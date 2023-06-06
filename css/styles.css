@@ -11815,3 +11815,15 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+.Mydisabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.6;
+}
+p,li {
+  font-size:20px;
+}
+.titulo {
+  font-size:52px;
+}
