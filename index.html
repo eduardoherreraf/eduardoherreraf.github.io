@@ -592,19 +592,19 @@
               <article class="accordion-item">
                 <h4 class="accordion-header">
                   <button
-                    class="accordion-button collapsed fs-5"
+                    class="accordion-button"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseOne">
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne">
                     INSTALACIÓN DE BOOTSTRAP V5.3 CON EL MANEJADOR DE PAQUETES NPM y VITE
                   </button>
                 </h4>
                 <div
-                  id="flush-collapseOne"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionFlushExample">
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#collapseOne">
                   <div class="accordion-body">
                     <p>
                       Esta documentación se realizó con base a la oficial entregada por Bootstrap en su página
@@ -782,35 +782,33 @@
                           }
                         }
                     </code></pre>
-                    <h5>
-                      Compilación del proyecto para Producción
-                      <p>
-                        Cuando se haya terminado y se quiera obtener la versión para producción se ejecuta el
-                        comando: <b>npm run build</b>
-                      </p>
-                      <h4>Corrección del archivo <b>index.html</b></h4>
-                      <p>
-                        Corregir las direcciones de llamado a los archivos css y js insertando un punto "."
-                        antes del slash, debe quedar asi en la cabecera &lt;head&gt; del archivo:
-                      </p>
-                      <pre
-                        class="line-numbers"
-                        data-src-status="loaded"
-                        tabindex="0"><code class="language-html" data-prismjs-copy="Copy">
+                    <h5>Compilación del proyecto para Producción</h5>
+                    <p>
+                      Cuando se haya terminado y se quiera obtener la versión para producción se ejecuta el
+                      comando: <b>npm run build</b>
+                    </p>
+                    <h4>Corrección del archivo <b>index.html</b></h4>
+                    <p>
+                      Corregir las direcciones de llamado a los archivos css y js insertando un punto "."
+                      antes del slash, debe quedar asi en la cabecera &lt;head&gt; del archivo:
+                    </p>
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0"><code class="language-html" data-prismjs-copy="Copy">
                         &lt;script type="module" crossorigin src="./assets/index-e9ba998b.js"&gt;&lt;/script&gt; y
                         &lt;link rel="stylesheet" href="./assets/index-1b619488.css"&gt;
                     </code></pre>
-                      <p>
-                        Si se tienen imágenes que están guardadas en la carpeta <b>assets/</b>, también se
-                        debe corregir la dirección colocándole el punto antes del slash (/) a su dirección, p.
-                        ej. <b>./assets/sun-86eb3c88.svg</b>
-                      </p>
-                      <p>
-                        Si la imagen se encuentra en la etiqueta <b>&lt;script&gt;</b>, esta no aparecerá en
-                        la carpeta <b>assets/</b>, se debe copiar en esta carpeta y su dirección se debe
-                        cambiar p. ej de <b>./images/moon.svg</b> a <b>./assets/moon.svg</b>
-                      </p>
-                    </h5>
+                    <p>
+                      Si se tienen imágenes que están guardadas en la carpeta <b>assets/</b>, también se debe
+                      corregir la dirección colocándole el punto antes del slash (/) a su dirección, p. ej.
+                      <b>./assets/sun-86eb3c88.svg</b>
+                    </p>
+                    <p>
+                      Si la imagen se encuentra en la etiqueta <b>&lt;script&gt;</b>, esta no aparecerá en la
+                      carpeta <b>assets/</b>, se debe copiar en esta carpeta y su dirección se debe cambiar p.
+                      ej de <b>./images/moon.svg</b> a <b>./assets/moon.svg</b>
+                    </p>
                   </div>
                 </div>
               </article>
@@ -1257,7 +1255,7 @@
       </main>
       <aside class="col-lg-4 pt-5">
         <h1 class="text_saira fw-bold">PUBLICACIONES</h1>
-        <ul>
+        <ul class="list-unstyled">
           <li><a href="#vite">INSTALACIÓN DE BOOTSTRAP V5.3 CON EL MANEJADOR DE PAQUETES NPM y VITE</a></li>
         </ul>
       </aside>
@@ -1413,9 +1411,8 @@
                 class="bi bi-whatsapp"
                 viewBox="0 0 16 16">
                 <path
-                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-              </svg>
-            </a>
+                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" /></svg
+            ></a>
           </div>
         </div>
       </div>
@@ -1476,7 +1473,7 @@
 
     const temaClaro = () => {
       document.querySelector('body').setAttribute('data-bs-theme', 'light');
-      document.querySelector('#dl-icon').setAttribute('src', './assets//moon.svg');
+      document.querySelector('#dl-icon').setAttribute('src', './assets/moon.svg');
       document.querySelector('#dl-icon').setAttribute('alt', 'Tema Nocturno');
       localStorage.setItem('theme', 'light');
     };
