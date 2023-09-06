@@ -105,17 +105,17 @@
     <script
       type="module"
       crossorigin
-      src="./assets/index-2d98b27f.js"></script>
+      src="./assets/index-625595b5.js"></script>
     <link
       rel="stylesheet"
-      href="./assets/index-0332d075.css" />
+      href="./assets/index-f6afda92.css" />
   </head>
   <body
     data-bs-theme="dark"
     data-bs-spy="scroll"
     data-bs-target=".navbar-collapse"
     data-bs-offset="10"
-    class="container-fluid"
+    class="container-fluid code-toolbar"
     id="about">
     <nav class="row navbar navbar-expand-lg bg-body-tertiary border-1 border fixed-top nav-pills">
       <div class="container-fluid">
@@ -169,10 +169,10 @@
             <a
               class="nav-link mx-1"
               href="#blog"
-              >BLOG</a
+              >PUBLICACIONES</a
             >
             <a
-              class="nav-link ms-1 me-auto"
+              class="nav-link ms-1"
               href="#contact"
               >CONTACTO</a
             >
@@ -514,7 +514,7 @@
                   title="¡Juega!"
                   class="fs-1"
                   ><img
-                    src="./assets/Ahorcado-105e077d.png"
+                    src="./assets/Ahorcado-2417b33c.png"
                     alt="Juego del Ahorcado - Ing. Eduardo Herrera Forero"
                     width="80%"
                 /></a>
@@ -539,11 +539,11 @@
                   href="https://web.archive.org/web/20160313141625/http://empucol.com.co/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  title="empucol.com.co"
+                  title="git add"
                   class="fs-6"
                   ><img
                     src="./assets/empucol_com_co-8807ecc8.jpg"
-                    alt="Encriptador - Ing. Eduardo Herrera Forero"
+                    alt="Empucol.com.co - Ing. Eduardo Herrera Forero"
                     width="80%"
                 /></a>
               </div>
@@ -563,14 +563,13 @@
               <h3 class="text_saira">INGENIERÍA ELECTRÓNICA</h3>
               <span>Bogotá D. C., 1998 || <span class="fw-bold">Universidad Santo Tomás</span></span>
             </div>
-            <h2 class="text_saira fw-bold text-break">FORMACIóN COMPLEMENTARIA</h2>
+            <h2 class="text_saira fw-bold text-break mt-4">FORMACIóN COMPLEMENTARIA</h2>
             <div>
               <h3 class="text_saira">DESARROLLO FRONT-END</h3>
               <span
                 >Bogotá D. C., 2022 || <span class="fw-bold">Alura - Oracle Next Education (ONE)</span></span
               >
             </div>
-            <br />
             <div>
               <h3 class="text_saira">ITIL (Information Technology Infrastructure Library)</h3>
               <span
@@ -585,12 +584,237 @@
             class="row pt-5 border-1 border-bottom pb-3"
             id="blog">
             <br />
-            <h2 class="text_saira fw-bold">BLOG</h2>
-            <article>
-              <h3 class="text_saira fw-bold">
-                INSTALACIÓN DE BOOTSTRAP V5.3 CON EL MANEJADOR DE PAQUETES NPM y VITE
-              </h3>
-            </article>
+            <h2 class="text_saira fw-bold">PUBLICACIONES</h2>
+            <h3 id="vite">2023</h3>
+            <section
+              class="accordion accordion-flush"
+              id="accordionFlushExample">
+              <article class="accordion-item">
+                <h4 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fs-5"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne">
+                    INSTALACIÓN DE BOOTSTRAP V5.3 CON EL MANEJADOR DE PAQUETES NPM y VITE
+                  </button>
+                </h4>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>
+                      Esta documentación se realizó con base a la oficial entregada por Bootstrap en su página
+                      web
+                      <a
+                        href="https://getbootstrap.com/docs/5.3/getting-started/vite/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Bootstrap and Vite</a
+                      >, todos los comando que se usaran en este tutorial son ejecutados en la terminal BASH
+                      de GIT.
+                    </p>
+                    <h5>Configuración inicial</h5>
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+                        mkdir my-project && cd my-project
+                        npm init -y
+                        npm i --save-dev vite
+                        npm i --save bootstrap @popperjs/core
+                        npm i --save-dev sass
+                    </code></pre>
+                    <h5>Configuración del Espacio de Trabajo</h5>
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+                        mkdir {src,src/js,src/scss}
+                        touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
+                    </code></pre>
+                    <h5>Configuración de Vite</h5>
+                    <p>En el archivo <b>vite.config.js</b>, se llena con:</p>
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+                        const path = require('path')
+
+                        export default {
+                          root: path.resolve(__dirname, 'src'),
+                          build: {
+                            outDir: '../dist'
+                          },
+                          server: {
+                            port: 8080
+                          }
+                        }
+                      </code></pre>
+                    <p>El archivo <b>src/index.html</b>, se llena con la siguiente plantilla:</p>
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0"><code class="language-html" data-prismjs-copy="Copy">
+                      &lt;!doctype html&gt;
+                      &lt;html lang="en"&gt;
+                      &lt;head&gt;
+                        &lt;meta charset="utf-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                        &lt;title&gt;Bootstrap w/ Vite&lt;/title&gt;
+                        &lt;script type="module" src="./js/main.js"&gt;&lt;/script&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+                        &lt;div class="container py-4 px-3 mx-auto"&gt;
+                        &lt;h1&gt;Hello, Bootstrap and Vite!&lt;/h1&gt;
+                        &lt;button class="btn btn-primary"&gt;Primary button&lt;/button&gt;
+                      &lt;/div&gt;
+                      &lt;/body&gt;
+                    &lt;/html&gt;
+                    </code></pre>
+                    <p>Mientras que el archivo <b>package.json</b> debe quedar configurado así:</p>
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+                      {
+                        "scripts": {
+                          "start": "vite",
+                          "build": "vite build",
+                          "test": "echo \"Error: no test specified\" && exit 1"
+                        },
+                      }
+                  </code></pre>
+                    <p>Iniciar el proyecto con vite: <b>npm start</b>, en el navegador</p>
+                    <h4>Importación Bootstrap v5.3</h4>
+                    <p>En el archivo <b>src/scss/styles.scss</b> se importa los estilos CSS:</p>
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0"><code class="language-css" data-prismjs-copy="Copy">
+                        // Import all of Bootstrap's CSS
+                        @import "bootstrap/scss/bootstrap";
+                    </code></pre>
+                    <p>El archivo src/js/main.js se carga e importa los CSS y JS de Bootstrap agregando.</p>
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0"><code class="language-js" data-prismjs-copy="Copy">
+                        // Import our custom CSS
+                        import '../scss/styles.scss'
+
+                        // Import all of Bootstrap's JS
+                        import * as bootstrap from 'bootstrap'
+                    </code></pre>
+                    <h5>Instalación plugin PurgeCSS plugin HTML</h5>
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0"><code class="language-bash" data-prismjs-copy="Copy">
+                        npm i vite-plugin-purgecss
+                        npm i vite-plugin-HTML
+                    </code></pre>
+                    <p>
+                      El plugin <b>purgecss</b> elimina toda clase de CSS que no sea utilizada y el
+                      <b>HTML</b> elimina todo espacio extra o cambio de línea del documento HTML y deja todo
+                      el código en una sola línea.
+                    </p>
+                    <p>El archivo vite.cfg.js se debe configurar asi:</p>
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+                        import htmlPurge from 'vite-plugin-purgecss'
+                        import { createHtmlPlugin } from 'vite-plugin-html'
+
+                        const path = require('path')
+
+                        export default {
+                          root: path.resolve(__dirname, 'src'),
+                          plugins:[
+                            htmlPurge(),
+                            createHtmlPlugin({
+                              minify:true,
+                              removeComments:true,
+                              colapseWhitespaces:true
+                            })
+                          ],
+                          build: {
+                            outDir: '../dist',
+                            emptyOutDir:true
+                          },
+                          server: {
+                            port: 8080
+                          }
+                        }
+                    </code></pre>
+                    <h4>Configuraciones finales</h4>
+                    <p>El archivo <b>package.json</b>, finalmente se debe tener asi:</p>
+                    <pre
+                      class="line-numbers"
+                      data-src-status="loaded"
+                      tabindex="0"><code class="language-javascript" data-prismjs-copy="Copy">
+                        {
+                          "name": "my-project",
+                          "version": "1.0.0",
+                          "description": "",
+                          "main": "index.js",
+                          "scripts": {
+                            "start": "vite",
+                            "build": "vite build",
+                            "test": "echo \"Error: no test specified\" && exit 1"
+                          },
+                          "keywords": [],
+                          "author": "",
+                          "license": "ISC",
+                          "devDependencies": {
+                            "sass": "^1.64.1",
+                            "vite": "^4.4.7",
+                            "vite-plugin-html": "^3.2.0"
+                          },
+                          "dependencies": {
+                            "@popperjs/core": "^2.11.8",
+                            "bootstrap": "^5.3.0",
+                            "vite-plugin-purgecss": "^0.2.12"
+                          }
+                        }
+                    </code></pre>
+                    <h5>
+                      Compilación del proyecto para Producción
+                      <p>
+                        Cuando se haya terminado y se quiera obtener la versión para producción se ejecuta el
+                        comando: <b>npm run build</b>
+                      </p>
+                      <h4>Corrección del archivo <b>index.html</b></h4>
+                      <p>
+                        Corregir las direcciones de llamado a los archivos css y js insertando un punto "."
+                        antes del slash, debe quedar asi en la cabecera &lt;head&gt; del archivo:
+                      </p>
+                      <pre
+                        class="line-numbers"
+                        data-src-status="loaded"
+                        tabindex="0"><code class="language-html" data-prismjs-copy="Copy">
+                        &lt;script type="module" crossorigin src="./assets/index-e9ba998b.js"&gt;&lt;/script&gt; y
+                        &lt;link rel="stylesheet" href="./assets/index-1b619488.css"&gt;
+                    </code></pre>
+                      <p>
+                        Si se tienen imágenes que están guardadas en la carpeta <b>assets/</b>, también se
+                        debe corregir la dirección colocándole el punto antes del slash (/) a su dirección, p.
+                        ej. <b>./assets/sun-86eb3c88.svg</b>
+                      </p>
+                      <p>
+                        Si la imagen se encuentra en la etiqueta <b>&lt;script&gt;</b>, esta no aparecerá en
+                        la carpeta <b>assets/</b>, se debe copiar en esta carpeta y su dirección se debe
+                        cambiar p. ej de <b>./images/moon.svg</b> a <b>./assets/moon.svg</b>
+                      </p>
+                    </h5>
+                  </div>
+                </div>
+              </article>
+            </section>
           </article>
           <article
             class="row pt-5"
@@ -840,11 +1064,11 @@
                               por terceros si utilizas dichos servicios en nuestro sitio web, por ejemplo, una
                               ventana de visualización de video proporcionada por terceros e integrada en
                               nuestro sitio web.<br /><br /><strong>Licencia</strong>:<br />A menos que se
-                              indique lo contrario, Ing. Eduardo Herrera Forero y/o sus licenciantes poseen
-                              los derechos de propiedad intelectual de todo el material en Ing. Eduardo
-                              Herrera Forero. Todos los derechos de propiedad intelectual son reservados.
-                              Puedes acceder desde Ing. Eduardo Herrera Forero para tu uso personal sujeto a
-                              las restricciones establecidas en estos términos y condiciones.<br /><br /><strong
+                              indique lo contrario, Ing. Eduardo Herrera Forero y/o sus liciantes poseen los
+                              derechos de propiedad intelectual de todo el material en Ing. Eduardo Herrera
+                              Forero. Todos los derechos de propiedad intelectual son reservados. Puedes
+                              acceder desde Ing. Eduardo Herrera Forero para tu uso personal sujeto a las
+                              restricciones establecidas en estos términos y condiciones.<br /><br /><strong
                                 >No debes</strong
                               >:<br />
                               <ul>
@@ -1033,7 +1257,9 @@
       </main>
       <aside class="col-lg-4 pt-5">
         <h1 class="text_saira fw-bold">PUBLICACIONES</h1>
-        <ul></ul>
+        <ul>
+          <li><a href="#vite">INSTALACIÓN DE BOOTSTRAP V5.3 CON EL MANEJADOR DE PAQUETES NPM y VITE</a></li>
+        </ul>
       </aside>
     </div>
     <footer class="row container-fluid border-1 border-top row col">
@@ -1106,7 +1332,7 @@
               <li><a href="#resume">Experiencia</a></li>
               <li><a href="#portfolio">Portafolio</a></li>
               <li><a href="#studies">Formación</a></li>
-              <li><a href="#blog">Blog</a></li>
+              <li><a href="#blog">Publicaciones</a></li>
               <li><a href="#contact">Contacto</a></li>
             </ul>
           </div>
@@ -1232,27 +1458,27 @@
   <script>
     // pagina ha cargado totalmente
     window.onload = function () {
-      alert("tema guardado " + tema);
-      if (tema === "null" || tema === "dark") temaOscuro();
-      if (tema === "light") temaClaro();
+      alert('tema guardado ' + tema);
+      if (tema === 'null' || tema === 'dark') temaOscuro();
+      if (tema === 'light') temaClaro();
     };
 
     // Change of Theme
     const cambiarTema = () => {
-      document.querySelector("body").getAttribute("data-bs-theme") === "light" ? temaOscuro() : temaClaro();
+      document.querySelector('body').getAttribute('data-bs-theme') === 'light' ? temaOscuro() : temaClaro();
     };
     const temaOscuro = () => {
-      document.querySelector("body").setAttribute("data-bs-theme", "dark");
-      document.querySelector("#dl-icon").setAttribute("src", "./assets/sun-86eb3c88.svg");
-      document.querySelector("#dl-icon").setAttribute("alt", "Tema Diurno");
-      localStorage.setItem("theme", "dark");
+      document.querySelector('body').setAttribute('data-bs-theme', 'dark');
+      document.querySelector('#dl-icon').setAttribute('src', './assets/sun-86eb3c88.svg');
+      document.querySelector('#dl-icon').setAttribute('alt', 'Tema Diurno');
+      localStorage.setItem('theme', 'dark');
     };
 
     const temaClaro = () => {
-      document.querySelector("body").setAttribute("data-bs-theme", "light");
-      document.querySelector("#dl-icon").setAttribute("src", "./assets/moon.svg");
-      document.querySelector("#dl-icon").setAttribute("alt", "Tema Nocturno");
-      localStorage.setItem("theme", "light");
+      document.querySelector('body').setAttribute('data-bs-theme', 'light');
+      document.querySelector('#dl-icon').setAttribute('src', './assets//moon.svg');
+      document.querySelector('#dl-icon').setAttribute('alt', 'Tema Nocturno');
+      localStorage.setItem('theme', 'light');
     };
   </script>
 </html>
