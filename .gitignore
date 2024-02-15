@@ -1,2 +1,5 @@
-# ignora carpeta node_modules
-**/vscode/**
+# ignora carpeta .vscode
+**/.vscode/**
+
+# ignora carpeta .gitignore
+**/.gitignore/**
