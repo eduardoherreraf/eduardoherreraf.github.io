@@ -9,27 +9,37 @@
 
 <url>
   <loc>https://eduardoherreraf.github.io/</loc>
-  <lastmod>2023-10-06T22:03:29+00:00</lastmod>
+  <lastmod>2024-03-06T23:22:18+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://eduardoherreraf.github.io/index.html</loc>
+  <lastmod>2024-03-06T23:22:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://eduardoherreraf.github.io/comandos_basicos_de_git_para_windows.html</loc>
+  <lastmod>2024-03-06T23:22:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://eduardoherreraf.github.io/como_eliminar_el_ultimo_commit_de_git.html</loc>
-  <lastmod>2024-02-02T12:06:49+00:00</lastmod>
+  <lastmod>2024-03-06T23:22:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://eduardoherreraf.github.io/manual_de_referencia_de_html_basico.html</loc>
-  <lastmod>2024-02-01T20:00:49+00:00</lastmod>
+  <lastmod>2024-03-06T23:22:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://eduardoherreraf.github.io/instalacion_de_bootstrap_v53_con_npm_y_parcel.html</loc>
-  <lastmod>2023-10-06T22:03:29+00:00</lastmod>
+  <lastmod>2024-03-06T23:22:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://eduardoherreraf.github.io/instalacion_de_bootstrap_v53_con_npm_y_vite.html</loc>
-  <lastmod>2023-10-06T22:03:29+00:00</lastmod>
+  <lastmod>2024-03-06T23:22:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
