@@ -1,42 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
-  <loc>https://eduardoherreraf.github.io/</loc>
-  <lastmod>2024-03-06T23:22:18+00:00</lastmod>
-  <priority>1.00</priority>
+  <loc>http://eduardoherreraf.github.io/index.html</loc>
+  <lastmod>2024-05-08</lastmod>
 </url>
 <url>
-  <loc>https://eduardoherreraf.github.io/comandos_basicos_de_git_para_windows.html</loc>
-  <lastmod>2024-03-06T23:22:18+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://eduardoherreraf.github.io/index.html#resume</loc>
+  <lastmod>2024-05-08</lastmod>
 </url>
 <url>
-  <loc>https://eduardoherreraf.github.io/como_eliminar_el_ultimo_commit_de_git.html</loc>
-  <lastmod>2024-03-06T23:22:18+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://eduardoherreraf.github.io/index.html#portfolio</loc>
+  <lastmod>2024-05-08</lastmod>
 </url>
 <url>
-  <loc>https://eduardoherreraf.github.io/manual_de_referencia_de_html_basico.html</loc>
-  <lastmod>2024-03-06T23:22:18+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://eduardoherreraf.github.io/index.html#studies</loc>
+  <lastmod>2024-05-08</lastmod>
 </url>
 <url>
-  <loc>https://eduardoherreraf.github.io/instalacion_de_bootstrap_v53_con_npm_y_parcel.html</loc>
-  <lastmod>2024-03-06T23:22:18+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://eduardoherreraf.github.io/index.html#blog</loc>
+  <lastmod>2024-05-08</lastmod>
 </url>
 <url>
-  <loc>https://eduardoherreraf.github.io/instalacion_de_bootstrap_v53_con_npm_y_vite.html</loc>
-  <lastmod>2024-03-06T23:22:18+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://eduardoherreraf.github.io/index.html#contact</loc>
+  <lastmod>2024-05-08</lastmod>
 </url>
-
-
-</urlset>
+<url>
+  <loc>http://eduardoherreraf.github.io</loc>
+  <lastmod>2024-05-08</lastmod>
+</url>
+<url>
+  <loc>http://eduardoherreraf.github.io/git@comandos_basicos_de_git_para_windows.html</loc>
+  <lastmod>2024-05-08</lastmod>
+</url>
+<url>
+  <loc>http://eduardoherreraf.github.io/git@como_eliminar_el_ultimo_commit_de_git.html</loc>
+  <lastmod>2024-05-08</lastmod>
+</url>
+<url>
+  <loc>http://eduardoherreraf.github.io/bootstrap@instalacion_de_bootstrap_v5_con_npm_y_parcel.html</loc>
+  <lastmod>2024-05-08</lastmod>
+</url>
+<url>
+  <loc>http://eduardoherreraf.github.io/bootstrap@instalacion_de_bootstrap_v5_con_npm_y_vite.html</loc>
+  <lastmod>2024-05-08</lastmod>
+</url>
+<url>
+  <loc>http://eduardoherreraf.github.io/</loc>
+  <lastmod>2024-05-08</lastmod>
+</url>
+<url>
+  <loc></loc>
+  <lastmod>2024-05-08</lastmod>
+</url>
+<url>
+  <loc>http://eduardoherreraf.github.io/index.html#about</loc>
+  <lastmod>2024-05-08</lastmod>
+</url>
