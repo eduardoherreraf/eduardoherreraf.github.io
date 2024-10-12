@@ -1,0 +1,13 @@
+# Permite a todos a inspeccionar la pagina
+User-agent: *
+
+# Paginas ignoradas
+Disallow: /Ahorcado/
+Disallow: /encriptador/
+Disallow: /bootstrapparcelnpm.html
+Disallow: /bootstrapvitenpm.html
+
+# Sitemap
+Sitemap: https://eduardoherreraf.github.io/sitemap.xml
+
+

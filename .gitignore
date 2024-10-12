@@ -1,0 +1,5 @@
+# ignora carpeta .vscode
+**/.vscode/**
+
+# ignora carpeta .gitignore
+**/.gitignore/**
