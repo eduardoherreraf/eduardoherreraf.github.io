@@ -1,0 +1,11 @@
+# Permite a todos a inspeccionar la pagina
+User-agent: *
+
+# Paginas ignoradas
+Disallow: /Ahorcado/
+Disallow: /encriptador/
+
+# Sitemap
+Sitemap: https://eduardoherreraf.github.io/sitemap.xml
+
+
