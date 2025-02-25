@@ -1,0 +1,351 @@
+<!DOCTYPE html><html lang="es" data-bs-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Descubre los errores más comunes en Python: guía práctica para programadores que transforman fallos en oportunidades de aprendizaje y mejora continua."><meta name="tittle" content="Errores: el pan diario del programador Python - Ing. Eduardo Herrera Forero."><meta name="author" content="Ing. Eduardo Herrera Forero"><meta name="application-name" content="EHF"><meta name="robots" content="index, follow"><link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0602_errores-el_pan_diario_del_programador.html"><meta property="og:type" content="website"><meta property="og:title" content="Errores: el pan diario del programador Python - Ing. Eduardo Herrera Forero."><meta property="og:description" content="Descubre los errores más comunes en Python: guía práctica para programadores que transforman fallos en oportunidades de aprendizaje y mejora continua."><meta property="og:image" content="https://i.imgur.com/JKbKYrO.png"><meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero"><meta property="og:url" content="https://eduardoherreraf.github.io/cursoPython3-0602_errores-el_pan_diario_del_programador.html"><meta property="og:locale" content="es_CO"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Errores: el pan diario del programador Python - Ing. Eduardo Herrera Forero."><meta name="twitter:description" content="Descubre los errores más comunes en Python: guía práctica para programadores que transforman fallos en oportunidades de aprendizaje y mejora continua."><meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png"><meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero"><meta name="twitter:url" content="https://eduardoherreraf.github.io/cursoPython3-0602_errores-el_pan_diario_del_programador.html"><meta name="twitter:site" content="@ehfeduardo"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.d2cbc014.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.02c0440e.png"><link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.9d63268f.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.a17b4569.png"><link rel="manifest" href="site.webmanifest"><link rel="mask-icon" href="safari-pinned-tab.cd218f89.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><title> Errores: el pan diario del programador Python - Ing. Eduardo Herrera Forero. </title><link rel="stylesheet" href="index.a3bc828d.css"><script type="module" defer src="index.aa7cbd0f.js"></script><meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"></head><body>  <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg"> <div class="container-fluid">  <a class="align-items-center d-flex ms-2 navbar-brand" href="index.html"> <img src="logo.f31ffce0.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30" class="align-text-top d-inline-block me-1"> <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span> </a>  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>  <div class="collapse ms-auto navbar-collapse text-center" id="navbarSupportedContent"> <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100"> <li class="nav-item"><a class="mx-1 nav-link" href="index.html">PERFIL</a></li> <li class="nav-item"><a class="mx-1 nav-link" href="index.html#resume">EXPERIENCIA</a></li> <li class="nav-item"><a class="mx-1 nav-link" href="index.html#portfolio">PORTAFOLIO</a></li> <li class="nav-item"><a class="mx-1 nav-link" href="index.html#studies">ESTUDIOS</a></li> <li class="nav-item"><a class="active mx-1 nav-link" href="index.html#blog">ARTÍCULOS</a></li> <li class="nav-item"><a class="mx-1 nav-link" href="index.html#contact">CONTACTO</a></li> </ul> </div> </div> </nav>   <div class="col row"> <main class="col-lg-9 pt-5"> <section class="pb-3">  <article class="border-1 border-bottom pb-3 row"> <div> <header> <h1>Errores: el pan diario del programador</h1> </header> <p> En el mundo de la programación, los errores son inevitables y forman parte del proceso de aprendizaje y desarrollo. Este documento explora los tipos más comunes de errores que los programadores enfrentan al trabajar con Python, así como algunas estrategias para identificarlos y solucionarlos. A través de ejemplos prácticos, se busca proporcionar una comprensión más profunda de cómo manejar errores y mejorar la calidad del código. </p> <div class="imagen text-center"> <picture> <img src="https://i.ibb.co/56h2n3H/errores.jpg" class="img-fluid rounded-4" width="50%" alt="Errores: el pan diario del programador  " title="Dominando los Errores de Python"> <figcaption>Errores: el pan diario del programador</figcaption> </picture> </div> </div>  <div id="tiposDeErroresEnPython" class="mt-5 pt-5"> <h2 class="mt-1">Tipos de Errores en Python</h2>  <div> <h3>Errores de Sintaxis</h3> <p> Estos errores ocurren cuando se escribe código que no sigue la gramática del lenguaje. Python no puede interpretar o compilar el código debido a un problema de sintaxis. </p> <p>Ejemplos:</p> <ul> <li> Olvidar cerrar un paréntesis o una comilla: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        print("Hola mundo)
+                      </code>
+                    </pre> </li> <li> Uso incorrecto de una palabra clave: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        def = 5
+                      </code>
+                    </pre> </li> </ul> </div>   <div> <h3>Errores de Tiempo de Ejecución</h3> <p> Estos errores ocurren mientras el programa está en ejecución, a pesar de que el código se haya escrito correctamente desde el punto de vista sintáctico. </p> <p>Tipos comunes de errores de ejecución:</p> <ul> <li> <span class="fw-bold">Error de <code>IndentationError</code></span>: Se produce cuando no se respeta la indentación del código. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    def saludo():
+                    print("Hola")
+                  </code>
+                </pre> </li> <li> <span class="fw-bold">Error de <code>TypeError</code></span>: Se produce cuando se intenta realizar una operación con un tipo de datos incompatible. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    resultado = "Hola" + 5
+                  </code>
+                </pre> </li> <li> <span class="fw-bold">Error de <code>ValueError</code></span>: Sucede cuando se pasa un argumento a una función que no es adecuado, aunque su tipo de datos sea correcto. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    int("abc")
+                  </code>
+                </pre> </li> <li> <span class="fw-bold">Error de <code>IndexError</code></span>: Se da cuando se intenta acceder a un índice fuera del rango de una lista. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    lista = [1, 2, 3]
+                    print(lista[5])
+                  </code>
+                </pre> </li> <li> <span class="fw-bold">Error de <code>KeyError</code></span>: Ocurre cuando se intenta acceder a una clave que no existe en un diccionario. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    diccionario = {"nombre": "Juan"}
+                    print(diccionario["edad"])
+                  </code>
+                </pre> </li> <li> <span class="fw-bold">Error de <code>AttributeError</code></span>: Se genera cuando se intenta acceder a un atributo o método que no existe en un objeto. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    objeto = "Hola"
+                    objeto.append(" Mundo")
+                  </code>
+                </pre> </li> <li> <span class="fw-bold">Error de <code>ZeroDivisionError</code></span>: Ocurre cuando se intenta dividir un número entre cero. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    x = 5 / 0
+                  </code>
+                </pre> </li> <li> <span class="fw-bold">Error de <code>FileNotFoundError</code></span>: Se produce cuando se intenta abrir un archivo que no existe. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    open("archivo_inexistente.txt")
+                  </code>
+                </pre> </li> </ul> </div>   <div> <h3>Errores Lógicos</h3> <p> Los errores lógicos son más difíciles de detectar, ya que el código se ejecuta sin problemas, pero no produce el resultado esperado. Son errores en la lógica del programa. </p> <p>Ejemplo.</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    def calcular_area(base, altura):
+                        return base * base  # Error lógico, debería ser base * altura
+                  </code>
+                </pre> </div>   <div> <h3>Errores de Excepción</h3> <p> En Python, las excepciones son objetos que representan errores durante la ejecución de un programa. Estos errores pueden ser controlados mediante bloques <code>try-except</code>. Algunas excepciones comunes incluyen: </p>  <div> <h4>Errores de Excepción Comunes</h4> <ul> <li> <span class="fw-bold"><code>BaseException</code></span>: Clase base para todas las excepciones en Python. Es la raíz del sistema jerárquico de excepciones. </li> <li> <span class="fw-bold"><code>Exception</code></span>: Clase base para las excepciones estándar, utilizada para capturar errores en programas normales. </li> </ul> </div>   <div> <h4>Errores Relacionados con Argumentos o Tipos</h4> <ul> <li> <span class="fw-bold"><code>TypeError</code></span>: Error generado cuando una operación o función se aplica a un objeto del tipo inapropiado. </li> <li> <span class="fw-bold"><code>ValueError</code></span>: Error lanzado cuando una función recibe un argumento del tipo correcto pero con un valor inapropiado. </li> <li> <span class="fw-bold"><code>KeyError</code></span>: Error lanzado al intentar acceder a una clave inexistente en un diccionario. </li> <li> <span class="fw-bold"><code>IndexError</code></span>: Error que ocurre al intentar acceder a un índice fuera de rango en una lista, tupla, etc. </li> <li> <span class="fw-bold"><code>AttributeError</code></span>: Error generado cuando se intenta acceder a un atributo inexistente de un objeto. </li> <li> <span class="fw-bold"><code>NameError</code></span>: Error que ocurre cuando se utiliza una variable no definida en el espacio de nombres. </li> <li> <span class="fw-bold"><code>UnboundLocalError</code></span>: Subclase de NameError. Aparece cuando una variable local se utiliza antes de ser asignada. </li> </ul> </div>   <div> <h4>Errores Matemáticos</h4> <ul> <li> <span class="fw-bold"><code>ArithmeticError</code></span>: Clase base para errores en operaciones aritméticas. </li> <li> <span class="fw-bold"><code>ZeroDivisionError</code></span>: Error al intentar dividir por cero. </li> <li> <span class="fw-bold"><code>OverflowError</code></span>: Error cuando un cálculo produce un número demasiado grande para ser representado. </li> <li> <span class="fw-bold"><code>FloatingPointError</code></span>: Error relacionado con operaciones en punto flotante. </li> </ul> </div>   <div> <h4>Errores de Entrada/Salida</h4> <ul> <li> <span class="fw-bold"><code>IOError</code></span>: Error general de entrada/salida (obsoleto, ahora se utiliza OSError). </li> <li> <span class="fw-bold"><code>OSError</code></span>: Error relacionado con operaciones del sistema operativo (lectura/escritura de archivos, etc.). </li> <li> <span class="fw-bold"><code>FileNotFoundError</code></span>: Error lanzado cuando no se encuentra un archivo o directorio. </li> <li> <span class="fw-bold"><code>PermissionError</code></span>: Error que ocurre al intentar realizar una operación sin los permisos necesarios. </li> <li> <span class="fw-bold"><code>IsADirectoryError</code></span>: Error al tratar de operar en un directorio como si fuera un archivo. </li> <li> <span class="fw-bold"><code>NotADirectoryError</code></span>: Error al tratar de operar en un archivo como si fuera un directorio. </li> <li> <span class="fw-bold"><code>EOFError</code></span>: Error lanzado cuando una función de entrada llega al final del archivo sin datos adicionales. </li> </ul> </div>   <div> <h4>Errores de Memoria</h4> <ul> <li> <span class="fw-bold"><code>MemoryError</code></span>: Error que ocurre cuando el sistema no tiene memoria suficiente para completar una operación. </li> <li> <span class="fw-bold"><code>RecursionError</code></span>: Error lanzado cuando se supera el límite de recursión. </li> </ul> </div>   <div> <h4>Errores de Importación</h4> <ul> <li> <span class="fw-bold"><code>ImportError</code></span>: Error que ocurre al intentar importar un módulo que no existe. </li> <li> <span class="fw-bold"><code>ModuleNotFoundError</code></span>: Subclase de ImportError. Aparece específicamente cuando no se encuentra un módulo. </li> </ul> </div>   <div> <h4>Errores de Codificación y Descodificación</h4> <ul> <li> <span class="fw-bold"><code>UnicodeError</code></span>: Clase base para errores relacionados con codificación y descodificación de Unicode. </li> <li> <span class="fw-bold"><code>UnicodeEncodeError</code></span>: Error al codificar datos en Unicode. </li> <li> <span class="fw-bold"><code>UnicodeDecodeError</code></span>: Error al descodificar datos en Unicode. </li> <li> <span class="fw-bold"><code>UnicodeTranslateError</code></span>: Error al traducir datos en Unicode. </li> </ul> </div>   <div> <h4>Errores de Concurrencia</h4> <ul> <li> <span class="fw-bold"><code>BlockingIOError</code></span>: Error que ocurre cuando una operación de E/S bloqueante es interrumpida. </li> <li> <span class="fw-bold"><code>TimeoutError</code></span>: Error generado cuando expira el tiempo de espera de una operación. </li> </ul> </div>   <div> <h4>Errores Personalizables</h4> <ul> <li> <span class="fw-bold"><code>RuntimeError</code></span>: Error general que no cae bajo otras categorías específicas. </li> <li> <span class="fw-bold"><code>NotImplementedError</code></span>: Error utilizado para indicar que un método o función no ha sido implementado. </li> </ul> </div>   <div> <h4>Errores de Clases y Herencia</h4> <ul> <li> <span class="fw-bold"><code>LookupError</code></span>: Clase base para errores relacionados con búsquedas de índices o claves. </li> <li> <span class="fw-bold"><code>AssertionError</code></span>: Error que ocurre cuando una declaración assert falla. </li> <li> <span class="fw-bold"><code>SystemError</code></span>: Error que indica un problema interno en el intérprete de Python. </li> </ul> </div>   <div> <h4>Errores de Sistema y Procesos</h4> <ul> <li> <span class="fw-bold"><code>KeyboardInterrupt</code></span>: Error lanzado cuando se presiona Ctrl+C durante la ejecución de un programa. </li> <li> <span class="fw-bold"><code>SystemExit</code></span>: Excepción lanzada para solicitar la finalización de un programa. </li> <li> <span class="fw-bold"><code>StopIteration</code></span>: Error lanzado para señalar el final de un iterador. </li> <li> <span class="fw-bold"><code>StopAsyncIteration</code></span>: Error lanzado para detener iteradores asíncronos. </li> </ul> </div>  </div>   <div> <h3>Errores de Importación</h3> <p> Este tipo de error ocurre cuando Python no puede encontrar el módulo o paquete especificado. </p> <p>Ejemplo:</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    import modulo_inexistente
+                  </code>
+                </pre> </div>   <div> <h3>Errores de Recursión</h3> <p> Este error ocurre cuando una función recursiva no tiene una condición de parada adecuada y se llama infinitamente. </p> <p>Ejemplo:</p> def funcion_recursiva(): return funcion_recursiva() </div>  </div>   <div id="estrategiasParaManejarErrores" class="mt-5 pt-5"> <h2 class="mt-1">Estrategias para Manejar Errores</h2>  <div> <h3>Dinámica de Tratamiento de Excepciones</h3> <p> Cuando el código intenta realizar una operación incorrecta, poco razonable, irresponsable, ilógica o que simplemente no es válida, Python responde de la manera: </p> <ul> <li> <strong>Interrumpe la ejecución</strong> del programa de forma inmediata, evitando que el error se propague o cause resultados inesperados. </li> <li> Genera un objeto especial denominado <strong>excepción</strong>, que es un tipo particular de dato diseñado para representar y manejar el error ocurrido. </li> </ul> <p> Las excepciones permiten identificar qué salió mal y, en muchos casos, ofrecen la oportunidad de gestionar el error de manera controlada para evitar que el programa falle por completo. </p> <p> El proceso detallado de la generación de excepciones en Python, cuando ocurre un error, sigue varios pasos bien definidos. A continuación se desglosa el proceso: </p> <ul> <li> <span class="fw-bold">Detección del error</span>: Cuando el intérprete de Python encuentra una operación inválida (como dividir por cero, acceder a un índice fuera de rango o usar un tipo de dato incorrecto), detecta que la operación no puede continuar de forma normal. <br> Ejemplo: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        x = [1, 2, 3]
+                        print(x[5])  # Operación inválida (acceso a un índice fuera de rango)
+                      </code>
+                    </pre> Python lanza un objeto IndexError con un mensaje como: list index out of range. </li> <li> <span class="fw-bold">Creación de una excepción</span>: En el momento del error, Python crea un objeto especial llamado <strong>excepción</strong>, basado en una clase predefinida. Este objeto contiene información detallada sobre el error, como: <ul> <li> <span class="fw-bold">El tipo de excepción</span>: Por ejemplo, <code>ZeroDivisionError</code>, <code>IndexError</code>, <code>TypeError</code>, etc. </li> <li> <span class="fw-bold">Un mensaje descriptivo</span>: Explica la naturaleza del problema. </li> <li> <span class="fw-bold">El contexto del error</span>: Información sobre dónde ocurrió, como el archivo, la línea y la pila de llamadas (stack trace). </li> </ul> </li> <li> <span class="fw-bold">Lanzamiento (raising) de la excepción</span>: Python "lanza" la excepción para indicar que ocurrió un error. Esto interrumpe inmediatamente la ejecución normal del programa y comienza a buscar un manejador de excepciones adecuado en el código (un bloque try...except). Ejemplo: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        x = [1, 2, 3]
+                        print(x[5])  # Genera IndexError
+                      </code>
+                    </pre> Python lanza un objeto IndexError con un mensaje como: <code>list index out of range</code>. </li> <li> <span class="fw-bold">Propagación de la excepción</span>: Python revisa si la excepción puede ser manejada dentro del bloque de código donde ocurrió el error: <ul> <li> Si no encuentra un bloque <code>try...except</code> adecuado en el contexto actual, la excepción se "propaga" hacia afuera, buscando manejadores en niveles superiores de la pila de llamadas. </li> <li> Si llega al nivel más alto sin encontrar un manejador, la excepción no es manejada. </li> </ul> </li> <li> <span class="fw-bold">Terminación del programa o manejo de la excepción</span>: <ul> <li> <span class="fw-bold">Sin manejo de la excepción</span>: Si no hay un bloque <code>try...except</code> que gestione la excepción, Python imprime un mensaje de error detallado (traceback), que incluye: <ul> <li>La excepción lanzada.</li> <li>El mensaje descriptivo del error.</li> <li> La ubicación exacta del error en el código. El programa se termina de forma abrupta. </li> </ul> <strong>Ejemplo sin manejo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        print(10 / 0)  # Sin bloque try...except
+                        # Resultado:
+                        # ZeroDivisionError: division by zero
+                      </code>
+                    </pre> </li> <li> <span class="fw-bold">Con manejo de la excepción</span>: Si se encuentra un bloque <code>try...except</code>, el código dentro del bloque <code>except</code> se ejecuta, permitiendo que el programa continúe su ejecución de manera controlada. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      try:
+                          print(10 / 0)
+                      except ZeroDivisionError as e:
+                          print(f"Ocurrió un error: {e}")
+                          # Resultado:
+                          # Ocurrió un error: division by zero
+                    </code>
+                  </pre> </li> </ul> </li> <li> <span class="fw-bold">Terminación del proceso</span>: <ul> <li> Si la excepción es manejada correctamente, el programa puede continuar su ejecución normal. </li> <li> Si no se maneja, el programa se cierra después de imprimir el traceback. </li> </ul> </li> </ul> </div>   <div> <h3>Uso de Try-Except</h3> <p> El bloque <code>try...excepts</code> en Python es una estructura utilizada para manejar excepciones (errores) que pueden ocurrir durante la ejecución de un programa. Este mecanismo permite que el programa continúe ejecutándose en lugar de detenerse abruptamente cuando ocurre un error. A continuación, se describe detalladamente su uso y funcionamiento: </p>  <div> <h4>Estructura Básica</h4> <p> La estructura básica de un bloque <code>try...except</code> es la siguiente: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        try:
+                            # Código que puede generar una excepción
+                            operación_potencialmente_riesgosa()
+                        except TipoDeExcepción:
+                            # Código que se ejecuta si ocurre una excepción del tipo especificado
+                            manejar_la_excepción()
+                      </code>
+                    </pre> <ul> <li> <span class="fw-bold"><code>try</code></span>: En este bloque se coloca el código que podría generar un error. Python intentará ejecutarlo. </li> <li> <span class="fw-bold"><code>except</code></span>: Aquí se especifica qué hacer si se produce una excepción. Se puede manejar un tipo específico de excepción o cualquier excepción. </li> </ul> </div>   <div> <h4>Tipos de Manejo de Excepciones</h4> <ul> <li> <span class="fw-bold">Capturar una excepción específica</span>: Es posible manejar un tipo de excepción específico, como <code>ValueError</code>, <code>ZeroDivisionError</code>, o cualquier otra. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          try:
+                              x = int(input("Introduce un número: "))
+                              resultado = 10 / x
+                          except ValueError:
+                              print("Se debe ingresar un número válido.")
+                          except ZeroDivisionError:
+                              print("No se puede dividir entre cero.")
+                        </code>
+                      </pre> </li> <li> <span class="fw-bold">Capturar múltiples excepciones</span>: Si varias excepciones deben manejarse de la misma manera, se pueden agrupar usando una tupla. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          try:
+                              x = int(input("Introduce un número: "))
+                              resultado = 10 / x
+                          except (ValueError, ZeroDivisionError):
+                              print("Ocurrió un error: número inválido o división entre cero.")
+                        </code>
+                      </pre> </li> <li> <span class="fw-bold">Capturar cualquier excepción</span>: Utilizando un <code>except</code> sin especificar el tipo, se capturan todas las excepciones. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          try:
+                              x = int(input("Introduce un número: "))
+                              resultado = 10 / x
+                          except:
+                              print("Ocurrió un error inesperado.")
+                        </code>
+                      </pre> Nota: Capturar todas las excepciones no es recomendable porque puede ocultar errores importantes que deberían ser corregidos. </li> <li> <span class="fw-bold">Obtener detalles de la excepción</span>: La excepción puede ser capturada en una variable para acceder a información detallada. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          try:
+                              x = int(input("Introduce un número: "))
+                              resultado = 10 / x
+                          except Exception as e:
+                              print(f"Ocurrió un error: {e}")
+                        </code>
+                      </pre> </li> <li> <span class="fw-bold">Excepciones generadas en una Función</span>: Si una excepción es generada dentro de una función, puede ser manejada: </li> </ul> </div>   <div> <h4>Bloques else y finally</h4> <ul> <li> <span class="fw-bold"><code>else</code></span>: Este bloque se ejecuta si no se genera ninguna excepción dentro del bloque <code>try</code>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            try:
+                                x = int(input("Introduce un número: "))
+                                resultado = 10 / x
+                            except ZeroDivisionError:
+                                print("No se puede dividir entre cero.")
+                            else:
+                                print(f"El resultado es {resultado}")
+                          </code>
+                        </pre> </li> <li> <span class="fw-bold"><code>finally</code></span>: Este bloque siempre se ejecuta, ya sea que ocurra o no una excepción. Se utiliza para realizar limpieza de recursos, como cerrar archivos o conexiones. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                          <code class="language-python" data-prismjs-copy="Copy">
+                            try:
+                                archivo = open("datos.txt", "r")
+                                contenido = archivo.read()
+                            except FileNotFoundError:
+                                print("El archivo no existe.")
+                            finally:
+                                print("Cerrando el archivo.")
+                                archivo.close()
+                          </code>
+                        </pre> </li> </ul> </div>   <div> <h4>Importancia del manejo de excepciones</h4> <ul> <li> <span class="fw-bold">Evita interrupciones inesperadas</span>: Un programa bien diseñado no debería cerrarse abruptamente debido a errores no manejados. </li> <li> <span class="fw-bold">Facilita la depuración</span>: Proporciona información específica sobre los errores. </li> <li> <span class="fw-bold">Mejora la experiencia del usuario</span>: Ofrece mensajes claros y opciones en lugar de mostrar rastros de errores confusos. </li> </ul> </div>   <div> <h4>Ejemplo Práctico Completo</h4> <p> Supongamos que se desea leer números de un archivo y calcular el recíproco de cada uno: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      try:
+                          with open("numeros.txt", "r") as archivo:
+                              for linea in archivo:
+                                  numero = int(linea.strip())
+                                  print(f"El recíproco de {numero} es {1/numero}")
+                      except FileNotFoundError:
+                          print("El archivo no fue encontrado.")
+                      except ValueError:
+                          print("El archivo contiene datos no válidos.")
+                      except ZeroDivisionError:
+                          print("Uno de los números es cero, no se puede dividir.")
+                      finally:
+                          print("Proceso completado.")
+                    </code>
+                  </pre> </div>  </div>   <div> <h3>Depuración</h3> <p> La depuración de código en Python es el proceso de identificar y corregir errores (bugs) en un programa. A continuación, se describen las principales técnicas y herramientas que se utilizan para depurar código en Python: </p>  <div> <h4>Uso de Declaraciones print()</h4> <p> Agregar declaraciones <code>print()</code> estratégicamente en el código ayuda a inspeccionar el flujo de ejecución y los valores de las variables. </p> <p>Ventajas:</p> <ul> <li>Fácil de usar.</li> <li>No requiere herramientas externas.</li> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-python" data-prismjs-copy="Copy">
+                        def suma(a, b):
+                            print(f"Valores recibidos: a={a}, b={b}")  # Depuración
+                            return a + b
+                        resultado = suma(5, '3')  # Error intencional para identificar
+                        print(f"Resultado: {resultado}")
+                      </code>
+                    </pre> </ul> </div>   <div> <h4>Uso de un Depurador (Debugger)</h4> <p> Un depurador permite inspeccionar el estado del programa línea por línea, verificar valores de variables y entender mejor el flujo del programa. </p> <ul> <li> <span class="fw-bold">Módulo <code>pdb</code> (Python Debugger)</span>: Python incluye un depurador integrado llamado <code>pdb</code>. <br> Uso básico: <br> <ul> <li> Insertar <code>import pdb; pdb.set_trace()</code> en el punto donde se desea iniciar la depuración. </li> <li>Ejecutar el programa y usar comandos de pdb.</li> </ul> Ejemplo: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-python" data-prismjs-copy="Copy">
+                          import pdb
+                          def suma(a, b):
+                              pdb.set_trace()  # Pausa la ejecución para depuración
+                              return a + b
+                          resultado = suma(5, 3)
+                          print(f"Resultado: {resultado}")
+                        </code>
+                      </pre> Comandos útiles de pdb: <ul> <li> <span class="fw-bold"><code>n</code></span>: Ejecuta la siguiente línea. </li> <li> <span class="fw-bold"><code>c</code></span>: Continúa hasta el siguiente punto de interrupción. </li> <li> <span class="fw-bold"><code>l</code></span>: Muestra las líneas de código actuales. </li> <li> <span class="fw-bold"><code>p &lt;variable></code> </span>: Imprime el valor de una variable. </li> <li> <span class="fw-bold"><code>q</code></span>: Salir del depurador. </li> </ul> </li> <li> <span class="fw-bold">Depuración en IDEs</span>: La mayoría de los entornos de desarrollo integrados (IDEs) como PyCharm, Visual Studio Code y Thonny tienen depuradores visuales. Estos permiten: <ul> <li>Establecer puntos de interrupción (breakpoints).</li> <li>Inspeccionar valores de variables en tiempo real.</li> <li> Paso a paso por el código (step over, step into, step out). </li> </ul> </li> </ul> </div>   <div> <h4>Registro de Eventos (Logging)</h4> <p> El módulo <code>logging</code> permite registrar información sobre la ejecución del programa en un archivo o en la consola, lo que facilita la depuración. </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      import logging
+                      logging.basicConfig(level=logging.DEBUG)
+                      def suma(a, b):
+                          logging.debug(f"Valores recibidos: a={a}, b={b}")
+                          return a + b
+                      resultado = suma(5, 3)
+                      print(f"Resultado: {resultado}")
+                    </code>
+                  </pre> </div>   <div> <h4>Análisis Estático del Código</h4> <p> Herramientas como <code>flake8</code>, <code>pylint</code> y <code>mypy</code> ayudan a encontrar errores comunes y verificar la tipificación estática. </p> <p>Ejemplo con flake8: Ejecutar en la terminal:</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      flake8 mi_codigo.py
+                    </code>
+                  </pre> </div>   <div> <h4>Depuración de Memoria y Rendimiento</h4> <p> Para problemas de memoria o rendimiento, se pueden usar herramientas como: </p> <ul> <li> <span class="fw-bold"><code>cProfile</code></span>: Para analizar el tiempo de ejecución. </li> <li> <span class="fw-bold"><code>memory_profiler</code></span>: Para monitorear el uso de memoria. </li> </ul> <p>Ejemplo con <code>cProfile</code>:</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                    <code class="language-python" data-prismjs-copy="Copy">
+                      python -m cProfile mi_codigo.py
+                    </code>
+                  </pre> </div>  </div>   <div> <h3>Pruebas Unitarias</h3> <p> Escribir pruebas unitarias con bibliotecas como unittest o pytest ayuda a identificar errores potenciales antes de que ocurran en producción. </p> <p>Ejemplo con unittest:</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    import unittest
+                    def dividir(a, b):
+                        if b == 0:
+                            raise ValueError("No se puede dividir por cero.")
+                        return a / b
+                    class TestDivision(unittest.TestCase):
+                        def test_division_correcta(self):
+                            self.assertEqual(dividir(10, 2), 5)
+                        def test_division_por_cero(self):
+                            with self.assertRaises(ValueError):
+                                dividir(10, 0)
+                  </code>
+                </pre> </div>  </div>   <div id="laAnatomiaDeLasExcepciones" class="mt-5 pt-5"> <h2 class="mt-1">La Anatomía de las Excepciones</h2> <ul> <li> No se puede agregar más de un bloque <code>except</code> sin nombre (anónimo) después de los bloques con nombre. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    # Este es el código principal que siempre se ejecuta sin problemas
+                    try:
+                        # Sección del código que puede generar excepciones
+                        print("Ejecutando código riesgoso...")
+                        # Código riesgoso aquí (por ejemplo, abrir un archivo, realizar operaciones aritméticas, etc.)
+                    except Except_1 as e:
+                        # Manejo específico para la excepción `Except_1`
+                        print(f"Se manejó un error de tipo Except_1: {e}")
+                    except Except_2 as e:
+                        # Manejo específico para la excepción `Except_2`
+                        print(f"Se manejó un error de tipo Except_2: {e}")
+                    except Exception as e:
+                        # Manejo para cualquier otro tipo de excepción no específica
+                        print(f"Se manejó una excepción no esperada: {e}")
+                    # Esto siempre se ejecutará, incluso si hubo error.
+                  </code>
+                </pre> </li> <li> Todas las excepciones de Python predefinidas forman una jerarquía, es decir, algunas de ellas son más generales (la llamada <code>BaseException</code> es la más general) mientras que otras son más o menos concretas (por ejemplo, <code>IndexError</code> es más concreta que <code>LookupError</code>). <br> No se debe poner excepciones más concretas antes de las más generales dentro de la misma secuencia de bloques except. Por ejemplo, se puede hacer esto: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    try:
+                        # Código riesgoso.
+                    except IndexError:
+                        # Solucionando problemas con listas.
+                    except LookupError:
+                        # Lidiando con búsquedas erróneas.
+                  </code>
+                </pre> Se recomienda evitar dicha implementación (a menos que exista una certeza absoluta de que se desea que una parte específica del código quede excluida de la generación de su excepción correspondiente en caso que suceda). <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    try:
+                    # Código riesgoso.
+                    except LookupError:
+                        # Lidiando con búsquedas erróneas.
+                    except IndexError:
+                        nunca llegarás aquí
+                  </code>
+                </pre> </li> <li> La sentencia de Python <code>raise NombreDeExcepción</code> puede generar una excepción bajo demanda. La misma sentencia pero sin <code>NombreDeExcepción</code>, se puede usar solamente dentro del bloque <code>except</code>, y genera la misma excepción que se está manejando actualmente. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    edad = int(input("Introduce tu edad: "))
+                    if edad &lt; 0:
+                        raise ValueError("La edad no puede ser negativa.")
+                    elif edad &lt; 18:
+                        raise PermissionError("Debes ser mayor de edad para continuar.")
+                    else:
+                        print("Bienvenido, eres mayor de edad.")
+                  </code>
+                </pre> <strong>Resultado esperado</strong>:gggg <ul> <li> Si numero es mayor que 0, se imprimirá: <code>ValueError: La edad no puede ser negativa</code>. </li> <li> Si numero es mayor que 15, se imprimirá: <code>PermissionError: Debes ser mayor de edad para continuar</code>. </li> <li> Si numero es mayor que 20, se imprimirá: Bienvenido, eres mayor de edad. </li> </ul> </li> <li> La sentencia <code>assert</code> en Python permite verificar una condición booleana durante el desarrollo y las pruebas. Si la expresión evaluada es <code>False</code>, <code>0</code>, <code>None</code>, o una cadena vacía, se genera una excepción <code>AssertionError</code>. Esta herramienta es útil para validar suposiciones y detectar errores en puntos críticos del código, ayudando a identificar problemas durante el desarrollo y garantizando la integridad de los datos. <br> Si se desea estar seguro que un número sea positivo: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-python" data-prismjs-copy="Copy">
+                    numero = 5
+                    assert numero > 0, "El número no es positivo."
+                    print("El número es positivo.")
+                  </code>
+                </pre> <strong>Resultado esperado</strong>: <ul> <li> Si <code>numero</code> es mayor que 0, se imprimirá: <code>El número es positivo</code>. </li> <li> Si <code>numero</code> fuera negativo o cero, se lanzaría: <code>AssertionError: El número no es positivo</code>. </li> </ul> </li> </ul> </div>   <div id="excepcionesIntegradas" class="mt-5 pt-5"> <h2 class="mt-1">Excepciones Integradas</h2> <p> Se procederá a presentar una breve lista de las excepciones más útiles. Aunque pueda parecer extraño denominar "útil" a un elemento o fenómeno que representa una señal visible de falla o retroceso. </p> <p> Las excepciones son tan rutinarias y normales como cualquier otro aspecto de la vida de un programador, constituyendo una herramienta fundamental para manejar situaciones imprevistas en el desarrollo de software. </p> <p> A continuación, se presenta un listado de las excepciones más importantes en Python, ordenadas de las más generales a las más específicas. Para cada una, se incluyen su nombre, ubicación en el árbol de excepciones, una breve descripción y un ejemplo conciso de código: </p> <ul> <li> <strong>BaseException</strong>: <ul> <li> <strong>Ubicación</strong>: Raíz del árbol de excepciones. </li> <li> <strong>Descripción</strong>: Clase base para todas las excepciones en Python. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                raise BaseException("Esto es una excepción general")
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>Exception</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija directa de BaseException. </li> <li> <strong>Descripción</strong>: Descripción: Clase base para todas las excepciones manejables. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                raise Exception("Excepción genérica")
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>ArithmeticError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de Exception. </li> <li> <strong>Descripción</strong>: Descripción: Clase base para errores en operaciones aritméticas. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                x = 1 / 0  # Genera un ZeroDivisionError, hijo de ArithmeticError
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>ZeroDivisionError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de ArithmeticError. </li> <li> <strong>Descripción</strong>: Descripción: Ocurre cuando se intenta dividir por cero. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                x = 10 / 0
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>OverflowError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de ArithmeticError. </li> <li> <strong>Descripción</strong>: Descripción: Se genera cuando un resultado excede el rango permitido. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                "import math
+                math.exp(1000)"
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>AssertionError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de Exception. </li> <li> <strong>Descripción</strong>: Descripción: Se lanza cuando una aserción assert falla. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                assert 2 + 2 == 5, "Aserción fallida"
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>AttributeError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de Exception. </li> <li> <strong>Descripción</strong>: Descripción: Se produce cuando un objeto no tiene un atributo solicitado. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                "obj = 5
+                obj.nonexistent_attribute"
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>EOFError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de Exception. </li> <li> <strong>Descripción</strong>: Descripción: Ocurre cuando la función input() encuentra el final de archivo. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                input("Ingresa algo: ")  # Genera EOFError si se presiona Ctrl+D (Linux/Mac) o Ctrl+Z (Windows)
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>ImportError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de Exception. </li> <li> <strong>Descripción</strong>: Descripción: Se lanza cuando una importación falla. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                import nonexistent_module
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>IndexError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de LookupError. </li> <li> <strong>Descripción</strong>: Descripción: Se produce cuando se accede a un índice fuera del rango de una secuencia. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                "lista = [1, 2, 3]
+                lista[5]"
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>KeyError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de LookupError. </li> <li> <strong>Descripción</strong>: Descripción: Se lanza cuando una clave no se encuentra en un diccionario. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                "diccionario = {""a"": 1}
+                diccionario[""b""]"
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>KeyboardInterrupt</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de BaseException. </li> <li> <strong>Descripción</strong>: Descripción: Se genera cuando el usuario interrumpe la ejecución con Ctrl+C. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                "while True:
+                    pass  # Interrumpe con Ctrl+C"
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>MemoryError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de Exception. </li> <li> <strong>Descripción</strong>: Descripción: Ocurre cuando el sistema no puede asignar memoria. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                a = [1] * (10**10)
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>NameError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de Exception. </li> <li> <strong>Descripción</strong>: Descripción: Se genera al usar una variable no definida. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                print(una_variable_no_definida)
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>NotImplementedError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de RuntimeError. </li> <li> <strong>Descripción</strong>: Descripción: Clase base para métodos no implementados. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                "class MiClase:
+                    def metodo(self):
+                        raise NotImplementedError(""Método no implementado"")"
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>OSError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de Exception. </li> <li> <strong>Descripción</strong>: Descripción: Clase base para errores relacionados con el sistema operativo. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                open("/ruta/no/existe.txt")
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>TypeError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de Exception. </li> <li> <strong>Descripción</strong>: Descripción: Se lanza al realizar una operación en un tipo inapropiado. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                x = "texto" + 5
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>ValueError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de Exception. </li> <li> <strong>Descripción</strong>: Descripción: Se genera al usar un valor inválido. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                int("texto")
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>UnicodeDecodeError</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de UnicodeError. </li> <li> <strong>Descripción</strong>: Descripción: Se lanza al decodificar caracteres Unicode incorrectos. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                b"\xff".decode("utf-8")
+                </code>
+                </pre> </li> </ul> </li> <li> <strong>StopIteration</strong>: <ul> <li> <strong>Ubicación</strong>: Ubicación: Hija de Exception. </li> <li> <strong>Descripción</strong>: Descripción: Se lanza cuando un iterador no tiene más elementos. </li> <li> <strong>Ejemplo</strong>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                <code class="language-python" data-prismjs-copy="Copy">
+                "iterador = iter([1, 2, 3])
+                next(iterador)
+                next(iterador)
+                next(iterador)
+                next(iterador)"
+                </code>
+                </pre> </li> </ul> </li> </ul> </div>  </article>   <article class="pt-5 row" id="comment"> <br> <h1>COMENTARIOS</h1> <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario disponible para este propósito.</p> <div class="d-flex justify-content-center"> <form action="https://formsubmit.co/herreraforeroeduardo@gmail.com" method="post" id="myForm"> <div class="d-flex flex-column input-group justify-content-center"> <label for="name" class="pe-2">Nombre:</label> <input type="text" name="name" id="name" placeholder="Eduardo Herrera Forero" class="rounded" required> <label for="email" class="pe-2">Email:</label> <input type="email" name="email" id="email" placeholder="herreraforeroeduardo@gmail.com" class="rounded" required> <label for="message" class="pe-2">Mensaje:</label> <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..." class="rounded rounded-3"></textarea> <input class="border border-2 btn btn-outline-light my-3 rounded-pill" type="submit" value="Enviar..."> </div> <p>La política de privacidad, y los términos y condiciones están disponibles en el formulario de contacto. </p> </form> </div> </article>  </section> </main>   <aside class="col-lg-3 d-lg-block d-none pt-5"> <h1>Índice</h1> <ul class="list-group"> <li class="list-group-item"> <a href="#tiposDeErroresEnPython">Tipos de Errores en Python</a> </li> <li class="list-group-item"> <a href="#estrategiasParaManejarErrores">Estrategias para Manejar Errores</a> </li> <li class="list-group-item"> <a href="#laAnatomiaDeLasExcepciones">La Anatomía de las Excepciones</a> </li> <li class="list-group-item"> <a href="#excepcionesIntegradas">Excepciones Integradas</a> </li> </ul> </aside>  </div>   <footer class="border-1 border-top col container-fluid row"> <div class="row">  <div class="align-items-center col-lg-4 d-flex flex-column"> <div> <div class="fs-2 text-center">Contacto</div> <div class="align-text-top d-flex flex-row m-3">  </div> <div class="align-text-top d-flex flex-row m-3"> <div> <svg width="16" height="16" fill="currentColor" class="bi bi-envelope-at"><path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/><path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/></svg> <span class="ms-3"> <a href="mailto:ehfeduardo@gmail.com">ehfeduardo@gmail.com</a> </span> </div> </div> <div class="align-text-top d-flex flex-row m-3"> <div> <svg width="16" height="16" fill="currentColor" class="bi bi-geo-alt"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg> </div> <span class="ms-3">Bogotá D. C. - Colombia</span> </div> </div> </div>  <div class="align-items-center col-lg-4 d-flex flex-column"> <div> <div class="fs-2 text-center">Mapa del Sitio</div> <ul class="list-unstyled"> <li> <a href="index.html#about">Perfil</a> </li> <li> <a href="index.html#resume">Experiencia</a> </li> <li> <a href="index.html#portfolio">Portafolio</a> </li> <li> <a href="index.html#studies">Estudios</a> </li> <li> <a href="index.html#blog">Artículos</a> </li> <li> <a href="index.html#contact">Contacto</a> </li> </ul> </div> </div>  <div class="align-items-center col-lg-4 d-flex flex-column"> <div class="fs-2 text-center">Redes Sociales</div> <div class="d-flex flex-column justify-content-between m-3"> <a href="https://www.linkedin.com/in/eduardoherreraf/" target="_blank" rel="noopener noreferrer" class="mb-1"> <svg width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg> </a> <a href="https://github.com/eduardoherreraf" target="_blank" rel="noopener noreferrer" class="mb-1"> <svg width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg> </a> <a href="https://www.facebook.com/eduardoherreraforero/" target="_blank" rel="noopener noreferrer" class="mb-1"> <svg width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg> </a> <a href="https://twitter.com/ehfeduardo/" target="_blank" rel="noopener noreferrer" class="mb-1"> <svg width="32" height="32" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3.2 3.2 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/></svg> </a>  </div> </div> </div> <div class="align-text-top d-flex justify-content-center m-3"> <div> <svg width="17" height="17" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16"><path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512"/></svg> </div> <span class="ms-3">All Rights Reserved 2023</span> </div> </footer>  <button onclick="topFunction()" id="myBtnScroll" title="Go to top"> <svg width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up" style="margin-left:-2px" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg> </button>  </body></html>
