@@ -1,442 +1,443 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='https://www.sitemaps.org/schemas/sitemap/0.9' xmlns:xhtml='https://www.w3.org/1999/xhtml'>
-<url>
-<loc>https://eduardoherreraf.github.io/</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>1</priority>
-</url>
-<!-- Páginas Índice -->
-<url>
-<loc>https://eduardoherreraf.github.io/bootstrap.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/git.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/javascript.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/otrosTemas.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.7</priority>
-</url>
-<!-- Bootstrap -->
-<url>
-<loc>https://eduardoherreraf.github.io/bootstrap-instalacion_de_bootstrap_v5_con_npm_y_parcel.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/bootstrap-instalacion_de_bootstrap_v5_con_npm_y_vite.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<!-- Git / Github -->
-<url>
-<loc>https://eduardoherreraf.github.io/git-01_como_eliminar_el_ultimo_commit_de_git.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/git-02_comandos_basicos_de_consola-terminal_cli_para_windows.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/git-03_introduccion_de_git_para_windows.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/git-04_configuracion_inicial_git.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/git-05_reiniciar_repositorio_en_git-github.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<!-- Javascript -->
-<url>
-<loc>https://eduardoherreraf.github.io/javascript-como_ejecutar_un_codigo_javascript.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/javascript-configurar_el_entorno_de_trabajo_javascript.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<!-- Photoshop -->
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-16_metadatos_y_exportacion.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-15_filtros_licuar.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-14_filtros_neurales.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-13_filtros.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-12_formas_y_capas.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-11_textos.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-10_color_y_degradados.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-09_uso_de_pinceles.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-08_agregar_y_quitar_objetos.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-07_herramientas_de_seleccion.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-06_ajuste_tono_brillo_y_saturacion.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-05_trabajo_con_capas.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-04_ajuste_lienzo_resolucion.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-03_compartir_y_editar_archivos.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-02_interfaz_y_area_de_trabajo.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/photoshop-01_comenzando_un_proyecto.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<!-- Otros Temas -->
-<url>
-<loc>https://eduardoherreraf.github.io/otrosTemas-como_aprender_cualquier_habilidad_facilmente_con_chatgpt.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/otrosTemas-como_borrar_la_cache_y_archivos_basura_en_windows.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<!-- Python -->
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0101_introduccion.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0102_instalacion_de_python_localmente.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0201_funcion_print.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0202_literales.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0203_operadores.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0204_variables.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0205_comentarios.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0206_interaccion_con_el_usuario.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0301_operadores_de_comparacion_y_logicos_en_python.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0302_sentencia_if_de_control_de_flujo.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0303_bucles_en_python_una_guia_completa.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0304_operadores_logicos_y_operaciones_bit_a_bit_en_python.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0305_listas.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0306_ordenamiento_de_listas_metodo_burbuja.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0307_operaciones_con_listas.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0401_introduccion_funciones.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0402_como_las_funciones_se_comunican_con_su_entorno.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0403_retorno_de_valores_en_funciones.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0404_el_alcance_de_las_variables.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0405_tuplas_y_diccionarios.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0501_introduccion_a_los_modulos.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0502_importacion_de_modulos.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0503_modulos_especializados_de_python-matematico_aleatorio_y_de_sistema.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0504_modulos_y_paquetes.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0505_instalador_de_paquetes_PIP.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0601_la_naturaleza_de_las_cadenas.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0602_errores-el_pan_diario_del_programador.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0701_los_fundamentos_de_la_poo.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0702_comparando_paradigmas_programacion_procedimental_y_orientada_a_objetos.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0703_poo_propiedades.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0704_poo_metodos.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0705_poo_herencia.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0706_poo_excepciones.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0801_iteradores,_generadores_y_cierres.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0802_manejo_de_archivos.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0803_el_modulo_os_interactuando_con_el_sistema_operativo.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0804_modulo_datetime_funciones_para_manejo_de_la_hora_y_la_fecha.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://eduardoherreraf.github.io/cursoPython3-0805_modulo_calendar_trabajando_con_funciones_relacionadas_con_el_calendario.html</loc>
-<lastmod>2025-03-02T16:14:42-05:00</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.6</priority>
-</url>
+<urlset xmlns='https://www.sitemaps.org/schemas/sitemap/0.9'
+    xmlns:xhtml='https://www.w3.org/1999/xhtml'>
+    <url>
+        <loc>https://eduardoherreraf.github.io/</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>1</priority>
+    </url>
+    <!-- Páginas Índice -->
+    <url>
+        <loc>https://eduardoherreraf.github.io/bootstrap.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/git.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/javascript.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/otrosTemas.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Bootstrap -->
+    <url>
+        <loc>https://eduardoherreraf.github.io/bootstrap-instalacion_de_bootstrap_v5_con_npm_y_parcel.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/bootstrap-instalacion_de_bootstrap_v5_con_npm_y_vite.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <!-- Git / Github -->
+    <url>
+        <loc>https://eduardoherreraf.github.io/git-01_como_eliminar_el_ultimo_commit_de_git.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/git-02_comandos_basicos_de_consola-terminal_cli_para_windows.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/git-03_introduccion_de_git_para_windows.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/git-04_configuracion_inicial_git.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/git-05_reiniciar_repositorio_en_git-github.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <!-- Javascript -->
+    <url>
+        <loc>https://eduardoherreraf.github.io/javascript-como_ejecutar_un_codigo_javascript.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/javascript-configurar_el_entorno_de_trabajo_javascript.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <!-- Photoshop -->
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-16_metadatos_y_exportacion.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-15_filtros_licuar.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-14_filtros_neurales.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-13_filtros.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-12_formas_y_capas.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-11_textos.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-10_color_y_degradados.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-09_uso_de_pinceles.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-08_agregar_y_quitar_objetos.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-07_herramientas_de_seleccion.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-06_ajuste_tono_brillo_y_saturacion.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-05_trabajo_con_capas.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-04_ajuste_lienzo_resolucion.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-03_compartir_y_editar_archivos.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-02_interfaz_y_area_de_trabajo.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/photoshop-01_comenzando_un_proyecto.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <!-- Otros Temas -->
+    <url>
+        <loc>https://eduardoherreraf.github.io/otrosTemas-como_aprender_cualquier_habilidad_facilmente_con_chatgpt.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/otrosTemas-como_borrar_la_cache_y_archivos_basura_en_windows.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <!-- Python -->
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0101_introduccion.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0102_instalacion_de_python_localmente.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0201_funcion_print.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0202_literales.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0203_operadores.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0204_variables.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0205_comentarios.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0206_interaccion_con_el_usuario.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0301_operadores_de_comparacion_y_logicos_en_python.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0302_sentencia_if_de_control_de_flujo.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0303_bucles_en_python_una_guia_completa.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0304_operadores_logicos_y_operaciones_bit_a_bit_en_python.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0305_listas.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0306_ordenamiento_de_listas_metodo_burbuja.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0307_operaciones_con_listas.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0401_introduccion_funciones.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0402_como_las_funciones_se_comunican_con_su_entorno.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0403_retorno_de_valores_en_funciones.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0404_el_alcance_de_las_variables.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0405_tuplas_y_diccionarios.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0501_introduccion_a_los_modulos.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0502_importacion_de_modulos.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0503_modulos_especializados_de_python-matematico_aleatorio_y_de_sistema.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0504_modulos_y_paquetes.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0505_instalador_de_paquetes_PIP.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0601_la_naturaleza_de_las_cadenas.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0602_errores-el_pan_diario_del_programador.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0701_los_fundamentos_de_la_poo.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0702_comparando_paradigmas_programacion_procedimental_y_orientada_a_objetos.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0703_poo_propiedades.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0704_poo_metodos.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0705_poo_herencia.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0706_poo_excepciones.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0801_iteradores,_generadores_y_cierres.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0802_manejo_de_archivos.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0803_el_modulo_os_interactuando_con_el_sistema_operativo.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0804_modulo_datetime_funciones_para_manejo_de_la_hora_y_la_fecha.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://eduardoherreraf.github.io/cursoPython3-0805_modulo_calendar_trabajando_con_funciones_relacionadas_con_el_calendario.html</loc>
+        <lastmod>2025-03-10T16:14:32-05:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>

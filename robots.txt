@@ -1,11 +1,26 @@
-# Permite a todos a inspeccionar la pagina
+# Permite a todos los rastreadores inspeccionar la página
 User-agent: *
 
-# Paginas ignoradas
+# Páginas ignoradas
 Disallow: /Ahorcado/
 Disallow: /encriptador/
+Disallow: /git@introduccion_de_git_para_windows.html
+Disallow: /git@como_eliminar_el_ultimo_commit_de_git.html
+Disallow: /git@configuracion_inicial_GIT.html
+Disallow: /git@comandos_basicos_de_git_para_windows.html
+Disallow: /photoshop@ajuste_lienzo_resolucion.
+Disallow: /photoshop@ajuste_tono_brillo_y_saturacion.html
+Disallow: /photoshop@trabajo_con_capas.html
+Disallow: /photoshop-ajuste_lienzo_resolucion.html
+Disallow: /photoshop@Agregar_y_Quitar_Objetos.html
+Disallow: /bootstrap@instalacion_de_bootstrap_v5_con_npm_y_parcel.html
+Disallow: /bootstrap@instalacion_de_bootstrap_v5_con_npm_y_vite.html
+Disallow: /js@configurar_el_entorno_de_trabajo_Javascript.html
+Disallow: /js@como_ejecutar_un_codigo_javascript.html
+Disallow: /textos.html
+Disallow: /instalacion-de-bootstrap-v53-con-npm-y-vite.html
+Disallow: /manual-de-referencia-html.html
+
 
 # Sitemap
 Sitemap: https://eduardoherreraf.github.io/sitemap.xml
-
-
