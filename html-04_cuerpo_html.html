@@ -1,0 +1,790 @@
+<html lang="es" data-bs-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Aprende las etiquetas HTML fundamentales para estructurar correctamente una página web. Guía completa con ejemplos prácticos para principiantes y desarrolladores web."><meta name="tittle" content="El Cuerpo HTML - Ing. Eduardo Herrera Forero."><meta name="author" content="Ing. Eduardo Herrera Forero"><meta name="application-name" content="EHF"><meta name="robots" content="index, follow"><link rel="canonical" href="https://eduardoherreraf.github.io/html-04_cuerpo_html.html"><meta property="og:type" content="website"><meta property="og:title" content="El Cuerpo HTML - Ing. Eduardo Herrera Forero."><meta property="og:description" content="Aprende las etiquetas HTML fundamentales para estructurar correctamente una página web. Guía completa con ejemplos prácticos para principiantes y desarrolladores web."><meta property="og:image" content="https://i.postimg.cc/VN1YnWQv/Cuerpo-html.jpg"><meta property="og:image:alt" content="El Cuerpo HTML - Ing. Eduardo Herrera Forero."><meta property="og:url" content="https://eduardoherreraf.github.io/html-04_cuerpo_html.html"><meta property="og:locale" content="es_CO"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="El Cuerpo HTML - Ing. Eduardo Herrera Forero."><meta name="twitter:description" content="Aprende las etiquetas HTML fundamentales para estructurar correctamente una página web. Guía completa con ejemplos prácticos para principiantes y desarrolladores web."><meta name="twitter:image" content="https://i.postimg.cc/VN1YnWQv/Cuerpo-html.jpg"><meta name="twitter:image:alt" content="El Cuerpo HTML - Ing. Eduardo Herrera Forero."><meta name="twitter:url" content="https://eduardoherreraf.github.io/html-04_cuerpo_html.html"><meta name="twitter:site" content="@ehfeduardo"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.d2cbc014.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.02c0440e.png"><link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.9d63268f.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.a17b4569.png"><link rel="manifest" href="site.webmanifest"><link rel="mask-icon" href="safari-pinned-tab.cd218f89.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><title>El Cuerpo HTML - Ing. Eduardo Herrera Forero.</title><link rel="stylesheet" href="index.2957e643.css"><script type="module" defer src="index.d07dbcde.js"></script><meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"></head><body>  <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg"> <div class="container-fluid">  <a class="align-items-center d-flex ms-2 navbar-brand" href="index.html"> <img src="logo.f31ffce0.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30" class="align-text-top d-inline-block me-1"> <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span> </a>  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>  <div class="collapse ms-auto navbar-collapse text-center" id="navbarSupportedContent"> <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100"> <li class="nav-item"> <a class="mx-1 nav-link" href="index.html">SOBRE MÍ</a> </li> <li class="nav-item"> <a class="mx-1 nav-link" href="index.html#resume">EXPERIENCIA</a> </li> <li class="nav-item"> <a class="mx-1 nav-link" href="index.html#portfolio">PORTAFOLIO</a> </li> <li class="nav-item"> <a class="mx-1 nav-link" href="index.html#studies">ESTUDIOS</a> </li> <li class="nav-item"> <a class="active mx-1 nav-link" href="index.html#blog">PUBLICACIONES</a> </li> <li class="nav-item"> <a class="mx-1 nav-link" href="index.html#contact">CONTACTO</a> </li> </ul> </div> </div> </nav>   <div class="col mx-1 row"> <main class="col-lg-9 pt-5"> <section class="pb-3">  <article class="border-1 border-bottom pb-3 row" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"> <div> <header><h1 id="introduccion">El Cuerpo HTML</h1></header>  <div class="mt-5"> <h2 class="mt-1">Introducción</h2> <p> En el mundo actual del desarrollo web, la estructura de una página no solo es importante para su visualización, sino también para su accesibilidad, SEO y mantenimiento. Las etiquetas semánticas HTML5 han revolucionado la forma en que construimos sitios web, proporcionando un significado claro y contextual a cada sección de nuestra página. </p> <p> A diferencia de las antiguas estructuras basadas únicamente en <code>&lt;div></code>s genéricos, las etiquetas semánticas como <code>&lt;header></code>, <code>&lt;nav></code>, <code>&lt;main></code>, <code>&lt;article></code>, <code>&lt;section></code>, <code>&lt;aside></code> y <code>&lt;footer></code> comunican explícitamente la función de cada componente. Esto no solo facilita la comprensión del código para otros desarrolladores, sino que también permite a los motores de búsqueda y tecnologías asistivas interpretar correctamente el contenido. </p> <p> Implementar estas etiquetas semánticas en el sitio web mejora significativamente el posicionamiento en buscadores, ya que los algoritmos modernos valoran el contenido bien estructurado y con significado claro. Además, las páginas construidas con etiquetas semánticas son más accesibles para personas con discapacidades que utilizan lectores de pantalla y otras tecnologías adaptativas. </p> <p> La adopción de estas prácticas no solo representa seguir las tendencias actuales, sino que constituye una inversión en la calidad, durabilidad y alcance de tu presencia digital. </p> <div class="imagen text-center"> <picture> <img src="https://i.postimg.cc/VN1YnWQv/Cuerpo-html.jpg" class="img-fluid" width="50%" alt="El Cuerpo HTML " title="Ejemplo de la estructura básica de una pagina web moderna."> <figcaption> Estructura básica de un documento HTML5 utilizando elementos semánticos. </figcaption> </picture> </div> </div>   <div id="estructura-html-no-semantica" class="mt-5"> <h2 class="mt-1">Estructura HTML no Semántica</h2> <p> Antes de la introducción de HTML5 y sus etiquetas semánticas, las páginas web se construían principalmente utilizando elementos genéricos, especialmente el <code>&lt;div></code>. Esta aproximación no semántica resultaba en código menos descriptivo y más difícil de mantener. </p> <p>Un ejemplo de una estructura no semántica típica:</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                  <code class="language-html" data-prismjs-copy="Copy">
+                  &lt;!DOCTYPE html>
+                  &lt;html>
+                  &lt;head>
+                    &lt;title>Mi Sitio Web&lt;/title>
+                  &lt;/head>
+                  &lt;body>
+                    &lt;!-- Cabecera --&gt;
+                    &lt;div id="header">
+                      &lt;div id="logo">Mi Sitio&lt;/div>
+                      &lt;div id="nav">
+                        &lt;div class="nav-item">&lt;a href="#">Inicio&lt;/a>&lt;/div>
+                        &lt;div class="nav-item">&lt;a href="#">Servicios&lt;/a>&lt;/div>
+                        &lt;div class="nav-item">&lt;a href="#">Contacto&lt;/a>&lt;/div>
+                      &lt;/div>
+                    &lt;/div>
+                    &lt;!-- Contenido principal --&gt;
+                    &lt;div id="main-content">
+                      &lt;div id="featured-post">
+                        &lt;div class="post-title">Título del Artículo&lt;/div>
+                        &lt;div class="post-content">
+                          &lt;p>Este es el contenido del artículo principal...&lt;/p>
+                        &lt;/div>
+                      &lt;/div>
+
+                      &lt;div id="other-posts">
+                        &lt;div class="post">
+                          &lt;div class="post-title">Artículo Secundario&lt;/div>
+                          &lt;div class="post-content">
+                            &lt;p>Contenido de un artículo secundario...&lt;/p>
+                          &lt;/div>
+                        &lt;/div>
+                      &lt;/div>
+                    &lt;/div>
+
+                    &lt;!-- Barra lateral --&gt;
+                    &lt;div id="sidebar">
+                      &lt;div class="widget">
+                        &lt;div class="widget-title">Categorías&lt;/div>
+                        &lt;div class="widget-content">
+                          &lt;div class="category">Categoría 1&lt;/div>
+                          &lt;div class="category">Categoría 2&lt;/div>
+                        &lt;/div>
+                      &lt;/div>
+                    &lt;/div>
+
+                    &lt;!-- Pie de página --&gt;
+                    &lt;div id="footer">
+                      &lt;div class="copyright">© 2025 Mi Sitio Web&lt;/div>
+                    &lt;/div>
+
+                  &lt;/body>
+                  &lt;/html>
+                  </code>
+                </pre> <p>En este ejemplo, observamos varios problemas:</p> <ul> <li> <strong>Falta de significado inherente</strong>: Cada <code>&lt;div></code> requiere un <code>id</code> o <code>clase</code> para explicar su propósito, ya que el elemento en sí no comunica nada sobre su función. </li> <li> <strong>Dificultad para el mantenimiento</strong>: Al tener una estructura basada completamente en <code>&lt;div></code>s, el código se vuelve más difícil de leer y mantener, especialmente en proyectos grandes. </li> <li> <strong>Desafíos para la accesibilidad</strong>: Los lectores de pantalla y otras tecnologías asistivas tienen dificultades para interpretar correctamente la estructura del documento. </li> <li> <strong>Limitaciones para SEO</strong>: Los motores de búsqueda no pueden identificar fácilmente qué secciones contienen el contenido principal versus contenido secundario. </li> <li> <strong>Anidación excesiva</strong>: Se tiende a usar excesivamente de <code>&lt;div></code>s, lo que hace que el código sea más verboso y menos eficiente. </li> </ul> </div>   <div id="estructura-html-con-etiquetas-semanticas" class="mt-5"> <h2 class="mt-1">Estructura HTML con Etiquetas Semánticas</h2>  <div> <h3>Introducción a Elementos Semánticos</h3> <p> Dentro del desarrollo web, lo 'semántico' implica el uso de elementos HTML que expresan claramente la función y el tipo del contenido que contienen. Esta práctica supera la mera presentación visual, buscando comunicar el significado del contenido tanto a los programas de navegación como a los programadores. En contraste con elementos generales como <code>&lt;div></code> y <code>&lt;span></code>, que actúan como contenedores sin especificar la naturaleza de la información que guardan, los elementos semánticos como <code>&lt;header></code>, <code>&lt;article</code> y <code>&lt;footer></code> proporcionan un contexto significativo, permitiendo que las máquinas (navegadores, buscadores, tecnologías de asistencia) interpreten mejor el papel de cada parte de la página. </p> <p> La implementación de elementos semánticos representa un cambio sustancial en la trayectoria de HTML. En versiones previas, como HTML4, era habitual construir la estructura de una página web utilizando principalmente elementos <code>&lt;div></code>, a menudo acompañados de atributos <code>id</code> o <code>class</code> para intentar aclarar su función. No obstante, este enfoque dependía de la interpretación de los nombres de las clases, que podían variar o no ser evidentes. Con la introducción de HTML5, se incorporó un conjunto de elementos semánticos diseñados específicamente para describir las distintas secciones y componentes de una página de forma inherente. Este cambio significó un progreso hacia una web más significativa y accesible. </p> <p> El empleo de elementos semánticos es crucial para la correcta organización de una página web por múltiples motivos. En esencia, estos elementos facilitan la navegación, la comprensión y el mantenimiento de las páginas web tanto para las personas como para las máquinas. Al transmitir de manera clara la función de cada elemento de contenido, se establecen las bases para una mejor accesibilidad, optimización para motores de búsqueda (SEO) y una mayor eficiencia en el desarrollo y la colaboración. </p> <div class="imagen text-center"> <picture> <img src="https://i.ibb.co/0jbNQFms/no-semantico-vs-semantico-compress.png" class="img-fluid" width="50%" alt="HTML no semántico vs HTML semántico" title="HTML no semántico vs HTML semántico"> <figcaption> Comparación de HTML no semántico vs HTML semántico. </figcaption> </picture> </div> </div>   <div> <h3>Beneficios el Uso de la Semántica</h3>  <div> <h4> Mejora del SEO (Optimización para Motores de Búsqueda) </h4> <p> Herramientas de búsqueda, tal como Google, examinan la estructura del código de las páginas web para entender qué información presentan y cómo deben mostrarla. Los marcadores semánticos ofrecen indicaciones precisas a los sistemas de exploración web sobre el propósito y la relevancia de los distintos elementos de una página. A modo de ejemplo, el marcador <code>&lt;header></code> identifica el contenido de inicio,<code>&lt;nav></code>señala los vínculos de navegación, <code>&lt;main></code> define el contenido central y <code>&lt;article></code> agrupa el contenido autónomo. </p> <p> Esta transparencia facilita a los buscadores la tarea de registrar y ordenar el contenido con mayor precisión. En el contexto de la búsqueda semántica, donde los motores de búsqueda se esfuerzan por interpretar la intención detrás de las preguntas de los usuarios, el empleo de marcadores semánticos se vuelve aún más esencial. Al definir claramente el significado y la relevancia de las diversas secciones del contenido, los creadores de sitios web permiten que los buscadores conecten de manera más eficiente las consultas de los usuarios con los resultados pertinentes. Asimismo, ciertos marcadores semánticos pueden contribuir a generar "resultados enriquecidos" en las páginas de búsqueda, lo cual puede aumentar la visibilidad y el número de clics. La utilización correcta de los marcadores de encabezado (<code>&lt;h1></code> a <code>&lt;h6></code>), el marcador <code>&lt;title></code>, las descripciones meta y el texto alternativo en las imágenes también juega un papel clave en la optimización para buscadores. </p> </div>   <div> <h4>Accesibilidad Web</h4> <p> Las herramientas de apoyo, como los programas que leen el texto en pantalla para personas con problemas de visión, necesitan de marcadores de significado para entender y moverse dentro de los sitios de internet. Estos marcadores dan información sobre el tema y la forma en que está organizado el sitio, lo que ayuda a las personas con discapacidades a entender y usar el contenido sin problemas. Por ejemplo, el marcador <code>&lt;nav></code> señala claramente dónde está el menú de navegación, lo que permite a los lectores de pantalla dar opciones de navegación precisas al usuario. Los títulos (<code>&lt;h1></code> a <code>&lt;h6></code>) ayudan a los usuarios a ver cómo se organiza el contenido, y usar el marcador <code>&lt;main></code> permite a los lectores de pantalla ir directamente a la parte principal del contenido. </p> <p> Usar marcadores de significado ayuda a que internet sea más para todos y más fácil de usar, sin importar las habilidades de cada persona. Al dar una forma organizada al contenido, se garantiza que este se pueda usar y entender por más personas. En algunos lugares, hacer que internet sea accesible es incluso una obligación por ley. Además, usar marcadores de significado puede hacer que el código sea más ordenado y corto, al no tener que usar muchas clases e ids, lo que también ayuda a que internet sea más accesible. </p> </div>  </div>   <div> <h4>Mantenimiento y Legibilidad del Código</h4> <p> El uso de etiquetas semánticas contribuye a que el código HTML sea más comprensible y de fácil lectura. A diferencia de utilizar etiquetas genéricas como <code>&lt;div></code> con nombres de clases que no son claros, las etiquetas semánticas como <code>&lt;article></code>, <code>&lt;section></code> y <code>&lt;header></code> señalan de forma precisa la función de cada segmento de contenido. Esta nitidez favorece el mantenimiento del código, posibilita la cooperación entre programadores y vuelve más sencillas las tareas de corrección de errores y perfeccionamiento. </p> <p> Si la forma en que está escrito el código muestra claramente de qué trata el contenido, los programadores pueden entender fácilmente cómo está organizada la página, lo que acelera el trabajo de desarrollo y simplifica las correcciones. Las etiquetas semánticas funcionan como una guía integrada, disminuyendo el esfuerzo mental requerido para entender el código fuente. Esto es especialmente útil cuando varios programadores colaboran en un mismo proyecto. Usar nombres claros para los elementos semánticos ayuda a encontrar rápidamente partes específicas del contenido para corregir errores o hacer cambios. También, al usar menos etiquetas que no indican el significado y evitar usar demasiadas clases e IDs, el código se vuelve más ordenado y con menos posibilidades de tener errores. </p> </div>   <div> <h4>Preparación para el Futuro y Colaboración en Equipo</h4> <p> Emplear HTML semántico garantiza que las páginas web estén mejor equipadas para los próximos criterios y avances tecnológicos de la red. Con la progresión de los criterios de la red, el código con estructura semántica tiene mayor probabilidad de ser compatible y de ajustarse a los cambios. La comunicación optimizada y el entendimiento mutuo que promueven las etiquetas semánticas son fundamentales para una cooperación eficiente entre los equipos de programación y diseño. </p> <p> Esta perspectiva a largo plazo asegura la durabilidad y disminuye la posible necesidad de modificaciones conforme cambian las tecnologías de la red. El carácter nítido y descriptivo de las etiquetas semánticas suministra un lenguaje común para programadores y diseñadores, lo cual deriva en una cooperación más efectiva. Cuando la arquitectura del HTML demuestra claramente el sentido del contenido, se reducen los errores de interpretación y se simplifica un procedimiento de programación más dinámico. Esto, asimismo, simplifica la incorporación de nuevas tecnologías o la adaptación a las variaciones en los criterios de la red en el porvenir. </p> </div>  </div>   <div id="etiquetas-semánticas-html" class="mt-5"> <h2 class="mt-1">Etiquetas Semánticas HTML</h2> <p> Las etiquetas semánticas en HTML proporcionan significado al contenido de una página web, facilitando su comprensión tanto para los navegadores como para los motores de búsqueda y tecnologías de asistencia. En lugar de usar elementos genéricos como <code>&lt;div></code> o <code>&lt;span></code>, se emplean etiquetas como <code>&lt;header></code>, <code>&lt;nav></code>, <code>&lt;article></code> y <code>&lt;section></code> para estructurar el contenido de forma clara y accesible. Su uso mejora la legibilidad, la accesibilidad y la optimización para motores de búsqueda (SEO) </p>  <div> <h3 id="etiqueta-html-main"> Etiqueta HTML &lt;main>: Contenido Principal Semánticamente Definido </h3>  <div> <h4>Definición &lt;main></h4> <p> La etiqueta <code>&lt;main></code> en HTML se utiliza para definir el contenido principal de un documento. Representa la sección central de la página que es única y relevante para el propósito del documento. </p> </div>   <div> <h4>Características clave &lt;main></h4> <ul> <li> <b>Contenido único y relevante</b>: Contiene el contenido principal del documento, que es único y relevante para la página. <br> No debe incluir elementos repetitivos como menús, barras laterales o pies de página. </li> <li> <b>Debe haber solo una etiqueta <code>&lt;main></code> por página</b>: HTML5 establece que solo puede existir una etiqueta <code>&lt;main></code> en cada documento. <br> No debe anidarse dentro de elementos como <code>&lt;header></code>, <code>&lt;nav></code>, <code>&lt;aside></code> o <code>&lt;footer></code>. </li> <li> <b>Mejora la accesibilidad</b>: Facilita la navegación para usuarios con tecnologías de asistencia, como lectores de pantalla. <br> Permite saltar directamente al contenido principal con accesos rápidos de teclado. </li> <li> <b>No tiene impacto visual directo</b>: <code>&lt;main></code> no afecta el estilo visual por sí mismo, pero puede ser estilizado con CSS. </li> <li> <b>Mejora el SEO (Optimización para Motores de Búsqueda)</b>: Ayuda a los motores de búsqueda a identificar el contenido más importante de la página. </li> </ul> </div>   <div> <h4>Sintaxis Correcta &lt;main></h4> <p> La etiqueta <code>&lt;main></code> se utiliza para definir el contenido principal de una página web. </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            <code class="language-html" data-prismjs-copy="Copy">
+            &lt;body>
+              &lt;nav>
+              &lt;!-- Menú de navegación ---&gt;
+              &lt;/nav>
+
+              &lt;header>
+              &lt;!-- Encabezado de la página ---&gt;
+              &lt;/header>
+
+              &lt;main>
+              &lt;!-- Contenido principal de la página ---&gt;
+              &lt;h1>Título principal&lt;/h1>
+              &lt;p>Párrafo del contenido principal&lt;/p>
+              &lt;/main>
+
+              &lt;footer>
+              &lt;!-- Pie de página ---&gt;
+              &lt;/footer>
+            &lt;/body>
+            </code>
+          </pre> <p> Se debe utilizar correctamente para evitar problemas de accesibilidad y estructura semántica. </p> </div>   <div> <h4>Uso &lt;main></h4> <p> La etiqueta <code>&lt;main></code> se debe usar en las siguientes situaciones: </p> <ul> <li> Páginas con contenido principal único, como artículos, descripciones de productos o información empresarial. </li> <li> Blogs y noticias, para destacar publicaciones relevantes. </li> <li> Tiendas en línea, mostrando productos y detalles importantes. </li> <li> Portafolios y sitios corporativos, en secciones como "Acerca de Nosotros" o "Servicios". </li> <li> Documentación técnica y tutoriales, donde se explica información detallada. </li> <li> Foros y comunidades, para mostrar discusiones o preguntas de los usuarios. </li> <li> Resultados de búsqueda, cuando se presentan listas de coincidencias. </li> <li> Portales educativos y cursos en línea, para mostrar lecciones o materiales de estudio. </li> </ul> </div>   <div> <h4>Relación con Otras Etiquetas &lt;main></h4> <ul> <li> <code>&lt;section></code> agrupa contenido relacionado dentro de <code>&lt;main></code>. </li> <li> <code>&lt;article></code> se usa para artículos o publicaciones individuales dentro de <code>&lt;main></code>. <ul> <li> Un <code>&lt;main></code> puede contener múltiples <code>&lt;article></code>. </li> <li> Un <code>&lt;article></code> puede ser el contenido principal en ciertos casos. Si la página contiene un único artículo, este puede representar la totalidad del contenido principal. </li> </ul> </li> <li> Trabaja en conjunto con etiquetas como <code>&lt;header></code>, <code>&lt;nav></code>, <code>&lt;aside</code> y <code>&lt;footer></code>, pero sin incluirlas dentro. </li> </ul> </div>   <div> <h4>Buenas Prácticas y Errores Comunes &lt;main></h4> <ul> <li> Buenas prácticas: <ul> <li> Usar solo un <code>&lt;main></code> por página. </li> <li> Evitar colocarlo dentro de <code>&lt;header></code>, <code>&lt;footer></code>, <code>&lt;nav></code> o <code>&lt;aside></code>. </li> <li> Usar atributos <code>aria-*</code> cuando sea necesario para mejorar accesibilidad. </li> <li> Asegurar que el <code>&lt;main></code> contenga contenido relevante: Debe contener información significativa, no solo enlaces o elementos decorativos. </li> <li> Aplicar estilos CSS adecuados sin afectar la semántica: Se recomienda agregar un <code>max-width</code>, <code>margin</code> y <code>padding</code> adecuados para mejorar la presentación del contenido. </li> </ul> </li> <li>Errores comunes:</li> <ul> <li> Abuso de la etiqueta: vita resaltar grandes bloques de texto con <code>&lt;mark></code>. </li> <li> Uso inapropiado: No uses <code>&lt;mark></code> para indicar importancia, usa <code>&lt;strong></code>. </li> <li> Falta de contraste: Utiliza colores que permitan leer el texto resaltado. </li> <li> Ignorar la accesibilidad: Considera el impacto del resaltado en usuarios con discapacidades. </li> <li> Confusión con otras etiquetas: Diferencia el uso de <code>&lt;mark></code> de etiquetas como "b" o "strong". </li> </ul> </ul> </div>   <div> <h4>Configuración CSS por Defecto &lt;main></h4> <p> En la mayoría de los navegadores, <code>&lt;main></code> tiene las siguientes propiedades CSS por defecto: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            <code class="language-css" data-prismjs-copy="Copy">
+            main {
+              display: block; /* Se comporta como un bloque */
+            }
+            </code>
+          </pre> </div>   <div> <h4>Ejemplo Aplicado en un Proyecto Real &lt;main></h4> <p> Ejemplo de página de blog usando <code>&lt;main></code>: </p> <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XJWBzpQ" data-pen-title="&amp;lt;main&amp;gt;" data-editable="true" data-user="eduardoherreraf" style="box-sizing:border-box;border:2px solid;justify-content:center;align-items:center;height:300px;margin:1em 0;padding:1em;display:flex"> <span>See the Pen <a href="https://codepen.io/eduardoherreraf/pen/XJWBzpQ"> &lt;main&gt;</a> by Eduardo Herrera Forero (<a href="https://codepen.io/eduardoherreraf">@eduardoherreraf</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://public.codepenassets.com/embed/index.js"></script> <p> La etiqueta <code>&lt;main></code> se utiliza para delimitar el contenido principal del blog, mejorando la accesibilidad y la organización semántica al englobar las tres secciones. Se ha destacado visualmente con color verde. </p> </div>   <div> <h4>Uso con Tecnologías de Asistencia (ARIA) &lt;main></h4> <p> El uso correcto del <code>&lt;main></code> en combinación con tecnologías de asistencia (como lectores de pantalla) y atributos ARIA es clave para mejorar la accesibilidad de una página web. A continuación, se detallan las mejores prácticas y ejemplos de uso. </p> <p> Los lectores de pantalla utilizan <code>&lt;main></code> para identificar rápidamente la sección principal del contenido de una página, permitiendo a los usuarios con discapacidad navegar más eficientemente. Esto evita que tengan que recorrer menús, barras laterales u otras secciones irrelevantes antes de llegar al contenido esencial. </p> <p>Ejemplo con un lector de pantalla como NVDA o JAWS:</p> <ul> <li> Al presionar "M", el lector de pantalla saltará directamente al <code>&lt;main></code>. </li> <li> Si se usa <code>role="main"</code>, se mejora aún más el soporte en navegadores más antiguo. </li> </ul> <p>Ejemplo:</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            <code class="language-html" data-prismjs-copy="Copy">
+            &lt;!DOCTYPE html>
+            &lt;html lang="es">
+            &lt;head>
+              &lt;meta charset="UTF-8">
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+              &lt;title>Ejemplo Accesible con &lt;main>&lt;/title>
+            &lt;/head>
+            &lt;body>
+
+              &lt;!-- Descripción general para usuarios con lectores de pantalla --&gt;
+              &lt;p id="descripcion-main" hidden>Esta sección contiene el contenido principal del sitio, incluyendo artículos y noticias relevantes.&lt;/p>
+
+              &lt;header>
+                &lt;h1>Sitio Web de Noticias&lt;/h1>
+                &lt;nav>
+                  &lt;ul>
+                    &lt;li>&lt;a href="#">Inicio&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#">Tecnología&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#">Ciencia&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#">Contacto&lt;/a>&lt;/li>
+                  &lt;/ul>
+                &lt;/nav>
+              &lt;/header>
+
+              &lt;!-- Contenido principal con todos los atributos ARIA --&gt;
+              &lt;main id="main-content" role="main" aria-labelledby="titulo-principal" aria-describedby="descripcion-main">
+                &lt;h2 id="titulo-principal">Últimas Noticias&lt;/h2>
+
+                &lt;article>
+                  &lt;h3>Avances en Inteligencia Artificial&lt;/h3>
+                  &lt;p>Los últimos desarrollos en IA están revolucionando la tecnología...&lt;/p>
+                &lt;/article>
+
+                &lt;article>
+                  &lt;h3>Exploración Espacial&lt;/h3>
+                  &lt;p>La NASA ha anunciado nuevas misiones a Marte en 2025...&lt;/p>
+                &lt;/article>
+              &lt;/main>
+
+              &lt;aside aria-labelledby="aside-info">
+                &lt;h2 id="aside-info">Artículos Relacionados&lt;/h2>
+                &lt;ul>
+                  &lt;li>&lt;a href="#">Cómo la IA está transformando la medicina&lt;/a>&lt;/li>
+                  &lt;li>&lt;a href="#">El futuro de la exploración espacial&lt;/a>&lt;/li>
+                &lt;/ul>
+              &lt;/aside>
+
+              &lt;footer>
+                &lt;p>&copy; 2025 Noticias del Futuro&lt;/p>
+              &lt;/footer>
+
+            &lt;/body>
+            &lt;/html>
+            </code>
+          </pre> <p> Explicación de los atributos ARIA usados en <code>&lt;main></code> </p> <ul> <li> <code>role="main"</code>: Asegura que <code>&lt;main></code> sea identificado correctamente por tecnologías de asistencia, especialmente en navegadores antiguos. </li> <li> <code>id="main-content"</code>: Proporciona un identificador único para el <code>&lt;main></code>, permitiendo que otros elementos ARIA lo referencien. </li> <li> <code>aria-labelledby="titulo-principal"</code>: Relaciona el contenido de <code>&lt;main></code> con su encabezado principal ( <code>&lt;h2 id="titulo-principal"&gt;Últimas Noticias&lt;/h2></code> ), mejorando la navegación. </li> <li> <code>aria-describedby="descripcion-main"</code>: Proporciona una descripción adicional a los usuarios de lectores de pantalla sobre el propósito del <code>&lt;main></code>, haciendo referencia al <code>&lt;p id="descripcion-main">oculto.&lt;/p></code>. </li> </ul> </div>  </div>   <div> <h3 id="etiqueta-html-section"> Etiqueta HTML &lt;section>: Agrupación Temática de Contenido </h3>  <div> <h4>Definición &lt;section></h4> <p> La etiqueta <code>&lt;section></code> en HTML se utiliza para definir una sección dentro de un documento web. Una sección representa un conjunto de contenido relacionado temáticamente, que puede incluir encabezados, párrafos, imágenes u otros elementos. Se usa principalmente para estructurar correctamente el contenido de una página, mejorando la semántica y la accesibilidad. </p> </div>   <div> <h4>Características clave &lt;section></h4> <p> La etiqueta <code>&lt;section></code> en HTML es un elemento semántico que se utiliza para definir secciones de contenido dentro de una página web. Algunas de sus características clave son: </p> <ul> <li> <b>Elemento semántico</b>: Ayuda a estructurar el contenido de manera significativa, lo que facilita la accesibilidad y el SEO. </li> <li> <b>Agrupación de contenido</b>: Se usa para agrupar contenido relacionado dentro de una página, como secciones de un artículo, capítulos de un documento o bloques de información. </li> <li> <b>Diferente de <code>&lt;div></code></b>: Mientras que <code>&lt;div></code> se usa para propósitos de diseño sin aportar significado semántico, <code>&lt;section></code> tiene un propósito más estructurado y significativo. </li> <li> <b>Puede contener otros elementos</b>: Dentro de una <code>&lt;section></code> se pueden incluir encabezados (<code>&lt;h1></code> a <code>&lt;h6></code>), párrafos, imágenes, listas y otros elementos HTML. </li> <li> <b>Ayuda en la accesibilidad</b>: Permite que los lectores de pantalla y motores de búsqueda comprendan mejor la estructura del contenido. </li> <li> <b>Puede incluir su propio encabezado</b>: Se recomienda que cada <code>&lt;section></code> tenga un <code>&lt;h2></code> o un <code>&lt;h3></code> para indicar claramente el tema de la sección. </li> <li> <b>Útil para dividir contenido extenso</b>: Facilita la organización de contenido en páginas largas, mejorando la experiencia del usuario. </li> </ul> </div>   <div> <h4>Sintaxis Correcta &lt;section></h4> <p> La forma correcta de escribir la etiqueta <code>&lt;section></code> es: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+            <code class="language-html" data-prismjs-copy="Copy">
+            &lt;section>
+              &lt;h2>Título de la Sección&lt;/h2>
+              &lt;p>Contenido de la sección.&lt;/p>
+            &lt;/section>
+            </code>
+          </pre> <ul> <li> Se recomienda incluir un encabezado (<code>&lt;h1></code> - <code>&lt;h6></code>) dentro de <code>&lt;section></code> para describir su contenido, ya que mejora la estructura del documento y la accesibilidad. Permite una correcta jerarquía del contenido, facilitando la navegación en tecnologías de asistencia. </li> <li> Permite una correcta jerarquía del contenido, facilitando la navegación en tecnologías de asistencia. </li> </ul> </div>   <div> <h4>Uso &lt;section></h4> <p> El elemento <code>&lt;section></code> se emplea para estructurar el contenido de una página web de manera semántica. Se utiliza cuando es necesario dividir el contenido en secciones claramente diferenciadas, como partes de un artículo, bloques de servicios, o cualquier agrupación de información relacionada. </p> <ul> <li> <b>Dividir Contenido en Secciones Temáticas</b>: Se utiliza para agrupar contenido relacionado en secciones lógicas, como capítulos en un artículo, secciones de productos en una tienda en línea o diferentes áreas de contenido en una página de inicio. </li> <li> <b>Organizar Artículos y Publicaciones de Blog</b>: Cada sección de un artículo o publicación de blog puede estar dentro de una etiqueta <code>&lt;section></code>, lo que facilita la lectura y la navegación. </li> <li> <b>Crear Secciones de Productos o Servicios</b>: En una página de comercio electrónico, cada categoría de productos o servicio puede estar dentro de una etiqueta <code>&lt;section></code>, lo que mejora la organización y la presentación. </li> <li> <b>Dividir el Contenido de una Página de Inicio</b>: La página de inicio de un sitio web puede dividirse en varias secciones, como "Acerca de nosotros", "Servicios", "Productos destacados" y "Contacto", cada una dentro de una etiqueta <code>&lt;section></code>. </li> <li> <b>Organizar Contenido en Páginas de Documentación</b>: En una página de documentación, se pueden usar etiquetas <code>&lt;section></code> para dividir el contenido en diferentes secciones, como "Introducción", "Instalación", "Uso" y "Ejemplos". </li> <li> <b>Crear Páginas de una Sola Página</b>: En una página de una sola página, se pueden usar etiquetas <code>&lt;section></code> para dividir el contenido en diferentes secciones que se desplazan suavemente al hacer clic en los enlaces de navegación. </li> </ul> </div>   <div> <h4>Relación con Otras Etiquetas &lt;section></h4> <ul> <li> <code>&lt;article></code>: <ul> <li> Un <code>&lt;article></code> puede contener varias <code>&lt;section></code> para dividir su contenido en partes temáticas. </li> <li> Se usa <code>&lt;article></code> para contenido independiente y <code>&lt;section></code> para dividirlo en secciones. </li> <li> Una <code>&lt;section></code> puede contener varios <code>&lt;article></code>. </li> <li> Se usa cuando los <code>&lt;article></code> comparten un tema en común dentro de una misma sección. </li> </ul> </li> <li> <code>&lt;div></code>: La etiqueta <code>&lt;section></code> tiene un significado semántico, mientras que <code>&lt;div></code> simplemente agrupa elementos sin proporcionar contexto adicional. Se recomienda utilizar <code>&lt;section></code> cuando el contenido tiene un propósito específico dentro de la estructura del documento, y usar <code>&lt;div></code> principalmente cuando el objetivo es aplicar estilos o realizar agrupaciones sin implicaciones semánticas. </li> <li> <code>&lt;header></code> y <code>&lt;footer></code>: <ul> <li> Cada <code>&lt;section></code> puede tener su propio <code>&lt;header></code> y <code>&lt;footer></code>, no solo el documento principal. </li> <li> <code>&lt;header></code> en una <code>&lt;section></code> ayuda a contextualizar su contenido. </li> <li> <code>&lt;footer></code> puede usarse dentro de <code>&lt;section></code> para incluir información relevante como la fuente o fecha. </li> </ul> </li> <li> <code>&lt;nav></code>: <ul> <li> <code>&lt;nav></code> se usa para navegación y puede estar dentro de una <code>&lt;section></code> si es parte del contenido. </li> <li> También <code>&lt;section></code> puede estar dentro de <code>&lt;nav></code> si se organizan varias áreas de navegación. </li> </ul> </li> <li> <code>&lt;aside></code>: <ul> <li> <code>&lt;aside></code> se usa para contenido complementario, mientras que <code>&lt;section></code> es parte del contenido principal. </li> <li> <code>&lt;aside></code> puede estar dentro de una <code>&lt;section></code> o viceversa, dependiendo del contexto. </li> <li> <code>&lt;aside></code> debe usarse para información adicional como citas, enlaces relacionados o publicidad. </li> </ul> </li> </ul> </div>   <div> <h4>Buenas Prácticas y Errores Comunes &lt;section></h4> <ul> <li> Buenas prácticas: <ul> <li> Incluir un encabezado dentro de cada <code>&lt;section></code>: </li> <li> Usar <code>aria-labelledby</code> para accesibilidad: </li> <li>Mantener una estructura clara del contenido.</li> <li> Usar <code>&lt;section></code> para contenido temáticamente relacionado. </li> </ul> </li> <li> Errores comunes: <ul> <li> Usar <code>&lt;section></code> sin encabezados. </li> <li> Emplear <code>&lt;section></code> para estilizar en lugar de <code>&lt;div></code> </li> <li>Anidar secciones sin relación temática.</li> </ul> </li> </ul> </div>   <div> <h4>Configuración CSS por Defecto &lt;section></h4> <p> Los navegadores aplican la siguiente configuración por defecto a <code>&lt;section></code>: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-css" data-prismjs-copy="Copy">
+                      section {
+                        display: block; /* Se comporta como un bloque */
+                      }
+                      </code>
+                    </pre> </div>   <div> <h4>Ejemplo Aplicado en un Proyecto Real &lt;section></h4> <p>Código de una página con varias secciones:</p> <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="KwKeOQd" data-pen-title="&amp;lt;section&amp;gt;" data-editable="true" data-user="eduardoherreraf" style="box-sizing:border-box;border:2px solid;justify-content:center;align-items:center;height:300px;margin:1em 0;padding:1em;display:flex"> <span>See the Pen <a href="https://codepen.io/eduardoherreraf/pen/KwKeOQd"> &lt;section&gt;</a> by Eduardo Herrera Forero (<a href="https://codepen.io/eduardoherreraf">@eduardoherreraf</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://public.codepenassets.com/embed/index.js"></script> <p>Explicación del código:</p> <ul> <li> Se incluyen tres secciones: Introducción, Desarrollo y Conclusión. </li> <li>Se aplica CSS básico para mejorar la apariencia.</li> <li> Se usa <code>&lt;section></code> para estructurar el contenido semánticamente. </li> </ul> </div>   <div> <h4> Uso con Tecnologías de Asistencia (ARIA) &lt;section> </h4> <p> Para mejorar la accesibilidad, se pueden usar atributos <code>aria-*</code> en <code>&lt;section></code>, como: </p> <table class="table table-bordered table-hover table-striped"> <thead class="table-dark"> <tr> <th scope="col">Atributo ARIA</th> <th scope="col">Función</th> </tr> </thead> <tbody> <tr> <td><code>aria-labelledby="id"</code></td> <td>Asocia la sección con un encabezado.</td> </tr> <tr> <td><code>aria-describedby="id"</code></td> <td>Proporciona una descripción adicional.</td> </tr> <tr> <td><code>role="region"</code></td> <td>Define la sección como una región importante.</td> </tr> </tbody> </table> <p><b>Ejemplo con ARIA</b>:</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                      &lt;section id="noticias" role="region" aria-labelledby="titulo-noticias" aria-describedby="descripcion-noticias">
+                        &lt;h2 id="titulo-noticias">Últimas Noticias&lt;/h2>
+                        &lt;p id="descripcion-noticias">En esta sección se presentan las noticias más recientes del día.&lt;/p>
+                        &lt;article>
+                          &lt;h3>Noticia 1&lt;/h3>
+                          &lt;p>La industria tecnológica sigue avanzando con nuevos lanzamientos innovadores.&lt;/p>
+                        &lt;/article>
+                        &lt;article>
+                          &lt;h3>Noticia 2&lt;/h3>
+                          &lt;p>El cambio climático sigue siendo un tema central en la agenda global.&lt;/p>
+                        &lt;/article>
+                      &lt;/section>
+                      </code>
+                    </pre> </div>  </div>   <div> <h3 id="etiqueta-html-article"> Etiqueta HTML &lt;article>: Contenido Autónomo y Completo </h3>  <div> <h4>Definición &lt;article></h4> <p> La etiqueta HTML <code>&lt;article></code> se utiliza para definir un contenido independiente dentro de un documento HTML. Esto significa que el contenido dentro de <code>&lt;article></code> tiene sentido por sí mismo y puede ser distribuido o reutilizado de forma independiente. </p> </div>   <div> <h4>Características Clave &lt;article></h4> <ul> <li> <b>Independencia</b>: Un <code>&lt;article></code> representa una composición completa en sí misma. Podría ser distribuido o reutilizado en otro contexto (por ejemplo, en un feed de noticias, un archivo, o incluso en otro sitio web) sin perder su significado. </li> <li> <b>Autocontenido</b>: El contenido dentro de <code>&lt;article></code> debe ser comprensible por sí solo. Aunque puede contener enlaces a otros recursos, no debe depender de ellos para su significado principal. </li> <li> <b>Semántica</b>: Proporciona significado semántico al contenido, ayudando a los navegadores, motores de búsqueda y tecnologías de asistencia a comprender la estructura y el propósito del contenido. </li> <li> <b>Estructura</b>: Generalmente contiene elementos estructurales como <code>&lt;header></code>, <code>&lt;section></code>, <code>&lt;aside></code>, y <code>&lt;footer></code> para organizar su contenido interno. </li> <li> <b>Contenido Principal</b>: Representa un bloque de contenido principal, como un artículo de blog, una entrada de foro, una noticia, etc. </li> <li> <b>Anidamiento</b>: Puede contener otros elementos de nivel de bloque, incluyendo otros <code>&lt;article></code>, <code>&lt;section></code>, etc. </li> <li> <b>Accesibilidad</b>: Ayuda a mejorar la accesibilidad al proporcionar una estructura clara y semántica para las tecnologías de asistencia. </li> <li> <b>SEO</b>: Contribuye a una mejor optimización para motores de búsqueda (SEO) al definir claramente el contenido principal de una página. </li> </ul> </div>   <div> <h4>Sintaxis Correcta &lt;article></h4> <p> La sintaxis correcta de un elemento <code>&lt;article></code> en HTML debe seguir las reglas básicas de estructura del lenguaje. A continuación, se presenta la forma correcta de usar <code>&lt;article></code>: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;article>
+                          &lt;h2>Título del Artículo&lt;/h2>
+                          &lt;p>Este es el contenido principal del artículo. Puede incluir varios elementos como encabezados, párrafos, listas, imágenes y más.&lt;/p>
+
+                          &lt;figure>
+                            &lt;img src="imagen.jpg" alt="Descripción de la imagen">
+                            &lt;figcaption>Descripción de la imagen relevante al artículo.&lt;/figcaption>
+                          &lt;/figure>
+
+                          &lt;section>
+                            &lt;h3>Subsección del Artículo&lt;/h3>
+                            &lt;p>Esta es una sección dentro del artículo con contenido relacionado.&lt;/p>
+                          &lt;/section>
+
+                          &lt;aside>
+                            &lt;h3>Información Relacionada&lt;/h3>
+                            &lt;p>Este es un contenido complementario, como enlaces, citas o resúmenes.&lt;/p>
+                          &lt;/aside>
+
+                          &lt;footer>
+                            &lt;p>Publicado por &lt;strong>Autor del Artículo&lt;/strong> el &lt;time datetime="2025-03-25">25 de marzo de 2025&lt;/time>.&lt;/p>
+                            &lt;p>&lt;a href="#">Leer más artículos&lt;/a>&lt;/p>
+                          &lt;/footer>
+
+                        &lt;/article>
+                      </code>
+                    </pre> </div>   <div> <h4>Uso &lt;article></h4> <p> La etiqueta HTML <code>&lt;article></code> es una herramienta poderosa para estructurar contenido independiente y significativo en las páginas web. Aquí se presentan algunos usos y ejemplos prácticos para que se pueda comprender mejor cómo utilizarla: </p> <p>Usos Comunes:</p> <ul> <li> <b>Entradas de Blogs y Artículos de Noticias</b>: Cada entrada de blog o artículo de noticias individual debe estar envuelto en una etiqueta <code>&lt;article></code>. Esto permite que el contenido se pueda sindicar o reutilizar fácilmente en otros contextos. </li> <li> <b>Publicaciones de Foros y Comentarios</b>: Cada publicación individual en un foro de discusión o cada comentario de usuario en un artículo puede ser marcado con <code>&lt;article></code>. </li> <li> <b>Widgets y Contenido Reutilizable</b>: Si tienes contenido que se puede reutilizar en diferentes partes de tu sitio web o en otros sitios, como un widget de noticias o un fragmento de información, puedes envolverlo en una etiqueta <code>&lt;article></code>. </li> <li> <b>Contenido de Sindicación (RSS)</b>: Los lectores de RSS utilizan la etiqueta <code>&lt;article></code> para identificar el contenido principal de una página y mostrarlo en sus feeds. </li> </ul> </div>  <div> <h4>Relación con Otras Etiquetas &lt;article></h4> <ul> <li> <code>&lt;main></code>: Puede contener uno o varios <code>&lt;article></code>, pero <code>&lt;article></code> nunca debe contener un &lt;main>. </li> <li> <code>&lt;section></code>: Se puede usar <code>&lt;section></code> dentro de <code>&lt;article></code> o viceversa, dependiendo de la estructura deseada. </li> <li> <code>&lt;aside></code>: Puede estar dentro de <code>&lt;article></code> (si la información complementa el artículo) o fuera de <code>&lt;article></code> (si complementa todo el sitio web). </li> <li> <code>&lt;header></code>: Contiene títulos, fechas o metadatos relacionados con el artículo. </li> <li> <code>&lt;footer></code>: Muestra información como el autor, la fecha de publicación o enlaces relacionados. </li> </ul> </div>   <div> <h4>Buenas Prácticas y Errores Comunes &lt;article></h4> <ul> <li> Buenas prácticas: <ul> <li> Un <code>&lt;article></code> debe representar contenido que tenga sentido por sí mismo y pueda ser reutilizado o distribuido fuera de su contexto original. </li> <li> Utilizar <code>&lt;header></code> para los títulos o metadatos del artículo y <code>&lt;footer></code> para información del autor, la fecha de publicación o enlaces adicionales. </li> <li> Si el artículo tiene varias partes o secciones temáticas, se recomienda dividirlo con <code>&lt;section></code>. </li> <li> Anidar <code>&lt;article></code> dentro de <code>&lt;main></code> para mejorar la semántica </li> <li> Usar <code>&lt;aside></code> dentro de <code>&lt;article></code> solo para información complementaria </li> </ul> </li> <li> Errores comunes: <ul> <li> Usar <code>&lt;article></code> para agrupar contenido sin relación. </li> <li> Incluir <code>&lt;main></code> dentro de <code>&lt;article></code>. </li> <li> No usar encabezados <code>&lt;h1></code> - <code>&lt;h6></code> dentro de <code>&lt;article></code>. </li> <li> Anidar <code>&lt;article></code> dentro de otro <code>&lt;article></code> sin justificación. </li> </ul> </li> </ul> </div>   <div> <h4>Configuración CSS por Defecto &lt;article></h4> <p> Los navegadores aplican los siguientes estilos base a <code>&lt;article></code>: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-css" data-prismjs-copy="Copy">
+                        article {
+                          display: block;  /* Se comporta como un bloque */
+                        }
+                      </code>
+                    </pre> </div>   <div> <h4>Ejemplo Aplicado en un Proyecto Real &lt;article></h4> <p> Este código representa un blog básico con dos <code>&lt;article></code>s, un diseño limpio y un botón para activar el modo oscuro. </p> <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="pvoZLYY" data-pen-title="&amp;lt;article&amp;gt;" data-editable="true" data-user="eduardoherreraf" style="box-sizing:border-box;border:2px solid;justify-content:center;align-items:center;height:300px;margin:1em 0;padding:1em;display:flex"> <span>See the Pen <a href="https://codepen.io/eduardoherreraf/pen/pvoZLYY"> &lt;article&gt;</a> by Eduardo Herrera Forero (<a href="https://codepen.io/eduardoherreraf">@eduardoherreraf</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://public.codepenassets.com/embed/index.js"></script> </div>   <div> <h4> Uso con Tecnologías de Asistencia (ARIA) &lt;article> </h4> <p> El uso de ARIA en <code>&lt;article></code> mejora la accesibilidad y experiencia de navegación. Se recomienda: </p> <ul> <li> Usar <code>aria-labelledby</code> para vincular títulos con artículos. </li> <li> Aplicar <code>role="article"</code> en elementos no semánticos si es necesario. </li> <li> Asociar información con <code>aria-describedby</code> para mayor contexto. </li> <li> Implementar <code>aria-live</code> en artículos con contenido dinámico. </li> </ul> <p> Esto garantiza que los artículos sean comprensibles y navegables por todas las personas, incluyendo usuarios de lectores de pantalla. </p> <p>Ejemplo:</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;!DOCTYPE html>
+                        &lt;html lang="es">
+                        &lt;head>
+                            &lt;meta charset="UTF-8">
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            &lt;title>Ejemplo de Article con ARIA&lt;/title>
+                            &lt;style>
+                                body {
+                                    font-family: Arial, sans-serif;
+                                    background-color: #f9f9f9;
+                                    color: #333;
+                                    text-align: center;
+                                }
+
+                                .container {
+                                    max-width: 800px;
+                                    margin: 20px auto;
+                                    padding: 20px;
+                                }
+
+                                article {
+                                    background: white;
+                                    padding: 15px;
+                                    margin: 15px 0;
+                                    border-radius: 5px;
+                                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                                }
+
+                                button {
+                                    margin: 10px;
+                                    padding: 10px;
+                                    background: #007bff;
+                                    color: white;
+                                    border: none;
+                                    border-radius: 5px;
+                                    cursor: pointer;
+                                }
+                            &lt;/style>
+                        &lt;/head>
+                        &lt;body>
+
+                            &lt;main aria-labelledby="titulo-principal">
+                                &lt;h1 id="titulo-principal">Últimas Noticias&lt;/h1>
+
+                                &lt;div class="container">
+                                    &lt;!-- Article con ARIA -->
+                                    &lt;article id="noticia1" aria-labelledby="titulo-noticia1" aria-describedby="descripcion1" aria-live="polite">
+                                        &lt;h2 id="titulo-noticia1">Avance en la Inteligencia Artificial&lt;/h2>
+                                        &lt;p id="descripcion1">Un nuevo algoritmo ha sido desarrollado para mejorar el procesamiento del lenguaje natural.&lt;/p>
+                                        &lt;p id="fuente1">Fuente: Universidad Tecnológica, 2025.&lt;/p>
+                                    &lt;/article>
+
+                                    &lt;article id="noticia2" aria-labelledby="titulo-noticia2" aria-describedby="descripcion2">
+                                        &lt;h2 id="titulo-noticia2">Nuevas Baterías de Alta Duración&lt;/h2>
+                                        &lt;p id="descripcion2">Las nuevas baterías de estado sólido prometen mejorar la autonomía de los dispositivos móviles.&lt;/p>
+                                        &lt;p id="fuente2">Fuente: Revista de Tecnología, 2025.&lt;/p>
+                                    &lt;/article>
+                                &lt;/div>
+
+                                &lt;button onclick="actualizarNoticia()">🔄 Actualizar Noticia&lt;/button>
+                            &lt;/main>
+
+                            &lt;script>
+                                function actualizarNoticia() {
+                                    document.getElementById("descripcion1").innerText = "Investigadores han logrado aumentar la precisión en modelos de lenguaje artificial.";
+                                }
+                            &lt;/script>
+
+                        &lt;/body>
+                        &lt;/html>
+
+                      </code>
+                    </pre> </div>  </div>   <div> <h3 id="etiqueta-html-nav"> Etiqueta HTML &lt;nav>: Sección de Enlaces para Navegación </h3>  <div> <h4>Definición &lt;nav></h4> <p> La etiqueta HTML <code>&lt;nav></code> define una sección de enlaces de navegación en un documento. </p> </div>   <div> <h4>Características Clave &lt;nav></h4> <ul> <li> <code>&lt;nav></code> es un elemento semántico clave en la estructura de una página web. </li> <li> Agrupa enlaces a diferentes secciones de la misma página o a otras páginas del sitio. </li> <li> Se pueden usar múltiples <code>&lt;nav></code> en un solo documento, por ejemplo: <ul> <li>Menú Principal en la parte superior.</li> <li> Navegación Secundaria dentro de una sección específica. </li> </ul> </li> <li> <code>&lt;nav></code> ya tiene implícitamente el rol navigation, pero en elementos genéricos como <code>&lt;div></code>, se debe agregar manualmente. </li> <li> Compatible con CSS y JavaScript para mejorar la apariencia visual. </li> </ul> </div>   <div> <h4>Sintaxis Correcta &lt;nav></h4> <p> El elemento <code>&lt;nav></code> se usa para definir secciones de navegación en una página web. Su estructura básica es sencilla y permite contener listas de enlaces o menús de navegación. </p>  <div> <h5>Sintaxis Básica &lt;nav></h5> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;header>
+                            &lt;nav>
+                                &lt;a href="home.html">Inicio&lt;/a>
+                                &lt;a href="blog.html">Blog&lt;/a>
+                                &lt;a href="contacto.html">Contacto&lt;/a>
+                            &lt;/nav>
+                          &lt;/header>
+                        </code>
+                      </pre> <ul> <li> <code>&lt;nav></code> define el contenedor de navegación. </li> <li> <code>&lt;ul></code> agrupa los elementos de la lista de enlaces. </li> <li> <code>&lt;li></code> representa cada elemento del menú. </li> <li> <code>&lt;a></code> es el enlace a la sección o página correspondiente. </li> </ul> </div>   <div> <h5>Sintaxis con Etiquetas Semánticas &lt;nav></h5> <p> Se recomienda usar <code>&lt;header></code> o <code>&lt;footer></code> para organizar mejor la estructura de la página. </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;header>
+                            &lt;nav>
+                                &lt;a href="home.html">Inicio&lt;/a>
+                                &lt;a href="blog.html">Blog&lt;/a>
+                                &lt;a href="contacto.html">Contacto&lt;/a>
+                            &lt;/nav>
+                          &lt;/header>
+                        </code>
+                      </pre> </div>   <div> <h5>Ejemplo con Submenús &lt;nav></h5> <p> Se pueden crear menús desplegables dentro de &lt;nav>. </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;nav>
+                            &lt;ul>
+                                &lt;li>&lt;a href="home.html">Inicio&lt;/a>&lt;/li>
+                                &lt;li>
+                                    &lt;a href="#">Servicios ▼&lt;/a>
+                                    &lt;ul>
+                                        &lt;li>&lt;a href="web.html">Desarrollo Web&lt;/a>&lt;/li>
+                                        &lt;li>&lt;a href="seo.html">SEO&lt;/a>&lt;/li>
+                                    &lt;/ul>
+                                &lt;/li>
+                                &lt;li>&lt;a href="contacto.html">Contacto&lt;/a>&lt;/li>
+                            &lt;/ul>
+                          &lt;/nav>
+                        </code>
+                      </pre> <ul> <li> Permite anidar listas <code>&lt;ul></code> dentro de <code>&lt;li></code> para submenús. </li> <li> Se puede mejorar con CSS para mostrar los submenús al pasar el cursor. </li> </ul> </div>  </div>   <div> <h4>Uso &lt;nav></h4> <ul> <li> Menús de navegación principal: Contiene los enlaces clave de un sitio web. </li> <li> Menús secundarios: Puede utilizarse para secciones internas o categorías. </li> <li> Índices de contenido: Cuando hay una lista de enlaces internos para facilitar la navegación en una página extensa. </li> <li> Menús de navegación en encabezados (<code>&lt;header></code>) o pies de página (<code>&lt;footer></code>). </li> <li> Navegación dentro de un documento largo: Índices con enlaces a diferentes partes del mismo documento. </li> <li> Breadcrumbs (Migas de Pan): Un patrón de navegación que muestra la ubicación actual del usuario. </li> </ul> </div>   <div> <h4>Relación con Otras Etiquetas &lt;nav></h4> <ul> <li> <code>&lt;nav></code> se combina con <code>&lt;header></code> y <code>&lt;footer></code> para estructurar la navegación global. </li> <li> No debe estar dentro de <code>&lt;main></code>, pero sí puede precederlo. </li> <li> Se usa en <code>&lt;aside></code> para menús laterales. </li> <li> Puede aparecer en <code>&lt;section></code> y <code>&lt;article></code> para navegación relacionada con el contenido. </li> </ul> </div>   <div> <h4>Buenas Prácticas y Errores Comunes &lt;nav></h4> <ul> <li> Buenas prácticas: <ul> <li> Usar <code>&lt;nav></code> solo para navegaciones importantes dentro de la página. </li> <li> Siempre organizar los enlaces en listas (<code>&lt;ul></code> o <code>&lt;ol></code>). </li> <li> No incluir <code>&lt;nav></code> dentro de <code>&lt;main>,</code> sino antes o después. </li> <li> Usar atributos ARIA (<code>aria-label</code>) para mejorar la accesibilidad. </li> <li> No duplicar <code>&lt;nav></code> innecesariamente sin diferenciarlos, deben tener diferentes roles. </li> </ul> </li> <li> Errores comunes: <ul> <li> Incluir <code>&lt;nav></code> dentro de <code>&lt;main></code>. </li> <li> Usar <code>&lt;nav></code> para un solo enlace. </li> <li> No especificar el propósito del <code>&lt;nav></code>. </li> <li> Incluir contenido no relacionado dentro de <code>&lt;nav></code>. </li> </ul> </li> </ul> </div>   <div> <h4>Configuración CSS por Defecto &lt;nav></h4> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-css" data-prismjs-copy="Copy">
+                        nav {
+                          display: block;
+                        }
+                      </code>
+                    </pre> </div>   <div> <h4>Ejemplo Aplicado en un Proyecto Real &lt;nav></h4> <p> A continuación, se presenta un ejemplo de una barra de navegación simple pero funcional, que podría utilizarse en un sitio web real. Se incluye HTML y CSS para lograr un diseño limpio y adaptable. </p> <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WbNKyjx" data-pen-title="&amp;lt;nav&amp;gt;" data-editable="true" data-user="eduardoherreraf" style="box-sizing:border-box;border:2px solid;justify-content:center;align-items:center;height:300px;margin:1em 0;padding:1em;display:flex"> <span>See the Pen <a href="https://codepen.io/eduardoherreraf/pen/WbNKyjx"> &lt;nav&gt;</a> by Eduardo Herrera Forero (<a href="https://codepen.io/eduardoherreraf">@eduardoherreraf</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://public.codepenassets.com/embed/index.js"></script> <p>Explicación del Código:</p> <ul> <li> Estructura simple: Se usa <code>&lt;nav></code> para envolver la navegación principal. </li> <li> Lista de enlaces: Se organiza dentro de <code>&lt;ul></code> con <code>&lt;li></code>. </li> <li> Enlaces estilizados: Se les da color, espaciado y efecto hover. </li> <li> Diseño responsivo: Se adapta a pantallas pequeñas con @media. </li> </ul> </div>   <div> <h4>Uso con Tecnologías de Asistencia (ARIA) &lt;nav></h4> <p> El elemento <code>&lt;nav></code> es semántico por defecto, lo que significa que los lectores de pantalla y otras tecnologías de asistencia lo identifican automáticamente como un área de navegación. Sin embargo, en algunos casos, puede ser útil mejorar la accesibilidad con atributos ARIA (Accessible Rich Internet Applications). </p>  <div> <h5>Cuándo Usar ARIA en &lt;nav></h5> <p> En la mayoría de los casos, no es necesario agregar atributos ARIA a <code>&lt;nav></code> porque ya es reconocido por los lectores de pantalla. Sin embargo, se pueden agregar etiquetas ARIA en los siguientes casos: </p> <ul> <li> <b>Si hay múltiples áreas de navegación en la página</b>: Se recomienda agregar <code>aria-label</code> o <code>aria-labelledby</code> para diferenciar cada <code>&lt;nav></code>. </li> <li> <b>Si la navegación es colapsable o dinámica</b>: Se pueden usar atributos como aria-hidden, aria-expanded o aria-controls para indicar cambios en la visibilidad. </li> </ul> </div>  </div>  </div>   <div> <h3 id="etiqueta-html-aside"> Etiqueta HTML &lt;aside>: Representa el contenido complementario o relacionado </h3>  <div> <h4>Definición &lt;aside></h4> <p> La etiqueta semántica <code>&lt;aside></code> de HTML que representa contenido complementario o relacionado con el contenido principal, como barras laterales, enlaces adicionales o información secundaria. </p> </div>   <div> <h4>Características Clave &lt;aside></h4> <ul> <li> <b>Contenido Complementario</b>: Contiene información relacionada pero no esencial para el contenido principal. </li> <li> <b>Ubicación Flexible</b>: Puede estar dentro o fuera de <code>&lt;article></code>, dependiendo de su relación con el contenido. </li> <li> <b>Usos Comunes</b>: Se emplea en barras laterales, enlaces relacionados, anuncios o notas informativas. </li> <li> <b>Elemento Semántico</b>: Mejora la accesibilidad y estructura del documento para motores de búsqueda y lectores de pantalla. </li> <li> <b>No es Contenido Principal</b>: Su información debe ser útil, pero no indispensable para la comprensión del contenido central. </li> </ul> </div>   <div> <h4>Sintaxis Correcta &lt;aside></h4> <p> La etiqueta <code>&lt;aside></code> se usa para contenido complementario y debe estar correctamente estructurada en HTML. </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;aside>
+                          &lt;h2>Artículos Relacionados&lt;/h2>
+                          &lt;ul>
+                              &lt;li>&lt;a href="articulo1.html">Tema 1&lt;/a>&lt;/li>
+                              &lt;li>&lt;a href="articulo2.html">Tema 2&lt;/a>&lt;/li>
+                              &lt;li>&lt;a href="articulo3.html">Tema 3&lt;/a>&lt;/li>
+                          &lt;/ul>
+                        &lt;/aside>
+                      </code>
+                    </pre> </div>   <div> <h4>Uso &lt;aside></h4> <p> El elemento <code>&lt;aside></code> se usa cuando se necesita incluir contenido complementario o relacionado con el contenido principal, pero que no es esencial para su comprensión. </p> <p>Casos de Uso Comunes:</p> <ul> <li> <b>Barras laterales</b>: Contenido adicional como widgets, enlaces o información extra. </li> <li> <b>Artículos relacionados</b>: Sugerencias de lectura dentro de una noticia o blog. </li> <li> <b>Citas o notas informativas</b>: Información adicional sobre un tema. </li> <li> <b>Anuncios publicitarios</b>: Publicidad contextual dentro de una página. </li> </ul> </div>   <div> <h4>Relación con Otras Etiquetas &lt;aside></h4> <ul> <li> <code>&lt;article></code>: <code>&lt;aside></code> se puede usar dentro de <code>&lt;article></code> para agregar información complementaria, como notas o referencias. </li> <li> <code>&lt;main></code>: <code>&lt;aside></code> puede estar dentro de <code>&lt;main></code>, pero su contenido no debe ser el principal. </li> <li> <code>&lt;section></code>: Se puede usar <code>&lt;aside></code> dentro de <code>&lt;section></code> cuando se desea incluir información secundaria. </li> <li> <code>&lt;nav></code>: Aunque <code>&lt;aside></code> puede contener enlaces, no debe reemplazar a <code>&lt;nav></code>, ya que este último es para navegación principal. </li> <li> <code>&lt;footer></code>: <code>&lt;aside></code> puede colocarse dentro de <code>&lt;footer></code> si se desea agregar contenido secundario, como enlaces adicionales o datos complementarios. </li> </ul> </div>   <div> <h4>Buenas Prácticas y Errores Comunes &lt;aside></h4> <ul> <li> Buenas prácticas: <ul> <li> Usar <code>&lt;aside></code> solo para contenido complementario. </li> <li> Ubicarlo correctamente dentro de la estructura HTML: Puede estar dentro de <code>&lt;aside></code> para información relacionada o fuera de él si es más general. </li> <li>Complementar con ARIA cuando sea necesario.</li> <li> Mantener un diseño claro y no sobrecargar con información </li> </ul> </li> <li>Errores comunes:</li> <ul> <li> Usar <code>&lt;aside></code> para contenido esencial. </li> <li>Usarlo para navegación principal.</li> <li> Incluir <code>&lt;aside></code> dentro de <code>&lt;header></code> o <code>&lt;footer></code> sin necesidad. </li> <li> No diferenciarlo visualmente del contenido principal. </li> </ul> </ul> </div>   <div> <h4>Configuración CSS por Defecto &lt;aside></h4> <p> En los navegadores modernos, <code>&lt;aside></code> tiene la siguiente configuración predeterminada: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-css" data-prismjs-copy="Copy">
+                        aside {
+                          display: block;  /* Se comporta como un bloque */
+                        }
+                      </code>
+                    </pre> </div>   <div> <h4>Ejemplo Aplicado en un Proyecto Real &lt;aside></h4> <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="GgRBBjN" data-pen-title="&amp;lt;aside&amp;gt;" data-editable="true" data-user="eduardoherreraf" style="box-sizing:border-box;border:2px solid;justify-content:center;align-items:center;height:300px;margin:1em 0;padding:1em;display:flex"> <span>See the Pen <a href="https://codepen.io/eduardoherreraf/pen/GgRBBjN"> &lt;aside&gt;</a> by Eduardo Herrera Forero (<a href="https://codepen.io/eduardoherreraf">@eduardoherreraf</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://public.codepenassets.com/embed/index.js"></script> <p>Uso de <code>&lt;aside></code>:</p> <ul> <li>Contenido complementario (consejo del chef).</li> <li>No esencial para la receta, pero añade valor.</li> <li>Información extra que enriquece la comprensión.</li> </ul> </div>   <div> <h4>Uso con Tecnologías de Asistencia (ARIA) &lt;aside></h4> <p> El elemento <code>&lt;aside></code> es semántico y por sí mismo es reconocido por lectores de pantalla como contenido complementario. Sin embargo, se puede mejorar su accesibilidad con atributos ARIA en ciertos casos. </p>  <div> <h5>ARIA Recomendado para &lt;aside></h5> <ul> <li> <code>role="complementary"</code>: Se usa cuando <code>&lt;aside></code> contiene información relevante pero no esencial para la comprensión del contenido principal. ¿Cuándo usarlo? Cuando el <code>&lt;aside></code> está fuera de <code>&lt;article></code> y proporciona información adicional a todo el sitio. </li> <li> <code>aria-labelledby</code>: Se usa para vincular <code>&lt;aside></code> con su título, asegurando que los lectores de pantalla anuncien correctamente el propósito del contenido. </li> <li> <code>aria-describedby</code>: Se usa cuando <code>&lt;aside></code> complementa un contenido específico y se quiere que los lectores de pantalla lo asocien correctamente. ¿Cuándo usarlo? Cuando <code>&lt;aside></code> complementa un contenido específico y se debe establecer esa relación para tecnologías de asistencia. </li> </ul> </div>  </div>  </div>   <div> <h3 id="etiqueta-html-header"> Etiqueta HTML &lt;header>: Representa la cabecera de una sección o página </h3>  <div> <h4>Definición &lt;header></h4> La etiqueta <code>&lt;header></code> en HTML es un elemento semántico que se utiliza para representar un encabezado introductorio dentro de un documento o una sección. Generalmente, contiene elementos como títulos (<code>&lt;h1></code> a <code>&lt;h6></code>), logotipos, menús de navegación, descripciones o cualquier otro contenido relacionado con la identidad o presentación de la página o sección. </div>   <div> <h4>Características Clave &lt;header></h4> <ul> <li> Elemento Semántico: <ul> <li> Representa la sección de encabezado de un documento o una sección. </li> <li> Ayuda a mejorar la estructura y accesibilidad del documento. </li> <li> No limita su uso a la cabecera principal de una página web. </li> </ul> </li> <li> Uso en Múltiples Secciones: <ul> <li> Puede utilizarse tanto en el encabezado global de una página web como en secciones individuales dentro del documento. </li> <li> No está limitado a una sola aparición en la página. </li> </ul> </li> <li> Contenido Común en <code>&lt;header></code>: <ul> <li> Títulos (<code>&lt;h1></code> a <code>&lt;h6></code>). </li> <li>Logotipos.</li> <li>Menús de navegación (<code>&lt;nav></code>).</li> <li>Slogans o descripciones.</li> <li>Imágenes de encabezado.</li> </ul> </li> </ul> </div>   <div> <h4>Sintaxis Correcta &lt;header></h4> <p> La etiqueta <code>&lt;header></code> sigue una estructura simple y clara en HTML. No requiere atributos obligatorios y su contenido puede variar según la necesidad del desarrollador. </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;header>
+                          &lt;h1>En Esta Página&lt;/h1>
+                          &lt;nav>
+                              &lt;ul>
+                                  &lt;li>&lt;a href="#">Capítulo 1&lt;/a>&lt;/li>
+                                  &lt;li>&lt;a href="#">Capítulo 2&lt;/a>&lt;/li>
+                                  &lt;li>&lt;a href="#">Capítulo 3&lt;/a>&lt;/li>
+                              &lt;/ul>
+                          &lt;/nav>
+                        &lt;/header>
+                      </code>
+                    </pre> </div>   <div> <h4>Uso &lt;header></h4> <p> La etiqueta <code>&lt;header></code> se usa para definir un encabezado en un documento o en una sección específica de una página web. Sirve para incluir información introductoria, como: </p> <ul> <li> Títulos (<code>&lt;h1></code> a <code>&lt;h6></code>). </li> <li>Logotipos (<code>&lt;img></code>).</li> <li>Menús de navegación (<code>&lt;nav></code>).</li> <li> Frases descriptivas o eslóganes (<code>&lt;p></code>). </li> </ul> </div>   <div> <h4>Relación con Otras Etiquetas &lt;header></h4> <p> La etiqueta <code>&lt;header></code> es un elemento semántico que se relaciona con varias otras etiquetas en HTML, ayudando a estructurar correctamente una página web. A continuación, se explica su relación con otras etiquetas importantes: </p> <ul> <li> <code>&lt;head></code>, <code>&lt;footer></code>, <code>&lt;address></code>: La etiqueta <code>&lt;header></code> no debe estar adentro de estas etiquetas. </li> <li> <code>&lt;nav></code>: Integración Natural, el <code>&lt;header></code> frecuentemente contiene un elemento <code>&lt;nav></code> para menús de navegación. </li> <li> <code>&lt;h1></code> - <code>&lt;h6></code>: Un <code>&lt;h1></code> dentro del <code>&lt;header></code> generalmente representa el título principal. Otros encabezados pueden usarse para subtítulos o información complementaria. </li> <li> <code>&lt;article></code> y <code>&lt;section></code>: Múltiples Instancias, un <code>&lt;header></code> puede existir dentro de: <ul> <li> El <code>&lt;body></code> principal del documento. </li> <li>Múltiples <code>&lt;article></code>.</li> <li>Diferentes <code>&lt;section></code>.</li> </ul> </li> <li> <code>&lt;img></code>: Inclusión de Logotipos, frecuentemente contiene imágenes de logo o encabezado. </li> <li> <code>&lt;aside></code>: Contenido Complementario, un <code>&lt;header></code> dentro de un <code>&lt;aside></code> puede contener información adicional. </li> </ul> </div>   <div> <h4>Buenas Prácticas y Errores Comunes &lt;header></h4> <ul> <li> Buenas prácticas: <ul> <li> Usar <code>&lt;header></code> para Encabezados Principales y Seccionales: La etiqueta <code>&lt;header></code> no solo se usa para el encabezado principal de una página, sino también dentro de <code>&lt;section></code> y <code>&lt;article></code> para definir encabezados de secciones. </li> <li> Incluir Elementos Relevantes dentro de <code>&lt;header></code>: El <code>&lt;header></code> debe contener información introductoria relevante: <ul> <li> Títulos (<code>&lt;h1></code> a <code>&lt;h6></code>). </li> <li> Menús de navegación (<code>&lt;nav></code>). </li> <li>Logotipos (<code>&lt;img></code>).</li> <li> Frases descriptivas (<code>&lt;p></code>). </li> </ul> </li> <li> Mantener una Jerarquía Correcta de Encabezados: Cada <code>&lt;header></code> debe seguir una estructura jerárquica adecuada en los títulos (<code>&lt;h1></code> a <code>&lt;h6></code>). </li> </ul> </li> <li>Errores comunes:</li> <ul> <li> Usar <code>&lt;header></code> dentro de <code>&lt;footer></code> o <code>&lt;address></code>. </li> <li> Usar <code>&lt;header></code> dentro de Otro <code>&lt;header></code>. </li> <li> Usar <code>&lt;header></code> sin Contenido Relevante. </li> </ul> </ul> </div>   <div> <h4>Configuración CSS por Defecto &lt;header></h4> <p> Por defecto, los navegadores aplican las siguientes reglas de estilo a <code>&lt;header></code>: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          header {
+                            display: block;  /* Se comporta como un bloque */
+                          }
+                        </code>
+                      </pre> </div>   <div> <h4>Ejemplo Aplicado en un Proyecto Real &lt;header></h4> <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XJWPmJx" data-pen-title="&amp;lt;header&amp;gt;" data-editable="true" data-user="eduardoherreraf" style="box-sizing:border-box;border:2px solid;justify-content:center;align-items:center;height:300px;margin:1em 0;padding:1em;display:flex"> <span>See the Pen <a href="https://codepen.io/eduardoherreraf/pen/XJWPmJx"> &lt;header&gt;</a> by Eduardo Herrera Forero (<a href="https://codepen.io/eduardoherreraf">@eduardoherreraf</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://public.codepenassets.com/embed/index.js"></script> <p> Características destacadas del <code>&lt;header></code>: </p> <ul> <li> Este <code>&lt;header></code> contiene tanto información personal como el menú de navegación </li> <li> Incluye una imagen de perfil y detalles personales </li> <li> Menú de navegación con enlaces a diferentes secciones del sitio </li> </ul> </div>   <div> <h4> Uso con Tecnologías de Asistencia (ARIA) &lt;header> </h4> <p> La etiqueta <code>&lt;header></code> mejora la accesibilidad al proporcionar una estructura semántica clara para el contenido de una página web. Sin embargo, para optimizar su interacción con tecnologías de asistencia como lectores de pantalla, se pueden emplear atributos de ARIA (Accessible Rich Internet Applications). </p> <p>Uso de ARIA en <code>&lt;header></code>:</p> <ul> <li> <code>role="banner"</code> para el Encabezado Principal : <ul> <li> Se usa en el <code>&lt;header></code> principal de la página. </li> <li> Indica que el contenido dentro del <code>&lt;header></code> representa la identidad del sitio, generalmente con logotipos, menús de navegación y encabezados principales. </li> <li> Solo debe haber un <code>&lt;header></code> con <code>role="banner"</code> en toda la página. </li> </ul> </li> <li> <code>aria-labelledby</code> para Mejor Identificación del Contenido: <ul> <li> Se usa cuando el <code>&lt;header></code> necesita una referencia clara a un título o descripción específica. </li> <li> Ayuda a los lectores de pantalla a identificar mejor la función del encabezado. </li> </ul> </li> <li> <code>aria-hidden="true"</code> para Encabezados Decorativos: Si un <code>&lt;header></code> solo contiene elementos decorativos (como imágenes sin información relevante para la navegación), se puede ocultar de los lectores de pantalla. </li> </ul> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;!DOCTYPE html>
+                        &lt;html lang="es">
+                        &lt;head>
+                            &lt;meta charset="UTF-8">
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            &lt;title>Ejemplo de Header Accesible&lt;/title>
+                            &lt;style>
+                                body {
+                                    font-family: Arial, sans-serif;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+
+                                header {
+                                    background-color: #333;
+                                    color: white;
+                                    text-align: center;
+                                    padding: 20px;
+                                    border-bottom: 3px solid #f39c12;
+                                }
+
+                                h1, h2 {
+                                    margin: 0;
+                                }
+
+                                nav ul {
+                                    list-style: none;
+                                    padding: 0;
+                                }
+
+                                nav ul li {
+                                    display: inline;
+                                    margin: 0 15px;
+                                }
+
+                                nav ul li a {
+                                    color: white;
+                                    text-decoration: none;
+                                }
+
+                                section {
+                                    padding: 20px;
+                                }
+
+                                .decorativo {
+                                    background-color: #f4f4f4;
+                                    padding: 10px;
+                                    text-align: center;
+                                }
+                            &lt;/style>
+                        &lt;/head>
+                        &lt;body>
+
+                            &lt;!-- ✅ HEADER PRINCIPAL con role="banner" --&gt;
+                            &lt;header role="banner">
+                                &lt;h1>Mi Sitio Web&lt;/h1>
+                                &lt;nav aria-label="Menú Principal">
+                                    &lt;ul>
+                                        &lt;li>&lt;a href="#">Inicio&lt;/a>&lt;/li>
+                                        &lt;li>&lt;a href="#">Servicios&lt;/a>&lt;/li>
+                                        &lt;li>&lt;a href="#">Contacto&lt;/a>&lt;/li>
+                                    &lt;/ul>
+                                &lt;/nav>
+                            &lt;/header>
+
+                            &lt;!-- ✅ HEADER SECUNDARIO con aria-labelledby --&gt;
+                            &lt;section>
+                                &lt;header aria-labelledby="titulo-seccion">
+                                    &lt;h2 id="titulo-seccion">Últimas Noticias&lt;/h2>
+                                &lt;/header>
+                                &lt;p>Esta es la sección de noticias con la información más reciente.&lt;/p>
+                            &lt;/section>
+
+                            &lt;!-- ✅ HEADER DECORATIVO con aria-hidden="true" --&gt;
+                            &lt;header class="decorativo" aria-hidden="true">
+                                &lt;img src="banner.jpg" alt="Decoración">
+                            &lt;/header>
+
+                        &lt;/body>
+                        &lt;/html>
+
+                      </code>
+                    </pre> <p>Explicación del Código:</p> <ul> <li> <code>role="banner"</code>: <ul> <li> Se usa en el <code>&lt;header></code> principal para indicar que representa la identidad del sitio. </li> <li>Solo debe haber uno por página.</li> </ul> </li> <li> <code>aria-labelledby="titulo-seccion"</code>: <ul> <li> Se usa en un <code>&lt;header></code> secundario dentro de una sección. </li> <li> Permite que los lectores de pantalla asocien correctamente el encabezado con su contenido. </li> </ul> </li> <li> <code>aria-hidden="true"</code>: <ul> <li> Se aplica a un <code>&lt;header></code> decorativo que no contiene información relevante para los usuarios. </li> <li> Evita que los lectores de pantalla lo lean innecesariamente. </li> </ul> </li> </ul> </div>  </div>   <div> <h3 id="etiqueta-html-footer"> Etiqueta HTML &lt;footer>: Define el pie de página de un documento o sección </h3>  <div> <h4>Definición &lt;footer></h4> <p> El elemento <code>&lt;footer></code> en HTML representa el pie de página de una sección o de un documento. Generalmente, se utiliza dentro de un documento HTML para contener información de contacto, derechos de autor, enlaces a documentos relacionados, autoría, términos de uso o cualquier otro contenido que sea relevante como cierre de una sección o de toda la página. </p> </div>   <div> <h4>Características Clave &lt;footer></h4> <ul> <li> Elemento Semántico:<code>&lt;footer></code> es un elemento semántico en HTML5, lo que significa que su propósito es proporcionar significado estructural al documento. Su función es indicar que el contenido dentro de este elemento pertenece a la parte final de una sección o página. Al ser semántico, facilita la accesibilidad y la indexación por parte de los motores de búsqueda. </li> <li> Uso en Múltiples Secciones: Aunque es común encontrar un<code>&lt;footer></code> en la parte inferior del documento dentro de <code>&lt;body></code>, también se puede incluir en otros elementos como <code>&lt;article></code>, <code>&lt;section></code> y <code>&lt;aside></code>. Esto permite que diferentes secciones del sitio web tengan su propio pie de página con información específica, como referencias o enlaces internos. </li> <li> Contenido Común en <code>&lt;footer></code> <ul> <li> Información de derechos de autor (© Año Nombre), </li> <li> Enlaces a políticas de privacidad y términos de uso, </li> <li> Datos de contacto (correo electrónico, dirección o redes sociales), </li> <li>Enlaces de navegación adicionales,</li> <li> Información del autor o la fuente en artículos o secciones específicas. </li> </ul> </li> </ul> </div>   <div> <h4>Sintaxis Correcta &lt;footer></h4> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;footer>
+                          &lt;p>© 2025 Mi Empresa. Todos los derechos reservados.&lt;/p>
+                          &lt;nav>
+                              &lt;a href="/privacidad">Política de Privacidad&lt;/a>
+                              &lt;a href="/terminos">Términos y Condiciones&lt;/a>
+                              &lt;a href="/contacto">Contacto&lt;/a>
+                          &lt;/nav>
+                          &lt;p>Síguenos en:
+                              &lt;a href="https://facebook.com/miempresa" target="_blank">Facebook&lt;/a> |
+                              &lt;a href="https://twitter.com/miempresa" target="_blank">Twitter&lt;/a> |
+                              &lt;a href="https://instagram.com/miempresa" target="_blank">Instagram&lt;/a>
+                          &lt;/p>
+                        &lt;/footer>
+                      </code>
+                    </pre> </div>   <div> <h4>Uso &lt;footer></h4> <ul> <li> Información de Contacto: <ul> <li>Datos de contacto de la empresa o sitio web.</li> <li>Información de redes sociales.</li> <li>Correo electrónico o teléfono de contacto.</li> </ul> </li> <li> Información Legal: <ul> <li>Derechos de autor.</li> <li>Avisos legales.</li> <li>Políticas de privacidad.</li> <li>Términos de servicio.</li> </ul> </li> <li> Navegación Secundaria: <ul> <li>Enlaces a páginas importantes.</li> <li>Mapa del sitio.</li> <li>Menús de sección.</li> </ul> </li> <li> Metadatos e Información Adicional: <ul> <li>Fecha de última actualización.</li> <li>Información del autor.</li> <li>Créditos.</li> <li>Información de versión.</li> </ul> </li> </ul> </div>   <div> <h4>Relación con Otras Etiquetas &lt;footer></h4> <ul> <li> <code>&lt;header></code>: Mientras que <code>&lt;footer></code> se usa para el pie de página, <code>&lt;header></code> se utiliza para la cabecera de un documento o sección. Ambas etiquetas son complementarias y ayudan a estructurar el contenido de una página web. </li> <li> <code>&lt;section></code>: La etiqueta <code>&lt;footer></code> puede ser utilizada dentro de una <code>&lt;section></code> para definir un pie de página específico para esa sección. Esto es útil para documentos largos con múltiples secciones. </li> <li> <code>&lt;article></code>: Similar a <code>&lt;section></code>, un <code>&lt;footer></code> dentro de un <code>&lt;article></code> proporciona información relacionada con ese artículo en particular, como metadatos o enlaces relacionados. </li> <li> <code>&lt;main></code>: La etiqueta <code>&lt;footer></code> generalmente se coloca fuera de <code>&lt;main></code>, ya que <code>&lt;main></code> se utiliza para el contenido principal de la página, mientras que <code>&lt;footer></code> es para información adicional o de cierre. </li> <li> <code>&lt;nav></code>: Aunque no están directamente relacionadas, <code>&lt;footer></code> a menudo contiene enlaces de navegación secundarios o enlaces a políticas de privacidad, términos de uso, etc., que pueden ser parte de una <code>&lt;nav></code>. </li> </ul> </div>   <div> <h4>Buenas Prácticas y Errores Comunes &lt;footer></h4> <ul> <li> Buenas prácticas: <ul> <li> Estructura Semántica: Usar <code>&lt;footer></code> para información de cierre o complementaria </li> <li> Accesibilidad: <ul> <li> Usar encabezados (<code>&lt;h4></code>, <code>&lt;h5></code>) para organizar contenido </li> <li>Proporcione texto alternativo en enlaces</li> <li> Asegure contraste de color para legibilidad </li> <li> Use etiquetas semánticas como <code>&lt;nav></code> para grupos de enlaces </li> </ul> </li> <li> Contenido Relevante: <ul> <li>Incluya información útil y concisa.</li> <li> Mantenga actualizados los datos de contacto. </li> <li> Proporcione enlaces a páginas importantes. </li> </ul> </li> <li> Diseño Adaptable: <ul> <li> Adapte el footer para diferentes dispositivos. </li> <li> Use flexbox o grid para organizar contenido. </li> <li>Ajuste tamaños de fuente y espaciado.</li> </ul> </li> <li> Optimización de Rendimiento: <ul> <li>Minimice archivos CSS y JavaScript.</li> <li>Use imágenes optimizadas.</li> <li>Evite contenido pesado.</li> </ul> </li> </ul> </li> <li>Errores comunes:</li> <ul> <li> Errores de Estructura: Usar <code>&lt;footer></code> fuera de contexto. Usar <code>&lt;footer></code> solo al final de secciones o documentos </li> <li> Problemas de Accesibilidad: Sin texto alternativo en enlaces. Agregar descripciones claras </li> <li> Sobrecarga de Información: Incluir demasiados elementos. Ser selectivo, priorizar información importante </li> <li> Diseño No Adaptable: Footer estático sin adaptación móvil. Usar media queries y diseño flexible. </li> <li> Problemas de Rendimiento: Cargar recursos pesados. Optimizar imágenes y scripts </li> </ul> </ul> </div>   <div> <h4>Configuración CSS por Defecto &lt;footer></h4> <p> La mayoría de los navegadores mostrarán el elemento <code>&lt;footer></code> con los siguientes valores por defecto: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-css" data-prismjs-copy="Copy">
+                        footer {
+                          display: block;         /* Se comporta como un bloque (block-level element) */
+                          unicode-bidi: isolate;  /* Asegura que el contenido se aísle del resto en términos de dirección de texto */
+                        }
+                      </code>
+                    </pre> <p> <code>display: block;</code>: <code>&lt;footer></code> es un elemento de nivel de bloque, por lo que ocupa todo el ancho disponible. </p> <p> <code>unicode-bidi: isolate;</code>: Asegura que el texto dentro del <code>&lt;footer></code> no se vea afectado por cambios en la dirección del texto en elementos externos. </p> </div>   <div> <h4>Ejemplo Aplicado en un Proyecto Real &lt;footer></h4> <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="NPWLRxO" data-pen-title="&amp;lt;footer&amp;gt;" data-editable="true" data-user="eduardoherreraf" style="box-sizing:border-box;border:2px solid;justify-content:center;align-items:center;height:300px;margin:1em 0;padding:1em;display:flex"> <span>See the Pen <a href="https://codepen.io/eduardoherreraf/pen/NPWLRxO"> &lt;footer&gt;</a> by Eduardo Herrera Forero (<a href="https://codepen.io/eduardoherreraf">@eduardoherreraf</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://public.codepenassets.com/embed/index.js"></script> <ul> <li> <code>position: fixed;</code>: Mantiene el <code>&lt;footer></code> siempre visible en la parte inferior de la ventana del navegador. </li> <li> <code>flex: 1</code> en <code>.contenido</code>: Hace que el contenido principal ocupe el espacio disponible antes del <code>&lt;footer></code>. </li> <li> Diseño limpio y responsivo, adaptable a cualquier tamaño de pantalla. </li> </ul> </div>   <div> <h4> Uso con Tecnologías de Asistencia (ARIA) &lt;footer> </h4> <p> El elemento <code>&lt;footer></code> es semántico, lo que significa que los lectores de pantalla y otras tecnologías de asistencia pueden interpretarlo sin necesidad de atributos ARIA adicionales en la mayoría de los casos. Sin embargo, en situaciones donde se requiere mayor accesibilidad, se pueden aplicar ciertos roles y atributos ARIA. </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;footer role="contentinfo" aria-labelledby="footer-title">
+                          &lt;h2 id="footer-title">Información Adicional&lt;/h2>
+                          &lt;p>© 2025 Mi Empresa. Todos los derechos reservados.&lt;/p>
+                          &lt;nav aria-label="Enlaces de footer">
+                              &lt;a href="/privacidad">Política de Privacidad&lt;/a>
+                              &lt;a href="/terminos">Términos y Condiciones&lt;/a>
+                              &lt;a href="/contacto">Contacto&lt;/a>
+                          &lt;/nav>
+                        &lt;/footer>
+                      </code>
+                    </pre> <ul> <li> <code>role="contentinfo"</code>: Refuerza la semántica del <code>&lt;footer></code>, asegurando su reconocimiento por tecnologías de asistencia. </li> <li> <code>aria-label</code> en <code>&lt;/code>nav></code>: Describe la navegación dentro del <code>&lt;footer></code> para mejorar la accesibilidad. </li> <li> <code>aria-labelledby</code> con encabezados: Relaciona el <code>&lt;footer></code> con su título para mayor claridad. </li> </ul> </div>  </div>   <div> <h3 id="etiqueta-html-figure"> Etiqueta HTML &lt;figure>: Agrupa contenido multimedia </h3>  <div> <h4>Definición &lt;figure></h4> <p> La etiqueta <code>&lt;figure></code> en HTML se usa para agrupar contenido multimedia, como imágenes, gráficos o videos, junto con su descripción opcional en una etiqueta <code>&lt;figcaption></code>. Ayuda a mejorar la semántica y accesibilidad del contenido. </p> <p> La etiqueta <code>&lt;figcaption></code> en HTML se usa para agregar una descripción o leyenda a un elemento <code>&lt;figure></code>. Mejora la accesibilidad y la comprensión del contenido multimedia. Debe colocarse dentro de <code>&lt;figure></code>, generalmente como el primer o último hijo. </p> </div>   <div> <h4>Características Clave &lt;figure></h4> <ul> <li> <b>Agrupación Semántica</b>: Encierra contenido multimedia, como imágenes, ilustraciones o videos. </li> <li> <b>Uso Opcional de <code>&lt;figcaption></code></b>: Puede incluir una descripción asociada. </li> <li> <b>Mejora la Accesibilidad</b>: Facilita la comprensión del contenido. </li> <li> <b>Elemento Independiente</b>: Puede moverse sin afectar el flujo del documento. </li> <li> <b>Compatible con Diversos Medios</b>: No se limita solo a imágenes. </li> </ul> </div>   <div> <h4>Sintaxis Correcta &lt;figure></h4> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;figure>
+                            &lt;img src="imagen.jpg" alt="Descripción de la imagen">
+                            &lt;figcaption>Leyenda o descripción&lt;/figcaption>
+                          &lt;/figure>
+                        </code>
+                      </pre> <p> <code>&lt;figure></code> agrupa contenido multimedia. <code>&lt;figcaption></code> proporciona una descripción opcional. Debe ir dentro de <code>&lt;figure></code>, al inicio o al final. Compatible con imágenes, videos, audios, gráficos, tablas y código. </p> <p><code>&lt;picture></code> con Imagen:</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;figure>
+                            &lt;img src="paisaje.jpg" alt="Paisaje montañoso">
+                            &lt;figcaption>Vista panorámica de los Andes&lt;/figcaption>
+                          &lt;/figure>
+                        </code>
+                      </pre> <p> <code>&lt;picture></code> con Múltiples Imágenes: Se usa para ilustraciones comparativas o secuencias de imágenes: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;figure>
+                            &lt;img src="foto1.jpg" alt="Primera imagen">
+                            &lt;img src="foto2.jpg" alt="Segunda imagen">
+                            &lt;figcaption>Galería de fotos de viaje&lt;/figcaption>
+                          &lt;/figure>
+                        </code>
+                      </pre> <p><code>&lt;picture></code> con Video:</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;figure>
+                            &lt;video src="tutorial.mp4" controls>
+                                Tu navegador no soporta video
+                            &lt;/video>
+                            &lt;figcaption>Tutorial de programación&lt;/figcaption>
+                          &lt;/figure>
+                        </code>
+                      </pre> <p><code>&lt;picture></code> con Audio:</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;figure>
+                            &lt;audio src="cancion.mp3" controls>
+                                Tu navegador no soporta audio
+                            &lt;/audio>
+                            &lt;figcaption>Canción del álbum 2024&lt;/figcaption>
+                          &lt;/figure>
+                        </code>
+                      </pre> <p> <code>&lt;picture></code> con Diagrama o Ilustración SVG: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;figure>
+                            &lt;svg width="100" height="100">
+                                &lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                            &lt;/svg>
+                            &lt;figcaption>Diagrama de círculo básico&lt;/figcaption>
+                          &lt;/figure>
+                        </code>
+                      </pre> <p><code>&lt;picture></code> con Código:</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;figure>
+                            &lt;pre>
+                              &lt;code>
+                                function ejemplo() {
+                                    console.log("Hola Mundo");
+                                }
+                              &lt;/code>
+                            &lt;/pre>
+                            &lt;figcaption>Ejemplo de función JavaScript&lt;/figcaption>
+                          &lt;/figure>
+                        </code>
+                      </pre> <p><code>&lt;picture></code> sin Leyenda (Opcional):</p> <pre class="line-numbers" data-src-status="loaded" s tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;figure>
+                            &lt;img src="grafico.png" alt="Gráfico de datos">
+                          &lt;/figure>
+                        </code>
+                      </pre> <p><code>&lt;picture></code> con Imágenes Adaptativas:</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;figure>
+                            &lt;picture>
+                                &lt;source srcset="imagen.webp" type="image/webp">
+                                &lt;source srcset="imagen.png" type="image/png">
+                                &lt;img src="imagen.jpg" alt="Descripción de la imagen">
+                            &lt;/picture>
+                            &lt;figcaption>Descripción de la imagen adaptativa&lt;/figcaption>
+                          &lt;/figure>
+                        </code>
+                      </pre> <p>Explicación del código:</p> <ul> <li> <code>&lt;figure></code>: Esta etiqueta se utiliza para agrupar contenido multimedia (como imágenes) junto con una leyenda o descripción (<code>&lt;figcaption></code>). </li> <li> <code>&lt;picture></code>: Esta etiqueta permite al navegador elegir entre múltiples versiones de una imagen, dependiendo de las capacidades del navegador y las condiciones especificadas. </li> <li> <code>&lt;source></code>: Cada etiqueta <code>&lt;source></code> dentro de <code>&lt;picture></code> especifica una versión diferente de la imagen. El navegador evaluará estas opciones en el orden en que aparecen: <ul> <li> Primera Opción WebP, <code>&lt;source srcset="imagen.webp" type="image/webp"></code>: <ul> <li> <code>srcset</code>: Especifica la ruta de la imagen en formato WebP. </li> <li> <code>type</code>: Indica el tipo MIME del archivo, en este caso, <code>image/webp</code>. </li> <li> Evaluación: El navegador intentará usar esta imagen primero si soporta el formato WebP. </li> </ul> </li> <li> Segunda Opción PNG, <code>&lt;source srcset="imagen.png" type="image/png"></code>: <ul> <li> <code>srcset</code>: Especifica la ruta de la imagen en formato PNG. </li> <li> <code>type</code>: Indica el tipo MIME del archivo, en este caso, image/png. </li> <li> Evaluación: Si la imagen WebP no está disponible, intentará usar la imagen PNG. </li> </ul> </li> </ul> </li> <li> <code>&lt;img></code>: Esta etiqueta proporciona una imagen de respaldo que se utilizará si ninguna de las opciones <code>&lt;source></code> es compatible o disponible, <code>&lt;img src="imagen.jpg" alt="Descripción de la imagen"></code>. <ul> <li> <code>src</code>: Especifica la ruta de la imagen de respaldo en formato JPEG. </li> <li> <code>alt</code>: Proporciona una descripción textual de la imagen, útil para accesibilidad y cuando la imagen no puede ser mostrada. </li> <li> Evaluación: Si el navegador no puede usar ni WebP ni PNG, utilizará esta imagen JPEG como último recurso. JPEG es un formato ampliamente soportado y es adecuado para fotografías y gráficos muchos colores. </li> </ul> </li> <li> <code>&lt;figcaption></code>: Proporciona una leyenda o descripción para el contenido dentro de <code>&lt;figure></code>. </li> </ul> <p> Uso de <code>&lt;picture></code> para Diferentes Tamaños de Pantalla: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;figure>
+                            &lt;picture>
+                                &lt;!-- Imagen pequeña para pantallas pequeñas --&gt;
+                                &lt;source srcset="imagen-pequena.webp" type="image/webp" media="(max-width: 600px)">
+                                &lt;source srcset="imagen-pequena.png" type="image/png" media="(max-width: 600px)">
+
+                                &lt;!-- Imagen mediana para pantallas medianas --&gt;
+                                &lt;source srcset="imagen-mediana.webp" type="image/webp" media="(max-width: 1200px)">
+                                &lt;source srcset="imagen-mediana.png" type="image/png" media="(max-width: 1200px)">
+
+                                &lt;!-- Imagen grande para pantallas grandes --&gt;
+                                &lt;source srcset="imagen-grande.webp" type="image/webp">
+                                &lt;source srcset="imagen-grande.png" type="image/png">
+
+                                &lt;!-- Imagen de respaldo en formato JPEG --&gt;
+                                &lt;img src="imagen-grande.jpg" alt="Descripción de la imagen">
+                            &lt;/picture>
+                            &lt;figcaption>Descripción de la imagen adaptativa con diferentes tamaños&lt;/figcaption>
+                          &lt;/figure>
+                        </code>
+                      </pre> <p>Explicación del código:</p> <ul> <li> <code>media="(max-width: 600px)"</code>: Esta consulta de medios especifica que la imagen se utilizará en pantallas con un ancho máximo de 600 píxeles. </li> <li> <code>media="(max-width: 1200px)"</code>: Esta consulta de medios especifica que la imagen se utilizará en pantallas con un ancho máximo de 1200 píxeles. </li> <li> Imagen de respaldo: Si ninguna de las condiciones anteriores se cumple, se utilizará la imagen grande en formato JPEG. </li> <li> <code>&lt;source></code>: Cada etiqueta <code>&lt;source></code> especifica una versión diferente de la imagen. El navegador evalúa estas opciones en el orden en que aparecen, desde la más pequeña hasta la más grande o por defecto. </li> </ul> </div>   <div> <h4>Uso &lt;figure></h4> <p> La etiqueta <code>&lt;figure></code> se usa para encapsular contenido independiente, como imágenes, ilustraciones, gráficos o fragmentos de código, junto con su descripción asociada. Su uso adecuado incluye: </p> <ul> <li> Agrupar imágenes con su respectivo pie de foto usando <code>&lt;figcaption></code>. </li> <li> Incluir gráficos o diagramas que requieran una explicación textual. </li> <li> Asociar contenido multimedia (videos o audios) con su descripción correspondiente. </li> </ul> <p> Se recomienda su uso cuando se necesita presentar contenido visual con contexto adicional, mejorando la accesibilidad y la estructura semántica del documento. </p> </div>   <div> <h4>Relación con Otras Etiquetas &lt;figure></h4> <ul> <li> <code>&lt;figcaption></code>: Esta etiqueta se utiliza dentro de <code>&lt;figure></code> para proporcionar una leyenda o descripción del contenido multimedia. Es opcional pero útil para proporcionar contexto adicional. </li> <li> <code>&lt;img></code>: Generalmente se usa dentro de <code>&lt;figure></code> para mostrar imágenes. La etiqueta <code>&lt;figure></code> proporciona un contenedor semántico para la imagen y su descripción. </li> <li> <code>&lt;video> y &lt;audio></code>: Aunque menos común, <code>&lt;figure></code> también puede contener elementos multimedia como <code>&lt;video></code> o <code>&lt;audio></code>, especialmente si se desea proporcionar una descripción o leyenda. </li> <li> <code>&lt;picture></code>: Puede ser utilizado dentro de <code>&lt;figure></code> para proporcionar imágenes adaptativas con múltiples formatos o tamaños, como se mostró en el ejemplo anterior. </li> <li> <code>&lt;article> y &lt;section></code>: <code>&lt;figure></code> puede ser utilizado dentro de estas etiquetas para incluir contenido multimedia relevante dentro de un artículo o sección específica del documento. </li> </ul> </div>   <div> <h4>Buenas Prácticas y Errores Comunes &lt;figure></h4> <ul> <li> Buenas prácticas: <ul> <li> Uso Semántico: Utiliza <code>&lt;figure></code> para contenido que realmente necesita una leyenda o descripción. Esto incluye imágenes, gráficos, diagramas, y otros elementos multimedia que se benefician de una explicación adicional. </li> <li> Incluir <code>&lt;figcaption></code>: Siempre que sea posible, incluye una etiqueta<code>&lt;figcaption></code> dentro de <code>&lt;figure></code> para proporcionar contexto adicional sobre el contenido multimedia. Esto mejora la accesibilidad y la comprensión del contenido. </li> <li> Accesibilidad: Asegúrate de que las imágenes dentro de <code>&lt;figure></code>tengan atributos alt descriptivos. Esto es crucial para los usuarios de tecnologías de asistencia. </li> <li> Estilos CSS: Aplica estilos CSS a <code>&lt;figure></code> y<code>&lt;figcaption></code> para mejorar la presentación visual. Por ejemplo, puedes centrar el contenido, ajustar márgenes, o cambiar el estilo de la leyenda. </li> <li> Contenido Relacionado: Usa <code>&lt;figure></code> para agrupar contenido que está estrechamente relacionado. Esto ayuda a mantener el documento organizado y fácil de entender. </li> </ul> </li> <li> Errores comunes: <ul> <li> Uso Incorrecto: No utilices <code>&lt;figure></code> para contenido que no necesita una leyenda o descripción. Por ejemplo, no es apropiado usar <code>&lt;figure></code> para texto simple o elementos de diseño que no son significativos. </li> <li> Omisión de<code>&lt;figcaption></code>: No omitas la etiqueta<code>&lt;figcaption></code> cuando el contenido dentro de <code>&lt;figure></code> se beneficiaría de una explicación adicional. La omisión de <code>&lt;figcaption></code> puede hacer que el contenido sea menos accesible. </li> <li> Sobrecarga de Estilos: Evita aplicar demasiados estilos CSS que puedan complicar la presentación del contenido. Mantén los estilos simples y efectivos. </li> <li> Falta de Atributos alt: No olvides incluir atributos alt en las imágenes dentro de <code>&lt;figure></code> Esto es esencial para la accesibilidad y la usabilidad del documento. </li> <li> Uso Excesivo: No uses <code>&lt;figure></code> de manera excesiva. Reserva su uso para contenido que realmente necesita ser destacado con una leyenda o descripción. </li> </ul> </li> </ul> </div>   <div> <h4>Configuración CSS por Defecto &lt;figure></h4> <p> La etiqueta <code>&lt;figure></code> tiene una configuración CSS por defecto que varía según el navegador, pero generalmente incluye los siguientes estilos predeterminados: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-css" data-prismjs-copy="Copy">
+                          figure {
+                            display: block;  /* Se comporta como un bloque */
+                            margin: 1em 40px; /* Márgenes estándar en algunos navegadores */
+                          }
+
+                          figcaption {
+                              display: block;  /* Se comporta como un bloque */
+                              text-align: center; /* Centra el texto de la descripción */
+                          }
+                        </code>
+                      </pre> </div>   <div> <h4>Ejemplo Aplicado en un Proyecto Real &lt;figure></h4> <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gbOdgpr" data-pen-title="Untitled" data-editable="true" data-user="eduardoherreraf" style="box-sizing:border-box;border:2px solid;justify-content:center;align-items:center;height:300px;margin:1em 0;padding:1em;display:flex"> <span>See the Pen <a href="https://codepen.io/eduardoherreraf/pen/gbOdgpr"> Untitled</a> by Eduardo Herrera Forero (<a href="https://codepen.io/eduardoherreraf">@eduardoherreraf</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://public.codepenassets.com/embed/index.js"></script> <p>Explicación del código:</p> <ul> <li> Se utiliza <code>&lt;figure></code> para envolver la imagen y su descripción. </li> <li> Se aplica CSS para centrar la imagen, limitar su tamaño y mejorar la apariencia. </li> <li> <code>&lt;figcaption></code> describe la imagen, proporcionando contexto adicional. </li> <li> Se crea un diseño limpio y responsivo para integrarlo en cualquier página web. </li> </ul> </div>   <div> <h4> Uso con Tecnologías de Asistencia (ARIA) &lt;figure> </h4> <p> El uso de ARIA (Accessible Rich Internet Applications) mejora la accesibilidad de <code>&lt;figure></code> para usuarios con discapacidades visuales. Aunque <code>&lt;figure></code> y <code>&lt;figcaption></code> ya son semánticos, se pueden agregar atributos ARIA para mayor compatibilidad con lectores de pantalla. </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;figure role="group" aria-labelledby="descripcion-imagen">
+                            &lt;img src="paisaje.jpg" alt="Montañas con un cielo anaranjado al atardecer">
+                            &lt;figcaption id="descripcion-imagen">Atardecer en la montaña - Fotografía de John Doe&lt;/figcaption>
+                          &lt;/figure>
+                        </code>
+                      </pre> <ul> <li> <code> role="group"</code>: <ul> <li> Indica que <code>&lt;figure></code> es un grupo de elementos relacionados (imagen + descripción). </li> <li> Permite que lectores de pantalla lo interpreten como un solo bloque. </li> </ul> </li> <li> <code>aria-labelledby="descripcion-imagen"</code>: Asocia la descripción de <code>&lt;figcaption></code> con <code>&lt;figure></code>, asegurando que los lectores de pantalla lean ambos elementos juntos. </li> </ul> </div>  </div>   <div> <h3 id="etiqueta-html-details"> Etiqueta HTML &lt;details>: Muestra y Oculta Contenido </h3>  <div> <h4>Definición &lt;details></h4> <p> La etiqueta <code>&lt;details></code> en HTML se utiliza para crear un widget desplegable que permite al usuario mostrar u ocultar información adicional de manera interactiva. Este elemento es útil para secciones de preguntas frecuentes (FAQ), detalles adicionales en formularios o contenido que no necesita mostrarse de inmediato. </p> </div>   <div> <h4>Características Clave &lt;details></h4> <ul> <li><b>Interactivo</b>: Se puede expandir y contraer.</li> <li> <b>Nativo</b>: No requiere JavaScript para funcionar. </li> <li> <b>Accesible</b>: Compatible con lectores de pantalla. </li> <li> <b>Flexible</b>: Puede contener cualquier contenido HTML. </li> <li> <b>Atributo <code>open</code></b>: Muestra el contenido por defecto. </li> <li> <b>Etiqueta <code>&lt;summary></code></b>: Define el encabezado desplegable. </li> </ul> </div>   <div> <h4>Sintaxis Correcta &lt;details></h4> <p> La sintaxis básica del elemento <code>&lt;details></code> es la siguiente: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;details>
+                          &lt;summary>Texto del encabezado&lt;/summary>
+                          &lt;p>Contenido oculto que se mostrará al expandir.&lt;/p>
+                        &lt;/details>
+                      </code>
+                    </pre> <ul> <li> <code>&lt;details></code>: Contenedor del contenido desplegable. </li> <li> <code>&lt;summary></code>: Encabezado visible que se puede hacer clic. </li> <li> Contenido interno: Se muestra cuando <code>&lt;details></code> está expandido. </li> </ul> </div>   <div> <h4>Uso &lt;details></h4> <p> La etiqueta <code>&lt;details></code> se usa para crear un contenido desplegable, permitiendo al usuario mostrar u ocultar información adicional de forma interactiva. </p> <p>Usos comunes:</p> <ul> <li>Preguntas frecuentes (FAQ).</li> <li>Mostrar detalles adicionales en formularios.</li> <li>Desplegar información técnica o avanzada.</li> <li> Ocultar contenido extenso para mejorar la organización. </li> <li>Mostrar términos y condiciones de forma compacta.</li> </ul> </div>   <div> <h4>Relación con Otras Etiquetas &lt;details></h4> <p> El elemento <code>&lt;details></code> se relaciona con otras etiquetas que complementan su funcionalidad: </p> <ul> <li> <code>&lt;summary></code>: Define el encabezado visible sobre el que se puede hacer clic para expandir o contraer el contenido de <code>&lt;details></code>. </li> <li> <code>&lt;p>, &lt;ul>, &lt;table>,&lt;form></code> : <code>&lt;details></code> puede contener cualquier contenido HTML, incluyendo texto, listas, tablas o formularios. </li> <li> CSS (<code>::marker</code>): Se puede estilizar el indicador desplegable de &lt;summary>. </li> <li> JavaScrip: Puede usarse para controlar la apertura y cierre de <code>&lt;details></code> dinámicamente. </li> </ul> </div>   <div> <h4>Buenas Prácticas y Errores Comunes &lt;details></h4> <ul> <li> Buenas prácticas: <ul> <li> Siempre incluir <code>&lt;summary></code>: Define un encabezado claro para mejorar la accesibilidad y usabilidad. </li> <li> Usar <code>&lt;details></code> solo para contenido opcional: No debe ocultar información esencial para la comprensión del usuario. </li> <li> Agregar el atributo open si el contenido debe mostrarse por defecto. </li> <li> Estilizar adecuadamente con CSS: Personalizar el indicador de <code>&lt;summary></code> y mejorar la presentación. </li> <li> Asegurar compatibilidad con lectores de pantalla: Evitar anidar <code>&lt;details></code> innecesariamente. </li> </ul> </li> <li> Errores comunes: <ul> <li> No incluir <code>&lt;%lt;summary></code>: Sin esta etiqueta, el contenido no tendrá un encabezado visible para desplegarse. </li> <li> Usar <code>&lt;details></code> para contenido crítico: No debe ocultar información clave o que afecte la accesibilidad. </li> <li> Insertar <code>&lt;summary></code> fuera de <code>&lt;details></code>: <code>&lt;%lt;summary></code> debe estar dentro de <code>&lt;details></code>, no separado. </li> <li> No probar en diferentes navegadores: Algunos navegadores antiguos pueden no soportar <code>&lt;details></code>. </li> <li> No agregar estilos: El diseño predeterminado puede ser poco atractivo y confuso sin CSS adecuado. </li> </ul> </li> </ul> </div>   <div> <h4>Configuración CSS por Defecto &lt;details></h4> <ul> <li> Estilos predeterminados de <code>&lt;details></code>: <ul> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                            <code class="language-css" data-prismjs-copy="Copy">
+                              details {
+                                display: block;
+                              }
+                            </code>
+                          </pre> <li>Se muestra como un bloque por defecto.</li> <li>No tiene márgenes ni relleno predefinidos.</li> <li> Cuando está expandido, su contenido se muestra debajo de <code>&lt;summary></code>. </li> </ul> </li> <li> Estilos predeterminados de <code>&lt;summary></code>: <ul> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                            <code class="language-css" data-prismjs-copy="Copy">
+                              summary {
+                                list-style: none;  /* Oculta la flecha nativa */
+                                cursor: pointer;
+                                font-weight: bold;
+                              }
+                              
+                              details[open] summary {
+                                color: blue;  /* Cambia de color cuando está abierto */
+                              }
+                              
+                              details p {
+                                padding: 10px;
+                                border-left: 3px solid #007BFF;
+                              }
+                              
+                            </code>
+                          </pre> <li> Se muestra como un elemento de lista (<code>list-item</code>), lo que permite que tenga un marcador (flecha desplegable). </li> <li> El cursor cambia a "pointer", indicando que es interactivo. </li> <li> El marcador de expansión es generado automáticamente y se puede modificar con <code>::marker</code>. </li> </ul> </li> </ul> </div>   <div> <h4>Ejemplo Aplicado en un Proyecto Real &lt;details></h4> <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="KwKxbwr" data-pen-title="&amp;lt;details&amp;gt;" data-editable="true" data-user="eduardoherreraf" style="box-sizing:border-box;border:2px solid;justify-content:center;align-items:center;height:300px;margin:1em 0;padding:1em;display:flex"> <span>See the Pen <a href="https://codepen.io/eduardoherreraf/pen/KwKxbwr"> &lt;details&gt;</a> by Eduardo Herrera Forero (<a href="https://codepen.io/eduardoherreraf">@eduardoherreraf</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://public.codepenassets.com/embed/index.js"></script> <ul> <li> Diseño simple y profesional con <code>border-radius</code>, <code>box-shadow</code> y un fondo limpio. </li> <li> Interactividad nativa sin necesidad de JavaScript. </li> <li> Cambio de color al expandir usando [<code>open</code>] en CSS. </li> <li> Estructura accesible para mostrar preguntas frecuentes sin ocupar mucho espacio. </li> </ul> </div>   <div> <h4> Uso con Tecnologías de Asistencia (ARIA) &lt;details> </h4> <p> El elemento <code>&lt;details></code> es nativamente accesible, ya que los navegadores lo reconocen y proporcionan soporte para lectores de pantalla sin necesidad de atributos ARIA adicionales. Sin embargo, en algunos casos, se pueden mejorar sus características de accesibilidad. </p> <p>Estados ARIA para mejorar la accesibilidad:</p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;!DOCTYPE html>
+                        &lt;html lang="es">
+                        &lt;head>
+                            &lt;meta charset="UTF-8">
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            &lt;title>Ejemplo Accesible con `&lt;details>` y ARIA&lt;/title>
+                            &lt;style>
+                                body {
+                                    font-family: Arial, sans-serif;
+                                    margin: 20px;
+                                    background-color: #f9f9f9;
+                                }
+
+                                details {
+                                    background: #fff;
+                                    border: 1px solid #ccc;
+                                    border-radius: 5px;
+                                    padding: 10px;
+                                    margin-bottom: 10px;
+                                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+                                }
+
+                                summary {
+                                    font-weight: bold;
+                                    cursor: pointer;
+                                    list-style: none;
+                                }
+
+                                details[open] {
+                                    border-color: #007BFF;
+                                }
+
+                                details[open] summary {
+                                    color: #007BFF;
+                                }
+                            &lt;/style>
+                        &lt;/head>
+                        &lt;body>
+
+                          &lt;h2>Ejemplo Accesible con &lt;details> y ARIA&lt;/h2>
+
+                            &lt;details id="faq1" role="group" aria-labelledby="titulo1">
+                                &lt;summary id="titulo1" role="button" aria-controls="contenido1" aria-expanded="false">
+                                    ¿Cómo puedo contactar con soporte?
+                                &lt;/summary>
+                                &lt;p id="contenido1">Puedes enviarnos un correo a soporte@ejemplo.com o llamar al +123 456 789.&lt;/p>
+                            &lt;/details>
+
+                            &lt;details id="faq2" role="group" aria-labelledby="titulo2">
+                                &lt;summary id="titulo2" role="button" aria-controls="contenido2" aria-expanded="false">
+                                    ¿Cuáles son los métodos de pago aceptados?
+                                &lt;/summary>
+                                &lt;p id="contenido2">Aceptamos tarjetas de crédito, PayPal y transferencias bancarias.&lt;/p>
+                            &lt;/details>
+
+                            &lt;details id="faq3" role="group" aria-labelledby="titulo3">
+                                &lt;summary id="titulo3" role="button" aria-controls="contenido3" aria-expanded="false">
+                                    ¿Cuánto tarda el envío?
+                                &lt;/summary>
+                                &lt;p id="contenido3">Los envíos nacionales tardan entre 3 y 5 días hábiles, mientras que los internacionales pueden tardar hasta 10 días.&lt;/p>
+                            &lt;/details>
+
+                            &lt;script>
+                                // Agregar evento para actualizar dinámicamente el aria-expanded en cada &lt;summary>
+                                document.querySelectorAll("summary").forEach(summary => {
+                                    summary.addEventListener("click", function() {
+                                        let details = this.parentElement;
+                                        this.setAttribute("aria-expanded", details.open);
+                                    });
+                                });
+                            &lt;/script>
+
+                        &lt;/body>
+                        &lt;/html>
+                      </code>
+                    </pre> <ul> <li> role="group" en <code>&lt;details></code>: Indica que el contenido dentro de este elemento pertenece a un mismo grupo lógico. </li> <li> role="button" en <code>&lt;summary></code>: Hace que el encabezado sea tratado como un botón por lectores de pantalla. </li> <li> aria-labelledby="tituloX" en <code>&lt;details></code>: Relaciona el <code>&lt;summary></code> con el contenido de <code>&lt;details></code>. </li> <li> aria-controls="contenidoX" en <code>&lt;summary></code>: Asocia el título con el contenido desplegable. </li> <li> aria-expanded="false" en <code>&lt;summary></code>: Indica si el contenido está expandido o no (se actualiza con JavaScript). </li> <li> JavaScript para actualizar aria-expanded dinámicamente cuando se abre o cierra <code>&lt;details></code>. </li> </ul> </div>  </div>   <div> <h3 id="etiqueta-html-mark"> Etiqueta HTML &lt;mark>: Resaltar texto sin énfasis estructural </h3>  <div> <h4>Definición &lt;mark></h4> <p> La etiqueta <code>&lt;mark></code> representa un fragmento de texto que se destaca con fines de referencia o anotación, debido a su relevancia en el contexto circundante. </p> </div>   <div> <h4>Características Clave &lt;mark></h4> <ul> <li> <b>Resaltado visual</b>: Aplica un fondo amarillo por defecto. </li> <li> <b>No afecta la semántica</b>: Solo cambia la apariencia, sin alterar el significado del texto. </li> <li> <b>Personalizable con CSS</b>: Se puede modificar el color y otros estilos. </li> <li> <b>Compatible con todos los navegadores</b>: Funciona en la mayoría de los navegadores modernos. </li> <li> <b>Uso en énfasis temporal</b>: Útil para destacar información importante sin alterar la estructura del contenido </li> </ul> </div>   <div> <h4>Sintaxis Correcta &lt;mark></h4> <p> La sintaxis correcta de la etiqueta <code>&lt;mark></code> es la siguiente: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;p>Este es un &lt;mark>texto resaltado&lt;/mark> en un párrafo.&lt;/p>
+                      </code>
+                    </pre> <ul> <li><code>&lt;mark></code>: Etiqueta de apertura.</li> <li> <b>texto resaltado</b>: Contenido dentro de la etiqueta que se resalta. </li> <li><code>&lt;/mark></code>: Etiqueta de cierre.</li> <li> Se usa dentro de otras etiquetas como <code>&lt;p></code>, <code>&lt;span></code>, <code>&lt;div></code>, etc. </li> </ul> </div>   <div> <h4>Uso &lt;mark></h4> <p> La etiqueta <code>&lt;mark></code> se usa cuando se quiere resaltar texto dentro de un contenido sin modificar su estructura semántica. Algunos casos comunes incluyen: </p> <ul> <li> Destacar información importante en un párrafo o artículo. </li> <li> Resaltar términos de búsqueda en aplicaciones o sitios web. </li> <li> Enfatizar contenido temporalmente sin cambiar su jerarquía. </li> <li> Mejorar la accesibilidad al destacar información clave en textos extensos. </li> </ul> <p> Se recomienda su uso cuando el resaltado es necesario para la comprensión, pero sin alterar la estructura del contenido. </p> </div>   <div> <h4>Relación con Otras Etiquetas &lt;mark></h4> <ul> <li> <code>&lt;strong></code>: <code>&lt;strong></code> enfatiza semánticamente, indicando importancia y <code>&lt;mark></code> solo resalta visualmente sin alterar el significado. </li> <li> <code>&lt;em></code>: <code>&lt;em></code> enfatiza la entonación en cambio <code>&lt;mark></code> solo resalta visualmente. </li> <li> <code>&lt;span></code>: <code>&lt;span></code> es neutra y sirve para aplicar estilos con CSS, mientras que <code>&lt;mark></code> resalta texto con un propósito visual específico. </li> <li> <code>&lt;u></code>: <code>&lt;u></code> subraya texto sin especificar su propósito, a diferencia de <code>&lt;mark></code> resalta texto para llamar la atención sobre su relevancia </li> <li> <code>&lt;b></code>: <code>&lt;b></code> aplica negrita sin significado semántico, por otro lado <code>&lt;mark></code> resalta texto para indicar relevancia visualmente. </li> </ul> </div>   <div> <h4>Buenas Prácticas y Errores Comunes &lt;mark></h4> <ul> <li> Buenas Prácticas: <ul> <li> Uso semántico adecuado: Se debe emplear <code>&lt;mark></code> para resaltar información relevante sin alterar la estructura del contenido. </li> <li> Diferenciar términos clave: Es útil para destacar términos en resultados de búsqueda o información importante en textos extensos. </li> <li> Uso en contexto dinámico: Puede utilizarse para marcar términos en respuestas interactivas o actualizaciones en tiempo real. </li> <li> Complemento con CSS: Se recomienda personalizar el estilo de <code>&lt;mark></code> para mejorar la accesibilidad y la experiencia del usuario. </li> </ul> </li> <li> Errores comunes: <ul> <li> Uso excesivo: Aplicar <code>&lt;mark></code> a demasiadas palabras puede dificultar la lectura y perder su propósito. </li> <li> Uso incorrecto para negritas o énfasis: No debe sustituir <code>&lt;strong></code> o <code>&lt;em></code>, ya que su función es diferente. </li> <li> Falta de contraste: Se debe verificar que el color de resaltado tenga suficiente contraste con el fondo para garantizar la accesibilidad. </li> <li> Uso fuera de contexto: No se recomienda su uso en elementos de navegación o títulos donde el énfasis semántico no sea necesario. </li> </ul> </li> </ul> </div>   <div> <h4>Configuración CSS por Defecto &lt;mark></h4> <p></p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-css" data-prismjs-copy="Copy">
+                        mark {
+                          background-color: yellow;
+                          color: black;
+                        }
+                      </code>
+                    </pre> <ul> <li> Por lo general, los navegadores aplican un estilo de fondo amarillo al texto dentro de la etiqueta <code>&lt;mark></code>. </li> <li> Este estilo predeterminado tiene como objetivo llamar la atención sobre el texto resaltado. </li> <li> Es importante tener en cuenta que el estilo predeterminado puede variar ligeramente entre los diferentes navegadores. </li> </ul> </div>   <div> <h4>Ejemplo Aplicado en un Proyecto Real &lt;mark></h4> <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZYEMwrK" data-pen-title="&amp;lt;mark&amp;gt;" data-editable="true" data-user="eduardoherreraf" style="box-sizing:border-box;border:2px solid;justify-content:center;align-items:center;height:300px;margin:1em 0;padding:1em;display:flex"> <span>See the Pen <a href="https://codepen.io/eduardoherreraf/pen/ZYEMwrK"> &lt;mark&gt;</a> by Eduardo Herrera Forero (<a href="https://codepen.io/eduardoherreraf">@eduardoherreraf</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://public.codepenassets.com/embed/index.js"></script> <ul> <li> Se usa <code>&lt;mark></code> para resaltar la palabra "HTML". </li> <li> Se aplica CSS para personalizar el resaltado con fondo amarillo. </li> <li> Este enfoque se puede ampliar con JavaScript para resaltar dinámicamente términos de búsqueda en una página web. </li> </ul> </div>   <div> <h4>Uso con Tecnologías de Asistencia (ARIA) &lt;mark></h4> <p> La etiqueta HTML <code>&lt;mark></code> tiene un propósito visual claro, pero por sí sola no proporciona suficiente información semántica para las tecnologías de asistencia (AT), como los lectores de pantalla. Aquí te explico cómo puedes mejorar la accesibilidad de <code>&lt;mark></code> utilizando ARIA (Accessible Rich Internet Applications): </p> <p> Problemas de accesibilidad con <code>&lt;mark></code>: </p> <ul> <li> Falta de contexto: Los lectores de pantalla requieren contexto adicional para comprender el propósito del texto marcado con <code>&lt;mark></code>. </li> <li> Significado ambiguo: ARIA proporciona claridad semántica sobre la relevancia del texto marcado. </li> <li> <code>aria-label</code> o <code>aria-describedby</code>: Utiliza ARIA para añadir descripciones que expliquen por qué se resalta el texto. </li> <li> <code>role="mark"</code> (implícito): La etiqueta mark ya posee el rol mark por lo que no es necesario agregarlo. </li> <li> Uso adecuado de ARIA: Emplea ARIA de forma concisa y solo cuando sea necesario para mejorar la accesibilidad. </li> <li> Pruebas con lectores de pantalla: Verificar la correcta interpretación del contenido marcado mediante pruebas con lectores de pantalla. </li> <li> Contraste de color: Mantener un contraste de color adecuado para asegurar la legibilidad del texto marcado. </li> </ul> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;!DOCTYPE html>
+                        &lt;html lang="es">
+                        &lt;head>
+                            &lt;meta charset="UTF-8">
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            &lt;title>Resaltado Accesible&lt;/title>
+                        &lt;/head>
+                        &lt;body>
+                            &lt;p>Aprender &lt;mark role="mark" aria-label="Texto resaltado">HTML&lt;/mark> es esencial para el desarrollo web.&lt;/p>
+                        &lt;/body>
+                        &lt;/html>
+                      </code>
+                    </pre> <ul> <li> <code>role="mark"</code> indica que el texto es un resaltado semántico. </li> <li> <code>aria-label="Texto resaltado"</code> ayuda a los lectores de pantalla a entender el propósito del <code>&lt;mark></code>. </li> <li> Esto mejora la accesibilidad para usuarios con discapacidad visual. </li> </ul> </div>  </div>   <div> <h3 id="etiqueta-html-time"> Etiqueta HTML &lt;time>: Mostrar la fecha </h3>  <div> <h4>Definición &lt;time></h4> La etiqueta <code>&lt;time></code> en HTML se utiliza para representar fechas, horas o cualquier valor temporal de forma estructurada, facilitando su interpretación por navegadores y motores de búsqueda. Puede incluir atributos como <code>datetime</code> para especificar el formato exacto del tiempo. </div>   <div> <h4>Características Clave &lt;time></h4> <ul> <li> <b>Representación de tiempo estructurada</b>: Permite marcar fechas y horas de manera comprensible para navegadores y motores de búsqueda. </li> <li> <b>Atributo</b> <code>datetime</code>: Facilita la especificación del tiempo en un formato estándar (ISO 8601). </li> <li> <b>Mejora la accesibilidad</b>: Ayuda a herramientas como lectores de pantalla y asistentes virtuales a interpretar correctamente la información temporal. </li> <li> <b>Optimización para SEO</b>: Los buscadores pueden identificar y mostrar mejor los datos de eventos y fechas relevantes. </li> <li> <b>Compatibilidad con contenido visible</b>: Puede incluir texto legible por humanos mientras mantiene un valor estructurado para las máquinas. </li> </ul> </div>   <div> <h4>Sintaxis Correcta &lt;time></h4> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;time datetime="2025-03-29">29 de marzo de 2025&lt;/time>
+                      </code>
+                    </pre> <ul> <li> <code>&lt;time></code>: Etiqueta que envuelve el contenido de la fecha o la hora. </li> <li> <code>datetime="YYYY-MM-DD"</code>: Atributo opcional que permite especificar la fecha en formato estándar (ISO 8601). </li> <li> <b>Contenido visible</b>: Se muestra el formato legible para el usuario. </li> </ul> <p>Otros casos:</p> <ul> <li> <b>Fecha y Hora (Año-Mes-DíaTHH:MM)</b>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            &lt;time datetime="2025-09-15T09:00">15 de septiembre de 2025 a las 9:00 AM&lt;/time>
+                            <time datetime="2025-09-15T09:00">15 de septiembre de 2025 a las 9:00 AM</time>
+                          </code>
+                        </pre> Uso común: Horarios de reuniones, vuelos, citas. </li> <li> <b>Fecha, Hora y Zona Horaria (Año-Mes-DíaTHH:MM±HH:MM)</b>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            &lt;time datetime="2025-09-15T09:00-05:00">15 de septiembre de 2025, 9:00 AM (GMT-5)&lt;/time> <br>
+                            <time datetime="2025-09-15T09:00-05:00">15 de septiembre de 2025, 9:00 AM (GMT-5)</time>
+                          </code>
+                        </pre> Uso común: Eventos con horario internacional. </li> <li> <b>Solo la Hora (HH:MM)</b>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            &lt;time datetime="14:30">2:30 PM&lt;/time>
+                            <time datetime="14:30">2:30 PM</time>
+                          </code>
+                        </pre> Uso común: Horarios de apertura/cierre, inicio de actividades. </li> <li> <b>Año y Mes (Año-Mes)</b>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            &lt;time datetime="2025-07">julio de 2025&lt;/time>
+                            <time datetime="2025-07">julio de 2025</time>
+                          </code>
+                        </pre> . Uso común: Fechas de lanzamientos, periodos académicos. </li> <li> <b>Solo el Año (YYYY)</b>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            &lt;time datetime="2023">2023&lt;/time>
+                            <time datetime="2023">2023</time>
+                          </code>
+                        </pre> Uso común: Fechas de publicación, versiones de software. </li> <li> <b>Solo el Mes y Día (MM-DD)</b>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            &lt;time datetime="12-25">25 de diciembre&lt;/time>
+                            <time datetime="12-25">25 de diciembre</time>
+                          </code>
+                        </pre> Uso común: Fechas de festividades, aniversarios sin año específico. </li> <li> <b>Solo la Duración (P[n]Y[n]M[n]DT[n]H[n]M[n]S)</b>: <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            &lt;time datetime="P2DT3H30M">2 días, 3 horas y 30 minutos&lt;/time>
+                            <time datetime="P2DT3H30M">2 días, 3 horas y 30 minutos</time>
+                          </code>
+                        </pre> <time datetime="P2DT3H30M">2 días, 3 horas y 30 minutos</time>. Uso común: Duración de eventos, tiempos estimados en procesos. </li> </ul> <p>Recomendaciones:</p> <ul> <li> Siempre usar <code>datetime</code> en formato ISO 8601 para garantizar compatibilidad. </li> <li> Incluir texto legible para los usuarios dentro de <code>&lt;time></code>. </li> <li> Evitar usos incorrectos como números sin relación con fechas o tiempos. </li> </ul> </div>   <div> <h4>Uso &lt;time></h4> <p> La etiqueta <code>&lt;time></code> se usa cuando se quiere representar fechas u horas dentro de un contenido de manera estructurada, facilitando su interpretación por navegadores y motores de búsqueda. Algunos casos comunes incluyen: </p> <ul> <li> Marcar fechas de eventos en artículos o publicaciones. </li> <li> Representar horarios en calendarios o agendas digitales. </li> <li> Indicar fechas de publicación o actualización de contenido. </li> <li> Facilitar la extracción de información temporal en aplicaciones o sitios web. </li> </ul> Se recomienda su uso cuando la información temporal es relevante para la comprensión del contenido, permitiendo un mejor procesamiento por parte de sistemas automatizados sin afectar la presentación visual para los usuarios. </div>   <div> <h4>Relación con Otras Etiquetas &lt;time></h4> <ul> <li> <code>&lt;p></code>: <code>&lt;time></code> suele utilizarse dentro de párrafos para indicar fechas o horas de manera clara. </li> <li> <code>&lt;article></code>: Se emplea dentro de artículos para indicar la fecha de publicación o modificación. </li> <li> <code>&lt;header></code>: Puede incluirse en la cabecera de una sección o documento para mostrar la fecha de un post o evento. </li> <li> <code>&lt;footer></code>: Se usa en los pies de página para indicar fechas de derechos de autor o actualizaciones. </li> <li> <code>&lt;span></code>: Puede utilizarse dentro de un <code>&lt;span></code> para aplicar estilos personalizados a la fecha o la hora. </li> </ul> </div>   <div> <h4>Buenas Prácticas y Errores Comunes &lt;time></h4> <ul> <li> Buenas Prácticas: <ul> <li> Usar datetime correctamente: El atributo debe seguir el formato ISO 8601 para mejorar la interpretación por sistemas automatizados. </li> <li> Mantener el contenido legible: El texto dentro de <code>&lt;time></code> debe ser comprensible para los usuarios. </li> <li> Utilizar <code>&lt;time></code> solo para valores temporales: No debe aplicarse a números que no representen fechas u horas. </li> <li> Incluirlo en contextos adecuados: Es útil en artículos, eventos y agendas donde la información temporal es relevante. </li> </ul> </li> <li> Errores comunes: <ul> <li> Omitir el atributo <code>datetime</code>: Puede afectar la interpretación de la fecha por motores de búsqueda. </li> <li> Usar formatos incorrectos en <code>datetime</code>: Se debe emplear el estándar ISO 8601 para evitar errores. </li> <li> Aplicarlo a información no temporal: No debe usarse para valores como precios o cantidades. </li> <li> Anidar múltiples etiquetas <code>&lt;time></code> innecesariamente: Esto es redundante y no aporta valor semántico. </li> </ul> </li> </ul> </div>   <div> <h4>Configuración CSS por Defecto &lt;time></h4> <p> La etiqueta <code>&lt;time></code> en HTML no tiene un estilo visual específico por defecto en la mayoría de los navegadores. Su apariencia es la misma que la de un elemento en línea (inline). Sin embargo, su configuración CSS predeterminada es la siguiente: </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                      <code class="language-css" data-prismjs-copy="Copy">
+                        time {
+                          display: inline;  /* Se comporta como un elemento en línea */
+                          font-style: normal;  /* No tiene estilo especial por defecto */
+                          font-weight: normal;  /* No es negrita a menos que se aplique */
+                        }
+                      </code>
+                    </pre> </div>   <div> <h4>Ejemplo Aplicado en un Proyecto Real &lt;time></h4> <p> Un sitio web de conferencias tecnológicas presenta detalles sobre un evento, incluyendo la fecha del evento, la hora de inicio, el período de inscripciones y el año de la última edición. </p> <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dPygKXd" data-pen-title="&amp;lt;time&amp;gt;" data-editable="true" data-user="eduardoherreraf" style="box-sizing:border-box;border:2px solid;justify-content:center;align-items:center;height:300px;margin:1em 0;padding:1em;display:flex"> <span>See the Pen <a href="https://codepen.io/eduardoherreraf/pen/dPygKXd"> &lt;time&gt;</a> by Eduardo Herrera Forero (<a href="https://codepen.io/eduardoherreraf">@eduardoherreraf</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://public.codepenassets.com/embed/index.js"></script> <ul> <li> <code>&lt;Sección <code>&lt;header></code></code>: Presenta el título del evento y su descripción. </li> <li> <code>&lt;Sección <code>&lt;section></code> con <code>.event-details</code></code>: Muestra los detalles del evento utilizando <code>&lt;time></code> en diferentes formatos: <ul> <li>Fecha completa: <code>2025-09-15</code>.</li> <li>Fecha y hora: <code>2025-09-15T09:00</code>.</li> <li> Solo hora: <code>03:30</code> (duración estimada). </li> <li> Año y mes: <code>2025-07</code> (fecha de inicio de inscripciones). </li> <li>Solo año: <code>2023"</code>(última edición).</li> </ul> </li> <li> <code>&lt;Sección <code>&lt;footer></code></code>: Indica el año actual en los derechos de autor. </li> </ul> </div>   <div> <h4>Uso con Tecnologías de Asistencia (ARIA) &lt;time></h4> <p> La etiqueta <code>&lt;time></code> es semántica y, por defecto, es reconocida por tecnologías de asistencia como lectores de pantalla. Sin embargo, en algunos casos puede ser útil mejorar su accesibilidad con atributos ARIA. </p>  <div> <h5>Mejores Prácticas con ARIA con &lt;time></h5> <ul> <li> <b>Usar <code>aria-label</code> para una lectura clara</b>: Algunos lectores de pantalla pueden no interpretar correctamente el formato de fecha u hora. Se puede usar <code>aria-label</code> para proporcionar una lectura más clara. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              &lt;time datetime="2025-09-15" aria-label="15 de septiembre de 2025">
+                                15/09/2025
+                              &lt;/time>
+                            </code>
+                          </pre> <b>Beneficio</b>: Garantiza que la fecha se lea de manera clara y comprensible. </li> <li> <b>Indicar la duración de eventos con <code>aria-live</code></b>: Si el tiempo cambia dinámicamente (por ejemplo, un temporizador), se recomienda usar <code>aria-live</code> para notificar el cambio. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              <p>
+                                El evento termina en:
+                                &lt;time id="countdown" datetime="PT10M" aria-live="polite">10 minutos&lt;/time>
+                              </p>
+                            </code>
+                          </pre> <b>Beneficio</b>: Permite que los lectores de pantalla anuncien cambios sin interrumpir al usuario. </li> <li> <b>Marcar fechas importantes con <code>role="presentation"</code> cuando sea necesario</b>: Si <code>&lt;time></code> se usa solo con fines visuales y no aporta valor semántico, se puede agregar <code>role="presentation"</code> para evitar que los lectores de pantalla lo procesen innecesariamente. <pre class="line-numbers" data-src-status="loaded" tabindex="0">
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              &lt;time datetime="2025-12-31" role="presentation">31/12/2025&lt;/time>
+                            </code>
+                          </pre> <b>Beneficio</b>: Evita información redundante para usuarios con discapacidad visual. </li> </ul> <ul></ul> </div>  </div>  </div>  </div>   <div id="plantilla-html-de-un-diseno-semantico" class="mt-5"> <h2 class="mt-1">Plantilla HTML de un Diseño Semántico</h2> <p>Plantilla HTML de un Diseño Semántico</p> <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="Eaxdpyp" data-pen-title="Untitled" data-editable="true" data-user="eduardoherreraf" style="box-sizing:border-box;border:2px solid;justify-content:center;align-items:center;height:300px;margin:1em 0;padding:1em;display:flex"> <span>See the Pen <a href="https://codepen.io/eduardoherreraf/pen/Eaxdpyp"> Untitled</a> by Eduardo Herrera Forero (<a href="https://codepen.io/eduardoherreraf">@eduardoherreraf</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://public.codepenassets.com/embed/index.js"></script> <p>Las etiquetas semánticas utilizadas en la plantilla son:</p> <ul> <li> <code>&lt;header></code>: Representa la cabecera de la página. </li> <li> <code>&lt;nav></code>: Define la navegación principal. </li> <li> <code>&lt;main></code>: Contiene el contenido principal del sitio. </li> <li> <code>&lt;section></code>: Agrupa contenido temáticamente relacionado. </li> <li> <code>&lt;article></code>: Representa artículos o unidades de contenido independientes. </li> <li> <code>&lt;figure></code>: Agrupa contenido multimedia, como imágenes. </li> <li> <code>&lt;figcaption></code>: Proporciona una descripción para la figura. </li> <li> <code>&lt;time></code>: Representa una fecha o una hora específica. </li> <li> <code>&lt;mark></code>: Resalta texto importante sin alterar la semántica. </li> <li> <code>&lt;aside></code>: Contiene contenido complementario o relacionado. </li> <li> <code>&lt;dialog></code>: Representa un cuadro de diálogo interactivo. </li> </ul> </div>   <div> <h3 id="plantilla-html-de-un-diseno-semantico-con-aria"> Plantilla HTML de un Diseño Semántico Con ARIA </h3> <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XJWxBaB" data-pen-title="Plantilla con ARIA" data-editable="true" data-user="eduardoherreraf" style="box-sizing:border-box;border:2px solid;justify-content:center;align-items:center;height:300px;margin:1em 0;padding:1em;display:flex"> <span>See the Pen <a href="https://codepen.io/eduardoherreraf/pen/XJWxBaB"> Plantilla con ARIA</a> by Eduardo Herrera Forero (<a href="https://codepen.io/eduardoherreraf">@eduardoherreraf</a>) on <a href="https://codepen.io">CodePen</a>.</span> </p> <script async src="https://public.codepenassets.com/embed/index.js"></script> </div>  </div> </article>  <article class="pt-5 row" id="comment"> <br> <h1>COMENTARIOS</h1> <p> Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario disponible para este propósito. </p> <div class="d-flex justify-content-center"> <form action="https://formsubmit.co/herreraforeroeduardo@gmail.com" method="post" id="myForm"> <div class="d-flex flex-column input-group justify-content-center"> <label for="name" class="pe-2">Nombre:</label> <input type="text" name="name" id="name" placeholder="Eduardo Herrera Forero" class="rounded" required> <label for="email" class="pe-2">Email:</label> <input type="email" name="email" id="email" placeholder="herreraforeroeduardo@gmail.com" class="rounded" required> <label for="message" class="pe-2">Mensaje:</label> <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..." class="rounded rounded-3"></textarea> <input class="border border-2 btn btn-outline-light my-3 rounded-pill" type="submit" value="Enviar..."> </div> <p> La política de privacidad, y los términos y condiciones están disponibles en el formulario de contacto. </p> </form> </div> </article>  </section>  </main>   <aside class="col-lg-3 d-lg-block d-none pt-5"> <h1 class="h3">En Este Artículo</h1> <ul class="list-group"> <li class="list-group-item"> <a href="#introduccion">Introducción</a> </li> <li class="list-group-item"> <a href="#estructura-html-no-semantica">Estructura HTML no Semántica</a> </li> <li class="list-group-item"> <a href="#estructura-html-con-etiquetas-semanticas">Estructura HTML con Etiquetas Semánticas</a> </li> <li class="list-group-item"> <a href="#etiquetas-semánticas-html">Etiquetas Semánticas HTML</a> <ul class="list-no-bullets"> <li> <a href="#etiqueta-html-main">&lt;main></a> </li> <li> <a href="#etiqueta-html-section">&lt;section></a> </li> <li><a href="#etiqueta-html-article">&lt;article></a></li> <li><a href="#etiqueta-html-nav">&lt;nav></a></li> <li><a href="#etiqueta-html-aside">&lt;aside></a></li> <li><a href="#etiqueta-html-header">&lt;header></a></li> <li><a href="#etiqueta-html-footer">&lt;footer></a></li> <li><a href="#etiqueta-html-figure">&lt;figure></a></li> <li><a href="#etiqueta-html-details">&lt;details></a></li> <li><a href="#etiqueta-html-mark">&lt;mark></a></li> <li><a href="#etiqueta-html-time">&lt;time></a></li> </ul> </li> <li class="list-group-item"> <a href="#plantilla-html-de-un-diseno-semantico">Plantilla HTML de un Diseño Semántico</a> </li> <li class="list-group-item"> <a href="#plantilla-html-de-un-diseno-semantico-con-aria">Plantilla HTML de un Diseño Semántico con ARIA</a> </li> </ul> </aside>  </div>   <button onclick="topFunction()" id="myBtnScroll" title="Go to top"> <svg width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up" style="margin-left:-2px" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg> </button>  </body></html>
