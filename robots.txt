@@ -20,7 +20,8 @@ Disallow: /js@como_ejecutar_un_codigo_javascript.html
 Disallow: /textos.html
 Disallow: /instalacion-de-bootstrap-v53-con-npm-y-vite.html
 Disallow: /manual-de-referencia-html.html
-
+Disallow: /cursoPython3-0505_instalador_de_paquetes_PIP.html
+Disallow: /cursoPython3-0505_instalador_de_paquetes_pip.html
 
 # Sitemap
 Sitemap: https://eduardoherreraf.github.io/sitemap.xml
