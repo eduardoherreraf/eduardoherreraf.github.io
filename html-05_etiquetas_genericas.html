@@ -1,0 +1,563 @@
+<!DOCTYPE html><html lang="es" data-bs-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Aprende cómo utilizar las etiquetas HTML genéricas <div> y <span> para estructurar y dar estilo a tu contenido web de forma efectiva."><meta name="tittle" content="Etiquetas Genéricas HTML - Ing. Eduardo Herrera Forero."><meta name="author" content="Ing. Eduardo Herrera Forero"><meta name="application-name" content="EHF"><meta name="robots" content="index, follow"><link rel="canonical" href="https://eduardoherreraf.github.io/html-05_etiquetas_genericas.html"><meta property="og:type" content="website"><meta property="og:title" content="Etiquetas Genéricas HTML - Ing. Eduardo Herrera Forero."><meta property="og:description" content="Aprende cómo utilizar las etiquetas HTML genéricas <div> y <span> para estructurar y dar estilo a tu contenido web de forma efectiva."><meta property="og:image" content="https://i.postimg.cc/KjG2V8kV/Etiquetas-Genericas-Transparente-Final.png"><meta property="og:image:alt" content="Analogía etiquetas genéricas con la vida real"><meta property="og:url" content="https://eduardoherreraf.github.io/html-05_etiquetas_genericas.html"><meta property="og:locale" content="es_CO"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Etiquetas Genéricas HTML - Ing. Eduardo Herrera Forero."><meta name="twitter:description" content="Aprende cómo utilizar las etiquetas HTML genéricas div y span para estructurar y dar estilo a tu contenido web de forma efectiva."><meta name="twitter:image" content="https://i.postimg.cc/KjG2V8kV/Etiquetas-Genericas-Transparente-Final.png"><meta name="twitter:image:alt" content><meta name="twitter:url" content="https://eduardoherreraf.github.io/html-05_etiquetas_genericas.html"><meta name="twitter:site" content="@ehfeduardo"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.d2cbc014.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.02c0440e.png"><link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.9d63268f.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.a17b4569.png"><link rel="manifest" href="site.webmanifest"><link rel="mask-icon" href="safari-pinned-tab.cd218f89.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><title>Etiquetas Genéricas HTML - Ing. Eduardo Herrera Forero.</title><link rel="stylesheet" href="index.f6012c1f.css"><script type="module" defer src="index.d07dbcde.js"></script><meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"></head><body>  <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg"> <div class="container-fluid">  <a class="align-items-center d-flex ms-2 navbar-brand text-decoration-none" href="index.html"> <img src="logo.f31ffce0.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30" class="align-text-top d-inline-block me-1"> <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span> </a>  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>  <div class="collapse ms-auto navbar-collapse text-center" id="navbarSupportedContent"> <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100"> <li class="nav-item"> <a class="mx-1 nav-link text-decoration-none" href="index.html">SOBRE MÍ</a> </li> <li class="nav-item"> <a class="mx-1 nav-link text-decoration-none" href="index.html#resume">EXPERIENCIA</a> </li> <li class="nav-item"> <a class="mx-1 nav-link text-decoration-none" href="index.html#portfolio">PORTAFOLIO</a> </li> <li class="nav-item"> <a class="mx-1 nav-link text-decoration-none" href="index.html#studies">ESTUDIOS</a> </li> <li class="nav-item"> <a class="active mx-1 nav-link text-decoration-none" href="index.html#blog">PUBLICACIONES</a> </li> <li class="nav-item"> <a class="mx-1 nav-link text-decoration-none" href="index.html#contact">CONTACTO</a> </li> </ul> </div> </div> </nav>   <div class="col mx-1 row"> <main class="col-lg-9 pt-5"> <section class="pb-3">  <article class="border-1 border-bottom pb-3 row" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"> <div> <header> <h1 id="introduccion">Etiquetas Genéricas HTML</h1> </header>  <div id="introduccion" class="mt-5"> <h2 class="mt-1">Introducción</h2> <p> En el lenguaje HTML, las etiquetas genéricas son elementos que permiten estructurar el contenido de una página web cuando no existe una etiqueta semántica específica que se ajuste a la necesidad del desarrollador. Estas etiquetas son versátiles y ampliamente utilizadas, especialmente durante las primeras etapas del diseño o cuando se requiere una agrupación flexible de contenido. </p> <p>Las dos etiquetas genéricas principales en HTML son:</p> <ul> <li> <code class="language-html">&lt;div></code> (division): se utiliza para agrupar bloques de contenido. Es un contenedor de nivel bloque, ideal para organizar secciones completas de la página, como encabezados, artículos, barras laterales o pies de página. Su uso es esencial en el diseño de estructuras con CSS. </li> <li> <code class="language-html">&lt;span></code> (Fragmento en Línea): es una etiqueta de nivel en línea que permite aplicar estilos o identificar partes específicas dentro de un texto, sin romper el flujo del mismo. Es comúnmente usada para resaltar palabras, aplicar estilos personalizados o manipular contenido mediante JavaScript. </li> </ul> <p> Aunque estas etiquetas no tienen un significado semántico propio, ofrecen una gran flexibilidad cuando se combinan con hojas de estilo (CSS) o scripts. Sin embargo, se recomienda usarlas con moderación y preferir etiquetas semánticas cuando sea posible, para mejorar la accesibilidad y el posicionamiento en buscadores. </p> <div class="imagen text-center"> <picture> <img src="https://i.postimg.cc/KjG2V8kV/Etiquetas-Genericas-Transparente-Final.png" class="img-fluid" width="50%" alt="Etiquetas Genéricas HTML " title="Etiquetas Genéricas HTML <div> y <span>"> <figcaption>Ejemplo de Etiquetas de Texto HTML</figcaption> </picture> </div> </div>  <hr class="subtle-divider">  <div id="división-div" class="mt-5"> <h2 class="mt-1">División &lt;div></h2>  <div> <h3>Definición División &lt;div></h3> <p> La etiqueta <code class="language-html">&lt;div></code> (abreviación de "division") es un elemento genérico de bloque en HTML que actúa como un contenedor para otros elementos HTML. Es uno de los elementos más utilizados en el desarrollo web moderno para crear estructura, organizar contenido y facilitar la aplicación de estilos CSS. No tiene significado semántico por sí mismo, sino que sirve como una herramienta de agrupación y organización. </p> </div>   <div> <h3>Características División &lt;div></h3> <ul> <li> La etiqueta <code class="language-html">&lt;div></code> es un elemento de tipo bloque, lo que significa que ocupa todo el ancho disponible de su contenedor padre y siempre comienza en una nueva línea, desplazando hacia abajo cualquier contenido que le siga. Puede entenderse como un párrafo invisible que crea su propio espacio dentro del documento. </li> <li> Esta etiqueta es altamente versátil y actúa como un comodín estructural cuando se necesita agrupar contenido y no existe una etiqueta semántica más específica que se ajuste al propósito. </li> <li> Su uso principal es organizar lógicamente el contenido o aplicar estilos CSS a un conjunto de elementos, sin aportar semántica por sí misma. </li> <li> Funciona como un contenedor flexible, capaz de incluir texto, imágenes, otros elementos HTML e incluso otras etiquetas <code class="language-html">&lt;div></code>. </li> <li> Se emplea ampliamente junto con CSS para diseñar interfaces y crear estructuras visuales personalizadas. </li> <li> Además, es compatible con todas las versiones de HTML, lo que garantiza su funcionamiento en cualquier entorno web moderno. </li> </ul> </div>   <div> <h3>Sintaxis Correcta División &lt;div></h3> <p> La sintaxis del elemento <code class="language-html">&lt;div></code> es relativamente sencilla, consistiendo en una etiqueta de apertura y una de cierre que delimitan el contenido que se desea agrupar. La estructura básica es la siguiente: </p> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;div>
+                          &lt;!-- El contenido va aquí --&gt;
+                        &lt;/div>
+                      </code>
+                    </pre> </div> <p> El elemento <code class="language-html">&lt;div></code> solo admite atributos globales HTML, con la excepción de <code class="language-html">align</code>, que ya no está permitido desde la introducción de HTML5. Esto significa que puede utilizar atributos como <code class="language-html">class</code>, <code class="language-html">id</code>, <code class="language-html">style</code>, <code class="language-html">data-*</code>, entre otros, pero debería evitarse el uso de atributos obsoletos. </p> <p>Con atributos comunes:</p> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;div>
+                          &lt;div class="nombre-clase" id="identificador-unico">
+                            &lt;p>Contenido del div&lt;/p>
+                          &lt;div>
+                        &lt;/div>
+                      </code>
+                    </pre> </div> <p>Con múltiples clases:</p> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-html" data-prismjs-copy="Copy">
+                      &lt;div>
+                        &lt;div class="clase1 clase2 clase3">
+                          &lt;p>Contenido del div&lt;/p>
+                        &lt;div>
+                      &lt;/div>
+                    </code>
+                  </pre> </div> <p>Con atributos de datos personalizados:</p> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-html" data-prismjs-copy="Copy">
+                      &lt;div data-valor="100" data-tipo="contenedor">
+                          &lt;span>Elemento con datos personalizados&lt;/span>
+                      &lt;/div>
+                    </code>
+                  </pre> </div> </div>   <div> <h3>Uso División &lt;div></h3> <p>Se emplea para:</p> <ul> <li> <b>Estructuración de Layout</b>: Organiza elementos HTML (texto, imágenes, etc.) en secciones o bloques. </li> <li> <b>Agrupamiento Lógico</b>: Organizar secciones de la página web que no tienen una etiqueta semántica específica. Por ejemplo, una sección de un formulario: <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;div class="comments">
+                            &lt;h2>Formulario de Comentarios&lt;/h2>
+                            &lt;form>
+                                &lt;div class="form-group">
+                                    &lt;label for="nombre">Nombre y Apellido:&lt;/label>
+                                    &lt;input type="text" id="nombre" name="nombre" required>
+                                &lt;/div>
+
+                                &lt;div class="form-group">
+                                    &lt;abel for="comentario">Comentario:&lt;/label>
+                                    &lt;textarea id="comentario" name="comentario" placeholder="Escribe tu comentario aquí..." required>&lt;/textarea>
+                                &lt;/div>
+
+                                &lt;button type="submit" class="submit-btn">Enviar Comentario&lt;/button>
+                            &lt;/form>
+                            &lt;/div>
+                          </code>
+                        </pre> </div> </li> <li> <b>Aplicar Estilos (CSS)</b>: Es el contenedor ideal para aplicar estilos a un grupo de elementos de una sola vez. En lugar de darle un color de fondo a cada párrafo, se puede darle ese color de fondo al <code class="language-html">&lt;div></code> que los contiene. Para ello, se suelen usar los atributos: <code class="language-html">class</code> o <code class="language-html">id</code>: <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            &lt;div class="overlay">
+                                &lt;div class="modal">
+                                    &lt;h2>Ventana Modal&lt;/h2>
+                                    &lt;p>Contenido del modal&lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+                          </code>
+                        </pre> </div> </li> <li> <b>Manipulación con JavaScript</b>: Cuando se necesita interactuar con un grupo de elementos (por ejemplo, ocultarlos, mostrarlos, cambiar su contenido), se puede apuntar al <code class="language-html">&lt;div></code> que los contiene usando JavaScript: <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;div id="contador">Clics: 0&lt;/div>
+                      </code>
+                    </pre> </li> </ul> </div>   <div> <h3>Relación con Otras Etiquetas División &lt;div></h3> <ul> <li> <b>Contiene a Casi Todas Las Etiquetas</b>: Puede contener prácticamente cualquier otra etiqueta HTML dentro de ella (párrafos, imágenes, listas, formularios, otras <code class="language-html">&lt;div></code>s, etc.). </li> <li> <b>Anidamiento</b>: Es muy común anidar <code class="language-html">&lt;div></code>s dentro de otras <code class="language-html">&lt;div></code>s para crear estructuras más complejas. Pensar en cajas dentro de cajas. </li> <li> <b>Relación con Etiquetas Semánticas</b>: Es crucial entender que, si bien <code class="language-html">&lt;div></code> es genérica, HTML5 introdujo muchas etiquetas semánticas (<code class="language-html">&lt;header></code>, <code class="language-html">&lt;nav></code>, <code class="language-html">&lt;main></code>, <code class="language-html">&lt;article></code>, <code class="language-html">&lt;section></code>, <code class="language-html">&lt;footer></code>, <code class="language-html">&lt;aside></code>) para dar un significado más claro a diferentes partes de una página. Antes de HTML5, se usaban muchos <code class="language-html">&lt;div></code>s con <code class="language-html">id</code>s o <code class="language-html">class</code>es como <code class="language-html">id="header"</code> o <code class="language-html">class="navigation"</code>. Ahora, lo ideal es usar las etiquetas semánticas cuando su propósito coincide con el contenido, y reservar <code class="language-html">&lt;div></code> para agrupaciones que no encajan en ninguna categoría semántica específica. </li> <li> <b>Fragmento en Línea</b>: la etiqueta <code class="language-html">&lt;span></code> es equivalente a <code class="language-html">&lt;div></code>, pero es en línea (<code class="language-html">inline</code>), no bloque (<code class="language-html">block</code>). </li> </ul> </div>   <div> <h3>Buenas Prácticas y Errores Comunes División &lt;div></h3> <ul> <li> Buenas prácticas: <ul> <li> Usar <code class="language-html">&lt;div></code> solo cuando no haya una etiqueta más semántica apropiada. </li> <li> Nombrar con claridad los <code class="language-html">id</code> y <code class="language-html">class</code>. </li> <li> Usar comentarios cuando los <code class="language-html">&lt;div></code> se anidan mucho. </li> <li> Evitar anidar demasiados <code class="language-html">&lt;div></code>s sin necesidad, ya que puede hacer que el código sea difícil de leer y mantener ("divitis"). </li> <li> Usar <code class="language-html">&lt;div></code> para agrupar elementos relacionados. </li> <li> Combinar con CSS para layouts (usar <code class="language-html">display: flex</code> o <code class="language-html">grid</code> en lugar de <code class="language-html">&lt;div></code> para todo). </li> </ul> </li> <li> Errores Comunes: <ul> <li> Divitis: uso excesivo e innecesario de <code class="language-html">&lt;div></code> . </li> <li> No usar atributos descriptivos, dejando <code class="language-html">&lt;div></code> genéricos sin <code class="language-html">class</code> o <code class="language-html">id</code>, lo que dificulta el mantenimiento. </li> <li>No estructurar adecuadamente el contenido.</li> <li> Omitir etiquetas semánticas que ofrecen mejor accesibilidad. </li> <li> Intentar usar <code class="language-html">&lt;div></code> para aplicar estilos a una palabra o frase dentro de un párrafo. Para eso, se debe usar la etiqueta <code class="language-html">&lt;span></code> (que es un elemento en línea). </li> <li> No usar la etiqueta de cierre <code class="language-html">&lt;/div></code> , lo que puede romper el diseño y el funcionamiento de la página. </li> <li> No añadir atributos <code class="language-html">ARIA</code> cuando es necesario para usuarios con tecnologías de asistencia para tener mejor una accesibilidad. </li> </ul> </li> </ul> </div>   <div> <h3>Configuración CSS por Defecto División &lt;div></h3> <p>CSS por defecto del navegador (estilos user-agent):</p> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-css" data-prismjs-copy="Copy">
+                        div {
+                          display: block;
+                          margin: 0;
+                          padding: 0;
+                          width: auto;
+                          height: auto;
+                        }
+                      </code>
+                    </pre> </div> <p>Donde:</p> <ul> <li> <code class="language-css">display: block;</code>: Esto es lo que lo convierte en un elemento de bloque, haciendo que ocupe todo el ancho disponible y comience en una nueva línea. </li> <li> <code class="language-css">margin: 0;</code> y <code class="language-css">padding: 0;</code>: Por defecto, no tiene margen ni relleno. </li> <li> <code class="language-css">width: auto;</code>: Por defecto, su ancho se ajusta automáticamente al 100% del ancho de su contenedor padre. </li> <li> <code class="language-css">height: auto;</code>: Su altura se ajusta al contenido que tiene dentro. </li> </ul> </div>   <div> <h3> Ejemplo Aplicado en un Proyecto Real División &lt;div> </h3> <p> Para ilustrar cómo se aplica el elemento <code class="language-html">&lt;div></code> en un proyecto real, veamos un ejemplo completo de una sección de una página web que utiliza <code class="language-html">&lt;div></code> para estructurar el contenido de manera efectiva. Este ejemplo muestra un panel de productos con tarjetas individuales: </p> <div class="row">  <div class="ej-ejemplo"> <div class="ej-ejecutado mt-3 row">  <div> <div class="ej-productos-grid-div">  <div class="ej-producto-tarjeta-div"> <div class="ej-producto-imagen-div"> Imagen del Producto 1 </div> <div class="ej-producto-info-div"> <h3 class="ej-producto-titulo-div"> Auriculares Bluetooth Premium </h3> <p class="ej-producto-descripcion-div"> Auriculares inalámbricos con cancelación de ruido activa y 30 horas de batería para una experiencia de audio excepcional. </p> <div class="ej-producto-precio-div">€29.99</div> </div> <div class="ej-producto-acciones-div"> <button class="ej-btn-div ej-btn-primario-div"> Comprar </button> <button class="ej-btn-div ej-btn-secundario-div"> Ver detalles </button> </div> </div>  <div class="ej-producto-tarjeta-div"> <div class="ej-producto-imagen-div"> Imagen del Producto 2 </div> <div class="ej-producto-info-div"> <h3 class="ej-producto-titulo-div"> Smartwatch Deportivo </h3> <p class="ej-producto-descripcion-div"> Reloj inteligente resistente al agua con monitor de frecuencia cardíaca y GPS integrado para deportistas. </p> <div class="ej-producto-precio-div">€34.99</div> </div> <div class="ej-producto-acciones-div"> <button class="ej-btn-div ej-btn-primario-div"> Comprar </button> <button class="ej-btn-div ej-btn-secundario-div"> Ver detalles </button> </div> </div>  <div class="ej-producto-tarjeta-div"> <div class="ej-producto-imagen-div"> Imagen del Producto 3 </div> <div class="ej-producto-info-div"> <h3 class="ej-producto-titulo-div"> Cargador Inalámbrico Rápido </h3> <p class="ej-producto-descripcion-div"> Base de carga inalámbrica compatible con todos los dispositivos Qi, diseño elegante y carga ultrarrápida. </p> <div class="ej-producto-precio-div">€24.99</div> </div> <div class="ej-producto-acciones-div"> <button class="ej-btn-div ej-btn-primario-div"> Comprar </button> <button class="ej-btn-div ej-btn-secundario-div"> Ver detalles </button> </div> </div> </div> </div>  </div> <div class="row"> <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">  <pre>
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              <div>
+                                &lt;div class="productos-grid">
+                                  &lt;!-- Producto 1 -->
+                                  &lt;div class="producto-tarjeta">
+                                    &lt;div class="producto-imagen">Imagen del Producto 1&lt;/div>
+                                    &lt;div class="producto-info">
+                                      &lt;h3 class="producto-titulo">Auriculares Bluetooth Premium&lt;/h3>
+                                      &lt;p class="producto-descripcion">Auriculares inalámbricos con cancelación de ruido activa y 30 horas de
+                                        batería para una experiencia de audio excepcional.&lt;/p>
+                                      &lt;div class="producto-precio">€29.99&lt;/div>
+                                    &lt;/div>
+                                    &lt;div class="producto-acciones">
+                                      &lt;button class="btn btn-primario">Comprar&lt;/button>
+                                      &lt;button class="btn btn-secundario">Ver detalles&lt;/button>
+                                    &lt;/div>
+                                  &lt;/div>
+
+                                  &lt;!-- Producto 2 -->
+                                  &lt;div class="producto-tarjeta">
+                                    &lt;div class="producto-imagen">Imagen del Producto 2&lt;/div>
+                                    &lt;div class="producto-info">
+                                      &lt;h3 class="producto-titulo">Smartwatch Deportivo&lt;/h3>
+                                      &lt;p class="producto-descripcion">Reloj inteligente resistente al agua con monitor de frecuencia cardíaca y
+                                        GPS integrado para deportistas.&lt;/p>
+                                      &lt;div class="producto-precio">€34.99&lt;/div>
+                                    &lt;/div>
+                                    &lt;div class="producto-acciones">
+                                      &lt;button class="btn btn-primario">Comprar&lt;/button>
+                                      &lt;button class="btn btn-secundario">Ver detalles&lt;/button>
+                                    &lt;/div>
+                                  &lt;/div>
+
+                                  &lt;!-- Producto 3 -->
+                                  &lt;div class="producto-tarjeta">
+                                    &lt;div class="producto-imagen">Imagen del Producto 3&lt;/div>
+                                    &lt;div class="producto-info">
+                                      &lt;h3 class="producto-titulo">Cargador Inalámbrico Rápido&lt;/h3>
+                                      &lt;p class="producto-descripcion">Base de carga inalámbrica compatible con todos los dispositivos Qi, diseño
+                                        elegante y carga ultrarrápida.&lt;/p>
+                                      &lt;div class="producto-precio">€24.99&lt;/div>
+                                    &lt;/div>
+                                    &lt;div class="producto-acciones">
+                                      &lt;button class="btn btn-primario">Comprar&lt;/button>
+                                      &lt;button class="btn btn-secundario">Ver detalles&lt;/button>
+                                    &lt;/div>
+                                  &lt;/div>
+                                &lt;/div>                                
+                              </div>        
+                            </code>
+                          </pre>  </div> <div class="col-lg-6 ej-code-css mb-3">  <pre>
+                            <code class="language-css" data-prismjs-copy="Copy">
+                              <div>
+                                .productos-container {
+                                    max-width: 1200px;
+                                    margin: 0 auto;
+                                    padding: 20px;
+                                }
+
+                                .productos-titulo {
+                                    text-align: center;
+                                    margin-bottom: 30px;
+                                }
+
+                                .productos-titulo h2 {
+                                    color: #333;
+                                    margin-bottom: 10px;
+                                    font-size: 2.5em;
+                                }
+
+                                .productos-titulo p {
+                                    color: #666;
+                                    font-size: 1.1em;
+                                }
+
+                                .productos-grid {
+                                    display: grid;
+                                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                                    gap: 20px;
+                                }
+
+                                .producto-tarjeta {
+                                    border: 1px solid #e0e0e0;
+                                    border-radius: 8px;
+                                    padding: 15px;
+                                    background-color: #fff;
+                                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                                }
+
+                                .producto-tarjeta:hover {
+                                    transform: translateY(-5px);
+                                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                                }
+
+                                .producto-imagen {
+                                    width: 100%;
+                                    height: 200px;
+                                    object-fit: cover;
+                                    border-radius: 4px;
+                                    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: #999;
+                                    font-size: 1.2em;
+                                    margin-bottom: 10px;
+                                }
+
+                                .producto-info {
+                                    padding: 10px 0;
+                                }
+
+                                .producto-titulo {
+                                    color: #333;
+                                    margin-bottom: 8px;
+                                    font-size: 1.3em;
+                                }
+
+                                .producto-descripcion {
+                                    color: #666;
+                                    margin-bottom: 10px;
+                                    line-height: 1.4;
+                                }
+
+                                .producto-precio {
+                                    font-weight: bold;
+                                    color: #e63946;
+                                    font-size: 1.2em;
+                                }
+
+                                .producto-acciones {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-top: 15px;
+                                    gap: 10px;
+                                }
+
+                                .btn {
+                                    padding: 8px 15px;
+                                    border-radius: 4px;
+                                    border: none;
+                                    cursor: pointer;
+                                    font-weight: bold;
+                                    transition: all 0.3s ease;
+                                    flex: 1;
+                                }
+
+                                .btn-primario {
+                                    background-color: #457b9d;
+                                    color: white;
+                                }
+
+                                .btn-primario:hover {
+                                    background-color: #3a6a8a;
+                                    transform: translateY(-2px);
+                                }
+
+                                .btn-secundario {
+                                    background-color: transparent;
+                                    border: 1px solid #457b9d;
+                                    color: #457b9d;
+                                }
+
+                                .btn-secundario:hover {
+                                    background-color: #457b9d;
+                                    color: white;
+                                    transform: translateY(-2px);
+                                }
+
+                                .main {
+                                    min-height: 100vh;
+                                    padding: 20px 0;
+                                }
+
+                                .section {
+                                    width: 100%;
+                                }                                  
+                              </div>        
+                            </code>
+                          </pre>  </div> </div> </div>  </div> <p> Este ejemplo ilustra varios usos efectivos de <code class="language-html">&lt;div></code>: </p> <ul> <li> <code class="language-html">productos-container</code>: sirve como un contenedor principal que limita el ancho Y centra el contenido. </li> <li> <code class="language-html">productos-titulo</code>: agrupa el encabezado Y el subtítulo relacionados. </li> <li> <code class="language-html">productos-grid</code>: crea un contenedor para implementar un diseño de rejilla CSS. </li> <li> <code class="language-html">productos-tarjeta</code>: funciona como un componente independiente para cada producto. </li> <li> <code class="language-html">producto-info</code> y <code class="language-html">.producto-acciones</code>: subdividen el contenido de cada tarjeta en secciones lógicas. </li> </ul> <p> Este ejemplo muestra cómo los <code class="language-html">&lt;div></code> pueden utilizarse para crear una estructura organizativa clara sin abusar de ellos. Se utilizan elementos semánticos como <code class="language-html">&lt;main></code>, <code class="language-html">&lt;section></code>, <code class="language-html">&lt;h2></code>, <code class="language-html">&lt;h3></code> y <code class="language-html">&lt;p></code> para el contenido que lo requiere, mientras que los <code class="language-html">&lt;div></code> se emplean para agrupar y estructurar. </p> </div>   <div> <h3> Uso con Tecnologías de Asistencia (ARIA) División &lt;div> </h3>  <div> <h4>Agregando Roles ARIA</h4> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;!-- Div con rol de navegación --&gt;
+                          &lt;div role="navigation" aria-label="Navegación principal">
+                              &lt;ul>
+                                  &lt;li>&lt;a href="#home">Inicio&lt;/a>&lt;/li>
+                                  &lt;li>&lt;a href="#about">Acerca&lt;/a>&lt;/li>
+                              &lt;/ul>
+                          &lt;/div>
+
+                          &lt;!-- Div con rol de banner --&gt;
+                          &lt;div role="banner" class="site-header">
+                              &lt;h1>Título del sitio&lt;/h1>
+                          &lt;/div>
+
+                          &lt;!-- Div con rol de main --&gt;
+                          &lt;div role="main" class="main-content">
+                              &lt;article>Contenido principal&lt;/article>
+                          &lt;/div>
+                        </code>
+                      </pre> </div> </div>   <div> <h4>Etiquetas ARIA para Accesibilidad</h4> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;!-- Div con etiqueta descriptiva --&gt;
+                          &lt;div aria-labelledby="section-title" class="content-section">
+                              &lt;h2 id="section-title">Título de la Sección&lt;/h2>
+                              &lt;p>Contenido de la sección...&lt;/p>
+                          &lt;/div>
+
+                          &lt;!-- Div con descripción aria --&gt;
+                          &lt;div aria-describedby="help-text" class="form-group">
+                              &lt;input type="email" id="email">
+                              &lt;div id="help-text">Ingrese un email válido&lt;/div>
+                          &lt;/div>
+
+                          &lt;!-- Div con estado aria --&gt;
+                          &lt;div aria-expanded="false" class="collapsible-menu">
+                            &lt;button aria-controls="menu-content">Menú&lt;/button>
+                            &lt;div id="menu-content" class="menu-content">
+                                &lt;ul>
+                                    &lt;li>&lt;a href="#">Opción 1&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a href="#">Opción 2&lt;/a>&lt;/li>
+                                &lt;/ul>
+                            &lt;/div>
+                          &lt;/div>
+                        </code>
+                      </pre> </div> </div>   <div> <h4>Marcadores de Región con ARIA</h4> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;!-- Regiones landmark --&gt;
+                          &lt;div role="complementary" aria-label="Barra lateral">
+                              &lt;div class="widget">
+                                  &lt;h3>Widget 1&lt;/h3>
+                                  &lt;p>Contenido del widget...&lt;/p>
+                              &lt;/div>
+                          &lt;/div>
+
+                          &lt;div role="contentinfo" class="site-footer">
+                              &lt;p>Información de contacto y derechos de autor&lt;/p>
+                          &lt;/div>
+
+                          &lt;!-- Estados dinámicos --&gt;
+                          &lt;div aria-live="polite" id="status-message" class="status-container">
+                              &lt;!-- Mensajes de estado se insertan aquí dinámicamente --&gt;
+                          &lt;/div>
+
+                          &lt;div aria-atomic="true" aria-live="assertive" class="alert-container">
+                              &lt;!-- Alertas importantes --&gt;
+                          &lt;/div>
+                        </code>
+                      </pre> </div> </div>   <div> <h4>Mejores Prácticas ARIA con &lt;div></h4> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                        <code class="language-html" data-prismjs-copy="Copy">
+                          &lt;!-- Cuando no se pueda usar elementos semánticos --&gt;
+                          &lt;div role="article" class="blog-post">
+                              &lt;div role="heading" aria-level="1">Título del artículo&lt;/div>
+                              &lt;div role="paragraph">Contenido del artículo...&lt;/div>
+                          &lt;/div>
+                        </code>
+                      </pre> </div> </div>  </div>  </div>  <hr class="subtle-divider">  <div id="fragmento-en-línea-span" class="mt-5"> <h2 class="mt-1">Fragmento en Línea &lt;span></h2>  <div> <h3>Definición Fragmento en Línea &lt;span></h3> <p> El elemento <code class="language-html">&lt;span></code> se define como un contenedor genérico en línea que abarca y agrupa contenido sin aportar significado semántico específico al documento. La etimología del término "span" proviene del inglés "abarcar" o "extenderse", lo que refleja perfectamente su función de envolver y delimitar porciones de contenido para su posterior manipulación. A diferencia de elementos estructurales como <code class="language-html">&lt;div></code> que operan a nivel de bloque, <code class="language-html">&lt;span></code> funciona exclusivamente como elemento en línea, integrado dentro del flujo textual sin generar saltos de línea antes o después de su contenido. </p> <p> La naturaleza inline del elemento <code class="language-html">&lt;span></code> significa que se comporta como texto normal dentro del documento, permitiendo que múltiples elementos span coexistan en la misma línea sin interrumpir la continuidad visual del contenido. Esta característica lo convierte en la herramienta ideal para aplicar cambios de formato a palabras específicas, frases cortas o cualquier fragmento de texto que requiera tratamiento diferenciado sin alterar la estructura general del párrafo o elemento contenedor. </p> <p> El elemento <code class="language-html">&lt;span></code> se clasifica como un elemento especial dentro de la especificación HTML, lo que significa que puede contener tanto texto como otros elementos en línea, proporcionando flexibilidad para crear estructuras de contenido complejas. Su versatilidad se extiende a la capacidad de anidar otros elementos <code class="language-html">&lt;span></code>, crear combinaciones con elementos de formato semántico y servir como contenedor para elementos multimedia pequeños como iconos o imágenes inline. </p> </div>   <div> <h3>Características Fragmento en Línea &lt;span></h3> <ul> <li> Es un elemento en línea (<code class="language-html">display: inline</code> ), por lo tanto no inicia una nueva línea, sólo ocupa el espacio necesario para su contenido. </li> <li> No tiene estilo visual propio por defecto; hereda los estilos del elemento padre. </li> <li> Se usa comúnmente con atributos como <code class="language-html">class</code>, <code class="language-html">style</code> y <code class="language-html">id</code> para aplicar estilos o comportamientos. </li> <li> No tiene un significado semántico específico (es decir, no describe el contenido que contiene). </li> <li> Es ligero y versátil, ideal para personalizar partes pequeñas del contenido, como una palabra o frase. </li> <li> Su flexibilidad se manifiesta en su capacidad para contener diversos tipos de contenido (texto plano, otros elementos en línea (<code class="language-html">display: inline;</code>) como <code class="language-html">&lt;strong></code>, <code class="language-html">&lt;em></code>, <code class="language-html">&lt;a></code>, pequeñas imágenes, iconos, y prácticamente cualquier elemento que no sea de tipo bloque (<code class="language-html">display: block</code>)). </li> <li> No tiene ningún Rol <code class="language-html">ARIA</code> implícito. </li> <li> Cualquier elemento que admita contenido de flujo, como <code class="language-html">&lt;p></code> o <code class="language-html">&lt;div></code> puede contener una etiqueta <code class="language-html">&lt;span></code> como su elemento hijo. </li> </ul> </div>   <div> <h3>Sintaxis Correcta Fragmento en Línea &lt;span></h3> <p> Estructura Básica: <code class="language-html">&lt;span>Contenido de texto&lt;span></code> </p> <p>Con Atributos Comunes:</p> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-html" data-prismjs-copy="Copy">
+                      &lt;span class="destacado" id="texto-importante">Texto destacado&lt;/span>
+                      &lt;span style="color: red; font-weight: bold;">Texto rojo y negrita&lt;/span>
+                      &lt;span data-info="información adicional">Texto con datos personalizados&lt;/span>
+                    </code>
+                  </pre> </div> <p>Anidación Correcta:</p> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;p>Este es un párrafo con &lt;span class="resaltado">texto resaltado&lt;/span> en el medio.&lt;/p>
+
+                        &lt;!-- Anidación múltiple --&gt;
+                        &lt;span class="contenedor">
+                            &lt;span class="icono">📧&lt;/span>
+                            &lt;span class="texto">Correo electrónico&lt;/span>
+                        &lt;/span>
+                      </code>
+                    </pre> </div> </div>   <div> <h3>Uso Fragmento en Línea &lt;span></h3> <p> El uso principal de <code class="language-html">&lt;span></code> incluye: </p> <ul> <li> <b>Aplicación de estilos</b>: Cambiar el color, tamaño, fuente, o añadir efectos como subrayados a partes específicas del texto. Por ejemplo: <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            &lt;p>La palabra &lt;span class="destacado">importante&lt;/span> está resaltada.&lt;/p>
+                          </code>
+                        </pre> </div> <p>Con CSS:</p> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-css" data-prismjs-copy="Copy">
+                            .destacado { color: blue; font-weight: bold; }
+                          </code>
+                        </pre> </div> </li> <li> <b>Manipulación con JavaScript</b>: Agrupar contenido para seleccionarlo y modificarlo dinámicamente, como cambiar texto o añadir eventos: <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            &lt;p>Hola, &lt;span id="nombre">Juan&lt;/span>.&lt;/p>
+                            &lt;script>
+                              document.getElementById("nombre").textContent = "Pedro";
+                            &lt;/script>
+                          </code>
+                        </pre> </div> </li> <li> <b>Agrupación semántica</b>: Aunque no es semántico, puede usarse para agrupar contenido relacionado cuando no hay otra etiqueta más adecuada, como en accesibilidad con <code class="language-html">ARIA</code>. <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                          <code class="language-html" data-prismjs-copy="Copy">
+                            &lt;p>
+                              &lt;span class="status-indicator status-away"
+                                role="img"
+                                aria-label="Ausente">&lt;/span>
+                              Usuario María está &lt;span aria-live="polite">ausente&lt;/span>
+                            &lt;/p>
+                          </code>
+                        </pre> </div> </li> </ul> </div>   <div> <h3> Relación con Otras Etiquetas Fragmento en Línea &lt;span> </h3> <ul> <li> <b>Nivel de Bloque vs. En Línea:</b>: Similar a <code class="language-html">&lt;div></code>, pero mientras <code class="language-html">&lt;div></code> es un contenedor de bloque, <code class="language-html">&lt;span></code> es en línea. </li> <li> <b>Semántica</b>: A diferencia de etiquetas como <code class="language-html">&lt;strong></code> o <code class="language-html">&lt;em></code>, <code class="language-html">&lt;span></code> no aporta semántica, solo sirve como gancho para estilo o comportamiento. </li> <li> <b>Relación con Otros Elementos en Línea:</b>: Puede contener otros elementos en línea o "phrasing content", pero no debe contener elementos de bloque (como <code class="language-html">&lt;div></code>, <code class="language-html">&lt;p></code> o "flow content"). </li> </ul> </div>   <div> <h3> Buenas Prácticas y Errores Comunes Fragmento en Línea &lt;span> </h3> <ul> <li> Buenas Prácticas: <ul> <li> Usar <code class="language-html">&lt;span></code> solo cuando se requiera aplicar estilos, eventos o atributos específicos. </li> <li> Acompañar con atributos como <code class="language-html">class</code> o <code class="language-html">id</code> para separar contenido de presentación. </li> <li> Usar CSS externo o interno en lugar de <code class="language-html">style</code> en línea cuando sea posible. </li> <li> Utilizar <code class="language-html">&lt;span></code> cuando no hay una etiqueta semántica más adecuada. </li> </ul> </li> <li> Errores Comunes: <ul> <li> Usar <code class="language-html">&lt;span></code> en exceso sin necesidad (provoca código innecesariamente complejo). </li> <li> Incluir elementos de bloque dentro de <code class="language-html">&lt;span></code> (no permitido). </li> <li> Usar <code class="language-html">&lt;span></code> sin aplicar ningún estilo o función, lo cual no tiene sentido práctico. </li> <li> Falta de accesibilidad <code class="language-html">ARIA</code>. </li> <li> Usar <code class="language-html">&lt;span></code> cuando una etiqueta semántica como <code class="language-html">&lt;strong></code> o <code class="language-html">&lt;em></code> sería más adecuada. </li> <li> Usar <code class="language-html">&lt;span></code> para estructurar layouts, lo que debe hacerse con CSS y elementos de bloque como <code class="language-html">&lt;div></code>. </li> <li> No cerrar la etiqueta, lo que puede causar errores de renderizado en navegadores. </li> </ul> </li> </ul> </div>   <div> <h3> Configuración CSS por Defecto Fragmento en Línea &lt;span> </h3> <p> Por defecto, <code class="language-html">&lt;span></code> no tiene estilos específicos. Hereda los estilos de su elemento padre. </p> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-css" data-prismjs-copy="Copy">
+                        span {
+                            display: inline;
+                            margin: 0;
+                            padding: 0;
+                            border: none;
+                            background: transparent;
+                            font: inherit;
+                            color: inherit;
+                            text-decoration: none;
+                            vertical-align: baseline;
+                        }
+                      </code>
+                    </pre> </div> <p>Estilos comunes aplicados:</p> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                    <code class="language-css" data-prismjs-copy="Copy">
+                      /* Estilos típicos para diferentes usos */
+
+                      /* Para badges o etiquetas */
+                      .badge {
+                          display: inline-block;
+                          padding: 0.25em 0.6em;
+                          font-size: 0.75em;
+                          font-weight: 700; 
+                          line-height: 1;
+                          text-align: center;
+                          white-space: nowrap;
+                          vertical-align: baseline;
+                          border-radius: 0.375rem;
+                      }
+
+                      /* Para resaltado de texto */
+                      .highlight {
+                          background-color: #fff3cd;
+                          padding: 0.1em 0.2em;
+                          border-radius: 0.2em;
+                      }
+
+                      /* Para tooltips */
+                      .tooltip {
+                          position: relative;
+                          cursor: help;
+                          border-bottom: 1px dotted #666;
+                      }
+
+                      .tooltip:hover::after {
+                          content: attr(data-tooltip);
+                          position: absolute;
+                          bottom: 125%;
+                          left: 50%;
+                          transform: translateX(-50%);
+                          background-color: #333;
+                          color: white;
+                          padding: 0.5em;
+                          border-radius: 0.3em;
+                          white-space: nowrap;
+                          z-index: 1000;
+                      }
+                    </code>
+                  </pre> </div> </div>   <div> <h3> Ejemplo Aplicado en un Proyecto Real Fragmento en Línea &lt;span> </h3> <p>Sistema de Notificaciones:</p> <div class="row">  <div class="ej-ejemplo"> <div class="ej-ejecutado mt-3 row">  <div> <div class="ej-contenedor-notificaciones-span">  <div class="ej-notificacion--exito-span ej-notificacion-span"> <span class="ej-notificacion__icono-span">✅</span> <div class="ej-notificacion__contenido-span"> <span class="ej-notificacion__titulo-span">Operación completada</span> <div class="ej-notificacion__mensaje-span"> El archivo se ha guardado correctamente en <span class="ej-codigo-span">/documentos/archivo.pdf</span> </div> <span class="ej-notificacion__tiempo-span">hace 2 minutos</span> </div> <div class="ej-notificacion__acciones-span"> <button class="ej-btn-accion-span"> Abrir </button> <button class="ej-btn-accion-span">✕</button> </div> </div>  <div class="ej-notificacion--advertencia-span ej-notificacion-span"> <span class="ej-notificacion__icono-span">⚠️</span> <div class="ej-notificacion__contenido-span"> <span class="ej-notificacion__titulo-span">Espacio de almacenamiento bajo</span> <div class="ej-notificacion__mensaje-span"> Quedan <span class="ej-texto-error-span">150 MB</span> de <span class="ej-texto-destacado-span">2 GB</span> disponibles </div> <span class="ej-notificacion__tiempo-span">hace 5 minutos</span> </div> <div class="ej-notificacion__acciones-span"> <button class="ej-btn-accion-span"> Limpiar </button> <button class="ej-btn-accion-span">✕</button> </div> </div>  <div class="ej-notificacion--error-span ej-notificacion-span"> <span class="ej-notificacion__icono-span">❌</span> <div class="ej-notificacion__contenido-span"> <span class="ej-notificacion__titulo-span">Error de conexión</span> <div class="ej-notificacion__mensaje-span"> No se pudo conectar al servidor <span class="ej-codigo-error-span">api.ejemplo.com</span> <br> <small>Código de error: <span class="ej-texto-destacado-span">ERR_CONNECTION_TIMEOUT</span></small> </div> <span class="ej-notificacion__tiempo-span">hace 1 minuto</span> </div> <div class="ej-notificacion__acciones-span"> <button class="ej-btn-accion-span"> Reintentar </button> <button class="ej-btn-accion-span">✕</button> </div> </div> </div> </div>  </div> <div class="row"> <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">  <pre>
+                            <code class="language-html" data-prismjs-copy="Copy">
+                              <div>
+                                &lt;div class="contenedor-notificaciones">
+                                  &lt;!-- Notificación de éxito -->
+                                  &lt;div class="notificacion notificacion--exito">
+                                    &lt;span class="notificacion__icono">✅&lt;/span>
+                                    &lt;div class="notificacion__contenido">
+                                      &lt;span class="notificacion__titulo">Operación completada&lt;/span>
+                                      &lt;div class="notificacion__mensaje">
+                                        El archivo se ha guardado correctamente en
+                                        &lt;span style="font-family: monospace; background-color: #e9ecef; padding: 0.1em 0.3em; border-radius: 0.2em;">/documentos/archivo.pdf&lt;/span>
+                                      &lt;/div>
+                                      &lt;span class="notificacion__tiempo">hace 2 minutos&lt;/span>
+                                    &lt;/div>
+                                    &lt;div class="notificacion__acciones">
+                                      &lt;button class="btn-accion">Abrir&lt;/button>
+                                      &lt;button class="btn-accion">✕&lt;/button>
+                                    &lt;/div>
+                                  &lt;/div>
+
+                                  &lt;!-- Notificación de advertencia -->
+                                  &lt;div class="notificacion notificacion--advertencia">
+                                    &lt;span class="notificacion__icono">⚠️&lt;/span>
+                                    &lt;div class="notificacion__contenido">
+                                      &lt;span class="notificacion__titulo">Espacio de almacenamiento bajo&lt;/span>
+                                      &lt;div class="notificacion__mensaje">
+                                        Quedan &lt;span style="font-weight: bold; color: #d63384;">150 MB&lt;/span>
+                                        de &lt;span style="font-weight: bold;">2 GB&lt;/span> disponibles
+                                      &lt;/div>
+                                      &lt;span class="notificacion__tiempo">hace 5 minutos&lt;/span>
+                                    &lt;/div>
+                                    &lt;div class="notificacion__acciones">
+                                      &lt;button class="btn-accion">Limpiar&lt;/button>
+                                      &lt;button class="btn-accion">✕&lt;/button>
+                                    &lt;/div>
+                                  &lt;/div>
+
+                                  &lt;!-- Notificación de error -->
+                                  &lt;div class="notificacion notificacion--error">
+                                    &lt;span class="notificacion__icono">❌&lt;/span>
+                                    &lt;div class="notificacion__contenido">
+                                      &lt;span class="notificacion__titulo">Error de conexión&lt;/span>
+                                      &lt;div class="notificacion__mensaje">
+                                        No se pudo conectar al servidor
+                                        &lt;span style="font-family: monospace; background-color: #f8d7da; padding: 0.1em 0.3em; border-radius: 0.2em;">api.ejemplo.com&lt;/span>
+                                        &lt;br>
+                                        &lt;small>Código de error: &lt;span style="font-weight: bold;">ERR_CONNECTION_TIMEOUT&lt;/span>&lt;/small>
+                                      &lt;/div>
+                                      &lt;span class="notificacion__tiempo">hace 1 minuto&lt;/span>
+                                    &lt;/div>
+                                    &lt;div class="notificacion__acciones">
+                                      &lt;button class="btn-accion">Reintentar&lt;/button>
+                                      &lt;button class="btn-accion">✕&lt;/button>
+                                    &lt;/div>
+                                  &lt;/div>
+                                &lt;/div>                                
+                              </div>        
+                            </code>
+                          </pre>  </div> <div class="col-lg-6 ej-code-css mb-3">  <pre>
+                              <code class="language-css" data-prismjs-copy="Copy">
+                                <div>
+                                  .notificacion {
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 1rem;
+                                    margin: 0.5rem 0;
+                                    border-radius: 0.5rem;
+                                    background-color: #f8f9fa;
+                                    border-left: 4px solid #007bff;
+                                  }
+
+                                  .notificacion__icono {
+                                    margin-right: 0.75rem;
+                                    font-size: 1.25em;
+                                  }
+
+                                  .notificacion__contenido {
+                                    flex: 1;
+                                  }
+
+                                  .notificacion__titulo {
+                                    font-weight: 600;
+                                    color: #333;
+                                    margin-bottom: 0.25rem;
+                                  }
+
+                                  .notificacion__mensaje {
+                                    color: #666;
+                                    font-size: 0.9em;
+                                  }
+
+                                  .notificacion__tiempo {
+                                    font-size: 0.8em;
+                                    color: #999;
+                                    font-style: italic;
+                                  }
+
+                                  .notificacion__acciones {
+                                    margin-left: 1rem;
+                                  }
+
+                                  .btn-accion {
+                                    background: none;
+                                    border: 1px solid #ddd;
+                                    padding: 0.25rem 0.5rem;
+                                    border-radius: 0.25rem;
+                                    cursor: pointer;
+                                    margin-left: 0.25rem;
+                                  }
+
+                                  .btn-accion:hover {
+                                    background-color: #e9ecef;
+                                  }
+
+                                  /* Estados de notificación */
+                                  .notificacion--exito {
+                                    border-left-color: #28a745;
+                                  }
+
+                                  .notificacion--advertencia {
+                                    border-left-color: #ffc107;
+                                    background-color: #fff8e1;
+                                  }
+
+                                  .notificacion--error {
+                                    border-left-color: #dc3545;
+                                    background-color: #fdf2f2;
+                                  }
+                                  
+                                </div>        
+                              </code>
+                            </pre>  </div> </div> </div>  </div> </div>   <div> <h3> Uso con Tecnologías de Asistencia (ARIA) Fragmento en Línea &lt;span> </h3> <p> El <code class="language-html">&lt;span></code> puede usarse con atributos <code class="language-html">ARIA</code> para mejorar la accesibilidad si tiene un propósito funcional o semántico al aplicar estilos o interacción: </p> <div class="ej-sintaxis"> <pre data-src-status="loaded" tabindex="0">
+                      <code class="language-html" data-prismjs-copy="Copy">
+                        &lt;span role="alert" aria-live="polite">Mensaje importante&lt;/span>
+                      </code>
+                    </pre> </div> <p> En este ejemplo, el <code class="language-html">&lt;span></code> informa a lectores de pantalla que este texto debe anunciarse cuando cambie dinámicamente. </p> </div>  </div>  </div> </article>   <article class="pt-5 row" id="comment"> <h2>COMENTARIOS</h2> <p> Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario disponible para este propósito. </p> <div class="d-flex justify-content-center"> <form action="https://formsubmit.co/herreraforeroeduardo@gmail.com" method="post" id="myForm"> <div class="d-flex flex-column input-group justify-content-center"> <label for="name" class="pe-2">Nombre:</label> <input type="text" name="name" id="name" placeholder="Eduardo Herrera Forero" class="rounded" required> <label for="email" class="pe-2">Email:</label> <input type="email" name="email" id="email" placeholder="herreraforeroeduardo@gmail.com" class="rounded" required> <label for="message" class="pe-2">Mensaje:</label> <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..." class="rounded rounded-3"></textarea> <input class="border border-2 btn btn-outline-light my-3 rounded-pill" type="submit" value="Enviar..."> </div> <p> La política de privacidad, y los términos y condiciones están disponibles en el formulario de contacto. </p> </form> </div> </article>  </section>  </main>   <aside class="col-lg-3 d-lg-block d-none pt-5"> <h1 class="h3">En Este Artículo</h1> <div class="menu-container"> <div class="menu-item"> <a href="#introduccion" class="simple-link">Introducción</a> </div> <div class="menu-item"> <a href="#división-div" class="simple-link">División <code class="language-html">&lt;div></code></a> </div> <div class="menu-item"> <a href="#fragmento-en-línea-span" class="simple-link">Fragmento en Línea <code class="language-html">&lt;span></code></a> </div> <div class="menu-item"> <a href="#comment" class="simple-link">Comentarios</a> </div> </div> </aside>  </div>   <button onclick="topFunction()" id="myBtnScroll" title="Go to top"> <svg width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up" style="margin-left:-2px" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg> </button>  </body></html>

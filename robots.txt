@@ -8,7 +8,7 @@ Disallow: /git@introduccion_de_git_para_windows.html
 Disallow: /git@como_eliminar_el_ultimo_commit_de_git.html
 Disallow: /git@configuracion_inicial_GIT.html
 Disallow: /git@comandos_basicos_de_git_para_windows.html
-Disallow: /photoshop@ajuste_lienzo_resolucion.
+Disallow: /photoshop@ajuste_lienzo_resolucion.jpg
 Disallow: /photoshop@ajuste_tono_brillo_y_saturacion.html
 Disallow: /photoshop@trabajo_con_capas.html
 Disallow: /photoshop-ajuste_lienzo_resolucion.html
@@ -22,6 +22,11 @@ Disallow: /instalacion-de-bootstrap-v53-con-npm-y-vite.html
 Disallow: /manual-de-referencia-html.html
 Disallow: /cursoPython3-0505_instalador_de_paquetes_PIP.html
 Disallow: /cursoPython3-0505_instalador_de_paquetes_pip.html
+Disallow: /html-04_cuerpo_aria.html
+Disallow: /html-04_cuerpo_aside_html.html
+Disallow: /html-04_cuerpo_footer_html.html
+Disallow: /html-04_cuerpo_semantico.html
+Disallow: /html-05_etiquetas_genericas.html
 
 # Sitemap
 Sitemap: https://eduardoherreraf.github.io/sitemap.xml
