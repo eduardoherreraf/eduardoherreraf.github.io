@@ -27,6 +27,60 @@ Disallow: /html-04_cuerpo_aside_html.html
 Disallow: /html-04_cuerpo_footer_html.html
 Disallow: /html-04_cuerpo_semantico.html
 Disallow: /html-05_etiquetas-genericas.html
+Disallow: /bootstrap-instalacion_de_bootstrap_v5_con_npm_y_parcel.html
+Disallow: /bootstrap-instalacion_de_bootstrap_v5_con_npm_y_vite.html
+Disallow: /chatgpt-01_como_aprender_cualquier_habilidad_facilmente_con_chatgpt.html
+Disallow: /git-01_como_eliminar_el_ultimo_commit_de_git.html
+Disallow: /git-02_comandos_basicos_de_consola-terminal_cli_para_windows.html
+Disallow: /git-03_introduccion_de_git_para_windows.html
+Disallow: /git-04_configuracion_inicial_git.html
+Disallow: /git-05_reiniciar_repositorio_en_git-github.html
+Disallow: /html-01_introduccion_html.html
+Disallow: /html-02_estructura_del_documento_html.html
+Disallow: /html-03_encabezado_html.html
+Disallow: /html-04_cuerpo_aria.html
+Disallow: /html-04_cuerpo_article_html.html
+Disallow: /html-04_cuerpo_aside_html.html
+Disallow: /html-04_cuerpo_footer_html.html
+Disallow: /html-04_cuerpo_html.html
+Disallow: /html-04_cuerpo_semantico.html
+Disallow: /html-05_etiquetas_genericas.html
+Disallow: /html-06_Etiquetas_de_texto.html
+Disallow: /html-07_formato_de_texto.html
+Disallow: /html-08_listas.html
+Disallow: /html-09_tablas.html
+Disallow: /html-10_imagenes_y_multimedia.html
+Disallow: /html-11_enlaces_y_hipervinculos.html
+Disallow: /html-12_formularios.html
+Disallow: /html-13_citas_y_referencias.html
+Disallow: /html-14_elementos_incrustados.html
+Disallow: /html-15_etiquetas_de_programacion_y_script.html
+Disallow: /html-15_etiquetas_de_programacion_y_script_template.html
+Disallow: /javascript-como_ejecutar_un_codigo_javascript.html
+Disallow: /javascript-configurar_el_entorno_de_trabajo_javascript.html
+Disallow: /otrosTemas-01_como_borrar_la_cache_y_archivos_basura_en_windows.html
+Disallow: /photoshop-01_comenzando_un_proyecto.html
+Disallow: /photoshop-02_interfaz_y_area_de_trabajo.html
+Disallow: /photoshop-03_compartir_y_editar_archivos.html
+Disallow: /photoshop-04_ajuste_lienzo_resolucion.html
+Disallow: /photoshop-05_trabajo_con_capas.html
+Disallow: /photoshop-06_ajuste_tono_brillo_y_saturacion.html
+Disallow: /photoshop-07_herramientas_de_seleccion.html
+Disallow: /photoshop-08_agregar_y_quitar_objetos.html
+Disallow: /photoshop-09_uso_de_pinceles.html
+Disallow: /photoshop-10_color_y_degradados.html
+Disallow: /photoshop-11_textos.html
+Disallow: /photoshop-12_formas_y_capas.html
+Disallow: /photoshop-13_filtros.html
+Disallow: /photoshop-14_filtros_neurales.html
+Disallow: /photoshop-15_filtros_licuar.html
+Disallow: /photoshop-16_metadatos_y_exportacion.html
+html-0004_cuerpo_aria.htmlhtml-0004_cuerpo_aria.html
+html-0004_cuerpo_article_html.htmlhtml-0004_cuerpo_article_html.html
+html-0004_cuerpo_aside_html.htmlhtml-0004_cuerpo_aside_html.html
+html-0004_cuerpo_footer_html.htmlhtml-0004_cuerpo_footer_html.html
+html-0004_cuerpo_semantico.htmlhtml-0004_cuerpo_semantico.html
+html-0015_etiquetas_de_programacion_y_script_template.htmlhtml-0015_etiquetas_de_programacion_y_script_template.html
 
 # Sitemap
 Sitemap: https://eduardoherreraf.github.io/sitemap.xml
