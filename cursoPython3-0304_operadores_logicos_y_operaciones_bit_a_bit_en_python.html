@@ -1,31 +1,302 @@
-<!DOCTYPE html><html lang="es" data-bs-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Aprende a utilizar operadores lógicos (and, or, not) y operaciones a nivel de bits (AND, OR, XOR, NOT, shifts) en Python. Incluye ejemplos prácticos y casos de uso comunes para manipulación de bits y evaluación de condiciones."><meta name="title" content="Operadores Lógicos y Operaciones Bit a Bit Python 3 - Ing. Eduardo Herrera Forero."><meta name="author" content="Ing. Eduardo Herrera Forero"><meta name="application-name" content="EHF"><meta name="robots" content="index, follow"><link rel="canonical" href="https://eduardoherreraf.github.io/cursoPython3-0304_operadores_logicos_y_operaciones_bit_a_bit_en_python.html"><meta property="og:type" content="website"><meta property="og:title" content="Operadores Lógicos y Operaciones Bit a Bit Python 3 - Ing. Eduardo Herrera Forero."><meta property="og:description" content="Aprende a utilizar operadores lógicos (and, or, not) y operaciones a nivel de bits (AND, OR, XOR, NOT, shifts) en Python. Incluye ejemplos prácticos y casos de uso comunes para manipulación de bits y evaluación de condiciones."><meta property="og:image" content="https://i.imgur.com/JKbKYrO.png"><meta property="og:image:alt" content="Logo del ingeniero Eduardo Herrera Forero"><meta property="og:url" content="https://eduardoherreraf.github.io/cursoPython3-0304_operadores_logicos_y_operaciones_bit_a_bit_en_python.html"><meta property="og:locale" content="es_CO"><meta name="twitter:card" content="content" ="summary"><meta name="twitter:title" content="Operadores Lógicos y Operaciones Bit a Bit Python 3 - Ing. Eduardo Herrera Forero."><meta name="twitter:description" content="Aprende a utilizar operadores lógicos (and, or, not) y operaciones a nivel de bits (AND, OR, XOR, NOT, shifts) en Python. Incluye ejemplos prácticos y casos de uso comunes para manipulación de bits y evaluación de condiciones."><meta name="twitter:image" content="https://i.imgur.com/JKbKYrO.png"><meta name="twitter:image:alt" content="Logo del ingeniero Eduardo Herrera Forero"><meta name="twitter:url" content="https://eduardoherreraf.github.io/cursoPython3-0304_operadores_logicos_y_operaciones_bit_a_bit_en_python.html"><meta name="twitter:site" content="@ehfeduardo"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.d2cbc014.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.02c0440e.png"><link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.9d63268f.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.a17b4569.png"><link rel="manifest" href="site.webmanifest"><link rel="mask-icon" href="safari-pinned-tab.cd218f89.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><title>Operadores Lógicos y Operaciones Bit a Bit Python 3 - Ing. Eduardo Herrera Forero.</title><link rel="stylesheet" href="index.41162c86.css"><script type="module" src="index.d07dbcde.js"></script><meta name="google-site-verification" content="2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc"></head><body>  <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg"> <div class="container-fluid">  <a class="align-items-center d-flex ms-2 navbar-brand text-decoration-none" href="index.html"> <img src="logo.f31ffce0.png" alt="Logo de Ing. Eduardo Herrera Forero" width="30" height="30" class="align-text-top d-inline-block me-1"> <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span> </a>  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>  <div class="collapse ms-auto navbar-collapse text-center" id="navbarSupportedContent"> <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100"> <li class="nav-item"> <a class="mx-1 nav-link text-decoration-none" href="index.html">SOBRE MÍ</a> </li> <li class="nav-item"> <a class="mx-1 nav-link text-decoration-none" href="index.html#resume">EXPERIENCIA</a> </li> <li class="nav-item"> <a class="mx-1 nav-link text-decoration-none" href="index.html#portfolio">PORTAFOLIO</a> </li> <li class="nav-item"> <a class="mx-1 nav-link text-decoration-none" href="index.html#studies">ESTUDIOS</a> </li> <li class="nav-item"> <a class="active mx-1 nav-link text-decoration-none" href="index.html#blog">PUBLICACIONES</a> </li> <li class="nav-item"> <a class="mx-1 nav-link text-decoration-none" href="index.html#contact">CONTACTO</a> </li> </ul> </div> </div> </nav>   <div class="container-fluid"> <main class="col-lg-9 pt-5"> <section class="pb-3">  <article class="border-1 border-bottom pb-3 row" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"> <div> <header> <h1>Operadores Lógicos y Operaciones Bit a Bit en Python</h1> </header> <p> En el mundo de la programación, las operaciones lógicas y de bits son fundamentales para manipular datos a un nivel más bajo. Python, como un lenguaje de alto nivel, ofrece una serie de herramientas y operadores que permiten a los desarrolladores realizar estas operaciones de manera eficiente. Este artículo explora las operaciones lógicas y de bits en Python, proporcionando ejemplos y explicaciones que facilitan su comprensión. </p> <div class="imagen text-center"> <figure> <img src="https://i.ibb.co/nsrh1p5/operadoreslogicosybit.jpg" class="img-fluid rounded-4" width="50%" alt="Operadores Lógicos y Operaciones Bit a Bit en Python  " title="Esta imagen muestra la comparación entre operaciones lógicas y operaciones bit a bit."> <figcaption>Operadores Lógicos y Operaciones Bit a Bit en Python</figcaption> </figure> </div>  <div id="operacionesLogicas" class="mt-5"> <h2 class="mt-1">Operaciones Lógicas</h2>  <div> <h3>Operadores Lógicos o Booleanos</h3> <p> Las operaciones lógicas en Python se utilizan para combinar expresiones booleanas. Las tres operaciones lógicas principales son: </p> <ul> <li> <span class="fw-bold">or (o)</span>: Devuelve<code>True</code>si al menos una de las expresiones es verdadera. </li> <li> <span class="fw-bold">and (y)</span>: Devuelve<code>True</code>si ambas expresiones son verdaderas. </li> <li> <span class="fw-bold">not (no)</span>: Devuelve<code>True</code>si la expresión es <code>False</code>, y viceversa. </li> </ul> </div>   <div> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    a = True
-                    b = False
-                    resultado_and = a and b   # False
-                    resultado_or  = a or b    # True
-                    resultado_not = not a     # False
-                    print(f"AND: {resultado_and}, OR: {resultado_or}, NOT: {resultado_not}")
-                  </code>
-                </pre> <p> Python imprime: AND: <code>False</code>, OR: <code>True</code>, NOT: <code>False</code> </p> </div>   <div> <h3>Uso de Operaciones Lógicas</h3> <p> Las operaciones lógicas son útiles en condiciones y bucles. Por ejemplo, se pueden usar en estructuras de control como <code>if</code> y <code>while</code> para tomar decisiones basadas en múltiples condiciones. </p> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    edad = 20
-                    tiene_permiso = True
-                    if edad >= 18 and tiene_permiso:
+<!DOCTYPE html><html lang=es data-bs-theme=dark><link rel=stylesheet href=PlantillaMiPagina.b8c68df4.css><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="Aprende a utilizar operadores lógicos (and, or, not) y operaciones a nivel de bits (AND, OR, XOR, NOT, shifts) en Python. Incluye ejemplos prácticos y casos de uso comunes para manipulación de bits y evaluación de condiciones."><meta name=title content="Operadores Lógicos y Operaciones Bit a Bit Python 3 - Ing. Eduardo Herrera Forero."><meta name=author content="Ing. Eduardo Herrera Forero"><meta name=application-name content=EHF><meta name=robots content="index, follow"><link rel=canonical href=https://eduardoherreraf.github.io/cursoPython3-0304_operadores_logicos_y_operaciones_bit_a_bit_en_python.html><meta property=og:type content=website><meta property=og:title content="Operadores Lógicos y Operaciones Bit a Bit Python 3 - Ing. Eduardo Herrera Forero."><meta property=og:description content="Aprende a utilizar operadores lógicos (and, or, not) y operaciones a nivel de bits (AND, OR, XOR, NOT, shifts) en Python. Incluye ejemplos prácticos y casos de uso comunes para manipulación de bits y evaluación de condiciones."><meta property=og:image content=https://i.imgur.com/JKbKYrO.png><meta property=og:image:alt content="Logo del ingeniero Eduardo Herrera Forero"><meta property=og:url content=https://eduardoherreraf.github.io/cursoPython3-0304_operadores_logicos_y_operaciones_bit_a_bit_en_python.html><meta property=og:locale content=es_CO><meta name=twitter:card content=summary><meta name=twitter:title content="Operadores Lógicos y Operaciones Bit a Bit Python 3 - Ing. Eduardo Herrera Forero."><meta name=twitter:description content="Aprende a utilizar operadores lógicos (and, or, not) y operaciones a nivel de bits (AND, OR, XOR, NOT, shifts) en Python. Incluye ejemplos prácticos y casos de uso comunes para manipulación de bits y evaluación de condiciones."><meta name=twitter:image content=https://i.imgur.com/JKbKYrO.png><meta name=twitter:image:alt content="Logo del ingeniero Eduardo Herrera Forero"><meta name=twitter:url content=https://eduardoherreraf.github.io/cursoPython3-0304_operadores_logicos_y_operaciones_bit_a_bit_en_python.html><meta name=twitter:site content=@ehfeduardo><link rel=apple-touch-icon sizes=180x180 href=apple-touch-icon.96046c77.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.f7991d03.png><link rel=icon type=image/png sizes=192x192 href=android-chrome-192x192.4500461c.png><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.060ee0ac.png><link rel=manifest href=site.webmanifest><link rel=mask-icon href=safari-pinned-tab.df3b9c22.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>
+      Operadores Lógicos y Operaciones Bit a Bit Python 3 - Ing. Eduardo Herrera
+      Forero.
+    </title><script type=module src=PlantillaMiPagina.638e488a.js></script><meta name=google-site-verification content=2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc><body>
+    
+    <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg">
+      <div class=container-fluid>
+        
+        <a class="align-items-center d-flex ms-2 navbar-brand" href=index.html>
+          <img src=logo.08948a42.png alt="Logo de Ing. Eduardo Herrera Forero" width=30 height=30 class="align-text-top d-inline-block me-1">
+          <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span>
+        </a>
+        
+        <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+          <span class=navbar-toggler-icon></span>
+        </button>
+        
+        <div class="collapse ms-auto navbar-collapse text-center" id=navbarSupportedContent>
+          <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100">
+            <li class=nav-item>
+              <a class="mx-1 nav-link" href=index.html>SOBRE MÍ</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link" href=index.html#resume>EXPERIENCIA</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link" href=index.html#portfolio>PORTAFOLIO</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link" href=index.html#studies>ESTUDIOS</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link publicaciones-activo" href=index.html#blog>PUBLICACIONES</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link" href=index.html#contact>CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <div class=container-fluid id=introduccion>
+      <main class=row>
+        <section class="col-lg-9 pb-3 pt-5 px-lg-4">
+          
+          <article class="border-1 border-bottom pb-3 row" data-bs-spy=scroll data-bs-target=#list-example data-bs-smooth-scroll=true>
+            <div>
+              <header>
+                <h1>Operadores Lógicos y Operaciones Bit a Bit en Python</h1>
+              </header>
+              
+              <div class=mt-5>
+                <h2>Introducción</h2>
+                <p>
+                  En el mundo de la programación, las operaciones lógicas y de
+                  bits son fundamentales para manipular datos a un nivel más
+                  bajo. Python, como un lenguaje de alto nivel, ofrece una serie
+                  de herramientas y operadores que permiten a los
+                  desarrolladores realizar estas operaciones de manera
+                  eficiente. Este artículo explora las operaciones lógicas y de
+                  bits en Python, proporcionando ejemplos y explicaciones que
+                  facilitan su comprensión.
+                </p>
+                <div class="centrar-imagen imagen50">
+                  <figure>
+                    <img src=https://i.ibb.co/nsrh1p5/operadoreslogicosybit.jpg class=img-fluid alt="Operadores Lógicos y Operaciones Bit a Bit en Python  " title="Esta imagen muestra la comparación entre operaciones lógicas y operaciones bit a bit.">
+                    <figcaption>
+                      Operadores Lógicos y Operaciones Bit a Bit en Python
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              
+              <div id=operacionesLogicas class=mt-5>
+                <h2 class=mt-1>Operaciones Lógicas</h2>
+                
+                <div>
+                  <h3>Operadores Lógicos o Booleanos</h3>
+                  <p>
+                    Las operaciones lógicas en Python se utilizan para combinar
+                    expresiones booleanas. Las tres operaciones lógicas
+                    principales son:
+                  </p>
+                  <ul>
+                    <li>
+                      <span class=fw-bold>or (o)</span>: Devuelve
+                      <code class=language-python>True</code> si al menos una
+                      de las expresiones es verdadera.
+                    </li>
+                    <li>
+                      <span class=fw-bold>and (y)</span>: Devuelve
+                      <code class=language-python>True</code> si ambas
+                      expresiones son verdaderas.
+                    </li>
+                    <li>
+                      <span class=fw-bold>not (no)</span>: Devuelve
+                      <code class=language-python>True</code> si la expresión
+                      es <code class=language-python>False</code>, y
+                      viceversa.
+                    </li>
+                  </ul>
+                </div>
+                
+                
+                <div>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-python data-prismjs-copy=Copy>
+                        a = True
+                        b = False
+                        resultado_and = a and b   # False
+                        resultado_or  = a or b    # True
+                        resultado_not = not a     # False
+                        print(f"AND: {resultado_and}, OR: {resultado_or}, NOT: {resultado_not}")
+                      </code>
+                    </pre>
+                  </div>
+                  <p>
+                    Python imprime: AND:
+                    <code class=language-python>False</code>, OR:
+                    <code class=language-python>True</code>, NOT:
+                    <code class=language-python>False</code>
+                  </p>
+                </div>
+                
+                
+                <div>
+                  <h3>Uso de Operaciones Lógicas</h3>
+                  <p>
+                    Las operaciones lógicas son útiles en condiciones y bucles.
+                    Por ejemplo, se pueden usar en estructuras de control como
+                    <code class=language-python>if</code> y
+                    <code class=language-python>while</code> para tomar
+                    decisiones basadas en múltiples condiciones.
+                  </p>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-python data-prismjs-copy=Copy>
+                        edad = 20
+                        tiene_permiso = True
+                        if edad &gt;= 18 and tiene_permiso:
                         print("Puede entrar.")
-                    else:
+                        else:
                         print("No puede entrar.")
-                  </code>
-                </pre> </div>  </div>   <div id="OperacionesdeBits" class="mt-5"> <h2 class="mt-1">Operaciones de Bits</h2>  <div> <h3>Operaciones de Bits (Bitwise)</h3> <p> Las operaciones de bits permiten manipular los bits individuales de un número. Python proporciona varios operadores para realizar estas operaciones: </p> <ul> <li><span class="fw-bold">AND (&)</span>: Realiza una operación AND a nivel de bits.</li> <li><span class="fw-bold">OR (|)</span>: Realiza una operación OR a nivel de bits.</li> <li><span class="fw-bold">XOR (^)</span>: Realiza una operación XOR a nivel de bits.</li> <li><span class="fw-bold">NOT (~)</span>: Realiza una operación NOT a nivel de bits.</li> <li> <span class="fw-bold">Desplazamiento a la izquierda (&lt;&lt;)</span>: Desplaza los bits hacia la izquierda. </li> <li> <span class="fw-bold">Desplazamiento a la derecha (>>)</span>: Desplaza los bits hacia la derecha. </li> </ul> </div>   <div> <h3>Ejemplos de Operaciones de Bits</h3> <pre class="line-numbers" data-src-status="loaded" tabindex="0">
-                  <code class="language-python" data-prismjs-copy="Copy">
-                    x = 10  # 1010 en binario
-                    y = 4   # 0100 en binario
-                    resultado_and_bits = x & y             # 0 (0000 en binario)
-                    resultado_or_bits = x | y              # 14 (1110 en binario)
-                    resultado_xor_bits = x ^ y             # 14 (1110 en binario)
-                    resultado_not_bits = ~x                # -11 (en complemento a dos)
-                    resultado_desplazamiento_izq = x &lt;&lt; 1  # 20 (10100 en binario)
-                    resultado_desplazamiento_der = x >> 1  # 5 (0101 en binario)
-                    print(f"AND: {resultado_and_bits}, OR: {resultado_or_bits}, XOR: {resultado_xor_bits}, NOT: {resultado_not_bits}, Desplazamiento Izquierda: {resultado_desplazamiento_izq}, Desplazamiento Derecha: {resultado_desplazamiento_der}")
-                  </code>
-                </pre> <p> Python imprime: AND: 0, OR: 14, XOR: 14, NOT: -11, Desplazamiento Izquierda: 20, Desplazamiento Derecha: 5 </p> </div>   <div> <h3>Uso de Operaciones de Bits</h3> <p> as operaciones de bits son especialmente útiles en programación de sistemas, criptografía y manipulación de datos a bajo nivel. Permiten optimizar el uso de memoria y mejorar la eficiencia de ciertas operaciones. </p> </div>   <div class="text-center"> <a href="#" id="myBtnScroll2" title="Go to top"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up" style="margin-left:-2px" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 16 16"> <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"></path> </svg> </a> </div>  </div>  </div> </article>  <article class="pt-5 row" id="comment"> <br> <h2>COMENTARIOS</h2> <p> Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario disponible para este propósito. </p> <div class="d-flex justify-content-center"> <form action="https://formspree.io/f/mdkdawkg" method="post" id="myForm"> <div class="d-flex flex-column input-group justify-content-center"> <label for="name" class="pe-2">Nombre:</label> <input type="text" name="name" id="name" placeholder="User" class="rounded" required> <label for="email" class="pe-2">Email:</label> <input type="email" name="email" id="email" placeholder="user@mail.com" class="rounded" required> <label for="message" class="pe-2">Mensaje:</label> <textarea name="message" id="message" cols="30" rows="5" placeholder="Su comentario..." class="rounded rounded-3"></textarea> <input class="border border-2 btn btn-outline-light my-3 rounded-pill" type="submit" value="Enviar..."> </div> <p> La política de privacidad, y los términos y condiciones están disponibles en el formulario de contacto. </p> </form> </div> </article>   </section> </main>   <aside class="col-lg-3 d-lg-block d-none pt-4"> <h1>En Este Artículo</h1> <ul class="list-group"> <li class="list-group-item"> <a href="#operacionesLogicas">Operaciones Lógicas</a> </li> <li class="list-group-item"> <a href="#OperacionesdeBits">Operaciones de Bits</a> </li> </ul> </aside>  </div>   <button onclick="topFunction()" id="myBtnScroll" title="Go to top"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-bar-up" style="margin-left:-2px" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 16 16"> <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"></path> </svg> </button>  </body></html>
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+                
+              </div>
+              
+              
+              <div id=OperacionesdeBits class=mt-5>
+                <h2 class=mt-1>Operaciones de Bits</h2>
+                
+                <div>
+                  <h3>Operaciones de Bits (Bitwise)</h3>
+                  <p>
+                    Las operaciones de bits permiten manipular los bits
+                    individuales de un número. Python proporciona varios
+                    operadores para realizar estas operaciones:
+                  </p>
+                  <ul>
+                    <li>
+                      <span class=fw-bold>AND (&amp;)</span>: Realiza una
+                      operación AND a nivel de bits.
+                    </li>
+                    <li>
+                      <span class=fw-bold>OR (|)</span>: Realiza una operación
+                      OR a nivel de bits.
+                    </li>
+                    <li>
+                      <span class=fw-bold>XOR (^)</span>: Realiza una
+                      operación XOR a nivel de bits.
+                    </li>
+                    <li>
+                      <span class=fw-bold>NOT (~)</span>: Realiza una
+                      operación NOT a nivel de bits.
+                    </li>
+                    <li>
+                      <span class=fw-bold>Desplazamiento a la izquierda (&lt;&lt;)</span>: Desplaza los bits hacia la izquierda.
+                    </li>
+                    <li>
+                      <span class=fw-bold>Desplazamiento a la derecha (&gt;&gt;)</span>: Desplaza los bits hacia la derecha.
+                    </li>
+                  </ul>
+                </div>
+                
+                
+                <div>
+                  <h3>Ejemplos de Operaciones de Bits</h3>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-python data-prismjs-copy=Copy>
+                        x = 10  # 1010 en binario
+                        y = 4   # 0100 en binario
+                        resultado_and_bits = x &amp; y             # 0 (0000 en binario)
+                        resultado_or_bits = x | y              # 14 (1110 en binario)
+                        resultado_xor_bits = x ^ y             # 14 (1110 en binario)
+                        resultado_not_bits = ~x                # -11 (en complemento a dos)
+                        resultado_desplazamiento_izq = x &lt;&lt; 1  # 20 (10100 en binario)
+                        resultado_desplazamiento_der = x &gt;&gt; 1  # 5 (0101 en binario)
+                        print(f"AND: {resultado_and_bits}, OR: {resultado_or_bits}, XOR: {resultado_xor_bits}, NOT: {resultado_not_bits}, Desplazamiento Izquierda: {resultado_desplazamiento_izq}, Desplazamiento Derecha: {resultado_desplazamiento_der}")
+                      </code>
+                    </pre>
+                  </div>
+                  <p>
+                    Python imprime: AND: 0, OR: 14, XOR: 14, NOT: -11,
+                    Desplazamiento Izquierda: 20, Desplazamiento Derecha: 5
+                  </p>
+                </div>
+                
+                
+                <div>
+                  <h3>Uso de Operaciones de Bits</h3>
+                  <p>
+                    as operaciones de bits son especialmente útiles en
+                    programación de sistemas, criptografía y manipulación de
+                    datos a bajo nivel. Permiten optimizar el uso de memoria y
+                    mejorar la eficiencia de ciertas operaciones.
+                  </p>
+                </div>
+                
+              </div>
+              
+            </div>
+          </article>
+
+          
+          <article class="pt-5 row" id=comments>
+            <h2>COMENTARIOS</h2>
+            <p>
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
+            </p>
+            <div class="d-flex justify-content-center">
+              <form action=https://formspree.io/f/mdkdawkg method=post id=myForm>
+                <fieldset class="d-flex flex-column gap-3">
+                  <legend class="fs-4 text-center">Deje su comentario</legend>
+
+                  <div class="d-flex flex-column">
+                    <label for=name>Nombre:</label>
+                    <input name=name id=name placeholder=User class="form-control rounded" required>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for=email>Email:</label>
+                    <input type=email name=email id=email placeholder=user@mail.com class="form-control rounded" required>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for=message>Mensaje:</label>
+                    <textarea name=message id=message cols=30 rows=5 placeholder="Su comentario..." class="form-control rounded-3" required></textarea>
+                  </div>
+
+                  <button class="border border-2 btn btn-outline-light my-3 rounded-pill">
+                    Enviar
+                  </button>
+                </fieldset>
+
+                <p class="small text-center">
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
+                </p>
+              </form>
+            </div>
+          </article>
+          
+          
+        </section>
+        
+        <aside class="col-lg-3 d-lg-block d-none pt-5">
+          <h1>En Este Artículo</h1>
+          <ul class=list-group>
+            <li class=list-group-item>
+              <a href=#introduccion>Introducción</a>
+            </li>
+            <li class=list-group-item>
+              <a href=#operacionesLogicas>Operaciones Lógicas</a>
+            </li>
+            <li class=list-group-item>
+              <a href=#OperacionesdeBits>Operaciones de Bits</a>
+            </li>
+            <li class=list-group-item>
+              <a href=#comments>Comentarios</a>
+            </li>
+          </ul>
+        </aside>
+        
+      </main>
+      
+    </div>
+    
+
+    
+    <button onclick=topFunction() id=myBtnScroll title="Go to top">
+      <svg xmlns:xmlns=http://www.w3.org/2000/svg width=32 height=32 fill=currentColor class="bi bi-arrow-bar-up" style=margin-left:-2px viewBox="0 0 16 16"><path fill-rule=evenodd d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg>
+    </button>
+    
+  
+

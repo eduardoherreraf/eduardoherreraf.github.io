@@ -1,0 +1,270 @@
+<!DOCTYPE html><html lang=es data-bs-theme=dark><link rel=stylesheet href=PlantillaMiPagina.b8c68df4.css><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="Este artículo describe cómo eliminar el último commit local en GIT o remoto en GITHUB."><meta name=title content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero."><meta name=author content="Ing. Eduardo Herrera Forero"><meta name=application-name content=EHF><meta name=robots content="index, follow"><link rel=canonical href=https://eduardoherreraf.github.io/git-0001_como_eliminar_el_ultimo_commit_de_git.html><meta property=og:type content=website><meta property=og:title content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero."><meta property=og:description content="Este artículo describe cómo eliminar el último commit local en GIT o remoto en GITHUB."><meta property=og:image content=https://i.imgur.com/JKbKYrO.png><meta property=og:image:alt content="Logo del ingeniero Eduardo Herrera Forero"><meta property=og:url content=https://eduardoherreraf.github.io/git-0001_como_eliminar_el_ultimo_commit_de_git.html><meta property=og:locale content=es_CO><meta name=twitter:card content=summary><meta name=twitter:title content="Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero."><meta name=twitter:description content="Este artículo describe cómo eliminar el último commit local en GIT o remoto en GITHUB."><meta name=twitter:image content=https://i.imgur.com/JKbKYrO.png><meta name=twitter:image:alt content="Logo del ingeniero Eduardo Herrera Forero"><meta name=twitter:url content=https://eduardoherreraf.github.io/git-0001_como_eliminar_el_ultimo_commit_de_git.html><meta name=twitter:site content=@ehfeduardo><link rel=apple-touch-icon sizes=180x180 href=apple-touch-icon.96046c77.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.f7991d03.png><link rel=icon type=image/png sizes=192x192 href=android-chrome-192x192.4500461c.png><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.060ee0ac.png><link rel=manifest href=site.webmanifest><link rel=mask-icon href=safari-pinned-tab.df3b9c22.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>
+      Como Eliminar el Último Commit de GIT - Ing. Eduardo Herrera Forero.
+    </title><script type=module src=PlantillaMiPagina.638e488a.js></script><meta name=google-site-verification content=2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc><body data-bs-theme=dark>
+    
+    <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg">
+      <div class=container-fluid>
+        
+        <a class="align-items-center d-flex ms-2 navbar-brand" href=index.html>
+          <img src=logo.08948a42.png alt="Logo de Ing. Eduardo Herrera Forero" width=30 height=30 class="align-text-top d-inline-block me-1">
+          <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span>
+        </a>
+        
+        <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+          <span class=navbar-toggler-icon></span>
+        </button>
+        
+        <div class="collapse ms-auto navbar-collapse text-center" id=navbarSupportedContent>
+          <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100">
+            <li class=nav-item>
+              <a class="mx-1 nav-link" href=index.html>SOBRE MÍ</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link" href=index.html#resume>EXPERIENCIA</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link" href=index.html#portfolio>PORTAFOLIO</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link" href=index.html#studies>ESTUDIOS</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link publicaciones-activo" href=index.html#blog>PUBLICACIONES</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link" href=index.html#contact>CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+    <div class=container-fluid id=introduccion>
+      <main class=row>
+        <section class="col-lg-9 pb-3 pt-5 px-lg-4">
+          
+          <article class="border-1 border-bottom pb-3 row" data-bs-spy=scroll data-bs-target=#list-example data-bs-smooth-scroll=true>
+            <h1>Como Eliminar el Último Commit de GIT</h1>
+            <div>
+              <div class=mt-5>
+                <h2>Introducción</h2>
+                <p>
+                  El propósito principal al emplear un sistema de control de
+                  versiones como Git es, indudablemente, conservar un historial
+                  preciso e inalterado de todas las etapas por las que ha
+                  atravesado el código fuente de un proyecto. A medida que
+                  realiza modificaciones en el código y se efectúan
+                  <span class="fw-bold text-warning">commits</span>, su
+                  historial se expande progresivamente. En cualquier momento, se
+                  tiene la capacidad de examinar el estado exacto que tenía un
+                  archivo en cualquier punto del pasado y, además, identificar
+                  quién llevó a cabo un cambio específico, lo cual resulta de
+                  gran utilidad. No obstante, en ocasiones, se puede agregar
+                  inadvertidamente a este historial cosas que no tenían porque
+                  añadir. Por ejemplo, se podría hacer un
+                  <span class="fw-bold text-warning">commit</span>
+                  sin intención, incluir archivos innecesarios, o incorporar un
+                  molesto error que preferiríamos que nadie notara y que se nos
+                  haya escapado.
+                </p>
+                <p>
+                  Se tratará el caso en el que se refiere exclusivamente a
+                  borrar el último
+                  <span class="fw-bold text-warning">commit</span> realizado.
+                </p>
+              </div>
+              <div id=commitNoGithub class=mt-5>
+                <h2 class=mt-1>El Commit aún no Está en Github</h2>
+                <p>
+                  Este es el caso más común y fácil, cuando el
+                  <span class="fw-bold text-warning">commit</span>
+                  áun no se ha empujado al repo remoto (Github, GitLab,
+                  Bitbucket,...), se tiene tres casos posibles:
+                </p>
+                <div id=volverPenultimoBorrandoCambios class=mt-5>
+                  <h3 class=mt-1>
+                    Volver al Penúltimo Commit Borrando los Últimos Cambios
+                  </h3>
+                  <p>
+                    Si lo que se necesita es volver al estado que tenía el repo
+                    en el
+                    <span class="fw-bold text-warning">penúltimo commit</span>
+                    , es decir, borrar todos los cambios realizados, se debe
+                    correr en línea de comandos del terminal el siguiente
+                    comando:
+                  </p>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-bash data-prismjs-copy=Copy>git reset HEAD^ --hard</code>
+                    </pre>
+                  </div>
+                  <p>
+                    Este comando elimina el último
+                    <span class="fw-bold text-warning">commit</span>
+                    del historial, dejando la carpeta de trabajo tal cual estaba
+                    en el
+                    <span class="fw-bold text-warning">penúltimo commit</span>
+                    y ahora este se convierte en el último.
+                  </p>
+                </div>
+                <div id=volverPenultimoSinPerderCambios class=mt-5>
+                  <h3 class=mt-1>
+                    Volver al Penúltimo Commit Sin Perder los Cambios Actuales
+                  </h3>
+                  <p>
+                    En este caso no se desea perder los cambios, ya sea porque
+                    lo único que se debe hacer es corregir un archivo y no más,
+                    en este caso se usa el siguiente comando:
+                  </p>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-bash data-prismjs-copy=Copy>
+                        git reset HEAD^ --soft
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+                <div id=soloIncluirAlgunosArchivos class=mt-5>
+                  <h3 class=mt-1>Sólo se Debe Incluir Algunos Archivos</h3>
+                  <p>
+                    En algunos casos lo único que hace falta es incluir algún
+                    archivo que se haya omitido por cualquier motivo, se puede
+                    incluir en el último
+                    <span class="fw-bold text-warning">commit</span>
+                    sin necesidad de borrarlo con el siguiente código:
+                  </p>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-bash data-prismjs-copy=Copy>
+                        git add .
+                        git commit --amend --no-edit
+                        git push origin --force
+                      </code>
+                    </pre>
+                  </div>
+                  <p>
+                    Primero se añaden los archivos para luego incluirlos en el
+                    último
+                    <span class="fw-bold text-warning">commit</span>
+                    . En este caso no se edita el mensaje del
+                    <span class="fw-bold text-warning">commit</span>
+                    .
+                  </p>
+                </div>
+              </div>
+              <div id=commitGithub class=mt-5>
+                <h2 class=mt-1>El Commit ya Está en Github</h2>
+                <p>
+                  En este caso se debe tener en cuenta que el
+                  <span class="fw-bold text-warning">commit</span>
+                  ya fue empujado al servidor remoto, puede ser Github,
+                  Bitbucket, Gitlab o similar.
+                </p>
+                <p>
+                  Hay una condición inflexible, los dos repos, el local y el
+                  remoto deben estar sincronizados, es decir, se debió haber
+                  usado el comando <code>git pull</code> para sincronizar el
+                  repo local con el remoto o haberlo descargado con
+                  <code>git clone</code> .
+                </p>
+                <p>
+                  Primero, se debe destruir el último
+                  <span class="fw-bold text-warning">commit</span> , para ello
+                  se usa el comando:
+                </p>
+                <div class=ej-sintaxis>
+                  <pre data-src-status=loaded tabindex=0>                    <code class=language-bash data-prismjs-copy=Copy>git reset HEAD^ --hard</code>
+                  </pre>
+                </div>
+                <p>
+                  Y luego se debe sincronizar forzosamente este cambio al repo
+                  remoto, con el comando:
+                </p>
+                <div class=ej-sintaxis>
+                  <pre data-src-status=loaded tabindex=0>                    <code class=language-bash data-prismjs-copy=Copy>git push origin -f</code>
+                  </pre>
+                </div>
+                <p>
+                  Donde <span class="fw-bold text-warning">origin</span> es el
+                  nombre del repo remoto.
+                </p>
+                <p>
+                  Se debe tener mucho cuidado al usar este último comando,
+                  porque en el caso que el repo remoto vaya por delante al repo
+                  local toda esta información será destruida y este repo quedará
+                  igual al local.
+                </p>
+              </div>
+            </div>
+          </article>
+          
+          
+          <article class="pt-5 row" id=comments>
+            <h2>COMENTARIOS</h2>
+            <p>
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
+            </p>
+            <div class="d-flex justify-content-center">
+              <form action=https://formspree.io/f/mdkdawkg method=post id=myForm>
+                <fieldset class="d-flex flex-column gap-3">
+                  <legend class="fs-4 text-center">Deje su comentario</legend>
+
+                  <div class="d-flex flex-column">
+                    <label for=name>Nombre:</label>
+                    <input name=name id=name placeholder=User class="form-control rounded" required>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for=email>Email:</label>
+                    <input type=email name=email id=email placeholder=user@mail.com class="form-control rounded" required>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for=message>Mensaje:</label>
+                    <textarea name=message id=message cols=30 rows=5 placeholder="Su comentario..." class="form-control rounded-3" required></textarea>
+                  </div>
+
+                  <button class="border border-2 btn btn-outline-light my-3 rounded-pill">
+                    Enviar
+                  </button>
+                </fieldset>
+
+                <p class="small text-center">
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
+                </p>
+              </form>
+            </div>
+          </article>
+          
+        </section>
+        
+        <aside class="col-lg-3 d-lg-block d-none m-0 pt-5">
+          <h1>En Este Artículo</h1>
+          <ul class=list-group>
+            <li class=list-group-item>
+              <a href=#introduccion>Introducción</a>
+            </li>
+            <li class=list-group-item>
+              <a href=#commitNoGithub>El Commit aún no Está en Github</a>
+            </li>
+            <li class=list-group-item>
+              <a href=#commitGithub>El Commit ya Está en Github</a>
+            </li>
+            <li class=list-group-item>
+              <a href=#comments>Comentarios</a>
+            </li>
+          </ul>
+        </aside>
+        
+      </main>
+      
+    </div>
+
+    
+    <button onclick=topFunction() id=myBtnScroll title="Go to top">
+      <svg xmlns:xmlns=http://www.w3.org/2000/svg width=32 height=32 fill=currentColor class="bi bi-arrow-bar-up" style=margin-left:-2px viewBox="0 0 16 16"><path fill-rule=evenodd d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg>
+    </button>
+    
+  
+

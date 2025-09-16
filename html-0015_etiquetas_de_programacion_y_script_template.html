@@ -1,0 +1,36 @@
+<html lang=es><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Mi Página Web Semántica</title><style>body{background-color:#f5f5f5;padding:20px;font-family:Arial,sans-serif}.container{background:#fff;border-radius:8px;max-width:600px;margin:0 auto;padding:20px;box-shadow:0 2px 10px #0000001a}button{color:#fff;cursor:pointer;background-color:#007bff;border:none;border-radius:5px;margin:10px 5px;padding:12px 24px;font-size:16px;transition:background-color .3s}button:hover{background-color:#0056b3}.tarjeta{background-color:#f8f9fa;border:2px solid #28a745;border-radius:8px;margin:15px 0;padding:20px;animation:.5s ease-in fadeIn}@keyframes fadeIn{0%{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.tarjeta h3{color:#28a745;margin-top:0}.tarjeta p{color:#666;line-height:1.5}.tarjeta button{background-color:#28a745;padding:8px 16px;font-size:14px}.tarjeta button:hover{background-color:#218838}.contador{text-align:center;background-color:#e9ecef;border-radius:5px;margin:10px 0;padding:10px;font-weight:700}.limpiar{background-color:#dc3545}.limpiar:hover{background-color:#c82333}</style><body>
+    <main>
+      <div class=container>
+        <h1>Ejemplo de Template con Botón</h1>
+        <p>Haz clic en el botón para agregar contenido usando la plantilla:</p>
+
+        
+        <template id=mi-plantilla>
+          <div class=tarjeta>
+            <h3>🎉 Contenido Generado</h3>
+            <p>
+              Este contenido fue creado dinámicamente usando la plantilla HTML.
+              Cada vez que presionas el botón, se clona este template.
+            </p>
+            <button onclick=this.parentElement.remove()>
+              ❌ Eliminar esta tarjeta
+            </button>
+          </div>
+        </template>
+
+        
+        <button id=agregar-contenido>➕ Agregar Contenido</button>
+        <button id=limpiar-todo class=limpiar>🗑️ Limpiar Todo</button>
+
+        
+        <div class=contador>
+          Tarjetas creadas: <span id=contador>0</span>
+        </div>
+
+        
+        <div id=contenedor-dinamico></div>
+      </div>
+    </main>
+    <script>let contador=0;function agregarContenido(){let e=document.querySelector("#mi-plantilla").content.cloneNode(!0);document.getElementById("contenedor-dinamico").appendChild(e),contador++,document.getElementById("contador").textContent=contador}function limpiarTodo(){document.getElementById("contenedor-dinamico").innerHTML="",contador=0,document.getElementById("contador").textContent=contador}document.getElementById("agregar-contenido").addEventListener("click",agregarContenido),document.getElementById("limpiar-todo").addEventListener("click",limpiarTodo);</script>
+  
+

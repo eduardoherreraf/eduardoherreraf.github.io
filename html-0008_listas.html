@@ -1,0 +1,2476 @@
+<!DOCTYPE html><html lang=es data-bs-theme=dark><link rel=stylesheet href=PlantillaMiPagina.b8c68df4.css><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="Guía para la elaboración de listas con HTML"><meta name=title content="Listas HTML - Ing. Eduardo Herrera Forero."><meta name=author content="Ing. Eduardo Herrera Forero"><meta name=application-name content=EHF><meta name=robots content="index, follow"><link rel=canonical href=https://eduardoherreraf.github.io/html-0008_listas.html><meta property=og:type content=website><meta property=og:title content="Listas HTML - Ing. Eduardo Herrera Forero."><meta property=og:description content="Guía para la elaboración de listas con HTML"><meta property=og:image content=f3a89af36d9f33f2><meta property=og:image:alt content="Imagen de una lista e un cuaderno de la vida real"><meta property=og:url content=https://eduardoherreraf.github.io/html-0008_listas.html><meta property=og:locale content=es_CO><meta name=twitter:card content=summary_large_image><meta name=twitter:title content="Listas HTML - Ing. Eduardo Herrera Forero."><meta name=twitter:description content="Guía para la elaboración de listas con HTML"><meta name=twitter:image content=f3a89af36d9f33f2><meta name=twitter:image:alt content="Imagen de una lista e un cuaderno de la vida real"><meta name=twitter:url content=https://eduardoherreraf.github.io/html-0008_listas.html><meta name=twitter:site content=@ehfeduardo><link rel=apple-touch-icon sizes=180x180 href=apple-touch-icon.96046c77.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.f7991d03.png><link rel=icon type=image/png sizes=192x192 href=android-chrome-192x192.4500461c.png><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.060ee0ac.png><link rel=manifest href=site.webmanifest><link rel=mask-icon href=safari-pinned-tab.df3b9c22.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>Listas HTML - Ing. Eduardo Herrera Forero.</title><script type=module src=PlantillaMiPagina.638e488a.js></script><meta name=google-site-verification content=2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc><body>
+    
+    <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg">
+      <div class=container-fluid>
+        
+        <a class="align-items-center d-flex ms-2 navbar-brand text-decoration-none" href=index.html>
+          <img src=logo.08948a42.png alt="Logo de Ing. Eduardo Herrera Forero" width=30 height=30 class="align-text-top d-inline-block me-1">
+          <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span>
+        </a>
+        
+        <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+          <span class=navbar-toggler-icon></span>
+        </button>
+        
+        <div class="collapse ms-auto navbar-collapse text-center" id=navbarSupportedContent>
+          <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100">
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html>SOBRE MÍ</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#resume>EXPERIENCIA</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#portfolio>PORTAFOLIO</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#studies>ESTUDIOS</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link publicaciones-activo text-decoration-none" href=index.html#blog>PUBLICACIONES</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#contact>CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <div class=container-fluid id=introduccion>
+      <main class=row>
+        <section class="col-lg-9 pb-3 pt-5 px-lg-4">
+          
+          <article class="border-1 border-bottom pb-3 row" data-bs-spy=scroll data-bs-target=#list-example data-bs-smooth-scroll=true>
+            <div>
+              <header>
+                <h1>Listas HTML</h1>
+              </header>
+              
+              <div>
+                <h2>Introducción</h2>
+                <p>
+                  En el fascinante mundo del desarrollo web, dar estilo y
+                  estructura al texto es fundamental para crear páginas
+                  atractivas y fáciles de leer. Hoy, se invita a los lectores a
+                  sumergirse en el poder de HTML, el lenguaje esencial para la
+                  web. Se descubrirán las etiquetas clave que permiten formatear
+                  el texto. Desde negritas y cursivas hasta el tamaño y la
+                  organización, el objetivo es transformar las palabras en
+                  contenido visualmente impactante.
+                </p>
+                <div class="centrar-imagen imagen20">
+                  <picture>
+                    <img src=https://i.ibb.co/nsLkz5xm/listas-html-ejemplo.png class=img-fluid alt="Listas HTML " title="Listas HTML ">
+                    <figcaption>Ejemplo de Listas HTML</figcaption>
+                  </picture>
+                </div>
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=definicion-de-listas-en-html>
+                <h2 class=pt-1>Definición de Listas en HTML</h2>
+                <p>
+                  Según la <abbr title="Real Academia Española">RAE</abbr>, una
+                  lista es enumeración, generalmente en forma de columna, de
+                  personas, cosas, cantidades, etc., que se hace con determinado
+                  propósito.
+                </p>
+                <p>
+                  Las listas en HTML son elementos que permiten crear conjuntos
+                  de elementos organizados en forma de lista dentro de una
+                  página web. Generalmente, cada elemento de la lista va
+                  precedido por un símbolo, número o letra que indica su orden o
+                  simplemente marca cada ítem.
+                </p>
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=tipos-de-listas>
+                <h2>Tipos de Listas</h2>
+                <p>
+                  HTML ofrece tres formas de especificar listas: listas
+                  ordenadas, listas desordenadas y listas de descripción. Las
+                  listas ordenadas utilizan secuencias ordinales para indicar el
+                  orden de los elementos de la lista, las listas desordenadas
+                  usan un símbolo definido, como un punto, para listar elementos
+                  sin un orden designado, y las listas de descripción usan
+                  sangrías para listar elementos con sus elementos secundarios.
+                </p>
+
+                
+                <div id=listas-ordenadas-ol>
+                  <h3>
+                    Listas Ordenadas <code class=language-html>&lt;ol&gt;</code>
+                  </h3>
+                  <p>
+                    Una lista ordenada (
+                    <code class=language-html>&lt;ol&gt;</code>,
+                    <span class=fst-italic>ordered list</span>) en HTML
+                    presenta elementos en un orden específico, crucial para
+                    casos como recetas, instrucciones o procedimientos donde la
+                    secuencia importa.
+                  </p>
+                  
+                  <div>
+                    <h4>
+                      ¿Cómo funciona una Lista Ordenada
+                      <code class=language-html>&lt;ol&gt;</code>?
+                    </h4>
+                    <p>
+                      La etiqueta
+                      <code class=language-html>&lt;ol&gt;</code> genera una
+                      lista ordenada que el navegador numera automáticamente
+                      (por defecto: 1, 2, 3...), aunque se puede personalizar el
+                      formato.
+                    </p>
+                    <p>
+                      Cada elemento de una lista ordenada se define con la
+                      etiqueta <code class=language-html>&lt;li&gt;</code>, que
+                      representa un "elemento de lista" (<span class=fst-italic>list item</span>).
+                    </p>
+                  </div>
+                  
+                  
+                  <div>
+                    <h4>
+                      Estructura básica de una Lista Ordenada
+                      <code class=language-html>&lt;ol&gt;</code>
+                    </h4>
+                    <p>
+                      Así es como se ve el código HTML para una lista ordenada
+                      <code class=language-html>&lt;ol&gt;</code>:
+                    </p>
+                    
+                    <div class="code p-3">
+                      <div class=row>
+                        
+                        <div class=ej-ejemplo>
+                          <div class="ej-ejecutado mt-3 row">
+                            
+                            <div class=ej-container>
+                              <p class=ej-h3-ol>
+                                🍋 Pasos para hacer una limonada
+                              </p>
+
+                              <div class=ej-step>
+                                <span class=ej-step-number>1</span>
+                                <span class=ej-step-text>Corta los limones por la mitad.</span>
+                              </div>
+
+                              <div class=ej-step>
+                                <span class=ej-step-number>2</span>
+                                <span class=ej-step-text>Exprime el jugo de los limones en un
+                                  recipiente.</span>
+                              </div>
+
+                              <div class=ej-step>
+                                <span class=ej-step-number>3</span>
+                                <span class=ej-step-text>Añade agua y azúcar al gusto.</span>
+                              </div>
+
+                              <div class=ej-step>
+                                <span class=ej-step-number>4</span>
+                                <span class=ej-step-text>Revuelve bien hasta disolver el azúcar.</span>
+                              </div>
+
+                              <div class=ej-step>
+                                <span class=ej-step-number>5</span>
+                                <span class=ej-step-text>Sirve con hielo y disfruta.</span>
+                              </div>
+                            </div>
+
+                            
+                          </div>
+                          <div class=row>
+                            <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                              
+                              <pre>                                <code class=language-html data-prismjs-copy=Copy>
+                                  <div>
+                                    <div class=example>
+                                      &lt;div class="container"&gt;
+                                        &lt;p class="h3"&gt;
+                                          🍋 Pasos para hacer una limonada
+                                        &lt;/p&gt;
+
+                                        &lt;div class="step"&gt;
+                                          &lt;span class="step-number"&gt;1&lt;/span&gt;
+                                          &lt;span class="step-text"
+                                            &gt;Corta los limones por la mitad.&lt;/span
+                                          &gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="step"&gt;
+                                          &lt;span class="step-number"&gt;2&lt;/span&gt;
+                                          &lt;span class="step-text"
+                                            &gt;Exprime el jugo de los limones en un
+                                            recipiente.&lt;/span
+                                          &gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="step"&gt;
+                                          &lt;span class="step-number"&gt;3&lt;/span&gt;
+                                          &lt;span class="step-text"
+                                            &gt;Añade agua y azúcar al gusto.&lt;/span
+                                          &gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="step"&gt;
+                                          &lt;span class="step-number"&gt;4&lt;/span&gt;
+                                          &lt;span class="step-text"
+                                            &gt;Revuelve bien hasta disolver el
+                                            azúcar.&lt;/span
+                                          &gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="step"&gt;
+                                          &lt;span class="step-number"&gt;5&lt;/span&gt;
+                                          &lt;span class="step-text"
+                                            &gt;Sirve con hielo y disfruta.&lt;/span
+                                          &gt;
+                                        &lt;/div&gt;
+                                      &lt;/div&gt;
+                                    </div> 
+                                  </div>        
+                                </code>
+                              </pre>
+                              
+                            </div>
+                            <div class="col-lg-6 ej-code-css mb-3">
+                              
+                              <pre>                                <code class=language-css data-prismjs-copy=Copy>
+                                  <div>
+                                    .container {
+                                        max-width: 500px;
+                                        margin: 0 auto;
+                                        background: white;
+                                        padding: 30px;
+                                        border-radius: 10px;
+                                        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                                    }
+
+                                    .h3 {
+                                        color: #4A4A4A;
+                                        text-align: center;
+                                        margin-bottom: 30px;
+                                        font-size: 1.8rem;
+                                    }
+
+                                    .step {
+                                        padding: 15px;
+                                        margin: 10px 0;
+                                        background: #F8F8F8;
+                                        border-radius: 8px;
+                                        border-left: 4px solid #FFD700;
+                                    }
+
+                                    .step-number {
+                                        display: inline-block;
+                                        background: #FFD700;
+                                        color: #333;
+                                        width: 25px;
+                                        height: 25px;
+                                        border-radius: 50%;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        margin-right: 15px;
+                                        line-height: 25px;
+                                        font-size: 0.9rem;
+                                    }
+
+                                    .step-text {
+                                        display: inline;
+                                        color: #333;
+                                    }                                    
+                                  </div>        
+                                </code>
+                              </pre>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div>
+                    <h4>
+                      Atributos más comunes de una Lista Ordenada
+                      <code class=language-html>&lt;ol&gt;</code>
+                    </h4>
+                    <ul>
+                      <li>
+                        <code class=language-html>type</code>: Permite cambiar
+                        el tipo de marcador que se utiliza para numerar la
+                        lista.
+                        <ul>
+                          <li>
+                            <code class=language-html>1</code>: para números
+                            decimales (por defecto), 1, 2, 3.
+                          </li>
+                          <li>
+                            <code class=language-html>a</code>: para letras
+                            minúsculas, a, b, c
+                          </li>
+                          <li>
+                            <code class=language-html>A</code>: para letras
+                            mayúsculas, A, B, C.
+                          </li>
+                          <li>
+                            <code class=language-html>i</code>: para números
+                            romanos en minúscula, i, ii, iii.
+                          </li>
+                          <li>
+                            <code class=language-html>I</code>: para números
+                            romanos en mayúscula, I, II, III.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <code class=language-html>start</code>: La etiqueta
+                        <code class=language-html>&lt;ol&gt;</code> permite
+                        establecer el valor inicial de la lista con el atributo
+                        <code class=language-html>start</code>, usando siempre
+                        un valor numérico, incluso si el atributo type define
+                        letras o números romanos.
+                      </li>
+                      <li>
+                        <code class=language-html>reversed</code>: Invierte el
+                        orden de numeración.
+                      </li>
+                    </ul>
+                    Ejemplos de uso:
+                    
+                    <div class="code p-3 rounded-2">
+                      <div class=row>
+                        
+                        <div class=ej-ejemplo>
+                          <div class="ej-ejecutado mt-3 row">
+                            
+                            <div>
+                              <div class=ej-container-ol2>
+                                <div class=ej-example-ol2>
+                                  <p class=ej-h3-ol2>
+                                    Enumeración con números romanos:
+                                  </p>
+                                  <ol class=ej-ol2 type=I>
+                                    <li class=ej-li2>Julio</li>
+                                    <li class=ej-li2>Carmen</li>
+                                    <li class=ej-li2>Ignacio</li>
+                                  </ol>
+                                </div>
+
+                                <div class=ej-example-ol2>
+                                  <p class=ej-h3-ol2>Inicia desde D o 4:</p>
+                                  <ol class=ej-ol2 type=A start=4>
+                                    <li class=ej-li2>Julio</li>
+                                    <li class=ej-li2>Carmen</li>
+                                    <li class=ej-li2>Ignacio</li>
+                                  </ol>
+                                </div>
+
+                                <div class=ej-example-ol2>
+                                  <p class=ej-h3-ol2>
+                                    Inicia desde V o 5 romano con conteo
+                                    inverso:
+                                  </p>
+                                  <ol class=ej-ol2 type=I start=5 reversed>
+                                    <li class=ej-li2>Julio</li>
+                                    <li class=ej-li2>Carmen</li>
+                                    <li class=ej-li2>Ignacio</li>
+                                  </ol>
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <div class=row>
+                            <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                              
+                              <pre>                                <code class=language-html data-prismjs-copy=Copy>
+                                  <div>
+                                    &lt;div&gt;
+                                      &lt;div class="container-ol"&gt;
+                                        &lt;div class="example-ol2"&gt;
+                                          &lt;p class="h3"&gt;
+                                            Enumeración con números romanos:
+                                          &lt;/p&gt;
+                                          &lt;ol class="ol2" type="I"&gt;
+                                            &lt;li class="li2"&gt;Julio&lt;/li&gt;
+                                            &lt;li class="li2"&gt;Carmen&lt;/li&gt;
+                                            &lt;li class="li2"&gt;Ignacio&lt;/li&gt;
+                                          &lt;/ol&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="example-ol2"&gt;
+                                          &lt;p class="h3"&gt;Inicia desde D o 4:&lt;/p&gt;
+                                          &lt;ol class="ol2" type="A" start="4"&gt;
+                                            &lt;li class="li2"&gt;Julio&lt;/li&gt;
+                                            &lt;li class="li2"&gt;Carmen&lt;/li&gt;
+                                            &lt;li class="li2"&gt;Ignacio&lt;/li&gt;
+                                          &lt;/ol&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="example-ol2"&gt;
+                                          &lt;p class="h3"&gt;
+                                            Inicia desde V o 5 romano con conteo
+                                            inverso:
+                                          &lt;/p&gt;
+                                          &lt;ol
+                                            class="ol2"
+                                            type="I"
+                                            start="5"
+                                            reversed
+                                          &gt;
+                                            &lt;li class="li2"&gt;Julio&lt;/li&gt;
+                                            &lt;li class="li2"&gt;Carmen&lt;/li&gt;
+                                            &lt;li class="li2"&gt;Ignacio&lt;/li&gt;
+                                          &lt;/ol&gt;
+                                        &lt;/div&gt;
+                                      &lt;/div&gt;
+                                    &lt;/div&gt;                                    
+                                  </div>        
+                                </code>
+                              </pre>
+                              
+                            </div>
+                            <div class="col-lg-6 ej-code-css mb-3">
+                              
+                              <pre>                                <code class=language-css data-prismjs-copy=Copy>
+                                  <div>
+                                    .example-ol2 {
+                                      background: rgba(255, 255, 255, 0.95);
+                                      border-radius: 12px;
+                                      padding: 25px;
+                                      margin: 25px 0;
+                                      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+                                      border: 1px solid rgba(255, 255, 255, 0.3);
+                                      transition: transform 0.2s ease;
+                                    }
+
+                                    .example-ol2:hover {
+                                      transform: translateY(-2px);
+                                    }
+
+                                    .ol2 {
+                                      margin: 18px 0;
+                                      padding-left: 30px;
+                                    }
+
+                                    .li2 {
+                                      margin: 8px 0;
+                                      color: #34495e;
+                                      line-height: 1.4;
+                                    }
+
+                                    /* Colores para los marcadores */
+                                    .ol2[type="I"] li::marker {
+                                      color: #e74c3c;
+                                      font-weight: bold;
+                                    }
+
+                                    .ol2[type="A"] li::marker {
+                                      color: #3498db;
+                                      font-weight: bold;
+                                    }
+
+                                    .ol2[type="I"][reversed] li::marker {
+                                      color: #9b59b6;
+                                      font-weight: bold;
+                                    }
+                                  </div>        
+                                </code>
+                              </pre>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div>
+                    <h4>
+                      ¿Cuándo usar una Lista Ordenada
+                      <code class=language-html>&lt;ol&gt;</code>?
+                    </h4>
+                    <p>
+                      Usar una lista ordenada siempre que la secuencia o la
+                      prioridad de los elementos sea importante. Por ejemplo:
+                    </p>
+                    <ul>
+                      <li>Instrucciones paso a paso.</li>
+                      <li>Clasificaciones (Top 10...).</li>
+                      <li>Un esquema con puntos numerados.</li>
+                      <li>Un índice de contenidos.</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+                
+
+                
+                <div id=listas-desordenadas-ul>
+                  <h3>
+                    Listas Desordenadas
+                    <code class=language-html>&lt;ul&gt;</code>
+                  </h3>
+                  <p>
+                    Una lista desordenada (
+                    <code class=language-html>&lt;ul&gt;</code>,
+                    <span class=fst-italic>unordered list</span>) en HTML
+                    muestra sus elementos sin un orden numérico o alfabético,
+                    utilizando viñetas o símbolos para marcar cada ítem.
+                  </p>
+                  
+                  <div>
+                    <h4>
+                      ¿Cómo funciona una Lista Desordenada
+                      <code class=language-html>&lt;ul&gt;</code>?
+                    </h4>
+                    <p>
+                      La etiqueta
+                      <code class=language-html>&lt;ul&gt;</code> crea una lista
+                      desordenada en la que el navegador añade automáticamente
+                      un símbolo (como una viñeta) a cada elemento, sin usar
+                      números ni letras. Cada elemento de la lista se define con
+                      la etiqueta
+                      <code class=language-html>&lt;li&gt;,</code> que representa
+                      un "elemento de lista" (<span class=fst-italic>list item</span>).
+                    </p>
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>
+                      Estructura básica de una Lista Desordenada
+                      <code class=language-html>&lt;ul&gt;</code>
+                    </h4>
+                    <p>
+                      Así es como se ve el código HTML para una lista
+                      desordenada <code class=language-html>&lt;ul&gt;</code>:
+                    </p>
+
+                    <div class=row>
+                      
+                      <div class=ej-ejemplo>
+                        <div class="ej-ejecutado mt-3 row">
+                          
+                          <div>
+                            <div class=ej-example-ul>
+                              <p class=ej-h3-ul>Lista de compras</p>
+                              <ul class=ej-ul>
+                                <li class=ej-li>Manzanas</li>
+                                <li class=ej-li>Pan</li>
+                                <li class=ej-li>Leche</li>
+                                <li class=ej-li>Huevos</li>
+                                <li class=ej-li>Café</li>
+                              </ul>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <div class=row>
+                          <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                            
+                            <pre>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>
+                                &lt;div class="example-ul"&gt;
+                                  &lt;p class="h3-ul"&gt;Lista de compras&lt;/p&gt;
+                                  &lt;ul class="-ul"&gt;
+                                    &lt;li class="li"&gt;Manzanas&lt;/li&gt;
+                                    &lt;li class="li"&gt;Pan&lt;/li&gt;
+                                    &lt;li class="li"&gt;Leche&lt;/li&gt;
+                                    &lt;li class="li"&gt;Huevos&lt;/li&gt;
+                                    &lt;li class="li"&gt;Café&lt;/li&gt;
+                                  &lt;/ul&gt;
+                                &lt;/div&gt;                                
+                              </div>        
+                            </code>
+                          </pre>
+                            
+                          </div>
+                          <div class="col-lg-6 ej-code-css mb-3">
+                            
+                            <pre>                              <code class=language-css data-prismjs-copy=Copy>
+                                <div>
+                                  .example-ul {
+                                      background: white;
+                                      border-radius: 15px;
+                                      padding: 30px;
+                                      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                                      max-width: 300px;
+                                      width: 100%;
+                                      transform: translateY(0);
+                                      transition: transform 0.3s ease;
+                                  }
+
+                                  .example-ul:hover {
+                                      transform: translateY(-5px);
+                                      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+                                  }
+
+                                  .h3-ul {
+                                      color: #333;
+                                      text-align: center;
+                                      margin-bottom: 25px;
+                                      font-size: 24px;
+                                      font-weight: 600;
+                                      border-bottom: 3px solid #667eea;
+                                      padding-bottom: 10px;
+                                  }
+
+                                  .ul {
+                                      list-style: none;
+                                      padding: 0;
+                                      margin: 0;
+                                  }
+
+                                  .li {
+                                      background: #f8f9fa;
+                                      margin: 10px 0;
+                                      padding: 15px 20px;
+                                      border-radius: 10px;
+                                      border-left: 4px solid #667eea;
+                                      font-size: 16px;
+                                      transition: all 0.3s ease;
+                                      cursor: pointer;
+                                      position: relative;
+                                  }
+
+                                  .li:hover {
+                                      background: #e3f2fd;
+                                      transform: translateX(5px);
+                                      border-left-color: #764ba2;
+                                  }
+
+                                  .li::before {
+                                      content: "🛒";
+                                      margin-right: 10px;
+                                      font-size: 18px;
+                                  }
+
+                                  .li:nth-child(1)::before { content: "🍎"; }
+                                  .li:nth-child(2)::before { content: "🍞"; }
+                                  .li:nth-child(3)::before { content: "🥛"; }
+                                  .li:nth-child(4)::before { content: "🥚"; }
+                                  .li:nth-child(5)::before { content: "☕"; }
+
+                                </div>        
+                              </code>
+                            </pre>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>
+                      Atributos más comunes de una Lista Desordenada
+                      <code class=language-html>&lt;ul&gt;</code>
+                    </h4>
+                    <ul>
+                      <li>
+                        <code class=language-html>type</code>: Históricamente
+                        se usaba para definir el tipo de viñeta de la lista.
+                        (obsoleto).
+                        <ul>
+                          <li>
+                            <code class=language-html>circle</code>: Círculo
+                            (por defecto).
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        Personalización con CSS:
+                        <ul>
+                          <li>
+                            <code class=language-html>list-style-type</code>,
+                            Controla el tipo de viñeta con CSS:
+                            <ul>
+                              <li>
+                                <code class=language-html>disc</code>: •
+                                (predeterminado)
+                              </li>
+                              <li>
+                                <code class=language-html>circle</code>: ○
+                              </li>
+                              <li>
+                                <code class=language-html>square</code>: ■
+                              </li>
+                              <li>
+                                <code class=language-html>none</code>: sin
+                                viñeta.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <code class=language-html>list-style-image</code>,
+                            Usa imagen personalizada como viñeta (CSS):<br>
+                          </li>
+                          <li>
+                            <code class=language-html>list-style-position</code>, Controla la alineación de la viñeta (CSS):<br>
+                            <ul>
+                              <li>
+                                <code class=language-html>inside</code>: la
+                                viñeta se alinea con el texto.
+                              </li>
+                              <li>
+                                <code class=language-html>outside</code>: la
+                                viñeta queda en el margen izquierdo (valor por
+                                defecto).
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <p>Ejemplo de de una lista desordenada:</p>
+                    
+                    <div class=row>
+                      
+                      <div class=ej-ejemplo>
+                        <div class="ej-ejecutado mt-3 row">
+                          
+                          <div>
+                            <div class=ej-example-ul2>
+                              <p class=ej-example-ul2-h3>
+                                Ejemplos de estilos de viñetas:
+                              </p>
+                              <ul class=ej-lista-disco-ul2>
+                                <li class=ej-li-ul2>
+                                  Ítem con círculo relleno (disc)
+                                </li>
+                                <li class=ej-li-ul2>
+                                  Otro ítem con círculo relleno
+                                </li>
+                              </ul>
+                              <ul class=ej-lista-circulo-ul2>
+                                <li class=ej-li-ul2>
+                                  Ítem con círculo vacío (circle)
+                                </li>
+                                <li class=ej-li-ul2>
+                                  Otro ítem con círculo vacío
+                                </li>
+                              </ul>
+                              <ul class=ej-lista-cuadrado-ul2>
+                                <li class=ej-li-ul2>
+                                  Ítem con cuadrado (square)
+                                </li>
+                                <li class=ej-li-ul2>
+                                  Otro ítem con cuadrado
+                                </li>
+                              </ul>
+                              <ul class=ej-lista-sin-vineta>
+                                <li class=ej-li-ul2>
+                                  Ítem sin viñeta (none)
+                                </li>
+                                <li class=ej-li-ul2>Otro ítem sin viñeta</li>
+                              </ul>
+                            </div>
+
+                            <div class=ej-example-ul2>
+                              <p class=ej-example-ul2-h3>
+                                Viñeta Personalizada
+                              </p>
+                              <ul class=ej-list-style-image>
+                                <li class=ej-li-ul2>
+                                  Elemento uno con viñeta personalizada
+                                </li>
+                                <li class=ej-li-ul2>
+                                  Elemento dos con viñeta personalizada
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class=ej-example-ul2>
+                              <p class=ej-example-ul2-h3>
+                                Cambio de posición de la viñeta
+                              </p>
+                              <ul class="ej-inside ul-ul2">
+                                <li class=ej-li-ul2>
+                                  Elemento uno, viñeta adentro (inside)
+                                </li>
+                                <li class=ej-li-ul2>
+                                  Elemento dos, el texto se alinea con la viñeta
+                                </li>
+                              </ul>
+                              <ul class="ej-outside ul-ul2">
+                                <li class=ej-li-ul2>
+                                  Elemento tres, viñeta afuera (ej-outside)
+                                </li>
+                                <li class=ej-li-ul2>
+                                  Elemento cuatro, el texto se alinea
+                                  independiente de la viñeta
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <div class=row>
+                          <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                            
+                            <pre>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>    
+                                &lt;div class="example"&gt;
+                                  &lt;h3&gt;Ejemplos de estilos de viñetas:&lt;/h3&gt;
+                                  &lt;ul class="lista-disco"&gt;
+                                      &lt;li&gt;Ítem con círculo relleno (disc)&lt;/li&gt;
+                                      &lt;li&gt;Otro ítem con círculo relleno&lt;/li&gt;
+                                  &lt;/ul&gt;
+                                  &lt;ul class="lista-circulo"&gt;
+                                      &lt;li&gt;Ítem con círculo vacío (circle)&lt;/li&gt;
+                                      &lt;li&gt;Otro ítem con círculo vacío&lt;/li&gt;
+                                  &lt;/ul&gt;
+                                  &lt;ul class="lista-cuadrado"&gt;
+                                      &lt;li&gt;Ítem con cuadrado (square)&lt;/li&gt;
+                                      &lt;li&gt;Otro ítem con cuadrado&lt;/li&gt;
+                                  &lt;/ul&gt;
+                                  &lt;ul class="lista-sin-vineta"&gt;
+                                      &lt;li&gt;Ítem sin viñeta (none)&lt;/li&gt;
+                                      &lt;li&gt;Otro ítem sin viñeta&lt;/li&gt;
+                                  &lt;/ul&gt;
+                              &lt;/div&gt;
+
+                              &lt;div class="example"&gt;
+                                  &lt;h3&gt;Viñeta Personalizada&lt;/h3&gt;
+                                  &lt;ul class="list-style-image"&gt;
+                                      &lt;li&gt;Elemento uno con viñeta personalizada&lt;/li&gt;
+                                      &lt;li&gt;Elemento dos con viñeta personalizada&lt;/li&gt;
+                                  &lt;/ul&gt;
+                              &lt;/div&gt;
+
+                              &lt;div class="example"&gt;
+                                  &lt;h3&gt;Cambio de posición de la viñeta&lt;/h3&gt;
+                                  &lt;ul class="inside"&gt;
+                                      &lt;li&gt;Elemento uno, viñeta adentro (inside)&lt;/li&gt;
+                                      &lt;li&gt;Elemento dos, el texto se alinea con la viñeta&lt;/li&gt;
+                                  &lt;/ul&gt;
+                                  &lt;ul class="outside"&gt;
+                                      &lt;li&gt;Elemento tres, viñeta afuera (outside)&lt;/li&gt;
+                                      &lt;li&gt;Elemento cuatro, el texto se alinea independiente de la viñeta&lt;/li&gt;
+                                  &lt;/ul&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          </div>      
+                            </code>
+                          </pre>
+                            
+                          </div>
+                          <div class="col-lg-6 ej-code-css mb-3">
+                            
+                            <pre>                              <code class=language-css data-prismjs-copy=Copy>
+                                <div>
+                                  .example {
+                                      background: white;
+                                      padding: 20px;
+                                      margin-bottom: 20px;
+                                      border-radius: 8px;
+                                      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                                  }
+
+                                  .example h3 {
+                                      color: #333;
+                                      border-bottom: 2px solid #007bff;
+                                      padding-bottom: 10px;
+                                      margin-bottom: 15px;
+                                  }
+
+                                  /* Estilos básicos de viñetas */
+                                  .lista-disco {
+                                      list-style-type: disc;
+                                      color: #444;
+                                  }
+
+                                  .lista-circulo {
+                                      list-style-type: circle;
+                                      color: #444;
+                                  }
+
+                                  .lista-cuadrado {
+                                      list-style-type: square;
+                                      color: #444;
+                                  }
+
+                                  .lista-sin-vineta {
+                                      list-style-type: none;
+                                      color: #444;
+                                  }
+
+                                  /* Viñeta personalizada con imagen */
+                                  .list-style-image {
+                                      list-style-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiMwMDdiZmYiLz4KPHN2Zz4K');
+                                  }
+
+                                  /* Espaciado general para todas las listas */
+                                  ul {
+                                      padding-left: 30px;
+                                      margin: 10px 0;
+                                  }
+
+                                  li {
+                                      margin: 8px 0;
+                                      line-height: 1.4;
+                                  }
+
+                                  /* Estilos para posicionamiento */
+                                  .inside {
+                                      list-style-position: inside;
+                                      background-color: #f8f9fa;
+                                      padding: 10px;
+                                      border-left: 3px solid #28a745;
+                                  }
+
+                                  .outside {
+                                      list-style-position: outside;
+                                      background-color: #f8f9fa;
+                                      padding: 10px;
+                                      border-left: 3px solid #dc3545;
+                                  }                                  
+                                </div>        
+                              </code>
+                            </pre>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>
+                      ¿Cuándo usar una Lista Desordenada
+                      <code class=language-html>&lt;ul&gt;</code>?
+                    </h4>
+                    <p>
+                      Usa una lista desordenada siempre que la secuencia o la
+                      prioridad de los elementos NO sea importante. Algunos
+                      ejemplos comunes son:
+                    </p>
+                    <ul>
+                      <li>Una lista de características de un producto.</li>
+                      <li>
+                        Un menú de navegación en un sitio web (Inicio, Acerca
+                        de, Contacto).
+                      </li>
+                      <li>Una lista de "preguntas frecuentes".</li>
+                      <li>Una lista de hobbies o intereses.</li>
+                      <li>
+                        Cualquier enumeración donde el orden de los ítems no
+                        afecte el significado general.
+                      </li>
+                    </ul>
+                  </div>
+                  
+                </div>
+                
+
+                
+                <div id=listas-de-descripcion-dl>
+                  <h3>
+                    Listas de Descripción
+                    <code class=language-html>&lt;dl&gt;</code>
+                  </h3>
+                  <p>
+                    Las Listas de Descripción, también conocidas como Listas de
+                    Definición ( <code class=language-html>&lt;dl&gt;</code>,
+                    <span-fst>description list</span-fst>), son un tipo de lista
+                    en HTML diseñada para presentar elementos que consisten en
+                    un término y su correspondiente definición.
+                  </p>
+                  <p>
+                    Pensar en ella como un glosario, un diccionario o una
+                    sección de preguntas y respuestas donde cada pregunta tiene
+                    su(s) respuesta(s) asociada(s).
+                  </p>
+                  
+                  <div>
+                    <h4>
+                      ¿Cómo funciona una Listas de Descripción
+                      <code class=language-html>&lt;dl&gt;</code>?
+                    </h4>
+                    <p>
+                      En esta lista, cada término está etiquetado con
+                      <code class=language-html>&lt;dt&gt;</code> (término de
+                      definición) y su correspondiente descripción o definición
+                      con
+                      <code class=language-html>&lt;dd&gt;</code> (descripción de
+                      definición). Esta estructura organiza la información en
+                      pares término-definición, permitiendo incluir uno o más
+                      términos de definición, lo que facilita una presentación
+                      clara, semántica y ordenada de datos relacionados.
+                    </p>
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>
+                      Estructura básica de una Listas de Descripción
+                      <code class=language-html>&lt;dl&gt;</code>
+                    </h4>
+                    <div class=row>
+                      
+                      <div class=ej-ejemplo>
+                        <div class="ej-ejecutado mt-3 row">
+                          
+                          <div>
+                            <div class=ej-example-box>
+                              <p class=ej-h3-dl>Tecnologías Front-End</p>
+                              <dl>
+                                <dt>HTML</dt>
+                                <dd>
+                                  Lenguaje de marcado utilizado para estructurar
+                                  contenido en la web.
+                                </dd>
+                                <dd>
+                                  Este lenguaje de marcación, es fundamental
+                                  para el desarrollo web, ya que actúa como el
+                                  esqueleto de cualquier página web.
+                                </dd>
+                              </dl>
+                              <dl>
+                                <dt>CSS</dt>
+                                <dd>
+                                  Lenguaje de estilos utilizado para presentar y
+                                  diseñar contenido web.
+                                </dd>
+                                <dd>
+                                  Este lenguaje funciona como el maquillaje y la
+                                  vestimenta, moldeando y embelleciendo la
+                                  presentación visual de una página.
+                                </dd>
+                              </dl>
+                              <dl>
+                                <dt>JavaScript</dt>
+                                <dd>
+                                  Lenguaje de programación que añade
+                                  interactividad y dinamismo a las páginas web.
+                                </dd>
+                              </dl>
+                            </div>
+
+                            <div class=ej-example-box>
+                              <p class=ej-h3-dl>
+                                Lista con Estilo Personalizado
+                              </p>
+                              <dl class=ej-styled-dl>
+                                <dt>React</dt>
+                                <dd>
+                                  Biblioteca de JavaScript para construir
+                                  interfaces de usuario, desarrollada por
+                                  Facebook. Utiliza un DOM virtual para mejorar
+                                  el rendimiento.
+                                </dd>
+
+                                <dt>Vue.js</dt>
+                                <dd>
+                                  Framework progresivo de JavaScript para
+                                  construir interfaces de usuario. Es conocido
+                                  por su curva de aprendizaje suave.
+                                </dd>
+
+                                <dt>Angular</dt>
+                                <dd>
+                                  Plataforma y framework para construir
+                                  aplicaciones web de una sola página usando
+                                  TypeScript.
+                                </dd>
+                              </dl>
+                            </div>
+
+                            <div class=ej-example-box>
+                              <p class=ej-h3-dl>Estilo Tarjeta</p>
+                              <dl class=ej-card-dl>
+                                <dt>¿Qué es una API?</dt>
+                                <dd>
+                                  Una API (Application Programming Interface) es
+                                  un conjunto de reglas y especificaciones que
+                                  permite que diferentes aplicaciones se
+                                  comuniquen entre sí.
+                                </dd>
+
+                                <dt>¿Qué es REST?</dt>
+                                <dd>
+                                  REST (Representational State Transfer) es un
+                                  estilo arquitectónico para diseñar servicios
+                                  web que utiliza métodos HTTP estándar.
+                                </dd>
+
+                                <dt>¿Qué es JSON?</dt>
+                                <dd>
+                                  JSON (JavaScript Object Notation) es un
+                                  formato ligero de intercambio de datos que es
+                                  fácil de leer y escribir para humanos y
+                                  máquinas.
+                                </dd>
+                              </dl>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <div class=row>
+                          <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                            
+                            <pre>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>
+                                &lt;div class="example-box"&gt;
+                                    &lt;p class="h3-dl"&gt;Tecnologías Front-End&lt;/p&gt;
+                                    &lt;dl&gt;
+                                        &lt;dt&gt;HTML&lt;/dt&gt;
+                                        &lt;dd&gt;
+                                            Lenguaje de marcado utilizado para estructurar
+                                            contenido en la web.
+                                        &lt;/dd&gt;
+                                        &lt;dd&gt;
+                                            Este lenguaje de marcación, es fundamental
+                                            para el desarrollo web, ya que actúa como el
+                                            esqueleto de cualquier página web.
+                                        &lt;/dd&gt;
+                                    &lt;/dl&gt;
+                                    &lt;dl&gt;
+                                        &lt;dt&gt;CSS&lt;/dt&gt;
+                                        &lt;dd&gt;
+                                            Lenguaje de estilos utilizado para presentar y
+                                            diseñar contenido web.
+                                        &lt;/dd&gt;
+                                        &lt;dd&gt;
+                                            Este lenguaje funciona como el maquillaje y la
+                                            vestimenta, moldeando y embelleciendo la
+                                            presentación visual de una página.
+                                        &lt;/dd&gt;
+                                    &lt;/dl&gt;
+                                    &lt;dl&gt;
+                                        &lt;dt&gt;JavaScript&lt;/dt&gt;
+                                        &lt;dd&gt;
+                                            Lenguaje de programación que añade
+                                            interactividad y dinamismo a las páginas web.
+                                        &lt;/dd&gt;
+                                    &lt;/dl&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="example-box"&gt;
+                                    &lt;p class="h3-dl"&gt;Lista con Estilo Personalizado&lt;/p&gt;
+                                    &lt;dl class="styled-dl"&gt;
+                                        &lt;dt&gt;React&lt;/dt&gt;
+                                        &lt;dd&gt;
+                                            Biblioteca de JavaScript para construir
+                                            interfaces de usuario, desarrollada por
+                                            Facebook. Utiliza un DOM virtual para mejorar
+                                            el rendimiento.
+                                        &lt;/dd&gt;
+
+                                        &lt;dt&gt;Vue.js&lt;/dt&gt;
+                                        &lt;dd&gt;
+                                            Framework progresivo de JavaScript para
+                                            construir interfaces de usuario. Es conocido
+                                            por su curva de aprendizaje suave.
+                                        &lt;/dd&gt;
+
+                                        &lt;dt&gt;Angular&lt;/dt&gt;
+                                        &lt;dd&gt;
+                                            Plataforma y framework para construir
+                                            aplicaciones web de una sola página usando
+                                            TypeScript.
+                                        &lt;/dd&gt;
+                                    &lt;/dl&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="example-box"&gt;
+                                  &lt;p class="h3-dl"&gt;Estilo Tarjeta&lt;/p&gt;
+                                    &lt;dl class="card-dl"&gt;
+                                        &lt;dt&gt;¿Qué es una API?&lt;/dt&gt;
+                                        &lt;dd&gt;
+                                            Una API (Application Programming Interface) es
+                                            un conjunto de reglas y especificaciones que
+                                            permite que diferentes aplicaciones se
+                                            comuniquen entre sí.
+                                        &lt;/dd&gt;
+
+                                        &lt;dt&gt;¿Qué es REST?&lt;/dt&gt;
+                                        &lt;dd&gt;
+                                            REST (Representational State Transfer) es un
+                                            estilo arquitectónico para diseñar servicios
+                                            web que utiliza métodos HTTP estándar.
+                                        &lt;/dd&gt;
+
+                                        &lt;dt&gt;¿Qué es JSON?&lt;/dt&gt;
+                                        &lt;dd&gt;
+                                            JSON (JavaScript Object Notation) es un
+                                            formato ligero de intercambio de datos que es
+                                            fácil de leer y escribir para humanos y
+                                            máquinas.
+                                        &lt;/dd&gt;
+                                    &lt;/dl&gt;
+                                &lt;/div&gt;                                
+                              </div>        
+                            </code>
+                          </pre>
+                            
+                          </div>
+                          <div class="col-lg-6 ej-code-css mb-3">
+                            
+                            <pre>                              <code class=language-css data-prismjs-copy=Copy>
+                                <div>
+                                  /* Estilos básicos para dl */
+                                  dl {
+                                    margin: 20px 0;
+                                    padding: 20px;
+                                    background: #f8f9fa;
+                                    border-radius: 10px;
+                                    border-left: 4px solid #667eea;
+                                  }
+
+                                  dt {
+                                    font-weight: bold;
+                                    color: #212529;
+                                    margin-top: 15px;
+                                    font-size: 1.1em;
+                                  }
+
+                                  dt:first-child {
+                                    margin-top: 0;
+                                  }
+
+                                  dd {
+                                    margin-left: 20px;
+                                    margin-bottom: 10px;
+                                    color: #555;
+                                    padding-left: 15px;
+                                    border-left: 2px solid #ddd;
+                                  }
+
+                                  .styled-dl { /* Cambiado de .ej-styled-dl */
+                                    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                                    border: none;
+                                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                                  }
+
+                                  .styled-dl dt { /* Cambiado de .ej-styled-dl dt */
+                                    background: #667eea;
+                                    color: white;
+                                    padding: 8px 15px;
+                                    border-radius: 5px;
+                                    margin: 10px 0 5px 0;
+                                    display: inline-block;
+                                  }
+
+                                  .styled-dl dd { /* Cambiado de .ej-styled-dl dd */
+                                    background: white;
+                                    padding: 15px;
+                                    border-radius: 5px;
+                                    margin: 5px 0 15px 0;
+                                    border-left: none;
+                                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                                  }
+
+                                  .card-dl { /* Cambiado de .ej-card-dl */
+                                    background: white;
+                                    border: 1px solid #e0e0e0;
+                                    border-radius: 12px;
+                                    overflow: hidden;
+                                  }
+
+                                  .card-dl dt { /* Cambiado de .ej-card-dl dt */
+                                    background: #764ba2;
+                                    color: white;
+                                    margin: 0;
+                                    padding: 15px 20px;
+                                    font-size: 1.2em;
+                                  }
+
+                                  .card-dl dd { /* Cambiado de .ej-card-dl dd */
+                                    margin: 0;
+                                    padding: 20px;
+                                    border-left: none;
+                                    border-bottom: 1px solid #f0f0f0;
+                                  }
+
+                                  .card-dl dd:last-child { /* Cambiado de .ej-card-dl dd:last-child */
+                                    border-bottom: none;
+                                  }
+
+                                  /* Estilos especiales para diferentes niveles */
+                                  .lista-principal &gt; li { /* Cambiado de .ej-lista-principal */
+                                    background: linear-gradient(90deg, #e3f2fd, #ffffff);
+                                    border-left: 4px solid #2196f3;
+                                    margin: 10px 0;
+                                    padding: 10px;
+                                    border-radius: 5px;
+                                  }
+
+                                  .lista-secundaria &gt; li { /* Cambiado de .ej-lista-secundaria */
+                                    background: linear-gradient(90deg, #f3e5f5, #ffffff);
+                                    border-left: 3px solid #9c27b0;
+                                    margin: 8px 0;
+                                    padding: 8px;
+                                    border-radius: 4px;
+                                  }
+
+                                  /* Estilos para listas de definición */
+                                  .lista-definiciones { /* Cambiado de .ej-lista-definiciones */
+                                    background: #f8f9fa;
+                                    border-radius: 10px;
+                                    padding: 20px;
+                                    margin: 20px 0;
+                                  }
+
+                                  .lista-definiciones dt { /* Cambiado de .ej-lista-definiciones dt */
+                                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                                    color: white;
+                                    padding: 15px;
+                                    border-radius: 8px;
+                                    margin: 20px 0 10px 0;
+                                    font-size: 1.2em;
+                                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                                  }
+
+                                  .lista-definiciones dd { /* Cambiado de .ej-lista-definiciones dd */
+                                    background: white;
+                                    border-left: 4px solid #667eea;
+                                    padding: 20px;
+                                    margin: 0 0 20px 20px;
+                                    border-radius: 0 8px 8px 0;
+                                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                                  }
+
+                                  .lista-definiciones dd &gt; p { /* Cambiado de .ej-lista-definiciones dd &gt; p */
+                                    font-style: italic;
+                                    color: #666;
+                                    margin-bottom: 15px;
+                                    font-size: 1.1em;
+                                  }
+
+                                  .lista-definiciones ol[type="a"] { /* Cambiado de .ej-lista-definiciones ol[type="a"] */
+                                    list-style-type: lower-alpha;
+                                  }
+
+                                  .lista-definiciones ol[type="A"] { /* Cambiado de .ej-lista-definiciones ol[type="A"] */
+                                    list-style-type: upper-alpha;
+                                  }
+
+                                  .lista-definiciones ol[type="i"] { /* Cambiado de .ej-lista-definiciones ol[type="i"] */
+                                    list-style-type: lower-roman;
+                                  }
+
+                                  .lista-definiciones ol[type="I"] { /* Cambiado de .ej-lista-definiciones ol[type="I"] */
+                                    list-style-type: upper-roman;
+                                  }
+
+                                  .lista-definiciones ol[type="1"] { /* Cambiado de .ej-lista-definiciones ol[type="1"] */
+                                    list-style-type: decimal;
+                                  }
+
+                                  /* Colores diferentes para diferentes niveles */
+                                  .lista-definiciones li &gt; strong { /* Cambiado de .ej-lista-definiciones li &gt; strong */
+                                    color: #2c3e50;
+                                    background: linear-gradient(90deg, #fff, #ecf0f1);
+                                    padding: 5px 10px;
+                                    border-radius: 5px;
+                                    border-left: 3px solid #3498db;
+                                  }
+
+                                  .lista-definiciones ul li { /* Cambiado de .ej-lista-definiciones ul li */
+                                    background: rgba(52, 152, 219, 0.1);
+                                    border-radius: 5px;
+                                    padding: 8px;
+                                    margin: 5px 0;
+                                  }
+
+                                  .lista-definiciones ol li { /* Cambiado de .ej-lista-definiciones ol li */
+                                    background: rgba(155, 89, 182, 0.1);
+                                    border-radius: 5px;
+                                    padding: 8px;
+                                    margin: 5px 0;
+                                  }
+
+                                      /* Estilo creativo para los títulos */
+                                          .h3-dl { /* Cambiado de .ej-h3-dl */
+                                              position: relative;
+                                              font-size: 1.8rem;
+                                              font-weight: 700;
+                                              color: #2d3748;
+                                              margin: 0 0 20px 0;
+                                              padding: 15px 25px;
+                                              background: linear-gradient(135deg, #667eea, #764ba2);
+                                              background-clip: text;
+                                              -webkit-background-clip: text;
+                                              -webkit-text-fill-color: transparent;
+                                              text-align: center;
+                                              text-transform: uppercase;
+                                              letter-spacing: 2px;
+                                              overflow: hidden;
+                                          }
+
+
+
+                                          .h3-dl::after { /* Cambiado de .ej-h3-dl::after */
+                                              content: '';
+                                              position: absolute;
+                                              bottom: 0;
+                                              left: 50%;
+                                              transform: translateX(-50%);
+                                              width: 60px;
+                                              height: 3px;
+                                              background: linear-gradient(135deg, #667eea, #764ba2);
+                                              border-radius: 2px;
+                                          }
+
+                                          .example-box { /* Cambiado de .ej-example-box */
+                                      background: rgba(255, 255, 255, 0.95);
+                                      border-radius: 15px;
+                                      padding: 25px;
+                                      margin: 20px 0;
+                                      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+                                      backdrop-filter: blur(10px);
+                                      border: 1px solid rgba(255, 255, 255, 0.2);
+                                  }
+
+                                  .example-box:hover { /* Cambiado de .ej-example-box:hover */
+                                      transform: translateY(-5px);
+                                      transition: transform 0.3s ease;
+                                  }                                  
+                                </div>        
+                              </code>
+                            </pre>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>
+                      Atributos más comunes de una Listas de Descripción<code class=language-html>&lt;dl&gt;</code>
+                    </h4>
+                    <p>
+                      Es importante mencionar que
+                      <code class=language-html>&lt;dl&gt;</code> no tiene
+                      atributos específicos únicos, pero sus elementos hijos (
+                      <code class=language-html>&lt;dt&gt;</code> y
+                      <code class=language-html>&lt;dd&gt;</code>) también pueden
+                      usar todos los atributos globales de HTML.
+                    </p>
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>
+                      ¿Cuándo usar una Listas de Descripción
+                      <code class=language-html>&lt;dl&gt;</code>?
+                    </h4>
+                    <p>
+                      Se recomienda utilizar una lista de descripción
+                      <code class=language-html>&lt;dl&gt;</code> en los
+                      siguientes casos:
+                    </p>
+                    <ul>
+                      <li>
+                        <span class=fw-bold>Glosarios y definiciones</span>:
+                        Términos técnicos y sus explicaciones.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Metadatos</span>: Información
+                        estructurada como especificaciones técnicas.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Preguntas frecuentes (FAQ)</span>:
+                        Preguntas y sus respuestas correspondientes.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Datos de contacto</span>:
+                        Etiquetas como "Teléfono", "Email" con sus valores.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Descripciones de productos</span>:
+                        Características y especificaciones.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Información biográfica</span>:
+                        Fechas, lugares, eventos y sus descripciones.
+                      </li>
+                    </ul>
+                  </div>
+                  
+                </div>
+                
+
+                
+                <div id=listas-mezcladas>
+                  <h3>Listas Mezcladas</h3>
+                  <p>
+                    Las listas mezcladas en HTML consisten en combinar listas
+                    ordenadas ( <code class=language-html>&lt;ol&gt;</code>) y/o
+                    listas desordenadas (
+                    <code class=language-html>&lt;ul&gt;</code>) dentro de una
+                    estructura jerárquica o anidada. Esto permite crear listas
+                    con diferentes tipos de numeración o viñetas en distintos
+                    niveles, aportando claridad y organización a la información.
+                  </p>
+
+                  
+                  <div>
+                    <h4>¿Cómo funciona una Lista Mezclada?</h4>
+                    <p>
+                      El navegador procesa la estructura anidada y la representa
+                      con distintos estilos de viñetas o numeración para cada
+                      nivel, mejorando la organización visual y semántica del
+                      contenido. Por ejemplo, una lista desordenada puede
+                      incluir una lista ordenada dentro de uno de sus elementos
+                      para detallar pasos o subcategorías, y viceversa,
+                      ofreciendo flexibilidad en la presentación.
+                    </p>
+                    <p>
+                      Este sistema permite representar relaciones jerárquicas
+                      entre elementos, facilitando la creación de menús
+                      multinivel, instrucciones detalladas o cualquier contenido
+                      que necesite orden y claridad. La estructura se forma al
+                      incorporar una lista completa dentro de un elemento
+                      <code class=language-html>&lt;li&gt;</code> de otra lista,
+                      y el navegador ajusta automáticamente la indentación y los
+                      marcadores para visualizar claramente los distintos
+                      niveles.
+                    </p>
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>Estructura básica de una Lista Mezclada</h4>
+                    <p>
+                      Se dbe pensar como una estructura de "contenido principal"
+                      y "sub-contenido relacionado" para una mejor comprensión
+                      de las listas mezcladas.
+                    </p>
+                    <p>
+                      <span class="fw-bold span">Mecánica del Funcionamiento</span>:
+                    </p>
+                    <ul>
+                      <li>
+                        <span class=fw-bold>Lista Principal o Contenedor</span>: Se tiene una lista principal (ya sea
+                        <code class=language-html>&lt;ul&gt;</code> o
+                        <code class=language-html>&lt;ol&gt;</code>), cada punto
+                        de esta lista principal es un
+                        <code class=language-html>&lt;li&gt;</code>.
+                        <div class=ej-sintaxis>
+                          <pre data-src-status=loaded tabindex=0>                            <code class=language-html data-prismjs-copy=Copy>
+                              &lt;ul&gt;
+                                  &lt;li&gt;Elemento Principal 1&lt;/li&gt;
+                                  &lt;li&gt;Elemento Principal 2&lt;/li&gt;
+                                  &lt;li&gt;Elemento Principal 3&lt;/li&gt;
+                              &lt;/ul&gt;
+                            </code>
+                          </pre>
+                        </div>
+                      </li>
+                      <li>
+                        <span class=fw-bold>Anidación</span>: Cada elemento de
+                        la lista puede contener una sublista, es decir, entre
+                        las etiquetas
+                        <code class=language-html>&lt;li&gt;</code> y
+                        <code class=language-html>&lt;/li&gt;</code> se inserta
+                        una nueva lista (
+                        <code class=language-html>&lt;ul&gt;</code> o
+                        <code class=language-html>&lt;ol&gt;),</code> creando una
+                        estructura anidada, p. ej. sub-lista 2, en el Elemento
+                        Principal 2:
+                        <div class=ej-sintaxis>
+                          <pre data-src-status=loaded tabindex=0>                            <code class=language-html data-prismjs-copy=Copy>
+                              &lt;ul&gt;
+                                  &lt;li&gt;Elemento Principal 1&lt;/li&gt;
+                                  &lt;li&gt;Elemento Principal 2
+                                    &lt;ul&gt; 
+                                      &lt;!-- sub-lista 2 --&gt; 
+                                    &lt;/ul&gt;
+                                  &lt;/li&gt;
+                                  &lt;li&gt;Elemento Principal 3&lt;/li&gt;
+                              &lt;/ul&gt;
+                            </code>
+                          </pre>
+                        </div>
+                      </li>
+                      <li>
+                        <span class=fw-bold>Los Sub-elementos</span>: Dentro
+                        de esta nueva lista anidada, se coloca los propios
+                        elementos de ítem de lista (
+                        <code class=language-html>&lt;li&gt;</code>) para los
+                        sub-puntos:
+                        <div class=ej-sintaxis>
+                          <pre data-src-status=loaded tabindex=0>                          <code class=language-html data-prismjs-copy=Copy>
+                            &lt;ul&gt;
+                                &lt;li&gt;Elemento Principal 1&lt;/li&gt;
+                                &lt;li&gt;Elemento Principal 2
+                                  &lt;ul&gt; 
+                                    &lt;li&gt;Sub-elemento 2.1&lt;/li&gt;
+                                    &lt;li&gt;Sub-elemento 2.2&lt;/li&gt;
+                                  &lt;/ul&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;Elemento Principal 3&lt;/li&gt;
+                            &lt;/ul&gt;
+                          </code>
+                        </pre>
+                        </div>
+                      </li>
+                      <li>
+                        <span class=fw-bold>Cierre Correcto</span>: Es
+                        fundamental que las etiquetas de la sub-lista (
+                        <code class=language-html>&lt;/ul&gt;</code> o
+                        <code class=language-html>&lt;/ol&gt;</code>) y la
+                        etiqueta de cierre del elemento principal (
+                        <code class=language-html>&lt;/li&gt;</code>) se coloquen
+                        en el orden correcto para garantizar una estructura HTML
+                        válida. La sub-lista debe cerrarse antes de cerrar el
+                        elemento <code class=language-html>&lt;li&gt;</code> que
+                        la contiene.
+                      </li>
+                    </ul>
+                    <div class=row>
+                      
+                      <div class=ej-ejemplo>
+                        <div class="ej-ejecutado mt-3 row">
+                          
+                          <div>
+                            <div class=ej-example-box>
+                              <h3 class=pt-5>Lista Mezclada Básica</h3>
+                              <p>
+                                Combinación de lista ordenada con sub-listas no
+                                ordenadas:
+                              </p>
+
+                              <ol class=ej-lista-principal>
+                                <li>
+                                  Primer elemento principal
+                                  <ul>
+                                    <li>Sub-elemento A</li>
+                                    <li>Sub-elemento B</li>
+                                    <li>Sub-elemento C</li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  Segundo elemento principal
+                                  <ul>
+                                    <li>Sub-elemento X</li>
+                                    <li>Sub-elemento Y</li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  Tercer elemento principal
+                                  <ul>
+                                    <li>Sub-elemento 1</li>
+                                    <li>Sub-elemento 2</li>
+                                    <li>Sub-elemento 3</li>
+                                  </ul>
+                                </li>
+                              </ol>
+                            </div>
+
+                            <div class=ej-example-box>
+                              <h3 class=pt-5>Lista Mezclada Inversa</h3>
+                              <p>Lista no ordenada con sub-listas ordenadas:</p>
+                              <ul class=ej-lista-secundaria>
+                                <li>
+                                  Categoría Frutas
+                                  <ol>
+                                    <li>Manzanas</li>
+                                    <li>Bananas</li>
+                                    <li>Naranjas</li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  Categoría Verduras
+                                  <ol>
+                                    <li>Zanahorias</li>
+                                    <li>Brócoli</li>
+                                    <li>Espinacas</li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  Categoría Proteínas
+                                  <ol>
+                                    <li>Pollo</li>
+                                    <li>Pescado</li>
+                                    <li>Legumbres</li>
+                                  </ol>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class=ej-example-box>
+                              <h3 class=pt-5>
+                                Lista Mezclada con Descripciones Compleja
+                              </h3>
+                              <dl class=ej-lista-definiciones>
+                                <dt>
+                                  <strong>🚀 Tecnologías Frontend Modernas</strong>
+                                </dt>
+                                <dd>
+                                  <p>
+                                    Conjunto de herramientas y frameworks para
+                                    desarrollo de interfaces de usuario.
+                                  </p>
+                                  <ol>
+                                    <li>
+                                      <strong>Frameworks JavaScript</strong>
+                                      <ul>
+                                        <li>
+                                          React - Biblioteca para construir
+                                          interfaces de usuario
+                                          <ol type=a>
+                                            <li>Hooks para manejo de estado</li>
+                                            <li>
+                                              Context API para datos globales
+                                            </li>
+                                            <li>
+                                              Virtual DOM para rendimiento
+                                            </li>
+                                          </ol>
+                                        </li>
+                                        <li>
+                                          Vue.js - Framework progresivo
+                                          <ul>
+                                            <li>Directivas personalizadas</li>
+                                            <li>Componentes reutilizables</li>
+                                            <li>Vuex para gestión de estado</li>
+                                          </ul>
+                                        </li>
+                                        <li>
+                                          Angular - Framework completo
+                                          <ol type=i>
+                                            <li>TypeScript por defecto</li>
+                                            <li>Inyección de dependencias</li>
+                                            <li>
+                                              RxJS para programación reactiva
+                                            </li>
+                                          </ol>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <strong>Herramientas de Build</strong>
+                                      <ul>
+                                        <li>Webpack - Bundler de módulos</li>
+                                        <li>Vite - Build tool rápido</li>
+                                        <li>Parcel - Zero configuration</li>
+                                      </ul>
+                                    </li>
+                                  </ol>
+                                </dd>
+
+                                <dt>
+                                  <strong>🔧 Arquitecturas de Backend</strong>
+                                </dt>
+                                <dd>
+                                  <p>
+                                    Patrones y estructuras para el desarrollo
+                                    del lado del servidor.
+                                  </p>
+                                  <ul>
+                                    <li>
+                                      <strong>Arquitectura Monolítica</strong>
+                                      <ol>
+                                        <li>
+                                          Ventajas:
+                                          <ul>
+                                            <li>
+                                              Desarrollo inicial más simple
+                                            </li>
+                                            <li>Fácil testing end-to-end</li>
+                                            <li>Deployment unificado</li>
+                                          </ul>
+                                        </li>
+                                        <li>
+                                          Desventajas:
+                                          <ul>
+                                            <li>Escalabilidad limitada</li>
+                                            <li>Tecnología única</li>
+                                            <li>Riesgo de fallo completo</li>
+                                          </ul>
+                                        </li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      <strong>Microservicios</strong>
+                                      <ol>
+                                        <li>
+                                          Beneficios:
+                                          <ol type=A>
+                                            <li>Escalabilidad independiente</li>
+                                            <li>Diversidad tecnológica</li>
+                                            <li>Equipos autónomos</li>
+                                          </ol>
+                                        </li>
+                                        <li>
+                                          Desafíos:
+                                          <ul>
+                                            <li>Complejidad de comunicación</li>
+                                            <li>
+                                              Gestión de datos distribuidos
+                                            </li>
+                                            <li>Monitoreo y logging</li>
+                                          </ul>
+                                        </li>
+                                        <li>
+                                          Herramientas:
+                                          <ol type=i>
+                                            <li>
+                                              Docker para containerización
+                                            </li>
+                                            <li>
+                                              Kubernetes para orquestación
+                                            </li>
+                                            <li>API Gateway para routing</li>
+                                          </ol>
+                                        </li>
+                                      </ol>
+                                    </li>
+                                  </ul>
+                                </dd>
+                              </dl>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <div class=row>
+                          <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                            
+                            <pre>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>
+                                &lt;div class="example-box"&gt;
+                                  &lt;h3&gt;Lista Mezclada Básica&lt;/h3&gt;
+                                  &lt;p&gt;
+                                    Combinación de lista ordenada con sub-listas no
+                                    ordenadas:
+                                  &lt;/p&gt;
+
+                                  &lt;ol class="lista-principal"&gt;
+                                    &lt;li&gt;
+                                      Primer elemento principal
+                                      &lt;ul&gt;
+                                        &lt;li&gt;Sub-elemento A&lt;/li&gt;
+                                        &lt;li&gt;Sub-elemento B&lt;/li&gt;
+                                        &lt;li&gt;Sub-elemento C&lt;/li&gt;
+                                      &lt;/ul&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                      Segundo elemento principal
+                                      &lt;ul&gt;
+                                        &lt;li&gt;Sub-elemento X&lt;/li&gt;
+                                        &lt;li&gt;Sub-elemento Y&lt;/li&gt;
+                                      &lt;/ul&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                      Tercer elemento principal
+                                      &lt;ul&gt;
+                                        &lt;li&gt;Sub-elemento 1&lt;/li&gt;
+                                        &lt;li&gt;Sub-elemento 2&lt;/li&gt;
+                                        &lt;li&gt;Sub-elemento 3&lt;/li&gt;
+                                      &lt;/ul&gt;
+                                    &lt;/li&gt;
+                                  &lt;/ol&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="example-box"&gt;
+                                  &lt;h3&gt;Lista Mezclada Inversa&lt;/h3&gt;
+                                  &lt;p&gt;Lista no ordenada con sub-listas ordenadas:&lt;/p&gt;
+                                  &lt;ul class="lista-secundaria"&gt;
+                                    &lt;li&gt;
+                                      Categoría Frutas
+                                      &lt;ol&gt;
+                                        &lt;li&gt;Manzanas&lt;/li&gt;
+                                        &lt;li&gt;Bananas&lt;/li&gt;
+                                        &lt;li&gt;Naranjas&lt;/li&gt;
+                                      &lt;/ol&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                      Categoría Verduras
+                                      &lt;ol&gt;
+                                        &lt;li&gt;Zanahorias&lt;/li&gt;
+                                        &lt;li&gt;Brócoli&lt;/li&gt;
+                                        &lt;li&gt;Espinacas&lt;/li&gt;
+                                      &lt;/ol&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                      Categoría Proteínas
+                                      &lt;ol&gt;
+                                        &lt;li&gt;Pollo&lt;/li&gt;
+                                        &lt;li&gt;Pescado&lt;/li&gt;
+                                        &lt;li&gt;Legumbres&lt;/li&gt;
+                                      &lt;/ol&gt;
+                                    &lt;/li&gt;
+                                  &lt;/ul&gt;
+                                &lt;/div&gt;
+              
+                                &lt;div class="example-box"&gt;
+                                  &lt;h3&gt;Lista Mezclada con Descripciones Compleja&lt;/h3&gt;
+                                  &lt;dl class="lista-definiciones"&gt;
+                                    &lt;dt&gt;
+                                      &lt;strong&gt;🚀 Tecnologías Frontend Modernas&lt;/strong&gt;
+                                    &lt;/dt&gt;
+                                    &lt;dd&gt;
+                                      &lt;p&gt;
+                                        Conjunto de herramientas y frameworks para
+                                        desarrollo de interfaces de usuario.
+                                      &lt;/p&gt;
+                                      &lt;ol&gt;
+                                        &lt;li&gt;
+                                          &lt;strong&gt;Frameworks JavaScript&lt;/strong&gt;
+                                          &lt;ul&gt;
+                                            &lt;li&gt;
+                                              React - Biblioteca para construir
+                                              interfaces de usuario
+                                              &lt;ol type="a"&gt;
+                                                &lt;li&gt;Hooks para manejo de estado&lt;/li&gt;
+                                                &lt;li&gt;
+                                                  Context API para datos globales
+                                                &lt;/li&gt;
+                                                &lt;li&gt;
+                                                  Virtual DOM para rendimiento
+                                                &lt;/li&gt;
+                                              &lt;/ol&gt;
+                                            &lt;/li&gt;
+                                            &lt;li&gt;
+                                              Vue.js - Framework progresivo
+                                              &lt;ul&gt;
+                                                &lt;li&gt;Directivas personalizadas&lt;/li&gt;
+                                                &lt;li&gt;Componentes reutilizables&lt;/li&gt;
+                                                &lt;li&gt;Vuex para gestión de estado&lt;/li&gt;
+                                              &lt;/ul&gt;
+                                            &lt;/li&gt;
+                                            &lt;li&gt;
+                                              Angular - Framework completo
+                                              &lt;ol type="i"&gt;
+                                                &lt;li&gt;TypeScript por defecto&lt;/li&gt;
+                                                &lt;li&gt;Inyección de dependencias&lt;/li&gt;
+                                                &lt;li&gt;
+                                                  RxJS para programación reactiva
+                                                &lt;/li&gt;
+                                              &lt;/ol&gt;
+                                            &lt;/li&gt;
+                                          &lt;/ul&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                          &lt;strong&gt;Herramientas de Build&lt;/strong&gt;
+                                          &lt;ul&gt;
+                                            &lt;li&gt;Webpack - Bundler de módulos&lt;/li&gt;
+                                            &lt;li&gt;Vite - Build tool rápido&lt;/li&gt;
+                                            &lt;li&gt;Parcel - Zero configuration&lt;/li&gt;
+                                          &lt;/ul&gt;
+                                        &lt;/li&gt;
+                                      &lt;/ol&gt;
+                                    &lt;/dd&gt;
+
+                                    &lt;dt&gt;
+                                      &lt;strong&gt;🔧 Arquitecturas de Backend&lt;/strong&gt;
+                                    &lt;/dt&gt;
+                                    &lt;dd&gt;
+                                      &lt;p&gt;
+                                        Patrones y estructuras para el desarrollo
+                                        del lado del servidor.
+                                      &lt;/p&gt;
+                                      &lt;ul&gt;
+                                        &lt;li&gt;
+                                          &lt;strong&gt;Arquitectura Monolítica&lt;/strong&gt;
+                                          &lt;ol&gt;
+                                            &lt;li&gt;
+                                              Ventajas:
+                                              &lt;ul&gt;
+                                                &lt;li&gt;
+                                                  Desarrollo inicial más simple
+                                                &lt;/li&gt;
+                                                &lt;li&gt;Fácil testing end-to-end&lt;/li&gt;
+                                                &lt;li&gt;Deployment unificado&lt;/li&gt;
+                                              &lt;/ul&gt;
+                                            &lt;/li&gt;
+                                            &lt;li&gt;
+                                              Desventajas:
+                                              &lt;ul&gt;
+                                                &lt;li&gt;Escalabilidad limitada&lt;/li&gt;
+                                                &lt;li&gt;Tecnología única&lt;/li&gt;
+                                                &lt;li&gt;Riesgo de fallo completo&lt;/li&gt;
+                                              &lt;/ul&gt;
+                                            &lt;/li&gt;
+                                          &lt;/ol&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                          &lt;strong&gt;Microservicios&lt;/strong&gt;
+                                          &lt;ol&gt;
+                                            &lt;li&gt;
+                                              Beneficios:
+                                              &lt;ol type="A"&gt;
+                                                &lt;li&gt;Escalabilidad independiente&lt;/li&gt;
+                                                &lt;li&gt;Diversidad tecnológica&lt;/li&gt;
+                                                &lt;li&gt;Equipos autónomos&lt;/li&gt;
+                                              &lt;/ol&gt;
+                                            &lt;/li&gt;
+                                            &lt;li&gt;
+                                              Desafíos:
+                                              &lt;ul&gt;
+                                                &lt;li&gt;Complejidad de comunicación&lt;/li&gt;
+                                                &lt;li&gt;
+                                                  Gestión de datos distribuidos
+                                                &lt;/li&gt;
+                                                &lt;li&gt;Monitoreo y logging&lt;/li&gt;
+                                              &lt;/ul&gt;
+                                            &lt;/li&gt;
+                                            &lt;li&gt;
+                                              Herramientas:
+                                              &lt;ol type="i"&gt;
+                                                &lt;li&gt;
+                                                  Docker para containerización
+                                                &lt;/li&gt;
+                                                &lt;li&gt;
+                                                  Kubernetes para orquestación
+                                                &lt;/li&gt;
+                                                &lt;li&gt;API Gateway para routing&lt;/li&gt;
+                                              &lt;/ol&gt;
+                                            &lt;/li&gt;
+                                          &lt;/ol&gt;
+                                        &lt;/li&gt;
+                                      &lt;/ul&gt;
+                                    &lt;/dd&gt;
+                                  &lt;/dl&gt;
+                                &lt;/div&gt;                                
+                              </div>        
+                            </code>
+                          </pre>
+                            
+                          </div>
+                          <div class="col-lg-6 ej-code-css mb-3">
+                            
+                            <pre>                              <code class=language-css data-prismjs-copy=Copy>
+                                <div>
+                                  /* Estilos especiales para diferentes niveles */
+                                  .lista-principal &gt; li {
+                                    background: linear-gradient(90deg, #e3f2fd, #ffffff);
+                                    border-left: 4px solid #2196f3;
+                                    margin: 10px 0;
+                                    padding: 10px;
+                                    border-radius: 5px;
+                                  }
+
+                                  .lista-secundaria &gt; li {
+                                    background: linear-gradient(90deg, #f3e5f5, #ffffff);
+                                    border-left: 3px solid #9c27b0;
+                                    margin: 8px 0;
+                                    padding: 8px;
+                                    border-radius: 4px;
+                                  }
+
+                                  /* Estilos para listas de definición */
+                                  .lista-definiciones {
+                                    background: #f8f9fa;
+                                    border-radius: 10px;
+                                    padding: 20px;
+                                    margin: 20px 0;
+                                  }
+
+                                  .lista-definiciones dt {
+                                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                                    color: white;
+                                    padding: 15px;
+                                    border-radius: 8px;
+                                    margin: 20px 0 10px 0;
+                                    font-size: 1.2em;
+                                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                                  }
+
+                                  .lista-definiciones dd {
+                                    background: white;
+                                    border-left: 4px solid #667eea;
+                                    padding: 20px;
+                                    margin: 0 0 20px 20px;
+                                    border-radius: 0 8px 8px 0;
+                                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                                  }
+
+                                  .lista-definiciones dd &gt; p {
+                                    font-style: italic;
+                                    color: #666;
+                                    margin-bottom: 15px;
+                                    font-size: 1.1em;
+                                  }
+
+                                  .lista-definiciones ol[type="a"] {
+                                    list-style-type: lower-alpha;
+                                  }
+
+                                  .lista-definiciones ol[type="A"] {
+                                    list-style-type: upper-alpha;
+                                  }
+
+                                  .lista-definiciones ol[type="i"] {
+                                    list-style-type: lower-roman;
+                                  }
+
+                                  .lista-definiciones ol[type="I"] {
+                                    list-style-type: upper-roman;
+                                  }
+
+                                  .lista-definiciones ol[type="1"] {
+                                    list-style-type: decimal;
+                                  }
+
+                                  /* Colores diferentes para diferentes niveles */
+                                  .lista-definiciones li &gt; strong {
+                                    color: #2c3e50;
+                                    background: linear-gradient(90deg, #fff, #ecf0f1);
+                                    padding: 5px 10px;
+                                    border-radius: 5px;
+                                    border-left: 3px solid #3498db;
+                                  }
+
+                                  .lista-definiciones ul li {
+                                    background: rgba(52, 152, 219, 0.1);
+                                    border-radius: 5px;
+                                    padding: 8px;
+                                    margin: 5px 0;
+                                  }
+
+                                  .lista-definiciones ol li {
+                                    background: rgba(155, 89, 182, 0.1);
+                                    border-radius: 5px;
+                                    padding: 8px;
+                                    margin: 5px 0;
+                                  }
+
+                                  /* Estilo creativo para los títulos */
+                                  .h3-dl {
+                                    position: relative;
+                                    font-size: 1.8rem;
+                                    font-weight: 700;
+                                    color: #2d3748;
+                                    margin: 0 0 20px 0;
+                                    padding: 15px 25px;
+                                    background: linear-gradient(135deg, #667eea, #764ba2);
+                                    background-clip: text;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                    letter-spacing: 2px;
+                                    overflow: hidden;
+                                  }
+
+                                  .h3-dl::after {
+                                    content: "";
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    width: 60px;
+                                    height: 3px;
+                                    background: linear-gradient(135deg, #667eea, #764ba2);
+                                    border-radius: 2px;
+                                  }
+
+                                  .example-box {
+                                    background: rgba(255, 255, 255, 0.95);
+                                    border-radius: 15px;
+                                    padding: 25px;
+                                    margin: 20px 0;
+                                    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+                                    backdrop-filter: blur(10px);
+                                    border: 1px solid rgba(255, 255, 255, 0.2);
+                                    color:var(--color-fondo)
+                                  }
+
+                                  .example-box:hover {
+                                    transform: translateY(-5px);
+                                    transition: transform 0.3s ease;
+                                  }                                  
+                                </div>        
+                              </code>
+                            </pre>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>Atributos más comunes de una una Lista Mezclada</h4>
+                    <ul>
+                      <li>
+                        <span class=fw-bold>Atributos de una Ordenada</span>:
+                        <ul>
+                          <li>
+                            <code class=language-html>type</code>: Tipo de
+                            marcador: 1, a, A, i ó I
+                          </li>
+                          <li>
+                            <code class=language-html>start</code>: valor
+                            inicial.
+                          </li>
+                          <li>
+                            <code class=language-html>reversed</code>: orden
+                            invertido.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class=fw-bold>Atributos de una Desordenada</span>: Personalización con CSS:
+                        <ul>
+                          <li>
+                            <code class=language-html>list-style-type,</code>:
+                            Tipo de viñeta:
+                            <code class=language-html>Disc</code>,
+                            <code class=language-html>circle</code>,
+                            <code class=language-html>square</code> o
+                            <code class=language-html>none</code>
+                          </li>
+                          <li>
+                            <code class=language-html>list-style-image</code>:
+                            Viñeta personalizada des un archivo de icono.
+                          </li>
+                          <li>
+                            <code class=language-html>list-style-position,</code>: posición de la viñeta:
+                            <code class=language-html>inside</code> o
+                            <code class=language-html>ouside</code>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>¿Cuándo usar una Lista Mezclada?</h4>
+                    <ul>
+                      <li>
+                        <span class=fw-bold>Representar jerarquías de información</span>: Mostrar una estructura de temas principales y
+                        subtemas o pasos que dependen unos de otros, las listas
+                        mezcladas ayudan a visualizar la relación entre los
+                        diferentes niveles.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Mostrar pasos con detalles adicionales</span>: Explicar un procedimiento general con instrucciones
+                        específicas para cada paso, se puede usar una lista
+                        mezclada para mostrar la secuencia principal y, dentro
+                        de cada paso, detallar las acciones
+                      </li>
+                      <li>
+                        <span class=fw-bold>Crear índices temáticos</span>:
+                        Para organizar temas y subtemas de un documento o
+                        manual, una lista mezclada ayuda a estructurar la
+                        información de forma ordenada.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Describir clasificaciones o taxonomías</span>: En áreas como biología, informática o documentación
+                        técnica, se pueden usar listas mezcladas para mostrar
+                        clasificaciones jerárquicas.
+                      </li>
+                    </ul>
+                    <p>
+                      <span class=fw-bold>Cuándo NO usar una Lista Mezclada</span>:
+                    </p>
+                    <ul>
+                      <li>
+                        <span class=fw-bold>Cuando la información no tiene relación
+                          jerárquica</span>: Si los ítems no dependen el uno del otro ni forman
+                        una subcategoría, es mejor usar listas separadas o
+                        simplemente texto.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Para fines puramente visuales</span>: No usar listas anidadas solo para aplicar indentación
+                        o un estilo visual. Si solo se quiere un efecto visual,
+                        es mejor usar CSS para el espaciado o los estilos. El
+                        HTML debe reflejar la estructura lógica del contenido.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Cuando el nivel de anidación es excesivo</span>: Aunque HTML permite anidar listas a muchos niveles,
+                        más de 3 o 4 niveles pueden hacer que el contenido sea
+                        muy difícil de leer y entender, tanto para los usuarios
+                        como para los lectores de pantalla. En esos casos,
+                        considera dividir el contenido en secciones más pequeñas
+                        o usar otros elementos HTML como encabezados y párrafos.
+                      </li>
+                    </ul>
+                  </div>
+                  
+                </div>
+                
+                
+              </div>
+            </div>
+          </article>
+          
+
+          
+          <article class="pt-5 row" id=comments>
+            <h2>COMENTARIOS</h2>
+            <p>
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
+            </p>
+            <div class="d-flex justify-content-center">
+              <form action=https://formspree.io/f/mdkdawkg method=post id=myForm>
+                <fieldset class="d-flex flex-column gap-3">
+                  <legend class="fs-4 text-center">Deje su comentario</legend>
+
+                  <div class="d-flex flex-column">
+                    <label for=name>Nombre:</label>
+                    <input name=name id=name placeholder=User class="form-control rounded" required>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for=email>Email:</label>
+                    <input type=email name=email id=email placeholder=user@mail.com class="form-control rounded" required>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for=message>Mensaje:</label>
+                    <textarea name=message id=message cols=30 rows=5 placeholder="Su comentario..." class="form-control rounded-3" required></textarea>
+                  </div>
+
+                  <button class="border border-2 btn btn-outline-light my-3 rounded-pill">
+                    Enviar
+                  </button>
+                </fieldset>
+
+                <p class="small text-center">
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
+                </p>
+              </form>
+            </div>
+          </article>
+          
+        </section>
+        
+        <aside class="col-lg-3 d-lg-block d-none pt-5">
+          <h1>En Este Artículo</h1>
+          <div class=menu-scroll>
+            <div class=menu-container>
+              <div class=menu-item>
+                <a href=#introduccion class=simple-link>Introducción</a>
+              </div>
+
+              <div class=menu-item>
+                <a href=#definicion-de-listas-en-html class=simple-link>Definición de Listas en HTML</a>
+              </div>
+
+              <div class=menu-item>
+                <details>
+                  <summary>Tipos de Listas</summary>
+                  <div class=submenu>
+                    <a href=#tipos-de-listas class=submenu-item>Tipos de Listas</a>
+
+                    <a href=#listas-ordenadas-ol class=submenu-item>Listas Ordenadas
+                      <code class=language-html>&lt;ol&gt;</code></a>
+                    <a href=#listas-desordenadas-ul class=submenu-item>Listas Desordenadas
+                      <code class=language-html>&lt;ul&gt;</code></a>
+                    <a href=#listas-de-descripcion-dl class=submenu-item>Listas de Descripción
+                      <code class=language-html>&lt;dl&gt;</code></a>
+                    <a href=#listas-mezcladas class=submenu-item>Listas Mezcladas</a>
+                  </div>
+                </details>
+              </div>
+              <div class=menu-item>
+                <a href=#comments class=simple-link>Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+        
+        
+      </main>
+      
+    </div>
+    
+
+    
+    <footer class="border-1 border-top m-1 mt-auto row">
+      <div class=row>
+        
+        <address class="align-items-center col-lg-4 d-flex flex-column">
+          <div class="fs-2 text-center">Contacto</div>
+          <div class="align-items-center d-flex flex-row">
+            <i class="bi bi-envelope-at fs-3"></i>
+            <span class=ms-3>
+              <a class=text-decoration-none href=mailto:ehfeduardo@gmail.com>ehfeduardo@gmail.com</a>
+            </span>
+          </div>
+          <div class="align-items-center d-flex flex-row">
+            <i class="bi bi-geo-alt fs-3"></i>
+            <span class=ms-3>Bogotá D. C. - Colombia</span>
+          </div>
+        </address>
+        
+        <div class="align-items-center col-lg-4 d-flex flex-column h-100 justify-content-center">
+          <div>
+            <i class="bi bi-c-circle fs-5"></i>
+          </div>
+          <div class=ms-2>All Rights Reserved 2025</div>
+        </div>
+        
+        <div class="align-items-center col-lg-4 d-flex flex-column">
+          <div class="fs-2 text-center">Redes Sociales</div>
+          <div class="align-items-center d-flex gap-5 justify-content-evenly">
+            <div>
+              <a href=https://www.linkedin.com/in/eduardoherreraf/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-linkedin fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://github.com/eduardoherreraf target=_blank rel="noopener noreferrer">
+                <i class="bi bi-github fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://www.facebook.com/eduardoherreraforero/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-facebook fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://twitter.com/ehfeduardo/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-twitter-x fs-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="align-items-center d-flex gap-2 justify-content-center"></div>
+    </footer>
+    
+
+    
+    <button onclick=topFunction() id=myBtnScroll title="Go to top">
+      <svg xmlns:xmlns=http://www.w3.org/2000/svg width=32 height=32 fill=currentColor class="bi bi-arrow-bar-up" style=margin-left:-2px viewBox="0 0 16 16"><path fill-rule=evenodd d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg>
+    </button>
+    
+  
+

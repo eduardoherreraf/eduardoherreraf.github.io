@@ -1,0 +1,1610 @@
+<!DOCTYPE html><html lang=es data-bs-theme=dark><link rel=stylesheet href=PlantillaMiPagina.b8c68df4.css><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="Guía que explica cómo utilizar los enlaces e hipervínculos en una página web."><meta name=title content="Enlaces y hipervínculos HTML - Ing. Eduardo Herrera Forero."><meta name=author content="Ing. Eduardo Herrera Forero"><meta name=application-name content=EHF><meta name=robots content="index, follow"><link rel=canonical href=https://eduardoherreraf.github.io/html-0011_enlaces_y_hipervinculos.html><meta property=og:type content=website><meta property=og:title content="Enlaces y hipervínculos HTML - Ing. Eduardo Herrera Forero."><meta property=og:description content="Guía que explica cómo utilizar los enlaces e hipervínculos en una página web."><meta property=og:image content=769b450be9c9345b><meta property=og:image:alt content="Analogía de un hipervínculo y la dirección de una invitación."><meta property=og:url content=https://eduardoherreraf.github.io/html-0011_enlaces_y_hipervinculos.html><meta property=og:locale content=es_CO><meta name=twitter:card content=summary_large_image><meta name=twitter:title content="Enlaces y hipervínculos HTML - Ing. Eduardo Herrera Forero."><meta name=twitter:description content="Guía que explica cómo utilizar los enlaces e hipervínculos en una página web."><meta name=twitter:image content=769b450be9c9345b><meta name=twitter:image:alt content="Analogía de un hipervínculo y la dirección de una invitación."><meta name=twitter:url content=https://eduardoherreraf.github.io/html-0011_enlaces_y_hipervinculos.html><meta name=twitter:site content=@ehfeduardo><link rel=apple-touch-icon sizes=180x180 href=apple-touch-icon.96046c77.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.f7991d03.png><link rel=icon type=image/png sizes=192x192 href=android-chrome-192x192.4500461c.png><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.060ee0ac.png><link rel=manifest href=site.webmanifest><link rel=mask-icon href=safari-pinned-tab.df3b9c22.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>Enlaces y hipervínculos HTML - Ing. Eduardo Herrera Forero.</title><script type=module src=PlantillaMiPagina.638e488a.js></script><meta name=google-site-verification content=2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc><body>
+    
+    <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg">
+      <div class=container-fluid>
+        
+        <a class="align-items-center d-flex ms-2 navbar-brand text-decoration-none" href=index.html>
+          <img src=logo.08948a42.png alt="Logo de Ing. Eduardo Herrera Forero" width=30 height=30 class="align-text-top d-inline-block me-1">
+          <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span>
+        </a>
+        
+        <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+          <span class=navbar-toggler-icon></span>
+        </button>
+        
+        <div class="collapse ms-auto navbar-collapse text-center" id=navbarSupportedContent>
+          <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100">
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html>SOBRE MÍ</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#resume>EXPERIENCIA</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#portfolio>PORTAFOLIO</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#studies>ESTUDIOS</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link publicaciones-activo text-decoration-none" href=index.html#blog>PUBLICACIONES</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#contact>CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <div class=container-fluid id=introduccion>
+      <main class=row>
+        <section class="col-lg-9 pb-3 pt-5 px-lg-4">
+          
+          <article class="border-1 border-bottom pb-3 row" data-bs-spy=scroll data-bs-target=#list-example data-bs-smooth-scroll=true>
+            <div>
+              <header>
+                <h1>Enlaces y hipervínculos HTML</h1>
+              </header>
+
+              
+              <div>
+                <h2>Introducción</h2>
+
+                <div class="centrar-imagen imagen50">
+                  <picture>
+                    <img src=https://i.postimg.cc/MHBr9FzF/img-ancla-y-hirpervinculo-comp.png class=img-fluid alt="Enlaces y hipervínculos HTML" title="Guía que explica cómo utilizar los enlaces e hipervínculos en una página web.">
+                    <figcaption>
+                      Analogía de un hipervínculo y la dirección de una
+                      invitación.
+                    </figcaption>
+                  </picture>
+                </div>
+
+                <p>
+                  <span class=fw-bold>
+                    Analogía: Un hipervínculo es como una dirección en una carta
+                    o invitación</span>: Cuando se recibe una invitación a una fiesta. En la
+                  invitación aparece una dirección:
+                  <span class=fst-italic>"Te esperamos en Calle 123, Edificio Fiesta, a las 8
+                    PM."</span>
+                </p>
+                <p>La dirección:</p>
+                <ul>
+                  <li>
+                    No se trata del evento en sí, solo se especifica su
+                    ubicación.
+                  </li>
+                  <li>
+                    Siguiendo esa dirección, se puede estar en el lugar
+                    correcto.
+                  </li>
+                  <li>
+                    Sin conocer esa dirección, es imposible encontrar el sitio.
+                  </li>
+                </ul>
+                <p>En <span class=fw-bold>HTML</span>:</p>
+                <ul>
+                  <li>
+                    La invitación funciona como el enlace
+                    <code class=language-html>&lt;a&gt;</code>.
+                  </li>
+                  <li>
+                    La dirección especificada corresponde al valor del atributo
+                    <code class=language-html>href</code>.
+                  </li>
+                  <li>
+                    Pulsar el enlace es similar a dirigirse al destino señalado.
+                  </li>
+                </ul>
+                <p>
+                  Los vínculos están presentes en casi todos los sitios web. Los
+                  vínculos facilitan a los usuarios navegar de una página a otra
+                  con un clic.
+                </p>
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=enlaces-html-hiperenlaces class=mt-3>
+                <h2>Enlaces HTML-Hiperenlaces</h2>
+                <p>
+                  Los enlaces en HTML son hiperenlaces que conectan diferentes
+                  recursos en la web.
+                </p>
+                <p>
+                  Al hacer clic en un enlace, se puede navegar hacia otro
+                  documento o página.
+                </p>
+                <p>
+                  Al pasar el cursor sobre un enlace, la flecha del ratón se
+                  transforma en una pequeña mano (<i class="bi bi-hand-index-thumb-fill"></i>).
+                </p>
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=enlaces-html-sintaxis class=mt-3>
+                <h2>Enlaces HTML-Sintaxis</h2>
+                <p>
+                  La etiqueta HTML
+                  <code class=language-html>&lt;a&gt;</code> define un
+                  hipervínculo. Tiene la siguiente sintaxis:
+                </p>
+
+                <div class=ej-sintaxis>
+                  <pre data-src-status=loaded tabindex=0>                    <code class=language-html data-prismjs-copy=Copy>
+                      &lt;a href="url"&gt;link text&lt;/a&gt;
+                    </code>
+                  </pre>
+                </div>
+                <ul>
+                  <li>
+                    <code class=language-html>&lt;a&gt;</code>: Es la etiqueta
+                    que sirve para crear un enlace (<span class=fst-italic>anchor</span>).
+                  </li>
+                  <li>
+                    <code class=language-html>href</code>: Es el atributo que
+                    especifica la URL hacia la cual se redirige al usuario al
+                    pulsar.
+                  </li>
+                  <li>
+                    <span class=fw-bold>Texto del vínculo</span>: Es el
+                    contenido visible que el usuario puede pulsar.
+                  </li>
+                  <li>
+                    Al pulsar sobre el texto del vínculo, se dirigirá al usuario
+                    a la URL indicada en
+                    <code class=language-html>href</code>.
+                  </li>
+                </ul>
+                
+                <div class=ej-ejemplo>
+                  <div class="ej-ejecutado mt-3">
+                    
+                    <p>
+                      Este ejemplo muestra cómo crear un enlace a la página del
+                      <a href=https://eduardoherreraf.github.io/ target=_blank>Ing. Eduardo Herrera Forero</a>:
+                    </p>
+                    
+                  </div>
+                  <div class="ej-code-html mb-3">
+                    
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-html data-prismjs-copy=Copy>
+                        Este ejemplo muestra cómo crear un enlace a la página del 
+                        &lt;a href="https://eduardoherreraf.github.io/"&gt;Ing. Eduardo Herrera Forero&lt;/a&gt; 
+                      </code>
+                    </pre>
+                    
+                  </div>
+                </div>
+                
+                <p>
+                  De manera predeterminada, los vínculos se mostrarán de la
+                  siguiente forma en todos los navegadores:
+                </p>
+                <ul>
+                  <li>
+                    Un enlace sin visitar se resalta en
+                    <span style=color:#9bb5ff>azul</span> y con
+                    <span style=text-decoration:underline>subrayado</span>.
+                  </li>
+                  <li>
+                    Un enlace visitado se destaca en
+                    <span style=color:#d2a4ff>púrpura</span> y con
+                    <span style=text-decoration:underline>subrayado</span>.
+                  </li>
+                  <li>
+                    Un enlace activo se marca en
+                    <span style=color:#ff6b6b>rojo</span> y con
+                    <span style=text-decoration:underline>subrayado</span>.
+                  </li>
+                </ul>
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=enlaces-html---el-atributo-target class=mt-3>
+                <h2>Enlaces HTML - El Atributo target</h2>
+                <p>
+                  Por defecto, la página enlazada aparecerá en la ventana actual
+                  del navegador. Para modificar esto, es necesario definir un
+                  destino diferente para el enlace.
+                </p>
+                <p>
+                  El atributo
+                  <code class=language-html>target</code> especifica dónde
+                  abrir el documento enlazado.
+                </p>
+                <p>
+                  El atributo <code class=language-html>target</code> puede
+                  ser uno de los siguientes valores:
+                </p>
+                <ul>
+                  <li>
+                    <code class=language-html>_self</code>: Por omisión, carga
+                    el documento en la misma ventana o pestaña donde se hizo
+                    clic.
+                  </li>
+                  <li>
+                    <code class=language-html>_blank</code>: Carga el
+                    documento en una nueva ventana o pestaña, se usa en conjunto
+                    con
+                    <code class=language-html>rel="noopener noreferrer"</code>, para una mayor seguridad y privacidad.
+                  </li>
+                  <li>
+                    <code class=language-html>_parent</code>: Carga el
+                    documento en el marco superior inmediato, si existe.
+                  </li>
+                  <li>
+                    <code class=language-html>_top</code>: Carga el documento
+                    ocupando todo el espacio de la ventana, rompe todos los
+                    frames.
+                  </li>
+                  <li>
+                    <sapa class=fw-bold>Nombre Personalizado</sapa>: Abre en
+                    ventana específica.
+                  </li>
+                  <li>
+                    Los atributos más usados son:
+                    <code class=language-html>_self</code> y
+                    <code class=language-html>_blank</code>:
+                  </li>
+                </ul>
+                
+                <div class=ej-ejemplo>
+                  <div class="ej-ejecutado mt-3">
+                    
+                    <p>
+                      <code class=language-html>_self</code>:
+                      <a href=https://eduardoherreraf.github.io/>
+                        La página abre en la misma pestaña / ventana</a>
+                      <br>
+                      <code class=language-html>_blank</code>:
+                      <a href=https://eduardoherreraf.github.io/ target=_blank rel="noopener noreferrer">
+                        La página abre en otra pestaña / ventana</a>
+                    </p>
+                    
+                  </div>
+                  <div class="ej-code-html mb-3">
+                    
+                    <pre data-src-status=loaded tabindex=0>                    <code class=language-html data-prismjs-copy=Copy>
+                      &lt;p&gt;&lt;code&gt;_self&lt;/code&gt;: 
+                        &lt;a href="https://eduardoherreraf.github.io/" target="_self"&gt;La página abre en la misma pestaña / ventana&lt;/a&gt;
+                      &lt;/p&gt;
+                      &lt;p&gt;&lt;code&gt;_bank&lt;/code&gt;: 
+                        &lt;a href="https://eduardoherreraf.github.io/" 
+                          target="_blank 
+                          rel="noopener noreferrer"&gt;
+                        La página abre en otra pestaña / ventana&lt;/a&gt;
+                      &lt;/p&gt;
+                    </code>
+                  </pre>
+                    
+                  </div>
+                </div>
+                
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=urls-absolutas-vs-urls-relativas class=mt-3>
+                <h2>URLs Absolutas vs URLs Relativas</h2>
+                <p>
+                  En el contexto de HTML, las
+                  <abbr title="Uniform Resource Locator">URL</abbr>s (Uniform
+                  Resource Locators) son fundamentales para especificar la
+                  ubicación de recursos como enlaces, imágenes o archivos
+                  multimedia. Permiten indicar el nombre y la localización de un
+                  archivo o recurso, y se dividen principalmente en dos tipos:
+                  absolutas y relativas. <br>
+                  
+                </p>
+                <div id=url-absoluta>
+                  <h3>URL Absoluta</h3>
+                  <p>
+                    Una URL absoluta es una dirección completa e independiente
+                    que contiene todos los componentes necesarios para localizar
+                    un recurso desde cualquier ubicación, sin depender de la
+                    posición del usuario o del documento que la referencia.
+                  </p>
+                  <p>
+                    Las URLs absolutas son necesarias cuando se quiere enlazar a
+                    una página o recurso que se encuentra fuera de su propio
+                    sistema o servidor. Este tipo de URL es universalmente
+                    accesible desde cualquier ubicación y no depende del
+                    contexto donde se use.
+                  </p>
+                  <p>
+                    Una URL absoluta proporciona la dirección completa y
+                    autosuficiente de un recurso en la web. Esto incluye:
+                  </p>
+                  <ul>
+                    <li>
+                      <span class=fw-bold>Protocolo</span>: Estar seguro de
+                      incluir de primero el protocolo, como
+                      <code class=language-html>http://</code>,
+                      <code class=language-html>https://</code>,
+                      <code class=language-html>ftp://</code>, etc.
+                    </li>
+                    <li>
+                      <span class=fw-bold>Dominio completo</span>: Contiene el
+                      nombre de dominio del sitio web (ej., www.ejemplo.com).
+                    </li>
+                    <li>
+                      <span class=fw-bold>Ruta</span>: Especifica la posición
+                      del recurso en el servidor (ej.,
+                      categoria/computador-Mac.html).
+                    </li>
+                  </ul>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3">
+                      
+                      <p>
+                        Para la página inicial de la Nasa:
+                        <a href=https://www.nasa.gov/>Página inicial de NASA
+                        </a>
+                      </p>
+                      <p>
+                        Listado de los
+                        <a href=http://localhost:3000/api/usuarios>Usuarios Locales</a>
+                      </p>
+                      <p>
+                        Ver
+                        <a href=ftp://servidor.com/archivos/documento.pdf>documento PDF</a>
+                      </p>
+                      <p>
+                        Las direcciones de correo electrónico en enlaces también
+                        usan una estructura absoluta con
+                        <code class=language-html>mailto:</code>
+                        <a href=mailto:presidente@empresa.com>Presidente de la empresa</a>.
+                      </p>
+                      
+                    </div>
+                    <div class="ej-code-html mb-3">
+                      
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-html data-prismjs-copy=Copy>
+                          &lt;p&gt;Para la página inicial de la Nasa: &lt;a href="https://www.nasa.gov/"&gt;Página inicial de NASA&lt;/a&gt;&lt;/p&gt; <br>
+                          &lt;p&gt;Listado de los &lt;a href="http://localhost:3000/api/usuarios"&gt;Usuarios Locales&lt;/a&gt;&lt;/p&gt; <br>
+                          &lt;p&gt;Ver &lt;a href="ftp://servidor.com/archivos/documento.pdf"&gt;documento PDF&lt;/a&gt;&lt;/p&gt; <br>
+                          &lt;p&gt;Enviar este documento a: &lt;a href="mailto:presidente@empresa.com"&gt;Presidente de la empresa&lt;/a&gt;.&lt;/p&gt;
+                        </code>
+                      </pre>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  <div>
+                    <h4>Ventajas de URLs Absolutas</h4>
+                    <ul>
+                      <li>
+                        <span class=fw-bold>Exactitud absoluta</span>: Siempre
+                        dirigen al mismo recurso sin confusiones.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Autonomía del entorno</span>:
+                        Operan correctamente desde cualquier lugar.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Intercambiabilidad</span>: Pueden
+                        compartirse y funcionar en cualquier plataforma.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Optimización SEO</span>: Ideales
+                        para enlaces externos y difusión en redes sociales.
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  
+                  <div>
+                    <h4>Desventajas de URLs Absolutas</h4>
+                    <ul>
+                      <li>
+                        <span class=fw-bold>Menos adaptables</span>:
+                        Complicadas de ajustar si el dominio cambia.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Más extensas</span>: Consumen más
+                        espacio en el código.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Vinculación al dominio</span>:
+                        Dificultades al trasladar entre entornos (desarrollo,
+                        testing, producción).
+                      </li>
+                      <li>
+                        <span class=fw-bold>Mantenimiento</span>: Más
+                        complejas de actualizar en sitios de gran escala.
+                      </li>
+                    </ul>
+                    <p>
+                      Por último, es importante copiar estas direcciones
+                      correctamente, respetando mayúsculas y minúsculas,
+                      especialmente para servidores UNIX o Github Pages que
+                      distinguen entre ellas.
+                    </p>
+                  </div>
+                  
+                </div>
+                
+
+                
+                <div id=url-relativa>
+                  <h3>URL Relativa</h3>
+                  <p>
+                    Una URL relativa especifica la ubicación de un recurso en
+                    relación con la ubicación del documento HTML actual. Son
+                    comúnmente utilizadas para enlazar a otras páginas o
+                    recursos que forman parte del mismo sitio web.
+                  </p>
+                  
+                  <div>
+                    <h4>Tipos de URLs Relativas</h4>
+                    <ul>
+                      <li>
+                        <span class=fw-bold>Relativas al documento actual</span>:
+                        <div class=ej-sintaxis>
+                          <pre data-src-status=loaded tabindex=0>                            <code class=language-html data-prismjs-copy=Copy>
+                              &lt;!-- Archivo en la misma carpeta --&gt;
+                              &lt;a href="contacto.html"&gt;Contacto&lt;/a&gt;
+
+                              &lt;!-- Archivo en la misma carpeta --&gt;
+                              &lt;a href="./usuarios.html"&gt;Usuarios&lt;/a&gt;
+
+                              &lt;!-- Archivo en subcarpeta --&gt;
+                              &lt;a href="imagenes/logo.png"&gt;Logo&lt;/a&gt;
+                            </code>
+                          </pre>
+                        </div>
+                      </li>
+                      <li>
+                        <span class=fw-bold>Relativas a la raíz del sitio</span>:
+                        <div class=ej-sintaxis>
+                          <pre data-src-status=loaded tabindex=0>                            <code class=language-html data-prismjs-copy=Copy>
+                              &lt;!-- Comienzan con / --&gt;
+                              &lt;a href="/productos/categoria/"&gt;Productos&lt;/a&gt;
+                              &lt;a href="/css/estilos.css"&gt;Estilos&lt;/a&gt;                              
+                            </code>
+                          </pre>
+                        </div>
+                      </li>
+                      <li>
+                        <span class=fw-bold>Relativas con navegación de directorios</span>:
+                        <div class=ej-sintaxis>
+                          <pre data-src-status=loaded tabindex=0>                            <code class=language-html data-prismjs-copy=Copy>
+                              &lt;!-- Subir un nivel --&gt;
+                              &lt;a href="../index.html"&gt;Inicio&lt;/a&gt;
+
+                              &lt;!-- Subir dos niveles --&gt;
+                              &lt;a href="../../recursos/manual.pdf"&gt;Manual&lt;/a&gt;
+
+                              &lt;!-- Combinadas --&gt;
+                              &lt;a href="../imagenes/banner.jpg"&gt;Banner&lt;/a&gt;
+                            </code>
+                          </pre>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  
+                  <div>
+                    <h4>Ejemplos Prácticos de URLs Relativas</h4>
+                    
+                    <div class=contenedor>
+                      <div class=row>
+                        <div class=col-lg-4>
+                          <p>
+                            <span class=fw-bold> Estructura de Carpetas</span>:
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <pre data-src-status=loaded tabindex=0><span class=text-bg-success>sitio-web (inicio)</span>/
+├── index.html
+├── productos/
+│   ├── categoria/
+│   │   └── <span class=text-bg-warning>item.html</span>
+│   └── <span class=text-bg-danger>lista.html</span>
+├── imagenes/
+│   └── <span class=text-bg-primary>logo.png</span>
+└── css/
+    └── <span class=text-bg-light>estilos.css</span>
+                              </pre>
+                          </div>
+                        </div>
+                        <div class=col-lg-4>
+                          <p>
+                            <span class=fw-bold> Desde</span>
+                            <code class=language-html><span class=text-bg-warning>item.html</span></code>:
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <pre data-src-status=loaded tabindex=0>Ir a inicio: <code class=language-html><span class=text-bg-success>../../index.html</span></code>
+Ir a lista: <code class=language-html><span class=text-bg-danger>../lista.html</span></code>
+Cargar logo: <code class=language-html><span class=text-bg-primary>../../imagenes/logo.png</span></code>
+Cargar CSS: <code class=language-html><span class=text-bg-light>../../css/estilos.css</span></code>
+                          </pre>
+                          </div>
+                        </div>
+                        <div class=col-lg-4>
+                          <p>
+                            <span class=fw-bold>Usando rutas absolutas del sitio</span>:
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <pre data-src-status=loaded tabindex=0>Ir a inicio: <span class=text-bg-success>/index.html</span>
+Ir a lista: <span class=text-bg-danger>/productos/lista.html</span>
+Cargar logo: <span class=text-bg-primary>/imagenes/logo.png</span>
+Cargar CSS: <span class=text-bg-light>/css/estilos.css</span>
+                          </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div>
+                    <h4>Ventajas de URLs Relativas</h4>
+                    <ul>
+                      <li>
+                        <span class=fw-bold>Portabilidad</span>: Permiten
+                        trasladar el sitio completo de manera funcional y sin
+                        complicaciones.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Flexibilidad</span>: Facilitan la
+                        adaptación y el cambio entre diferentes entornos con
+                        facilidad.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Brevedad</span>: Son más concisas
+                        y claras en su estructura.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Eficiencia</span>: Reducen la
+                        cantidad de código escrito, optimizando recursos.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Desarrollo local</span>: Operan de
+                        forma efectiva sin necesidad de un servidor web.
+                      </li>
+                    </ul>
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>Desventajas de URLs Relativas</h4>
+                    <ul>
+                      <li>
+                        <span class=fw-bold>Dependencia del contexto</span>:
+                        Pueden fallar al trasladar archivos.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Confusión</span>: Resultan más
+                        complejas de rastrear en proyectos extensos.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Limitaciones</span>: No son
+                        adecuadas para compartir fuera de la plataforma.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Depuración</span>: Son más
+                        complicadas de depurar cuando presentan errores.
+                      </li>
+                    </ul>
+                  </div>
+                  
+                </div>
+                
+
+                
+                <div id=cuándo-usar-cada-tipo-de-url>
+                  <h3>Cuándo Usar Cada Tipo de URL</h3>
+                  <p>Usar URLs absolutas cuando:</p>
+                  <ul>
+                    <li>Enlaces a sitios externos.</li>
+                    <li>APIs y servicios web.</li>
+                    <li>Recursos compartidos en redes sociales.</li>
+                    <li>Configuraciones de producción críticas.</li>
+                    <li>CDNs y recursos externos.</li>
+                    <li>Emails y documentos PDF.</li>
+                  </ul>
+
+                  <p>Usar URLs relativas cuando:</p>
+                  <ul>
+                    <li>Navegación interna del sitio.</li>
+                    <li>Recursos locales (CSS, JS, imágenes).</li>
+                    <li>Enlaces entre páginas del mismo dominio.</li>
+                    <li>Desarrollo y pruebas.</li>
+                    <li>Sitios que cambiarán de dominio.</li>
+                  </ul>
+                </div>
+                
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=enlaces-html---usar-una-imagen-como-enlace class=mt-3>
+                <h2>Enlaces HTML - Usar una Imagen como Enlace</h2>
+                <p>
+                  Un enlace HTML que incorpora una imagen como vínculo permite
+                  redirigir al usuario a otra página o recurso al hacer clic en
+                  la imagen. Esto se consigue mediante la combinación de las
+                  etiquetas <code class=language-html>&lt;a&gt;</code> (para
+                  crear enlaces) y
+                  <code class=language-html>&lt;img&gt;</code> (para insertar
+                  imágenes). En otras palabras, la etiqueta de imagen (<code class=language-html>&lt;img&gt;</code>) está contenida dentro de la etiqueta de anclaje (<code class=language-html>&lt;a&gt;</code>).
+                </p>
+                
+                <p><span class=fw-bold>Sintaxis Básica</span>:</p>
+                <div class=ej-sintaxis>
+                  <pre data-src-status=loaded tabindex=0>                    <code class=language-html data-prismjs-copy=Copy>
+                      &lt;a href="URL_destino"&gt;
+                        &lt;img src="ruta_imagen.jpg" alt="Descripción de la imagen"&gt;
+                      &lt;/a&gt;                                 
+                    </code>
+                  </pre>
+                </div>
+                
+                <p><span class=fw-bold>Ejemplo</span>:</p>
+                
+                <div class=ej-ejemplo>
+                  <div class="ej-ejecutado mt-3">
+                    
+                    <div class=ej-centrar-imagen>
+                      <a href=https://www.nasa.gov/>
+                        <img src=https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg alt="Logo de NASA" width=150>
+                      </a>
+                    </div>
+                    
+                  </div>
+                  <div class="ej-code-html mb-3">
+                    
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-html data-prismjs-copy=Copy>
+                        &lt;a href="https://www.nasa.gov/"&gt;
+                          &lt;img
+                            src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg"
+                            alt="Logo de NASA"
+                            width="150"
+                          /&gt;
+                        &lt;/a&gt;
+                      </code>
+                    </pre>
+                    
+                  </div>
+                </div>
+                
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=enlaces-html---enlace-a-una-direccion-de-correo-electronico class=mt-3>
+                <h2>
+                  Enlaces HTML - Enlace a una Dirección de Correo Electrónico
+                </h2>
+                <p>
+                  Un enlace de correo electrónico en HTML se crea con la
+                  etiqueta <code class=language-html>&lt;a&gt;</code> y el
+                  esquema <code class=language-html>mailto:</code> en el
+                  atributo <code class=language-html>href.</code> Permite a
+                  los usuarios abrir su cliente de correo predeterminado con un
+                  nuevo mensaje dirigido a una dirección específica, facilitando
+                  el envío de correos con un solo clic.
+                </p>
+                
+                <p><span class=fw-bold>Sintaxis Básica</span>:</p>
+                <div class=ej-sintaxis>
+                  <pre data-src-status=loaded tabindex=0>                    <code class=language-html data-prismjs-copy=Copy>
+                      &lt;a href="mailto:correo@ejemplo.com"&gt;Enviar correo&lt;/a&gt;
+                    </code>
+                  </pre>
+                </div>
+                
+
+                
+                <div id=opciones-adicionales-para-enviar-correos>
+                  <h3>Opciones Adicionales para Enviar Correos</h3>
+                  <p>
+                    Es posible añadir información adicional al enlace de correo
+                    electrónico para pre-configurar el mensaje, como
+                    destinatarios en copia (Cc), copia oculta (Bcc), asunto y
+                    cuerpo del mensaje. Estos valores deben ir codificados en la
+                    URL.
+                  </p>
+                  
+                  <div>
+                    <h4>Asunto Predefinido</h4>
+                    <p>
+                      El correo tiene como asunto predeterminado
+                      <code class=language-html>mi consulta</code>. Los
+                      espacios en el asunto deben reemplazarse por el código
+                      <code class=language-html>%20</code> para que sea
+                      correcto, es decir,
+                      <code class=language-html>Mi%20consulta</code>.
+                    </p>
+                    
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-html data-prismjs-copy=Copy>
+                          &lt;p&gt;
+                            Se envía el correo a:
+                            &lt;a href="mailto:correo@ejemplo.com?subject=Mi%20consulta"&gt;Pablo Pérez&lt;/a&gt;
+                          &lt;/p&gt;
+                        </code>
+                      </pre>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div>
+                    <h4>Cuerpo del Mensaje</h4>
+                    <p>
+                      Los espacios en el mensaje también se deben reemplazar por
+                      el código <code class=language-html>%20</code>.
+                    </p>
+                    
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-html data-prismjs-copy=Copy>
+                          &lt;p&gt;
+                            Se envía el correo a:
+                            &lt;a href="mailto:correo@ejemplo.com?body=Hola,%20tengo%20una%20pregunta."&gt;Contactar por correo&lt;/a&gt;
+                          &lt;/p&gt;
+                        </code>
+                      </pre>
+                    </div>
+                    
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>Múltiples Destinatarios</h4>
+                    <p>
+                      Los destinatarios se escriben uno tras otro separado por
+                      una coma (,).
+                    </p>
+                    
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-html data-prismjs-copy=Copy>
+                          &lt;p&gt;
+                            Se envía el correo a:
+                            &lt;a href="mailto:correo@ejemplo.com,correo2@ejemplo.com"&gt;Contactar por correo&lt;/a&gt;
+                          &lt;/p&gt;
+                        </code>
+                      </pre>
+                    </div>
+                    
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>Con copia (CC) y copia oculta (BCC)</h4>
+                    
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-html data-prismjs-copy=Copy>
+                          &lt;p&gt;
+                            Se envía el correo a:
+                            &lt;a href="mailto:correo@ejemplo.com?cc=copia@ejemplo.com&amp;bcc=oculta@ejemplo.com"&gt;Contactar por correo&lt;/a&gt;
+                          &lt;/p&gt;
+                        </code>
+                      </pre>
+                    </div>
+                    
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>Ejemplo General envío de Correo Electrónico</h4>
+                    <p>
+                      Este ejemplo ilustra cómo usar todas las opciones
+                      disponibles para enviar un correo electrónico.
+                    </p>
+                    <div class=ej-ejemplo>
+                      <div class=ej-ejecutado>
+                        
+                        <p>
+                          Se envía el correo a:
+                          <a href="mailto:correo@ejemplo.com,correo2@ejemplo.com?subject=Mi%20consulta&amp;body=Hola,%20tengo%20una%20pregunta.&amp;cc=copia@ejemplo.com&amp;bcc=oculto@ejemplo.com">
+                            Arturo Cova (correo) y Pedro López (correo2) con
+                            copia a Antonio Yammara (copia) y con copia oculta a
+                            Santiago Nasar (oculto).
+                          </a>
+                        </p>
+                        
+                      </div>
+                      <div class="ej-code-html mb-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                          <code class=language-html data-prismjs-copy=Copy>
+                            &lt;p&gt;Se envía el correo a:
+                              &lt;a
+                                href="mailto:correo@ejemplo.com,correo2@ejemplo.com?subject=Mi%20consulta&amp;body=Hola,%20tengo%20una%20pregunta.&amp;cc=copia@ejemplo.com&amp;bcc=oculto@ejemplo.com"
+                              &gt;
+                                Arturo Cova (correo) y Pedro López (correo2) con copia a Antonio Yammara (copia) y con copia oculta a Santiago Nasar (oculto).
+                              &lt;/a&gt;
+                            &lt;/p&gt;
+                          </code>
+                        </pre>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=enlaces-html---un-boton-como-un-enlace class=mt-3>
+                <h2>Enlaces HTML - Un Botón como un Enlace</h2>
+                <p>
+                  En HTML, existen diversas maneras de diseñar un botón que
+                  funcione como enlace. A continuación, se presentan las
+                  principales alternativas:
+                </p>
+                
+                <div id=botón-dentro-de-un-enlace>
+                  <h3>Botón Dentro de un Enlace</h3>
+                  <p>
+                    Situar un elemento
+                    <code class=language-html>&lt;button&gt;</code> dentro de un
+                    elemento <code class=language-html>&lt;a&gt;</code> puede
+                    provocar conflictos de validación HTML, ya que no cumple con
+                    las especificaciones estándares de accesibilidad y semántica
+                    web.
+                  </p>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3 row">
+                      
+                      <p>
+                        Este botón lo lleva a la Página de inicio de la NASA:
+                        <a href=https://nasa.gov/ target=_blank>
+                          <button type=button>Nasa</button>
+                        </a>
+                      </p>
+                      
+                    </div>
+                    <div class=row>
+                      <div class="ej-code-html mb-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                        <code class=language-html data-prismjs-copy=Copy>
+                          &lt;a href="https://nasa.gov/" target="_blank"&gt;
+                            &lt;button type="button"&gt;Nasa&lt;/button&gt;
+                          &lt;/a&gt;
+                        </code>
+                      </pre>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+
+                
+                <div id=enlace-estilizado-como-botón>
+                  <h3>Enlace Estilizado como Botón</h3>
+                  <p>Es la opción más semánticamente correcta y accesible.</p>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3 row">
+                      
+                      <p>
+                        Este botón lo lleva a la Página de inicio de la NASA:
+                        <a href=https://nasa.gov/ target=_blank class=ej-boton>NASA</a>
+                      </p>
+                      
+                    </div>
+                    <div class=row>
+                      <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                        <code class=language-html data-prismjs-copy=Copy>
+                          &lt;p&gt; <br>
+                            Este botón lo lleva a la Página de inicio
+                             de la NASA: <br>
+                            &lt;a <br>
+                              href="https://nasa.gov/" <br>
+                              target="_blank" <br>
+                              class="boton" <br>
+                              &gt;NASA&lt;/a&gt; <br>
+                            &lt;/p&gt;
+                          </code>
+                        </pre>
+                        
+                      </div>
+                      <div class="col-lg-6 ej-code-css mb-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                          <code class=language-html data-prismjs-copy=Copy>
+                            .code-css{
+                            &nbsp;&nbsp;padding: 10px 20px;
+                            &nbsp;&nbsp;background-color: #007bff;
+                            &nbsp;&nbsp;color: white;
+                            &nbsp;&nbsp;text-decoration: none;
+                            &nbsp;&nbsp;border-radius: 5px;
+                            &nbsp;&nbsp;border: none;
+                            &nbsp;&nbsp;cursor: pointer;
+                            }
+
+                            .boton:hover {
+                            &nbsp;&nbsp;background-color: #0056b3;
+                            }                            
+                          </code>
+                      </pre>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+
+                
+                <div id=formulario-con-botón>
+                  <h3>Formulario con Botón</h3>
+                  <p>Es útil cuando se necesita enviar datos POST.</p>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3 row">
+                      <div class="align-items-center d-flex gap-2">
+                        
+                        <p>
+                          Este botón lo lleva a la Página de inicio de la
+                          NASA:&nbsp;
+                        </p>
+                        <form action=https://www.nasa.gov/ target=_blank class=ej-form>
+                          <button>NASA</button>
+                        </form>
+                        
+                      </div>
+                    </div>
+                    <div class=row>
+                      <div class="ej-code-html mb-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                          <code class=language-html data-prismjs-copy=Copy>
+                            &lt;p&gt; <br>
+                              Este botón lo lleva a la Página de inicio de la NASA: <br>
+                            &lt;/p&gt; <br>
+                            &lt;form <br>
+                              action="https://www.nasa.gov/" <br>
+                              method="get" <br>
+                              target="_blank" <br>
+                            &gt; <br>
+                              &lt;button type="submit"&gt;NASA&lt;/button&gt; <br>
+                            &lt;/form&gt;
+                          </code>
+                        </pre>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+
+                
+                <div id=botón-con-javascript>
+                  <h3>Botón con JavaScript</h3>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3 row">
+                      <div class="align-items-center d-flex gap-2">
+                        
+                        <p>
+                          Este botón lo lleva a la Página de inicio de la NASA:
+                        </p>
+                        <button onclick="window.open('https://www.nasa.gov/', '_blank')">
+                          NASA
+                        </button>
+                        
+                      </div>
+                    </div>
+                    <div class=row>
+                      <div class="ej-code-html mb-3">
+                        
+                        <pre class=ej-pre>                          <code class=language-html data-prismjs-copy=Copy>
+                            &lt;p&gt;
+                              Este botón lo lleva a la Página de inicio de la
+                              NASA:&nbsp;
+                            &lt;/p&gt;
+                            &lt;button
+                              onclick="window.open('https://www.nasa.gov/', '_blank')"
+                            &gt;
+                              NASA
+                            &lt;/button&gt;
+                          </code>
+                        </pre>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+
+                
+                <div id=botón-con-data-attribute-y-javascript>
+                  <h3>Botón con data attribute y JavaScript</h3>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3 row">
+                      <div class="align-items-center d-flex gap-2">
+                        
+                        <p>
+                          Este botón lo lleva a la Página de inicio de la NASA:
+                        </p>
+                        <button data-url=https://nasa.gov class=link-button>
+                          NASA
+                        </button>
+
+                        <script>document.querySelectorAll(".link-button").forEach(n=>{n.addEventListener("click",function(){window.open(this.dataset.url,"_blank")})});</script>
+                        
+                      </div>
+                    </div>
+                    <div class=row>
+                      <div class="ej-code-html mb-3">
+                        
+                        <pre class=ej-pre>                          <code class=language-html data-prismjs-copy=Copy>
+                            &lt;button data-url="https://nasa.gov" class="link-button"&gt;
+                              NASA
+                            &lt;/button&gt; <br>
+
+                            &lt;script&gt; <br>
+                              document
+                                .querySelectorAll(".link-button") <br>
+                                .forEach((button) =&gt; { <br>
+                                  button.addEventListener("click", function () { <br>
+                                    window.open(this.dataset.url, "_blank"); <br>
+                                  }); <br>
+                                }); <br>
+                            &lt;/script&gt;      <br>                     
+                          </code>
+                        </pre>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=marcadores-anchors class=mt-3>
+                <h2>Marcadores (Anchors)</h2>
+                <p>
+                  Los enlaces ancla locales, o enlaces internos, facilitan la
+                  navegación al permitir saltos dentro de una misma página HTML.
+                  Se utilizan principalmente para:
+                </p>
+                <ul>
+                  <li>Navegación interna dentro de la misma página.</li>
+                  <li>
+                    Enlaces directos a secciones específicas de otras páginas.
+                  </li>
+                  <li>Crear menús de contenido y navegación.</li>
+                  <li>Mejorar la experiencia del usuario en páginas largas.</li>
+                </ul>
+
+                
+                <div id=sintaxis-básica-de-marcadores>
+                  <h3>Sintaxis Básica de Marcadores</h3>
+                  
+                  <div>
+                    <h4>Crear un Marcador</h4>
+                    <p>
+                      Un destino (ancla) es la sección específica de una página
+                      web a la que un enlace dirige al usuario. Se le asigna un
+                      <code class=language-html>id</code>
+                      nombre o identificador único mediante el atributo
+                      <code class=language-html>id</code> en HTML. Por
+                      ejemplo:
+                      <code class=language-html>&lt;h2 id="seccion-importante"&gt;Esta es una sección
+                        relevante&lt;/h2&gt;</code>. En este caso,
+                      <code class=language-html>seccion-importante</code> es
+                      el identificador del ancla.
+                    </p>
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>Enlazar al Marcador</h4>
+                    <p>
+                      Un enlace (origen) se define como el texto o la imagen en
+                      el que se hace clic para dirigirse al destino. En HTML, se
+                      crea mediante la etiqueta
+                      <code class=language-html>&lt;a&gt;</code> (<span class=fst-italic>anchor</span>) y el atributo <code class=language-html>href</code>.
+                      Lo esencial es que en el atributo
+                      <code class=language-html>href</code> se utiliza el
+                      símbolo <code class=language-html>#</code> seguido del
+                      nombre del ancla. Por ejemplo:
+                      <code class=language-html>&lt;a href="#seccion-importante"&gt;Acceder a la sección
+                        importante&lt;/a&gt;</code>.
+                    </p>
+                  </div>
+                  
+                </div>
+                
+
+                
+                <div id=ejemplos-uso-del-marcador>
+                  <h3>Ejemplos Uso del Marcador</h3>
+                  
+                  <div>
+                    <h4>Navegación Interna</h4>
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-html data-prismjs-copy=Copy>
+                          &lt;!-- Enlaces en el menú --&gt;
+                          &lt;a href="#introduccion"&gt;Introducción&lt;/a&gt;
+                          &lt;a href="#desarrollo"&gt;Desarrollo&lt;/a&gt;
+                          &lt;a href="#conclusion"&gt;Conclusión&lt;/a&gt;
+                          <br>
+                          &lt;!-- Secciones destino --&gt;<br>
+                          &lt;section id="introduccion"&gt;<br>
+                          &nbsp;&nbsp;&lt;h2&gt;Introducción&lt;/h2&gt;
+                          &nbsp;&nbsp;&lt;p&gt;Contenido...&lt;/p&gt;
+                          &lt;/section&gt;<br>
+                          <br>
+                          &lt;section id="desarrollo"&gt;
+                          &nbsp;&nbsp;&lt;h2&gt;Desarrollo&lt;/h2&gt;
+                          &nbsp;&nbsp;&lt;p&gt;Contenido...&lt;/p&gt;
+                          &lt;/section&gt;
+                          <br>
+                          &lt;section id="conclusion"&gt;
+                          &nbsp;&nbsp;&lt;h2&gt;Conclusión&lt;/h2&gt;
+                          &nbsp;&nbsp;&lt;p&gt;Contenido...&lt;/p&gt;
+                          &lt;/section&gt;             
+                        </code>
+                      </pre>
+                    </div>
+                  </div>
+                  
+
+                  
+                  <div>
+                    <h4>Botón "Volver al Inicio"</h4>
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-html data-prismjs-copy=Copy>
+                          &lt;!-- Al inicio de la página --&gt;
+                          &lt;h1 id="top"&gt;Título Principal&lt;/h1&gt;
+                          
+                          . 
+                          .
+                          .
+                                                  
+                          &lt;!-- En cualquier parte de la página --&gt;
+                          &lt;a href="#top" class="back-to-top"&gt;↑ Volver arriba&lt;/a&gt;   
+                        </code>
+                      </pre>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                
+                <div id=consejos-y-mejores-prácticas>
+                  <h3>Consejos y Mejores Prácticas</h3>
+                  <ul>
+                    <li>
+                      <span class=fw-bold>Identificadores (<code class=language-html>id</code>)
+                        únicos</span>: Cada identificador (<code class=language-html>id</code>) debe ser único dentro de la página.
+                    </li>
+                    <li>
+                      <span class=fw-bold>Nombres descriptivos</span>: Se
+                      deben emplear nombres claros y significativos, como
+                      "contacto" o "servicios".
+                    </li>
+                    <li>
+                      <span class=fw-bold>Sin espacios</span>: Los
+                      identificadores no deben incluir espacios; en su lugar, se
+                      utiliza guiones.
+                    </li>
+                    <li>
+                      <span class=fw-bold>Sensible a mayúsculas y minúsculas</span>: Los identificadores distinguen entre mayúsculas y
+                      minúsculas.
+                    </li>
+                    <li>
+                      <span class=fw-bold>Accesibilidad</span>: Se recomienda
+                      usar atributos
+                      <code class=language-html>aria-label</code> para mejorar
+                      la accesibilidad en enlaces de navegación.
+                    </li>
+                  </ul>
+                </div>
+                
+                
+                <div id=enlaces-a-marcadores-en-otras-páginas>
+                  <h3>Enlaces a Marcadores en Otras Páginas</h3>
+                  <p>
+                    También puedes enlazar a secciones específicas de otras
+                    páginas:
+                  </p>
+                  
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                    <code class=language-html data-prismjs-copy=Copy>
+                      &lt;!-- Enlace a una sección específica de otra página --&gt;
+                        &lt;a href="./productos.html#laptops"&gt;Ver Laptops&lt;/a&gt;
+                        &lt;a href="./contacto.html#formulario"&gt;Ir al Formulario&lt;/a&gt;
+                        &lt;a href="https://ejemplo.com/pagina.html#seccion"&gt;Enlace Externo&lt;/a&gt;
+                    </code>
+                  </pre>
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+
+              
+              <div id=otros-atributos-para-enlaces class=mt-3>
+                <h2>Otros Atributos para Enlaces</h2>
+                
+                <div id=atributos-de-seguridad>
+                  <h3 class=mt-3>Atributos de Seguridad</h3>
+                  <p>
+                    Definen la relación entre la página actual y el destino:
+                  </p>
+                  <ul>
+                    <li>
+                      <code class=language-html>noopener</code>: Previene
+                      acceso al objeto window
+                    </li>
+                    <li>
+                      <code class=language-html>noreferrer</code>: No envía
+                      información del referrer
+                    </li>
+                    <li>
+                      <code class=language-html>nofollow</code>: Indica a
+                      motores de búsqueda que no sigan el enlace
+                    </li>
+                  </ul>
+                  <p>
+                    Se recomienda incluir siempre el atributo
+                    <code class=language-html>rel"noopener noreferrer"</code>
+                    en los enlaces con
+                    <code class=language-html>target="_blank"</code> para
+                    garantizar la seguridad y evitar posibles vulnerabilidades.
+                  </p>
+                  
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-html data-prismjs-copy=Copy>
+                        &lt;a href="https://sitioexterno.com" target="_blank" rel="noopener noreferrer"&gt;Enlace seguro&lt;/a&gt;
+                      </code>
+                    </pre>
+                  </div>
+                  
+                </div>
+                
+                
+                <div id=atributos-de-accesibilidad>
+                  <h3>Atributos de Accesibilidad</h3>
+                  <p>
+                    <code class=language-html>title</code>: Proporciona
+                    información adicional que aparece como tooltip:
+                  </p>
+                  
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-html data-prismjs-copy=Copy>
+                        &lt;a href="documento.pdf" title="Descargar documento PDF (2MB)"&gt;Descargar&lt;/a&gt;
+                      </code>
+                    </pre>
+                  </div>
+                  
+                  <p>
+                    <code class=language-html>aria-label</code>: Etiqueta
+                    alternativa para lectores de pantalla::
+                  </p>
+                  
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-html data-prismjs-copy=Copy>
+                        &lt;a href="/inicio" aria-label="Ir a página de inicio"&gt;🏠&lt;/a&gt;
+                      </code>
+                    </pre>
+                  </div>
+                  
+                </div>
+                
+                
+                <div id=atributos-de-descarga>
+                  <h3>Atributos de Descarga</h3>
+                  <p>
+                    <code class=language-html>download</code>: Sugiere
+                    descargar el recurso en lugar de navegarlo:
+                  </p>
+                  
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-html data-prismjs-copy=Copy>
+                        &lt;a href="archivo.pdf" download="manual-usuario.pdf"&gt;Descargar manual&lt;/a&gt;
+                      </code>
+                    </pre>
+                  </div>
+                  
+                </div>
+                
+                
+                <div id=atributos-de-navegación>
+                  <h3>Atributos de Navegación</h3>
+                  <p>
+                    <code class=language-html>hreflang</code>: Indica el
+                    idioma del contenido enlazado:
+                  </p>
+                  
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-html data-prismjs-copy=Copy>
+                        &lt;a href="https://ejemplo.com/en/" hreflang="en"&gt;English version&lt;/a&gt;
+                      </code>
+                    </pre>
+                  </div>
+                  
+                  <p>
+                    <code class=language-html>type</code>: Especifica el tipo
+                    MIME del contenido enlazado:
+                  </p>
+                  
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-html data-prismjs-copy=Copy>
+                        &lt;a href="documento.pdf" type="application/pdf"&gt;Ver PDF&lt;/a&gt;
+                      </code>
+                    </pre>
+                  </div>
+                  
+                </div>
+                
+                
+                <div id=ejemplo-completo-enlaces>
+                  <h3>Ejemplo Completo Enlaces</h3>
+                  
+                  <p><span class=fw-bold>Sintaxis Básica</span>:</p>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-html data-prismjs-copy=Copy>
+                        &lt;a href="https://ejemplo.com/articulo" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          title="Leer artículo completo en sitio externo"
+                          hreflang="es"&gt;
+                          Leer más
+                        &lt;/a&gt;                      
+                      </code>
+                    </pre>
+                  </div>
+                  
+                  <p>
+                    Estos atributos facilitan la creación de enlaces más
+                    seguros, accesibles y funcionales, lo que optimiza la
+                    experiencia del usuario y potencia el posicionamiento SEO
+                    del sitio web.
+                  </p>
+                </div>
+                
+              </div>
+              
+            </div>
+          </article>
+          
+
+          
+          <article class="pt-5 row" id=comments>
+            <h2>COMENTARIOS</h2>
+            <p>
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
+            </p>
+            <div class="d-flex justify-content-center">
+              <form action=https://formspree.io/f/mdkdawkg method=post id=myForm>
+                <fieldset class="d-flex flex-column gap-3">
+                  <legend class="fs-4 text-center">Deje su comentario</legend>
+
+                  <div class="d-flex flex-column">
+                    <label for=name>Nombre:</label>
+                    <input name=name id=name placeholder=User class="form-control rounded" required>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for=email>Email:</label>
+                    <input type=email name=email id=email placeholder=user@mail.com class="form-control rounded" required>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for=message>Mensaje:</label>
+                    <textarea name=message id=message cols=30 rows=5 placeholder="Su comentario..." class="form-control rounded-3" required></textarea>
+                  </div>
+
+                  <button class="border border-2 btn btn-outline-light my-3 rounded-pill">
+                    Enviar
+                  </button>
+                </fieldset>
+
+                <p class="small text-center">
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
+                </p>
+              </form>
+            </div>
+          </article>
+          
+        </section>
+        
+        
+        <aside class="col-lg-3 d-lg-block d-none pt-5">
+          <h1>En Este Artículo</h1>
+          <div class=menu-scroll>
+            <div class=menu-container>
+              <div class=menu-item>
+                <a href=#introduccion class=simple-link>Introducción</a>
+              </div>
+
+              <div class=menu-item>
+                <a href=#enlaces-html-hiperenlaces class=simple-link>Enlaces HTML-Hiperenlaces</a>
+              </div>
+
+              <div class=menu-item>
+                <a href=#enlaces-html-sintaxis class=simple-link>Enlaces HTML-Sintaxis</a>
+              </div>
+
+              <div class=menu-item>
+                <a href=#enlaces-html---el-atributo-target class=simple-link>Enlaces HTML - El Atributo target</a>
+              </div>
+
+              <div class=menu-item>
+                <details>
+                  <summary>URLs Absolutas vs URLs Relativas</summary>
+                  <div class=submenu>
+                    <a href=#urls-absolutas-vs-urls-relativas class=submenu-item>URLs Absolutas vs URLs Relativas</a>
+                    <a href=#url-absoluta class=submenu-item>URL Absoluta</a>
+                    <a href=#url-relativa class=submenu-item>URL Relativa</a>
+                    <a href=#cuándo-usar-cada-tipo-de-url class=submenu-item>Cuándo Usar Cada Tipo de URL</a>
+                  </div>
+                </details>
+              </div>
+
+              <div class=menu-item>
+                <a href=#enlaces-html---usar-una-imagen-como-enlace class=simple-link>Enlaces HTML - Usar una Imagen como Enlace</a>
+              </div>
+
+              <div class=menu-item>
+                <details>
+                  <summary>
+                    Enlaces HTML - Enlace a una Dirección de Correo Electrónico
+                  </summary>
+                  <div class=submenu>
+                    <a href=#enlaces-html---enlace-a-una-direccion-de-correo-electronico class=submenu-item>Enlaces HTML - Enlace a una Dirección de Correo
+                      Electrónico
+                    </a>
+                    <a href=#opciones-adicionales-para-enviar-correos class=submenu-item>Opciones Adicionales para Enviar Correos</a>
+                  </div>
+                </details>
+              </div>
+
+              <div class=menu-item>
+                <details>
+                  <summary>Enlaces HTML - Un Botón como un Enlace</summary>
+                  <div class=submenu>
+                    <a href=#enlaces-html---un-boton-como-un-enlace class=submenu-item>Enlaces HTML - Un Botón como un Enlace</a>
+                    <a href=#botón-dentro-de-un-enlace class=submenu-item>Botón Dentro de un Enlace</a>
+                    <a href=#enlace-estilizado-como-botón class=submenu-item>Enlace Estilizado como Botón</a>
+                    <a href=#formulario-con-botón class=submenu-item>Formulario con Botón</a>
+                    <a href=#botón-con-javascript class=submenu-item>Botón con JavaScript</a>
+                    <a href=#botón-con-data-attribute-y-javascript class=submenu-item>Botón con data attribute y JavaScript</a>
+                  </div>
+                </details>
+              </div>
+
+              <div class=menu-item>
+                <details>
+                  <summary>Marcadores (Anchors)</summary>
+                  <div class=submenu>
+                    <a href=#marcadores-anchors class=submenu-item>Marcadores (Anchors)</a>
+                    <a href=#sintaxis-básica-de-marcadores class=submenu-item>Sintaxis Básica de Marcadores</a>
+                    <a href=#ejemplos-uso-del-marcador class=submenu-item>Ejemplos Uso del Marcador</a>
+                    <a href=#consejos-y-mejores-prácticas class=submenu-item>Consejos y Mejores Prácticas</a>
+                    <a href=#enlaces-a-marcadores-en-otras-páginas class=submenu-item>Enlaces a Marcadores en Otras Páginas</a>
+                  </div>
+                </details>
+              </div>
+
+              <div class=menu-item>
+                <details>
+                  <summary>Otros Atributos para Enlaces</summary>
+                  <div class=submenu>
+                    <a href=#atributos-de-seguridad class=submenu-item>Atributos de Seguridad</a>
+                    <a href=#atributos-de-accesibilidad class=submenu-item>Atributos de Accesibilidad</a>
+                    <a href=#atributos-de-descarga class=submenu-item>Atributos de Descarga</a>
+                    <a href=#atributos-de-navegación class=submenu-item>Atributos de Navegación</a>
+                    <a href=#ejemplo-completo-enlaces class=submenu-item>Ejemplo Completo Enlaces</a>
+                  </div>
+                </details>
+              </div>
+
+              <div class=menu-item>
+                <a href=#comments class=simple-link>Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+        
+      </main>
+      
+    </div>
+    
+
+    
+    <footer class="border-1 border-top m-1 mt-auto row">
+      <div class=row>
+        
+        <address class="align-items-center col-lg-4 d-flex flex-column">
+          <div class="fs-2 text-center">Contacto</div>
+          <div class="align-items-center d-flex flex-row">
+            <i class="bi bi-envelope-at fs-3"></i>
+            <span class=ms-3>
+              <a class=text-decoration-none href=mailto:ehfeduardo@gmail.com>ehfeduardo@gmail.com</a>
+            </span>
+          </div>
+          <div class="align-items-center d-flex flex-row">
+            <i class="bi bi-geo-alt fs-3"></i>
+            <span class=ms-3>Bogotá D. C. - Colombia</span>
+          </div>
+        </address>
+        
+        <div class="align-items-center col-lg-4 d-flex flex-column h-100 justify-content-center">
+          <div>
+            <i class="bi bi-c-circle fs-5"></i>
+          </div>
+          <div class=ms-2>All Rights Reserved 2025</div>
+        </div>
+        
+        <div class="align-items-center col-lg-4 d-flex flex-column">
+          <div class="fs-2 text-center">Redes Sociales</div>
+          <div class="align-items-center d-flex gap-5 justify-content-evenly">
+            <div>
+              <a href=https://www.linkedin.com/in/eduardoherreraf/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-linkedin fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://github.com/eduardoherreraf target=_blank rel="noopener noreferrer">
+                <i class="bi bi-github fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://www.facebook.com/eduardoherreraforero/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-facebook fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://twitter.com/ehfeduardo/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-twitter-x fs-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="align-items-center d-flex gap-2 justify-content-center"></div>
+    </footer>
+    
+
+    
+    <button onclick=topFunction() id=myBtnScroll title="Go to top">
+      <svg xmlns:xmlns=http://www.w3.org/2000/svg width=32 height=32 fill=currentColor class="bi bi-arrow-bar-up" style=margin-left:-2px viewBox="0 0 16 16"><path fill-rule=evenodd d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg>
+    </button>
+    
+  
+

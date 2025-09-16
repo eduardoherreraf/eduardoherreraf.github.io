@@ -1,0 +1,1736 @@
+<!DOCTYPE html><html lang=es data-bs-theme=dark><link rel=stylesheet href=PlantillaMiPagina.b8c68df4.css><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="Aprende todas las etiquetas HTML de texto: encabezados, párrafos y saltos de línea. Guía completa con ejemplos prácticos para crear contenido web estructurado y accesible."><meta name=title content="Etiquetas de Texto HTML - Ing. Eduardo Herrera Forero."><meta name=author content="Ing. Eduardo Herrera Forero"><meta name=application-name content=EHF><meta name=robots content="index, follow"><link rel=canonical href=https://eduardoherreraf.github.io/html-0006_Etiquetas_de_texto.html><meta property=og:type content=website><meta property=og:title content="Etiquetas de Texto HTML - Ing. Eduardo Herrera Forero."><meta property=og:description content="Aprende todas las etiquetas HTML de texto: encabezados, párrafos y saltos de línea. Guía completa con ejemplos prácticos para crear contenido web estructurado y accesible."><meta property=og:image content=77076bd5ecdec551><meta property=og:image:alt content="Ejemplos de etiquetas de texto"><meta property=og:url content=https://eduardoherreraf.github.io/html-0006_Etiquetas_de_texto.html><meta property=og:locale content=es_CO><meta name=twitter:card content=summary_large_image><meta name=twitter:title content="Etiquetas de Texto HTML - Ing. Eduardo Herrera Forero."><meta name=twitter:description content="Aprende todas las etiquetas HTML de texto: encabezados, párrafos y saltos de línea. Guía completa con ejemplos prácticos para crear contenido web estructurado y accesible."><meta name=twitter:image content=77076bd5ecdec551><meta name=twitter:image:alt content><meta name=twitter:url content=https://eduardoherreraf.github.io/html-0006_Etiquetas_de_texto.html><meta name=twitter:site content=@ehfeduardo><link rel=apple-touch-icon sizes=180x180 href=apple-touch-icon.96046c77.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.f7991d03.png><link rel=icon type=image/png sizes=192x192 href=android-chrome-192x192.4500461c.png><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.060ee0ac.png><link rel=manifest href=site.webmanifest><link rel=mask-icon href=safari-pinned-tab.df3b9c22.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>Etiquetas de Texto HTML - Ing. Eduardo Herrera Forero.</title><script type=module src=PlantillaMiPagina.638e488a.js></script><meta name=google-site-verification content=2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc><body>
+    
+    <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg">
+      <div class=container-fluid>
+        
+        <a class="align-items-center d-flex ms-2 navbar-brand text-decoration-none" href=index.html>
+          <img src=logo.08948a42.png alt="Logo de Ing. Eduardo Herrera Forero" width=30 height=30 class="align-text-top d-inline-block me-1">
+          <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span>
+        </a>
+        
+        <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+          <span class=navbar-toggler-icon></span>
+        </button>
+        
+        <div class="collapse ms-auto navbar-collapse text-center" id=navbarSupportedContent>
+          <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100">
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html>SOBRE MÍ</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#resume>EXPERIENCIA</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#portfolio>PORTAFOLIO</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#studies>ESTUDIOS</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link publicaciones-activo text-decoration-none" href=index.html#blog>PUBLICACIONES</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#contact>CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <div class=container-fluid id=introduccion>
+      <main class=row>
+        <section class="col-lg-9 pb-3 pt-5 px-lg-4">
+          
+          <article class="border-1 border-bottom pb-3 row" data-bs-spy=scroll data-bs-target=#list-example data-bs-smooth-scroll=true>
+            <div>
+              <header>
+                <h1>Etiquetas de Texto HTML</h1>
+              </header>
+              
+              <div>
+                <h2>Introducción</h2>
+                <p>
+                  Las etiquetas de texto en el diseño web son fundamentales por
+                  varias razones clave:
+                </p>
+                <ul>
+                  <li>
+                    <b>Accesibilidad</b>: Las etiquetas de texto adecuadas
+                    mejoran la accesibilidad de un sitio web, permitiendo que
+                    las tecnologías de asistencia, como los lectores de
+                    pantalla, interpreten y comuniquen el contenido de manera
+                    efectiva a los usuarios con discapacidades visuales.
+                  </li>
+                  <li>
+                    <b>SEO (Optimización para Motores de Búsqueda)</b>: Los
+                    motores de búsqueda utilizan las etiquetas de texto para
+                    entender el contenido y la estructura de una página web.
+                    Etiquetas como &lt;h1&gt;, &lt;h2&gt;, &lt;p&gt;, y &lt;alt&gt; en las
+                    imágenes ayudan a mejorar el posicionamiento en los
+                    resultados de búsqueda.
+                  </li>
+                  <li>
+                    <b>Experiencia del Usuario (UX)</b>: Las etiquetas de texto
+                    bien estructuradas facilitan la navegación y la comprensión
+                    del contenido por parte de los usuarios. Una jerarquía clara
+                    de títulos y subtítulos, por ejemplo, ayuda a los visitantes
+                    a escanear rápidamente la página y encontrar la información
+                    que necesitan.
+                  </li>
+                  <li>
+                    <b>Mantenimiento y Escalabilidad</b>: El uso adecuado de
+                    etiquetas de texto facilita el mantenimiento y la
+                    actualización del sitio web. Un código bien estructurado y
+                    semánticamente correcto es más fácil de entender y
+                    modificar, lo que es crucial para el desarrollo continuo y
+                    la escalabilidad del proyecto.
+                  </li>
+                  <li>
+                    <b>Consistencia y Profesionalismo</b>: Las etiquetas de
+                    texto contribuyen a la consistencia visual y funcional del
+                    sitio web, lo que transmite una imagen profesional y
+                    confiable a los usuarios.
+                  </li>
+                </ul>
+                <p>
+                  Las etiquetas de texto no solo afectan la apariencia visual
+                  por defecto (aunque esto se puede y se debe modificar con
+                  CSS), sino que, más importante aún, aportan significado
+                  semántico al contenido. Esto significa que le dicen al
+                  navegador, y a otras herramientas como los motores de búsqueda
+                  o lectores de pantalla para personas con discapacidad visual,
+                  qué tipo de texto es y cuál es su importancia o función.
+                </p>
+                <p>
+                  Entre las etiquetas HTML se encuentran disponibles
+                  encabezados, párrafos, saltos de línea, reglas horizontales y
+                  citas.
+                </p>
+                <div class="centrar-imagen imagen50">
+                  <picture>
+                    <img src=https://i.postimg.cc/5yNMYzjN/Etiquetas-de-Texto.png class=img-fluid width=30% alt="Etiquetas de Texto HTML " title="Ejemplo de etiquetas de texto en HTML: Título h1, Subtítulos h2 y dos párrafos p por cada subtítulo">
+                    <figcaption>Ejemplo de Etiquetas de Texto HTML</figcaption>
+                  </picture>
+                </div>
+              </div>
+              
+
+              <hr class=subtle-divider>
+
+              
+              <div id=los-encabezados>
+                <h2>
+                  Los Encabezados <code class=language-html>&lt;hx&gt;</code>
+                </h2>
+                
+                <div>
+                  <h3>
+                    Definición Encabezados
+                    <code class=language-html>&lt;hx&gt;</code>
+                  </h3>
+                  <p>
+                    Los encabezados
+                    <code class=language-html>&lt;hx&gt;</code> en HTML son
+                    etiquetas utilizadas para definir los títulos y subtítulos
+                    de una página web. Van desde
+                    <code class=language-html>&lt;h1&gt;</code> hasta
+                    <code class=language-html>&lt;h6&gt;</code>, donde
+                    <code class=language-html>&lt;h1&gt;</code> es el encabezado
+                    de mayor importancia y
+                    <code class=language-html>&lt;h6&gt;</code> el de menor
+                    importancia.
+                  </p>
+                  <p>
+                    El encabezado
+                    <code class=language-html>&lt;h1&gt;</code> tiene el texto
+                    más grande y grueso mientras que el encabezado
+                    <code class=language-html>&lt;h6&gt;</code> es el más pequeño
+                    y delgado, llegando al nivel de párrafo.
+                  </p>
+                </div>
+                
+                
+                <div>
+                  <h3>
+                    Características Clave Encabezados
+                    <code class=language-html>&lt;hx&gt;</code>
+                  </h3>
+                  <ul>
+                    <li>
+                      <b>Jerarquía</b>: Los encabezados proporcionan una
+                      estructura jerárquica al contenido, facilitando la
+                      navegación y comprensión.
+                    </li>
+                    <li>
+                      <b>Semántica</b>: Ayudan a los motores de búsqueda a
+                      entender la estructura y el contenido de la página.
+                    </li>
+                    <li>
+                      <b>Accesibilidad</b>: Mejoran la accesibilidad al permitir
+                      a los lectores de pantalla navegar por la página de manera
+                      más eficiente.
+                    </li>
+                  </ul>
+                </div>
+                
+                
+                <div>
+                  <h3 id=sintaxis-correcta-encabezados-hx>
+                    Sintaxis Correcta Encabezados
+                    <code class=language-html>&lt;hx&gt;</code>
+                  </h3>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-html data-prismjs-copy=Copy>
+                        &lt;h1&gt;Heading 1&lt;/h1&gt;
+                        &lt;h2&gt;Heading 2&lt;/h2&gt;
+                        &lt;h3&gt;Heading 3&lt;/h3&gt;
+                        &lt;h4&gt;Heading 4&lt;/h4&gt;
+                        &lt;h5&gt;Heading 5&lt;/h5&gt;
+                        &lt;h6&gt;Heading 6&lt;/h6&gt;
+                      </code>
+                  </pre>
+                  </div>
+                </div>
+                
+                
+                <div>
+                  <h3 id=uso-encabezados-hx>
+                    Uso Encabezados <code class=language-html>&lt;hx&gt;</code>
+                  </h3>
+                  <ul>
+                    <li>
+                      <b>Estructuración de Contenido</b>: Utilizados para
+                      organizar el contenido en secciones y subsecciones.
+                    </li>
+                    <li>
+                      <b>SEO</b>: Mejoran el posicionamiento en motores de
+                      búsqueda al destacar las partes importantes del contenido.
+                    </li>
+                    <li>
+                      <b>Legibilidad</b>: Facilitan la lectura al dividir el
+                      texto en partes manejables.
+                    </li>
+                    <li>
+                      <b>Estructura de los encabezados hx</b>:
+                      <div class=ej-sintaxis>
+                        <pre data-src-status=loaded tabindex=0>                          <code class=language-html data-prismjs-copy=Copy>
+                            &lt;h1&gt;Título principal de la página&lt;/h1&gt;            &lt;!-- Título principal de la página (solo uno por página) --&gt;
+                            &lt;h2&gt;Sección importante dentro del contenido&lt;/h2&gt;  &lt;!-- Títulos de secciones principales --&gt;
+                            &lt;h3&gt;Subsección más específica&lt;/h3&gt;                &lt;!-- Subtítulos dentro de una sección &lt;h2&gt; --&gt;
+                            &lt;h4&gt;Detalles dentro de una subsección&lt;/h4&gt;        &lt;!-- Subtítulos dentro de un &lt;h3&gt; --&gt;
+                            &lt;h5&gt;Información secundaria&lt;/h5&gt;                   &lt;!-- Aún más específicos --&gt;
+                            &lt;h6&gt;Notas o aclaraciones finales&lt;/h6&gt;             &lt;!-- El nivel más bajo de jerarquía --&gt;
+                          </code>
+                        </pre>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                
+                
+                <div>
+                  <h3 id=relación-con-otras-etiquetas-encabezados-hx>
+                    Relación con Otras Etiquetas Encabezados
+                    <code class=language-html>&lt;hx&gt;</code>
+                  </h3>
+                  <ul>
+                    <li>
+                      <b>Párrafos <code class=language-html>&lt;p&gt;</code></b>: Los encabezados suelen ir seguidos de párrafos que
+                      desarrollan el tema introducido.
+                    </li>
+                    <li>
+                      <b>Listas <code class=language-html>&lt;ul&gt;</code>,
+                        <code class=language-html>&lt;ol&gt;</code></b>: Pueden preceder a listas para introducir una serie de
+                      elementos relacionados.
+                    </li>
+                    <li>
+                      <b>Enlaces <code class=language-html>&lt;a&gt;</code></b>: A menudo se utilizan dentro de encabezados para enlazar
+                      a otras secciones o páginas.
+                    </li>
+                  </ul>
+                </div>
+                
+                
+                <div>
+                  <h3 id=buenas-prácticas-y-errores-comunes-encabezados-hx>
+                    Buenas Prácticas y Errores Comunes Encabezados
+                    <code class=language-html>&lt;hx&gt;</code>
+                  </h3>
+                  <ul>
+                    <li>
+                      Buenas Prácticas al usar encabezados
+                      <code class=language-html>&lt;hx&gt;</code>:
+                      <ul>
+                        <li>
+                          Usar solo un
+                          <code class=language-html>&lt;h1&gt;</code> por página,
+                          representando el título principal.
+                        </li>
+                        <li>
+                          Mantener la jerarquía lógica (no saltar de
+                          <code class=language-html>&lt;h1&gt;</code> a
+                          <code class=language-html>&lt;h3&gt;</code>).
+                        </li>
+                        <li>
+                          Utilizar encabezados para mejorar la accesibilidad y
+                          el SEO.
+                        </li>
+                        <li>
+                          No usar los encabezados
+                          <code class=language-html>&lt;hx&gt;</code> solo para
+                          cambiar el tamaño o apariencia del texto. Deben
+                          emplearse para organizar el contenido, no como
+                          herramienta de diseño. Para dar estilo, se debe usar
+                          CSS.
+                          <div class=ej-sintaxis>
+                            <pre data-src-status=loaded tabindex=0>                              <code class=language-css data-prismjs-copy=Copy>
+                                h2 {
+                                  font-size: 24px;
+                                  color: navy;
+                                }
+                              </code>
+                            </pre>
+                          </div>
+                        </li>
+                        <li>Incluir palabras clave relevantes.</li>
+                        <li>
+                          Usar encabezados informativos, los títulos deben
+                          reflejar claramente el contenido que sigue.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Errores Comunes al usar encabezados
+                      <code class=language-html>&lt;hx&gt;</code>:
+                      <ul>
+                        <li>
+                          Usar encabezados para estilar texto sin considerar su
+                          significado semántico.
+                        </li>
+                        <li>
+                          Saltarse niveles de encabezado, lo que puede confundir
+                          a los usuarios y motores de búsqueda.
+                        </li>
+                        <li>
+                          Solo debe existir un
+                          <code class=language-html>&lt;h1&gt;</code> principal.
+                          Múltiples
+                          <code class=language-html>&lt;h1&gt;</code> pueden
+                          confundir a buscadores y usuarios.
+                        </li>
+                        <li>
+                          Es un error omitir los encabezados y usar solo texto
+                          plano o
+                          <code class=language-html>&lt;div&gt;</code> para
+                          estructurar contenido.
+                        </li>
+                        <li>
+                          Repetir los mismos encabezados en múltiples lugares
+                          sin diferenciarlos. Por ejemplo, tener varios
+                          <code class=language-html>&lt;h2&gt;</code>Contenido<code class=language-html>&lt;/h2&gt;</code>
+                          en distintas secciones sin contexto adicional puede
+                          resultar confuso.
+                        </li>
+                        <li>
+                          No es recomendable usar solo
+                          <code class=language-html>&lt;h1&gt;</code> o solo
+                          <code class=language-html>&lt;h2&gt;</code> para todos
+                          los títulos, ya que no se refleja la jerarquía del
+                          contenido.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                
+                
+                <div>
+                  <h3 id=configuración-css-por-defectoencabezados-hx>
+                    Configuración CSS por Defecto Encabezados &lt;hx&gt;
+                  </h3>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-css data-prismjs-copy=Copy>
+                        h1,h2,h3,h4,h5,h6{
+                          display: block;
+                          font-weight: bold;
+                        }
+                        h1 {
+                          font-size: 2em;
+                          margin-block-start: 0.67em;
+                          margin-block-end: 0.67em;
+                        }
+                        h2 {
+                          font-size: 1.5em;
+                          margin-block-start: 0.75em;
+                          margin-block-end: 0.75em;
+                        }
+                        h3 {
+                          font-size: 1.17em;
+                          margin-block-start: 0.83em;
+                          margin-block-end: 0.83em;
+                        }
+                        h4 {
+                          font-size: 1em;
+                          margin-block-start: 1.12em;
+                          margin-block-end: 1.12em;
+                        }
+                        h5 {
+                          font-size: 0.83em;
+                          margin-block-start: 1.5em;
+                          margin-block-end: 1.5em;
+                        }
+                        h6 {
+                          font-size: 0.67em;
+                          margin-block-start: 1.67em;
+                          margin-block-end: 1.67em;
+                        }
+                      </code>
+                    </pre>
+                  </div>
+                  
+                  <div>
+                    <h4>Personalización recomendada con CSS encabezados hx</h4>
+                    <p>
+                      Para tener un diseño más uniforme y controlado, se
+                      recomienda definir los estilos personalizados para los
+                      encabezados:
+                    </p>
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-css data-prismjs-copy=Copy>
+                          h1, h2, h3, h4, h5, h6 {
+                            font-family: 'Arial', sans-serif;
+                            font-weight: bold;
+                            margin: 0 0 1rem 0;
+                            line-height: 1.2;
+                          }
+                          h1 { font-size: 2.5rem; }
+                          h2 { font-size: 2rem; }
+                          h3 { font-size: 1.75rem; }
+                          h4 { font-size: 1.5rem; }
+                          h5 { font-size: 1.25rem; }
+                          h6 { font-size: 1rem; }
+                        </code>
+                      </pre>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                
+                <div>
+                  <h3 id=ejemplo-aplicado-en-un-proyecto-real-encabezados-hx>
+                    Ejemplo Aplicado en un Proyecto Real Encabezados &lt;hx&gt;
+                  </h3>
+                  <p>
+                    Una empresa de tecnología está desarrollando una página web
+                    para promocionar un nuevo producto llamado TechNova
+                    SmartHub. Se necesita estructurar la página con encabezados
+                    jerárquicos bien organizados, siguiendo buenas prácticas
+                    semánticas.
+                  </p>
+                  <div class=row>
+                    
+                    <div class=ej-ejemplo>
+                      <div class="ej-ejecutado mt-3 row">
+                        
+                        <div>
+                          <div class="ej-centrar-imagen ej-container-header">
+                            <p class=ej-h1-header>TechNova SmartHub</p>
+                            <p>
+                              La solución integral para el hogar inteligente del
+                              futuro.
+                            </p>
+
+                            <p class=ej-h2-header>
+                              Características Principales
+                            </p>
+                            <ul>
+                              <li>Control centralizado de dispositivos IoT</li>
+                              <li>
+                                Compatibilidad con Alexa, Google Assistant y
+                                Siri
+                              </li>
+                              <li>Panel de gestión desde app móvil</li>
+                            </ul>
+
+                            <p class=ej-h2-header>Beneficios del Producto</p>
+
+                            <p class=ej-h3-header>Seguridad</p>
+                            <p>
+                              El sistema integra sensores de movimiento, cámaras
+                              y alertas en tiempo real.
+                            </p>
+
+                            <p class=ej-h3-header>Conectividad</p>
+                            <p>
+                              Permite la integración de múltiples dispositivos
+                              sin pérdida de rendimiento.
+                            </p>
+
+                            <p class=ej-h3-header>Eficiencia Energética</p>
+                            <p>
+                              Monitorea el consumo eléctrico y sugiere mejoras
+                              automáticas.
+                            </p>
+
+                            <p class=ej-h2-header>Preguntas Frecuentes</p>
+
+                            <p class=ej-h3-header>
+                              ¿Requiere Instalación Profesional?
+                            </p>
+                            <p>
+                              No, el SmartHub viene preconfigurado para
+                              instalación en minutos.
+                            </p>
+
+                            <p class=ej-h3-header>
+                              ¿Qué Sistemas Operativos Soporta?
+                            </p>
+                            <p>Compatible con Android, iOS, Windows y macOS.</p>
+
+                            <p class=ej-h2-header>Contacto</p>
+                            <p>
+                              Para más información, escríbanos a:
+                              contacto@technova.com
+                            </p>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class=row>
+                        <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                          
+                          <pre>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>
+                                &lt;div class="container"&gt;
+                                    &lt;p class="h1"&gt;TechNova SmartHub&lt;/p&gt;
+                                    &lt;p&gt;La solución integral para el hogar inteligente del futuro.&lt;/p&gt;
+
+                                    &lt;p class="h2"&gt;Características Principales&lt;/p&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;Control centralizado de dispositivos IoT&lt;/li&gt;
+                                        &lt;li&gt;Compatibilidad con Alexa, Google Assistant y Siri&lt;/li&gt;
+                                        &lt;li&gt;Panel de gestión desde app móvil&lt;/li&gt;
+                                    &lt;/ul&gt;
+
+                                    &lt;p class="h2"&gt;Beneficios del Producto&lt;/p&gt;
+
+                                    &lt;p class="h3"&gt;Seguridad&lt;/p&gt;
+                                    &lt;p&gt;El sistema integra sensores de movimiento, cámaras y alertas en tiempo real.&lt;/p&gt;
+
+                                    &lt;p class="h3"&gt;Conectividad&lt;/p&gt;
+                                    &lt;p&gt;Permite la integración de múltiples dispositivos sin pérdida de rendimiento.&lt;/p&gt;
+
+                                    &lt;p class="h3"&gt;Eficiencia Energética&lt;/p&gt;
+                                    &lt;p&gt;Monitorea el consumo eléctrico y sugiere mejoras automáticas.&lt;/p&gt;
+
+                                    &lt;p class="h2"&gt;Preguntas Frecuentes&lt;/p&gt;
+
+                                    &lt;p class="h3"&gt;¿Requiere Instalación Profesional?&lt;/p&gt;
+                                    &lt;p&gt;No, el SmartHub viene preconfigurado para instalación en minutos.&lt;/p&gt;
+
+                                    &lt;p class="h3"&gt;¿Qué Sistemas Operativos Soporta?&lt;/p&gt;
+                                    &lt;p&gt;Compatible con Android, iOS, Windows y macOS.&lt;/p&gt;
+
+                                    &lt;p class="h2"&gt;Contacto&lt;/p&gt;
+                                    &lt;p&gt;Para más información, escríbanos a: contacto@technova.com&lt;/p&gt;
+                                &lt;/div&gt;                                
+                              </div>        
+                            </code>
+                          </pre>
+                          
+                        </div>
+                        <div class="col-lg-6 ej-code-css mb-3">
+                          
+                          <pre>                            <code class=language-css data-prismjs-copy=Copy>
+                              <div>
+                                .container {
+                                    font-family: Arial, sans-serif;
+                                    padding: 2rem;
+                                    line-height: 1.6;
+                                }
+
+                                .h1 {
+                                    font-size: 2.5rem;
+                                    font-weight: bold;
+                                    margin: 0;
+                                }
+
+                                .h2 {
+                                    font-size: 2rem;
+                                    margin-top: 2rem;
+                                    font-weight: bold;
+                                }
+
+                                .h3 {
+                                    font-size: 1.5rem;
+                                    margin-top: 1.5rem;
+                                    font-weight: bold;
+                                }                                
+                              </div>        
+                            </code>
+                          </pre>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+                
+                <div>
+                  <h3 id=uso-con-tecnologías-de-asistencia-(aria)-encabezados-hx>
+                    Uso con Tecnologías de Asistencia (ARIA) Encabezados &lt;hx&gt;
+                  </h3>
+                  <p>
+                    Los encabezados son compatibles con
+                    <abbr title="Accessible Rich Internet Applications">ARIA</abbr>
+                    para mejorar la accesibilidad. Por ejemplo, se pueden
+                    utilizar atributos
+                    <abbr title="Accessible Rich Internet Applications">ARIA</abbr>
+                    como <code class=language-html>aria-level</code> para
+                    especificar el nivel de un encabezado cuando no se puede
+                    usar la etiqueta HTML estándar.
+                  </p>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                    <code class=language-html data-prismjs-copy=Copy>
+                      &lt;div role="heading" aria-level="1"&gt;Título Principal&lt;/div&gt;
+                    </code>
+                  </pre>
+                  </div>
+                </div>
+                
+              </div>
+              
+
+              <hr class=subtle-divider>
+
+              
+              <div id=los-parrafos>
+                <h2 class=pt-1>Los Párrafos &lt;p&gt;</h2>
+                
+                <div>
+                  <h3>Definición Párrafos &lt;p&gt;</h3>
+                  <p>
+                    La etiqueta <code class=language-html>&lt;p&gt;</code> en
+                    HTML se utiliza para definir párrafos de texto. Es una de
+                    las etiquetas más básicas y comunes del lenguaje HTML, y
+                    permite estructurar el contenido en bloques separados y
+                    legibles.
+                  </p>
+                </div>
+                
+
+                
+                <div>
+                  <h3>Características Clave Párrafos &lt;p&gt;</h3>
+                  <ul>
+                    <li>Inician en una nueva línea automáticamente.</li>
+                    <li>
+                      Se puede aplicar formato con
+                      <abbr title="Cascading Style Sheets">CSS</abbr>.
+                    </li>
+                    <li>
+                      Aceptan contenido textual y algunas etiquetas en línea.
+                    </li>
+                    <li>
+                      Generan espacio (margen) antes y después del contenido por
+                      defecto.
+                    </li>
+                    <li>
+                      No se puede estar seguro de cómo se mostrará el HTML.
+                    </li>
+                    <li>
+                      Pantallas grandes o pequeñas, y ventanas redimensionadas
+                      crearán resultados diferentes.
+                    </li>
+                    <li>
+                      Con HTML, no se puede cambiar la salida añadiendo espacios
+                      extra o líneas extra en tu código HTML.
+                    </li>
+                    <li>
+                      El navegador eliminará cualquier espacio extra y línea
+                      extra cuando se muestre la página:
+                      <div class=ej-sintaxis>
+                        <pre data-src-status=loaded tabindex=0>                          <code class=language-html data-prismjs-copy=Copy>
+                            &lt;p&gt;Este           es otro    parágrafo,
+                            los   espacios extra      serán  eliminados por  el   navegador&lt;/p&gt;
+
+                            &lt;!-- Lo que muestra el navegador: Este es otro parágrafo, los espacios extra serán eliminados por el navegador--&gt;
+                          </code>
+                        </pre>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                
+
+                
+                <div>
+                  <h3 id=sintaxis-correcta-parrafos-p>
+                    Sintaxis Correcta Párrafos &lt;p&gt;
+                  </h3>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-html data-prismjs-copy=Copy>
+                        &lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </div>
+                
+
+                
+                <div>
+                  <h3 id=uso-parrafos-p>Uso Párrafos &lt;p&gt;</h3>
+                  <p>
+                    La etiqueta <code class=language-html>&lt;p&gt;</code> se usa
+                    para dividir el texto en bloques legibles. Se puede usar
+                    dentro del cuerpo del documento HTML (<code class=language-html>&lt;body&gt;</code>), y su uso correcto mejora la accesibilidad y el orden del
+                    contenido.
+                  </p>
+                </div>
+                
+
+                
+                <div>
+                  <h3 id=relación-con-otras-etiquetas-parrafos-p>
+                    Relación con Otras Etiquetas Párrafos &lt;p&gt;
+                  </h3>
+                  <ul>
+                    <li>
+                      <b>Encabezado &lt;hx&gt;</b>: Los párrafos suelen seguir a
+                      los encabezados, desarrollando las ideas presentadas en
+                      ellos.
+                    </li>
+                    <li>
+                      <b>Contenedores &lt;div&gt;, &lt;article&gt;, &lt;section&gt; o
+                        &lt;main&gt;</b>: Los párrafos pueden estar dentro de elementos
+                      contenedores.
+                    </li>
+                    <li>
+                      <b>Elementos en línea &lt;b&gt;, &lt;em&gt;, &lt;span&gt;, &lt;a&gt;,
+                        etc.</b>: Dentro de un párrafo se pueden usar elementos en línea
+                      para formatear o enlazar partes específicas del texto.
+                    </li>
+                    <li>
+                      <b>Comportamiento con elementos de bloque</b>: Los
+                      párrafos no pueden contener otros elementos de bloque como
+                      listas (<code class=language-html>&lt;ol&gt;</code>,
+                      <code class=language-html>&lt;ul&gt;</code>,
+                      <code class=language-html>&lt;dl&gt;</code>), tablas
+                      <code class=language-html>&lt;table&gt;</code> o divisiones
+                      <code class=language-html>&lt;div&gt;</code>.
+                    </li>
+                  </ul>
+                </div>
+                
+
+                
+                <div>
+                  <h3 id=buenas-prácticas-y-errores-comunes-parrafos-p>
+                    Buenas Prácticas y Errores Comunes Párrafos &lt;p&gt;
+                  </h3>
+                  <ul>
+                    <li>
+                      Buenas Prácticas al usar párrafos
+                      <code class=language-html>&lt;p&gt;</code>:
+                      <ul>
+                        <li>
+                          Cada párrafo debe enfocarse en un solo tema para
+                          facilitar la comprensión.
+                        </li>
+                        <li>
+                          Los párrafos deben ser claros y breves, evitando
+                          repeticiones y frases largas.
+                        </li>
+                        <li>
+                          Las oraciones dentro del párrafo deben conectarse
+                          lógicamente con conectores.
+                        </li>
+                        <li>
+                          La longitud de los párrafos debe ser apropiada al
+                          contenido.
+                        </li>
+                        <li>
+                          Los párrafos estructuran la información comenzando con
+                          la idea principal.
+                        </li>
+                        <li>
+                          La etiqueta
+                          <code class=language-html>&lt;p&gt;</code> es solo para
+                          bloques de texto en párrafos.
+                        </li>
+                        <li>
+                          El contenido de los párrafos debe ser accesible para
+                          todos los usuarios.
+                        </li>
+                        <li>
+                          Los estilos deben aplicarse con CSS, no directamente
+                          en HTML.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Errores Comunes al usar párrafos
+                      <code class=language-html>&lt;p&gt;</code>:
+                      <ul>
+                        <li>
+                          Incluir varios temas distintos en un solo párrafo
+                          confunde al lector y dificulta entender la
+                          información.
+                        </li>
+                        <li>
+                          Textos extensos sin dividir en párrafos pueden abrumar
+                          visualmente y hacer perder el interés.
+                        </li>
+                        <li>
+                          Muchos párrafos de una sola frase dan sensación de
+                          falta de desarrollo y dificultan entender el contexto.
+                        </li>
+                        <li>
+                          Usar <code class=language-html>&lt;p&gt;</code> para
+                          espaciar o separar elementos que no son texto es un
+                          error que afecta la interpretación del contenido.
+                        </li>
+                        <li>
+                          Oraciones mal conectadas o transiciones poco claras
+                          dificultan la comprensión y la fluidez.
+                        </li>
+                        <li>
+                          Repetir información innecesariamente en el mismo
+                          párrafo o en párrafos seguidos hace el texto pesado.
+                        </li>
+                        <li>
+                          Olvidar cerrar la etiqueta
+                          <code class=language-html>&lt;/p&gt;</code> es un error
+                          de sintaxis.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                
+
+                
+                <div>
+                  <h3 id=configuración-css-por-defectoencabezados-p>
+                    Configuración CSS por Defecto Párrafos &lt;p&gt;
+                  </h3>
+                  <p>Los navegadores aplican estilos predeterminados como:</p>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-css data-prismjs-copy=Copy>
+                        p {
+                          margin-top: 1em;
+                          margin-bottom: 1em;
+                        }
+                      </code>
+                    </pre>
+                  </div>
+                  <p>
+                    Esto significa que hay espacio entre un párrafo y otro
+                    automáticamente.
+                  </p>
+                </div>
+                
+
+                
+                <div>
+                  <h3 id=ejemplo-aplicado-en-un-proyecto-real-parrafos-p>
+                    Ejemplo Aplicado en un Proyecto Real Párrafos &lt;p&gt;
+                  </h3>
+                  <p>En una página web básica:</p>
+                  <div class=row>
+                    
+                    <div class=ej-ejemplo>
+                      <div class="ej-ejecutado mt-3 row">
+                        
+                        <div>
+                          <div class=ej-body-wrapper-p>
+                            <div class=ej-container-p>
+                              <h1 class=ej-titulo-p>
+                                🎨 Párrafos con Estilo
+                              </h1>
+
+                              <p class=ej-neon-p>
+                                Este párrafo tiene un efecto neón que brilla en
+                                la oscuridad. Perfecto para darle un toque
+                                futurista a tu contenido.
+                              </p>
+
+                              <p class=ej-typewriter-p>
+                                Simulando una máquina de escribir...
+                              </p>
+
+                              <p class=ej-gradient-text-p>
+                                Un párrafo con texto degradado que cambia de
+                                colores constantemente. ¡Muy llamativo!
+                              </p>
+
+                              <p class=ej-floating-p>
+                                Este párrafo flota suavemente arriba y abajo,
+                                creando un efecto hipnotizante que capta la
+                                atención del lector.
+                              </p>
+
+                              <p class=ej-fade-in-p>
+                                Aparezco gradualmente con un efecto de
+                                desvanecimiento elegante. Ideal para revelar
+                                contenido importante.
+                              </p>
+
+                              <p class=ej-interactive-p>
+                                ¡Pasa el mouse sobre mí! Soy un párrafo
+                                interactivo que responde a tus acciones con
+                                animaciones suaves.
+                              </p>
+
+                              <p class=ej-retro-p>
+                                Estilo retro de los años 80 con colores
+                                vibrantes y sombras marcadas.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class=row>
+                        <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                          
+                          <pre>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>
+                                &lt;div class="body-wrapper"&gt;
+                                  &lt;div class="container"&gt;
+                                    &lt;h1 class="titulo"&gt;
+                                      🎨 Párrafos con Estilo
+                                    &lt;/h1&gt;
+
+                                    &lt;p class="neon"&gt;
+                                      Este párrafo tiene un efecto neón que brilla en
+                                      la oscuridad. Perfecto para darle un toque
+                                      futurista a tu contenido.
+                                    &lt;/p&gt;
+
+                                    &lt;p class="typewriter"&gt;
+                                      Simulando una máquina de escribir...
+                                    &lt;/p&gt;
+
+                                    &lt;p class="gradient-text"&gt;
+                                      Un párrafo con texto degradado que cambia de
+                                      colores constantemente. ¡Muy llamativo!
+                                    &lt;/p&gt;
+
+                                    &lt;p class="floating"&gt;
+                                      Este párrafo flota suavemente arriba y abajo,
+                                      creando un efecto hipnotizante que capta la
+                                      atención del lector.
+                                    &lt;/p&gt;
+
+                                    &lt;p class="fade-in"&gt;
+                                      Aparezco gradualmente con un efecto de
+                                      desvanecimiento elegante. Ideal para revelar
+                                      contenido importante.
+                                    &lt;/p&gt;
+
+                                    &lt;p class="interactive"&gt;
+                                      ¡Pasa el mouse sobre mí! Soy un párrafo
+                                      interactivo que responde a tus acciones con
+                                      animaciones suaves.
+                                    &lt;/p&gt;
+
+                                    &lt;p class="retro"&gt;
+                                      Estilo retro de los años 80 con colores
+                                      vibrantes y sombras marcadas.
+                                    &lt;/p&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;                                
+                              </div>        
+                            </code>
+                          </pre>
+                          
+                        </div>
+                        <div class="col-lg-6 ej-code-css mb-3">
+                          
+                          <pre>                            <code class=language-css data-prismjs-copy=Copy>
+                              <div>
+                                .body-wrapper {
+                                    font-family: 'Arial', sans-serif;
+                                    padding: 20px;
+                                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                                    min-height: 100vh;
+                                }
+
+                                .container {
+                                    max-width: 800px;
+                                    margin: 0 auto;
+                                    background: rgba(255, 255, 255, 0.95);
+                                    border-radius: 20px;
+                                    padding: 30px;
+                                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                                }
+
+                                .titulo {
+                                    text-align: center;
+                                    color: #333;
+                                    margin-bottom: 40px;
+                                    font-size: 2.5em;
+                                }
+
+                                /* Párrafo con efecto neón */
+                                .neon {
+                                    background: #000;
+                                    color: #00ff88;
+                                    padding: 20px;
+                                    border-radius: 10px;
+                                    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 40px #00ff88;
+                                    border: 2px solid #00ff88;
+                                    margin: 20px 0;
+                                    animation: glow 2s ease-in-out infinite alternate;
+                                }
+
+                                @keyframes glow {
+                                    from {
+                                        text-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88, 0 0 15px #00ff88;
+                                    }
+
+                                    to {
+                                        text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 40px #00ff88;
+                                    }
+                                }
+
+                                /* Párrafo con efecto máquina de escribir */
+                                .typewriter {
+                                    font-family: 'Courier New', monospace;
+                                    background: #1e1e1e;
+                                    color: #00ff00;
+                                    padding: 20px;
+                                    border-radius: 10px;
+                                    border-left: 5px solid #00ff00;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+                                    margin: 20px 0;
+                                }
+
+                                @keyframes typing {
+                                    from {
+                                        width: 0;
+                                    }
+
+                                    to {
+                                        width: 100%;
+                                    }
+                                }
+
+                                @keyframes blink-caret {
+
+                                    from,
+                                    to {
+                                        border-color: transparent;
+                                    }
+
+                                    50% {
+                                        border-color: #00ff00;
+                                    }
+                                }
+
+                                /* Párrafo con gradiente y sombra */
+                                .gradient-text {
+                                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+                                    background-size: 400% 400%;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    background-clip: text;
+                                    font-size: 1.5em;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    padding: 20px;
+                                    animation: gradient-shift 3s ease infinite;
+                                    margin: 20px 0;
+                                }
+
+                                @keyframes gradient-shift {
+                                    0% {
+                                        backgroundosition: 0% 50%;
+                                    }
+
+                                    50% {
+                                        backgroundosition: 100% 50%;
+                                    }
+
+                                    100% {
+                                        backgroundosition: 0% 50%;
+                                    }
+                                }
+
+                                /* Párrafo con efecto flotante */
+                                .floating {
+                                    background: rgba(255, 255, 255, 0.9);
+                                    color: var(--color-fondo);
+                                    padding: 20px;
+                                    border-radius: 15px;
+                                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                                    transform: translateY(0);
+                                    animation: float 3s ease-in-out infinite;
+                                    margin: 20px 0;
+                                    border: 3px solid #ff6b6b;
+                                }
+
+                                @keyframes float {
+
+                                    0%,
+                                    100% {
+                                        transform: translateY(0px);
+                                    }
+
+                                    50% {
+                                        transform: translateY(-10px);
+                                    }
+                                }
+
+                                /* Párrafo con efecto de desvanecimiento */
+                                .fade-in {
+                                    background: linear-gradient(135deg, #667eea, #764ba2);
+                                    color: white;
+                                    padding: 20px;
+                                    border-radius: 10px;
+                                    opacity: 0;
+                                    animation: fadeIn 2s ease-in forwards;
+                                    margin: 20px 0;
+                                }
+
+                                @keyframes fadeIn {
+                                    to {
+                                        opacity: 1;
+                                    }
+                                }
+
+                                /* Párrafo con hover interactivo */
+                                .interactive {
+                                    background: #f8f9fa;
+                                    color: var(--color-fondo);
+                                    padding: 20px;
+                                    border-radius: 10px;
+                                    border: 2px solid #dee2e6;
+                                    transition: all 0.3s ease;
+                                    cursor: pointer;
+                                    margin: 20px 0;
+                                }
+
+                                .interactive:hover {
+                                    background: #343a40;
+                                    color: white;
+                                    transform: scale(1.05);
+                                    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+                                }
+
+                                /* Párrafo con estilo retro */
+                                .retro {
+                                    background: #ff6b35;
+                                    color: #fff;
+                                    padding: 20px;
+                                    font-family: 'Courier New', monospace;
+                                    text-transform: uppercase;
+                                    letter-spacing: 2px;
+                                    border: 5px solid #fff;
+                                    box-shadow: 10px 10px 0 #333;
+                                    margin: 20px 0;
+                                }                                
+                              </div>        
+                            </code>
+                          </pre>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+
+                
+                <div>
+                  <h3 id=uso-con-tecnologías-de-asistencia-(aria)-parrafos-p>
+                    Uso con Tecnologías de Asistencia (ARIA) Párrafos &lt;p&gt;
+                  </h3>
+                  <p>
+                    Es fundamental comprender que la etiqueta
+                    <code class=language-html>&lt;p&gt;</code> en sí misma ya
+                    proporciona información semántica importante a las
+                    Tecnologías de Asistencia. Indica que el contenido encerrado
+                    es un párrafo de texto, una unidad lógica de información.
+                    Los lectores de pantalla, por ejemplo, anuncian los
+                    elementos <code class=language-html>&lt;p&gt;</code> como
+                    "párrafo", lo que ayuda a los usuarios con discapacidad
+                    visual a comprender la estructura y el flujo del contenido.
+                  </p>
+                  <p>
+                    En general, para el uso de párrafos de texto simples, no es
+                    necesario añadir atributos ARIA directamente a la etiqueta
+                    <code class=language-html>&lt;p&gt;</code>. La semántica
+                    inherente de la etiqueta es suficiente para comunicar su
+                    propósito.
+                  </p>
+                </div>
+                
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=saltos-de-linea>
+                <h2 class=pt-1>Saltos de Línea &lt;br&gt;</h2>
+                
+                <div>
+                  <h3>Definición Saltos de Línea &lt;br&gt;</h3>
+                  <p>
+                    La ruptura de la línea en HTML se logra con la etiqueta
+                    <code class=language-html>&lt;br&gt;</code> Esta etiqueta
+                    inserta una ruptura de línea en el contenido, permitiendo
+                    que el texto o los elementos posteriores se muestren en una
+                    línea separada No significa un nuevo párrafo; Es simplemente
+                    un cambio de línea.
+                  </p>
+                </div>
+                
+
+                
+                <div>
+                  <h3>Características Clave Saltos de Línea &lt;br&gt;</h3>
+                  <ul>
+                    <li>Es un elemento vacío (no tiene etiqueta de cierre).</li>
+                    <li>Crea un salto visual sin semántica de párrafo.</li>
+                    <li>
+                      Comúnmente utilizado en poesía, direcciones o necesidades
+                      de formato de texto manual.
+                    </li>
+                    <li>
+                      No agrega espacio vertical adicional en comparación con
+                      <code class=language-html>&lt;br&gt;</code>.
+                    </li>
+                    <li>Compatible en todos los navegadores.</li>
+                    <li>No se requiere contenido entre las etiquetas.</li>
+                    <li>
+                      Recibe atributos HTML globales como
+                      <code class=language-html>dir</code> y
+                      <code class=language-html>lang</code>, pero algunos
+                      pueden no funcionar desde HTML 4 01.
+                    </li>
+                    <li>Es un elemento en línea.</li>
+                    <li>
+                      Pertenece al contenido de fraseo y al contenido de flujo,
+                      lo que permite el uso dentro de elementos que aceptan este
+                      tipo de datos.
+                    </li>
+                    <li>
+                      Escrito como
+                      <code class=language-html>&lt;br/&gt;</code> para un mejor
+                      cumplimiento XHTML.
+                    </li>
+                  </ul>
+                </div>
+                
+
+                
+                <div>
+                  <h3 id=sintaxis-correcta-saltos-de-linea-br>
+                    Sintaxis Correcta Saltos de Línea &lt;br&gt;
+                  </h3>
+                  <ul>
+                    <li>
+                      HTML5 recomienda usar la siguiente sintaxis:
+                      <div class=ej-sintaxis>
+                        <pre data-src-status=loaded tabindex=0>                          <code class=language-html data-prismjs-copy=Copy>
+                            &lt;br&gt;
+                          </code>
+                        </pre>
+                      </div>
+                    </li>
+                    <li>
+                      Para XHTML o estilos más estrictos:
+                      <div class=ej-sintaxis>
+                        <pre data-src-status=loaded tabindex=0>                          <code class=language-html data-prismjs-copy=Copy>
+                            &lt;br /&gt;
+                          </code>
+                        </pre>
+                      </div>
+                    </li>
+                  </ul>
+                  Aunque ambas son válidas en HTML5, se recomienda la primera
+                  para simplicidad.
+                </div>
+                
+
+                
+                <div>
+                  <h3 id=uso-saltos-de-linea-br>
+                    Uso Saltos de Línea &lt;br&gt;
+                  </h3>
+                  <ul>
+                    <li>Separar líneas en direcciones postales.</li>
+                    <li>Crear espacios en poemas o letras de canciones.</li>
+                    <li>Separar líneas en un diálogo o cita.</li>
+                    <li>
+                      Cuando se necesita un salto visual sin cambiar el contexto
+                      semántico.
+                    </li>
+                  </ul>
+                </div>
+                
+
+                
+                <div>
+                  <h3 id=relación-con-otras-etiquetas-saltos-de-linea-br>
+                    Relación con Otras Etiquetas Saltos de Línea &lt;br&gt;
+                  </h3>
+                  <ul>
+                    <li>
+                      <code class=language-html>&lt;p&gt;</code> vs
+                      <code class=language-html>&lt;br&gt;:</code>
+                      <code class=language-html>&lt;p&gt;</code> crea un párrafo
+                      con espacio arriba y abajo.
+                      <code class=language-html>&lt;br&gt;</code> solo cambia de
+                      línea sin espacio adicional.
+                    </li>
+                    <li>
+                      <code class=language-html>&lt;div&gt;</code>: aunque se usa
+                      para agrupar contenido, no realiza quiebres de línea
+                      automáticos sin CSS.
+                    </li>
+                    <li>
+                      <code class=language-html>&lt;pre&gt;</code>: mantiene los
+                      saltos de línea del código fuente, sin necesidad de
+                      <code class=language-html>&lt;br&gt;</code>.
+                    </li>
+                    <li>
+                      <code class=language-html>&lt;hr&gt;</code>: inserta una
+                      línea horizontal, no relacionada con cambio de línea pero
+                      también es una etiqueta vacía.
+                    </li>
+                    <li>
+                      <code class=language-html>&lt;li&gt;</code> (List Item): Se
+                      usa dentro de listas (<code class=language-html>&lt;ul&gt;</code>
+                      o <code class=language-html>&lt;ol&gt;)</code>. Cada
+                      elemento de la lista se muestra en una línea separada.
+                    </li>
+                  </ul>
+                  <p>
+                    La principal diferencia con
+                    <code class=language-html>&lt;br&gt;</code> es que las
+                    etiquetas como <code class=language-html>&lt;p&gt;</code>,
+                    <code class=language-html>&lt;div&gt;</code>, y
+                    <code class=language-html>&lt;li&gt;</code> son elementos de
+                    bloque (por defecto), lo que significa que ocupan todo el
+                    ancho disponible y fuerzan un salto de línea antes y después
+                    de sí mismos. <code class=language-html>&lt;br&gt;</code> es
+                    un elemento en línea, lo que significa que solo ocupa el
+                    espacio necesario para su propio contenido y simplemente
+                    inserta una nueva línea en el flujo del texto.
+                  </p>
+                </div>
+                
+
+                
+                <div>
+                  <h3 id=buenas-prácticas-y-errores-comunes-saltos-de-linea-br>
+                    Buenas Prácticas y Errores Comunes Saltos de Línea &lt;br&gt;
+                  </h3>
+                  <ul>
+                    <li>
+                      Buenas Prácticas:
+                      <ul>
+                        <li>
+                          Usar <code class=language-html>&lt;br&gt;</code> solo
+                          cuando el salto de línea sea parte del contenido, no
+                          para maquetar o espaciar visualmente.
+                        </li>
+                        <li>
+                          Reservar el uso de
+                          <code class=language-html>&lt;br&gt;</code> para casos
+                          donde realmente se necesite un salto de línea dentro
+                          de un bloque de texto, como en direcciones postales,
+                          poemas o versos de una canción.
+                        </li>
+                        <li>
+                          Validar el código HTML para asegurar que los saltos de
+                          línea estén dentro de elementos válidos como
+                          <code class=language-html>&lt;p&gt;</code> o
+                          <code class=language-html>&lt;div&gt;</code>.
+                        </li>
+                        <li>
+                          Es preferible usar CSS para el control de espaciados y
+                          saltos de línea visuales.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Errores Comunes:
+                      <ul>
+                        <li>
+                          Usar <code class=language-html>&lt;br&gt;</code> para
+                          Separar Párrafos es un error común que dificulta la
+                          semántica del documento.
+                        </li>
+                        <li>
+                          Usar Múltiples
+                          <code class=language-html>&lt;br&gt;</code> para Crear
+                          Espacio Vertical es una mala práctica de diseño que
+                          debe evitarse en favor de CSS (<code class=language-html>margin</code>
+                          o <code class=language-html>padding</code>).
+                        </li>
+                        <li>
+                          Ignorar la Semántica No considerar el significado de
+                          las etiquetas HTML al usar saltos de línea puede
+                          afectar negativamente la accesibilidad y el SEO.
+                        </li>
+                        <li>
+                          Cerrar la etiqueta con
+                          <code class=language-html>&lt;/br&gt;</code> (no es
+                          correcto en HTML5).
+                        </li>
+                        <li>
+                          Reemplazar
+                          <code class=language-html>&lt;p&gt;</code> con
+                          <code class=language-html>&lt;br&gt;</code> para
+                          estructura de párrafos.
+                        </li>
+                        <li>
+                          Para dar formato a la estructura visual de una página,
+                          es preferible emplear CSS Grid, Flexbox o contenedores
+                          en lugar de la etiqueta
+                          <code class=language-html>&lt;br&gt;</code>.
+                        </li>
+                        <li>
+                          Usar <code class=language-html>&lt;br&gt;</code> para
+                          separar párrafos o bloques de contenido
+                          independientes.
+                        </li>
+                        <li>
+                          Colocar
+                          <code class=language-html>&lt;br&gt;</code> fuera de
+                          elementos de texto válidos, lo que puede causar
+                          problemas de renderizado.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                
+
+                
+                <div>
+                  <h3 id=configuración-css-por-defecto-saltos-de-linea-br>
+                    Configuración CSS por Defecto Saltos de Línea &lt;br&gt;
+                  </h3>
+                  <p>
+                    Por defecto, la etiqueta
+                    <code class=language-html>&lt;br&gt;</code> no tiene mucho
+                    estilo CSS asociado. Su comportamiento principal es
+                    simplemente forzar un salto de línea en el flujo del texto.
+                    No añade márgenes ni rellenos por defecto, pero puede decir
+                    que el formato por defecto puede ser el siguiente:
+                  </p>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-css data-prismjs-copy=Copy>
+                        br {
+                          display: inline;
+                          unicode-bidi: isolate;
+                        }
+                      </code>
+                    </pre>
+                  </div>
+                  <p>
+                    Esta configuración CSS representa el comportamiento
+                    predeterminado del elemento
+                    <code class=language-html><code class=language-html>&lt;br&gt;</code></code>
+                    en los navegadores modernos, lo que garantiza que funcione
+                    como un salto de línea simple dentro del flujo normal del
+                    texto, manteniendo la compatibilidad con diferentes idiomas
+                    y sus direcciones de escritura.
+                  </p>
+                </div>
+                
+
+                
+                <div>
+                  <h3 id=ejemplo-aplicado-en-un-proyecto-real-saltos-de-linea-br>
+                    Ejemplo Aplicado en un Proyecto Real Saltos de Línea &lt;br&gt;
+                  </h3>
+                  <div class=row>
+                    
+                    <div class=ej-ejemplo>
+                      <div class="ej-ejecutado mt-3 row">
+                        
+                        <div>
+                          <div class=ej-container-br>
+                            <address class=ej-address-br>
+                              Empresa Ejemplo S.A.<br>
+                              Calle 90 7-23<br>
+                              28001 Bogotá, Colombia<br>
+                              <a href=tel:+571234567>+57-123-4567</a>
+                            </address>
+
+                            <p class=ej-poem-br>
+                              Caminante, son tus huellas<br>
+                              el camino y nada más;<br>
+                              Caminante, no hay camino,<br>
+                              se hace camino al andar.
+                            </p>
+                          </div>
+                        </div>
+                        
+                      </div>
+
+                      <div class=row>
+                        <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                          
+                          <pre>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>
+                                &lt;div class="container"&gt;
+                                  &lt;address class="address"&gt;
+                                    Empresa Ejemplo S.A.&lt;br&gt;
+                                    Calle 90 7-23&lt;br&gt;
+                                    28001 Bogotá, Colombia&lt;br&gt;
+                                    &lt;a href="tel:+571234567"&gt;+57-123-4567&lt;/a&gt;
+                                  &lt;/address&gt;
+
+                                  &lt;p class="poem"&gt;
+                                    Caminante, son tus huellas&lt;br&gt;
+                                    el camino y nada más;&lt;br&gt;
+                                    Caminante, no hay camino,&lt;br&gt;
+                                    se hace camino al andar.
+                                  &lt;/p&gt;
+                                &lt;/div&gt;                                
+                              </div>        
+                            </code>
+                          </pre>
+                          
+                        </div>
+                        <div class="col-lg-6 ej-code-css mb-3">
+                          
+                          <pre>                              <code class=language-css data-prismjs-copy=Copy>
+                                <div>
+                                  .container {
+                                      font-family: 'Segoe UI', sans-serif;
+                                      color: #333;
+                                      padding: 2rem;
+                                      max-width: 800px;
+                                      margin: 0 auto;
+                                      max-width: 400px;
+                                      margin: 0 auto;
+                                  }
+
+                                  .address {
+                                      background-color: #ffffff;
+                                      border-left: 5px solid #3e8ed0;
+                                      padding: 1rem 1.5rem;
+                                      margin-bottom: 2rem;
+                                      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+                                      border-radius: 8px;
+                                      line-height: 1.6;
+                                  }
+
+                                  .address a {
+                                      color: #3e8ed0;
+                                      text-decoration: none;
+                                      font-weight: bold;
+                                  }
+
+                                  .address a:hover {
+                                      text-decoration: underline;
+                                  }
+
+                                  .poem {
+                                      background-color: #fffdf7;
+                                      border-left: 4px dashed #e0a96d;
+                                      padding: 1.5rem;
+                                      font-style: italic;
+                                      font-family: 'Georgia', serif;
+                                      white-space: pre-line;
+                                      border-radius: 8px;
+                                      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+                                  }                                  
+                                </div>        
+                              </code>
+                            </pre>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+
+                
+                <div>
+                  <h3 id=uso-con-tecnologías-de-asistencia-(aria)-saltos-de-linea-br>
+                    Uso con Tecnologías de Asistencia (ARIA) Saltos de Línea
+                    &lt;br&gt;
+                  </h3>
+                  <ul>
+                    <li>
+                      El <code class=language-html>&lt;br&gt;</code> es
+                      reconocido por lectores de pantalla, generando una breve
+                      pausa, pero no se anuncia como "salto de línea".
+                    </li>
+                    <li>Su efecto es visual, y no semántico.</li>
+                    <li>
+                      Si se necesita marcar una pausa o cambio significativo en
+                      contenido accesible, es mejor utilizar etiquetas como
+                      <code class=language-html>&lt;p&gt;</code>, listas o usar
+                      atributos ARIA más específicos.
+                    </li>
+                    <li>
+                      Para mejor accesibilidad, es preferible estructurar el
+                      contenido semánticamente y evitar usar
+                      <code class=language-html>&lt;br&gt;</code> como reemplazo
+                      de organización de bloques.
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+              
+            </div>
+          </article>
+          
+          <article class="pt-5 row" id=comments>
+            <h2>COMENTARIOS</h2>
+            <p>
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
+            </p>
+            <div class="d-flex justify-content-center">
+              <form action=https://formspree.io/f/mdkdawkg method=post id=myForm>
+                <fieldset class="d-flex flex-column gap-3">
+                  <legend class="fs-4 text-center">Deje su comentario</legend>
+
+                  <div class="d-flex flex-column">
+                    <label for=name>Nombre:</label>
+                    <input name=name id=name placeholder=User class="form-control rounded" required>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for=email>Email:</label>
+                    <input type=email name=email id=email placeholder=user@mail.com class="form-control rounded" required>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for=message>Mensaje:</label>
+                    <textarea name=message id=message cols=30 rows=5 placeholder="Su comentario..." class="form-control rounded-3" required></textarea>
+                  </div>
+
+                  <button class="border border-2 btn btn-outline-light my-3 rounded-pill">
+                    Enviar
+                  </button>
+                </fieldset>
+
+                <p class="small text-center">
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
+                </p>
+              </form>
+            </div>
+          </article>
+          
+        </section>
+        
+        
+        <aside class="col-lg-3 d-lg-block d-none pt-5">
+          <h1>En Este Artículo</h1>
+          <div class=menu-scroll>
+            <div class=menu-container>
+              <div class=menu-item>
+                <a href=#introduccion class=simple-link>Introducción</a>
+              </div>
+              <div class=menu-item>
+                <a href=#los-encabezados class=simple-link>Los Encabezados
+                  <code class=language-html>&lt;hx&gt;</code></a>
+              </div>
+
+              <div class=menu-item>
+                <a href=#los-parrafos class=simple-link>Los Párrafos <code class=language-html>&lt;p&gt;</code></a>
+              </div>
+
+              <div class=menu-item>
+                <a href=#saltos-de-linea class=simple-link>Saltos de Línea <code class=language-html>&lt;br&gt;</code></a>
+              </div>
+
+              <div class=menu-item>
+                <a href=#comments class=simple-link>Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+        
+      </main>
+      
+    </div>
+    
+
+    
+    <footer class="border-1 border-top m-1 mt-auto row">
+      <div class=row>
+        
+        <address class="align-items-center col-lg-4 d-flex flex-column">
+          <div class="fs-2 text-center">Contacto</div>
+          <div class="align-items-center d-flex flex-row">
+            <i class="bi bi-envelope-at fs-3"></i>
+            <span class=ms-3>
+              <a class=text-decoration-none href=mailto:ehfeduardo@gmail.com>ehfeduardo@gmail.com</a>
+            </span>
+          </div>
+          <div class="align-items-center d-flex flex-row">
+            <i class="bi bi-geo-alt fs-3"></i>
+            <span class=ms-3>Bogotá D. C. - Colombia</span>
+          </div>
+        </address>
+        
+        <div class="align-items-center col-lg-4 d-flex flex-column h-100 justify-content-center">
+          <div>
+            <i class="bi bi-c-circle fs-5"></i>
+          </div>
+          <div class=ms-2>All Rights Reserved 2025</div>
+        </div>
+        
+        <div class="align-items-center col-lg-4 d-flex flex-column">
+          <div class="fs-2 text-center">Redes Sociales</div>
+          <div class="align-items-center d-flex gap-5 justify-content-evenly">
+            <div>
+              <a href=https://www.linkedin.com/in/eduardoherreraf/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-linkedin fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://github.com/eduardoherreraf target=_blank rel="noopener noreferrer">
+                <i class="bi bi-github fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://www.facebook.com/eduardoherreraforero/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-facebook fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://twitter.com/ehfeduardo/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-twitter-x fs-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="align-items-center d-flex gap-2 justify-content-center"></div>
+    </footer>
+    
+
+    
+    <button onclick=topFunction() id=myBtnScroll title="Go to top">
+      <svg xmlns:xmlns=http://www.w3.org/2000/svg width=32 height=32 fill=currentColor class="bi bi-arrow-bar-up" style=margin-left:-2px viewBox="0 0 16 16"><path fill-rule=evenodd d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg>
+    </button>
+    
+  
+

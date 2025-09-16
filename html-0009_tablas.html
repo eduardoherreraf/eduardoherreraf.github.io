@@ -1,0 +1,813 @@
+<!DOCTYPE html><html lang=es data-bs-theme=dark><link rel=stylesheet href=PlantillaMiPagina.b8c68df4.css><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="Guía para la elaboración de tablas con HTML"><meta name=title content="Tablas HTML - Ing. Eduardo Herrera Forero."><meta name=author content="Ing. Eduardo Herrera Forero"><meta name=application-name content=EHF><meta name=robots content="index, follow"><link rel=canonical href=https://eduardoherreraf.github.io/html-0009_tablas.html><meta property=og:type content=website><meta property=og:title content="Tablas HTML - Ing. Eduardo Herrera Forero."><meta property=og:description content="Guía para la elaboración de tablas con HTML"><meta property=og:image content=82b0c434336d5abf><meta property=og:image:alt content="Imagen de un horario de clase hecho con una tabla HTML"><meta property=og:url content=https://eduardoherreraf.github.io/html-0009_tablas.html><meta property=og:locale content=es_CO><meta name=twitter:card content=summary_large_image><meta name=twitter:title content="Tablas HTML - Ing. Eduardo Herrera Forero."><meta name=twitter:description content="Guía para la elaboración de tablas con HTML"><meta name=twitter:image content=82b0c434336d5abf><meta name=twitter:image:alt content="Imagen de un horario de clase hecho con una tabla HTML"><meta name=twitter:url content=https://eduardoherreraf.github.io/html-0009_tablas.html><meta name=twitter:site content=@ehfeduardo><link rel=apple-touch-icon sizes=180x180 href=apple-touch-icon.96046c77.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.f7991d03.png><link rel=icon type=image/png sizes=192x192 href=android-chrome-192x192.4500461c.png><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.060ee0ac.png><link rel=manifest href=site.webmanifest><link rel=mask-icon href=safari-pinned-tab.df3b9c22.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>Tablas HTML - Ing. Eduardo Herrera Forero.</title><script type=module src=PlantillaMiPagina.638e488a.js></script><meta name=google-site-verification content=2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc><body>
+    
+    <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg">
+      <div class=container-fluid>
+        
+        <a class="align-items-center d-flex ms-2 navbar-brand text-decoration-none" href=index.html>
+          <img src=logo.08948a42.png alt="Logo de Ing. Eduardo Herrera Forero" width=30 height=30 class="align-text-top d-inline-block me-1">
+          <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span>
+        </a>
+        
+        <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+          <span class=navbar-toggler-icon></span>
+        </button>
+        
+        <div class="collapse ms-auto navbar-collapse text-center" id=navbarSupportedContent>
+          <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100">
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html>SOBRE MÍ</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#resume>EXPERIENCIA</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#portfolio>PORTAFOLIO</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#studies>ESTUDIOS</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link publicaciones-activo text-decoration-none" href=index.html#blog>PUBLICACIONES</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#contact>CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <div class=container-fluid id=introduccion>
+      <main class=row>
+        <section class="col-lg-9 pb-3 pt-5 px-lg-4">
+          
+          <article class="border-1 border-bottom pb-3 row" data-bs-spy=scroll data-bs-target=#list-example data-bs-smooth-scroll=true>
+            <div>
+              <header>
+                <h1>Tablas HTML</h1>
+              </header>
+
+              
+              <div>
+                <h2>Introducción</h2>
+                <p>
+                  Las tablas en HTML son una herramienta fundamental para
+                  organizar y presentar información en un formato estructurado
+                  de filas y columnas. Aunque en los inicios de la web se
+                  empleaban para el diseño y maquetación de páginas, su función
+                  principal hoy en día es la de mostrar datos tabulares.
+                </p>
+                <div class="centrar-imagen imagen50">
+                  <picture>
+                    <img src=https://i.postimg.cc/FFdYyYkx/tabla-html.png class=img-fluid alt="Tablas HTML " title="Tablas HTML ">
+                    <figcaption>Ejemplo de Listas HTML</figcaption>
+                  </picture>
+                </div>
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=que-son-las-tablas-html class=mt-3>
+                <h2>Qué son las Tablas HTML</h2>
+                <p>
+                  Las tablas HTML son estructuras que organizan datos en filas y
+                  columnas, mejorando la presentación de información tabular en
+                  sitios web. Son ideales para mostrar datos como resultados
+                  deportivos, estadísticas financieras o inventarios de
+                  productos, donde se requiere un formato claro de filas y
+                  columnas. Se crean con el elemento <code>&lt;table&gt;</code>,
+                  que contiene filas definidas por <code>&lt;tr&gt;</code> (<span class=fst-italic>table row</span>) y celdas especificadas con <code>&lt;td&gt;</code> (<span class=fst-italic>table data</span>) para contenido o <code>&lt;th&gt;</code> (<span class=fst-italic>table header</span>) para encabezados.
+                </p>
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=estructura-basica-de-una-tabla-html class=mt-3>
+                <h2>Estructura Básica de una Tabla HTML</h2>
+                <p>
+                  La estructura básica de una tabla en HTML se define
+                  principalmente con las siguientes etiquetas:
+                </p>
+                <ul>
+                  <li>
+                    <span class=fw-bold><code>&lt;table&gt;</code></span>: Etiqueta fundamental que define una tabla en HTML. Actúa
+                    como el contenedor principal, englobando todo el contenido
+                    de la tabla, desde encabezados hasta datos.
+                  </li>
+                  <li>
+                    <span class=fw-bold><code>&lt;thead&gt;</code></span>, <span class=fst-italic>Table Head</span>: (Opcional)
+                    Delimita la sección de encabezados de la tabla. Suele
+                    incluir los títulos de las columnas, aportando claridad y
+                    estructura. Aunque no es obligatorio, su uso es una práctica
+                    recomendada para mejorar la organización.
+                  </li>
+                  <li>
+                    <span class=fw-bold><code>&lt;tbody&gt;</code></span>, <span class=fst-italic>Table Body</span>: (Opcional)
+                    Contiene el cuerpo principal de la tabla, donde se alojan
+                    los datos organizados en filas y celdas. Es el núcleo de la
+                    tabla, esencial para presentar la información de manera
+                    ordenada.
+                  </li>
+                  <li>
+                    <span class=fw-bold><code>&lt;tfoot&gt;</code></span>, <span class=fst-italic>Table Footer</span>: (Opcional)
+                    Define el pie de la tabla, utilizado para incluir resúmenes,
+                    totales o notas finales. No es un elemento obligatorio, pero
+                    resulta útil para destacar información adicional o
+                    conclusiva.
+                  </li>
+                  <li>
+                    <span class=fw-bold><code>&lt;tr&gt;</code></span>, <span class=fst-italic>Table Row</span>: Representa una
+                    fila dentro de la tabla. Cada etiqueta
+                    <code>&lt;tr&gt;</code> genera una nueva fila, sirviendo como
+                    base para organizar celdas de encabezados o datos.
+                  </li>
+                  <li>
+                    <span class=fw-bold><code>&lt;th&gt;</code>, </span>
+                    <span class=fst-italic>Table Header</span>: Define las
+                    celdas de encabezado dentro de una fila, comúnmente en el
+                    <code>&lt;thead&gt;.</code> Su contenido, que identifica
+                    columnas o filas, aparece por defecto en negrita y centrado
+                    en la mayoría de los navegadores, facilitando la lectura.
+                  </li>
+                  <li>
+                    <span class=fw-bold><code>&lt;td&gt;</code>, </span><span class=fst-italic>Table Data</span>: Especifica las
+                    celdas que contienen los datos de la tabla, ubicadas
+                    generalmente en el <code>&lt;tbody&gt;</code> dentro de una
+                    fila. Estas celdas son el espacio donde se presenta la
+                    información principal de la tabla.
+                  </li>
+                </ul>
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=ejemplo-de-una-tabla-html class=mt-3>
+                <h2>Ejemplo de una Tabla HTML</h2>
+                <p>
+                  En este ejemplo se muestra como se combinan las etiquetas para
+                  crear una tabla simple:
+                </p>
+
+                <div class=row>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3 row">
+                      
+                      <div>
+                        <table class=ej-table>
+                          <thead>
+                            <tr>
+                              <th>Nombre</th>
+                              <th>Edad</th>
+                              <th>Ciudad</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Juan</td>
+                              <td>30</td>
+                              <td>Bogotá</td>
+                            </tr>
+                            <tr>
+                              <td>María</td>
+                              <td>25</td>
+                              <td>Medellín</td>
+                            </tr>
+                            <tr>
+                              <td>Sebastian</td>
+                              <td>35</td>
+                              <td>Cali</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td colspan=3>
+                                Estos son datos de ejemplo para demostración.
+                              </td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                      </div>
+                      
+                    </div>
+                    <div class=row>
+                      <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                          <code class=language-html data-prismjs-copy=Copy>
+                            <div>
+                              &lt;table class="table"&gt;
+                                &lt;thead&gt;
+                                  &lt;tr&gt;
+                                    &lt;th&gt;Nombre&lt;/th&gt;
+                                    &lt;th&gt;Edad&lt;/th&gt;
+                                    &lt;th&gt;Ciudad&lt;/th&gt;
+                                  &lt;/tr&gt;
+                                &lt;/thead&gt;
+                                &lt;tbody&gt;
+                                  &lt;tr&gt;
+                                    &lt;td&gt;Juan&lt;/td&gt;
+                                    &lt;td&gt;30&lt;/td&gt;
+                                    &lt;td&gt;Bogotá&lt;/td&gt;
+                                  &lt;/tr&gt;
+                                  &lt;tr&gt;
+                                    &lt;td&gt;María&lt;/td&gt;
+                                    &lt;td&gt;25&lt;/td&gt;
+                                    &lt;td&gt;Medellín&lt;/td&gt;
+                                  &lt;/tr&gt;
+                                  &lt;tr&gt;
+                                    &lt;td&gt;Sebastian&lt;/td&gt;
+                                    &lt;td&gt;35&lt;/td&gt;
+                                    &lt;td&gt;Cali&lt;/td&gt;
+                                  &lt;/tr&gt;
+                                &lt;/tbody&gt;
+                                &lt;tfoot&gt;
+                                  &lt;tr&gt;
+                                    &lt;td colspan="3"&gt;
+                                      Estos son datos de ejemplo para demostración.
+                                    &lt;/td&gt;
+                                  &lt;/tr&gt;
+                                &lt;/tfoot&gt;
+                              &lt;/table&gt;                              
+                            </div>        
+                          </code>
+                        </pre>
+                        
+                      </div>
+                      <div class="col-lg-6 ej-code-css mb-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                          <code class=language-css data-prismjs-copy=Copy>
+                            <div>
+                              .table {
+                                width: 100%;
+                                max-width: 600px;
+                                margin: 0 auto;
+                                border-collapse: collapse;
+                                background-color: white;
+                                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                                border-radius: 8px;
+                                overflow: hidden;
+                            }
+
+                            .table th {
+                                background-color: #4CAF50;
+                                color: white;
+                                padding: 12px 15px;
+                                text-align: left;
+                                font-weight: 600;
+                            }
+
+                            .table td {
+                                padding: 12px 15px;
+                                border-bottom: 1px solid #ddd;
+                            }
+
+                            .table tbody tr:hover {
+                                background-color: #f9f9f9;
+                            }
+
+                            .table tbody tr:last-child td {
+                                border-bottom: none;
+                            }
+
+                            .table tfoot td {
+                                background-color: #f8f8f8;
+                                font-style: italic;
+                                text-align: center;
+                                padding: 15px;
+                                color: #666;
+                                border-top: 2px solid #ddd;
+                            }
+
+                            .table tbody tr:nth-child(even) {
+                                background-color: #f9f9f9;
+                            }
+                            </div>        
+                          </code>
+                        </pre>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class=mt-3>
+                  <p><span class=fw-bold>Explicación del ejemplo</span>:</p>
+                </div>
+                <ul>
+                  <li>
+                    La etiqueta <code>&lt;table&gt;</code> es el contenedor
+                    principal que organiza todos los elementos y datos de una
+                    tabla HTML en una página web.
+                  </li>
+                  <li>
+                    La etiqueta <code>&lt;table&gt;</code> incluye una etiqueta
+                    <code>&lt;thead&gt;</code> que define la sección de
+                    encabezados, especificando los títulos de las columnas.
+                  </li>
+                  <li>
+                    En el elemento <code>&lt;thead&gt;</code>, una etiqueta
+                    <code>&lt;tr&gt;</code> define la fila de encabezados, que
+                    contiene tres etiquetas <code>&lt;th&gt;</code> representando
+                    los títulos de las columnas: "Nombre", "Edad" y "Ciudad".
+                  </li>
+                  <li>
+                    Luego, se tiene una etiqueta <code>&lt;tbody&gt;</code> para
+                    definir el cuerpo de la tabla, agrupando las filas con los
+                    datos principales.
+                  </li>
+                  <li>
+                    En el <code>&lt;tbody&gt;</code>, se encuentran dos etiquetas
+                    <code>&lt;tr&gt;</code>, cada una representando una fila con
+                    datos específicos de la tabla.
+                  </li>
+                  <li>
+                    Cada fila <code>&lt;tr&gt;</code> en el
+                    <code>&lt;tbody&gt;</code> contiene tres celdas
+                    <code>&lt;td&gt;</code> con datos específicos, como "Juan",
+                    "30" y "Bogotá" en la primera fila.
+                  </li>
+                  <li>
+                    En el
+                    <code>&lt;tfoot&gt;,</code> se define una fila con
+                    <code>&lt;tr&gt;</code> que contiene una celda
+                    <code>&lt;td&gt;</code> con el atributo
+                    <code>colspan="3"</code> para que el texto "Datos de ejemplo
+                    para demostración" abarque las tres columnas de la tabla
+                    (Nombre, Edad y Contacto).
+                  </li>
+                </ul>
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=elementos-opcionales-y-atributos-adicionales class=mt-3>
+                <h2>Elementos Opcionales y Atributos Adicionales</h2>
+                <ul>
+                  <li>
+                    <code>&lt;caption&gt;</code>: Título de la tabla:
+                    <ul>
+                      <li>
+                        Esta etiqueta se coloca como primer elemento dentro de
+                        <code>&lt;table&gt;</code>, antes de etiquetas como
+                        <code>&lt;thead&gt;</code> o <code>&lt;tr&gt;</code>.
+                      </li>
+                      <li>
+                        Por defecto, <code>&lt;caption&gt;</code> aparece centrado
+                        sobre la tabla, pero su alineación y posición pueden
+                        ajustarse con CSS.
+                      </li>
+                      <li>
+                        La etiqueta <code>&lt;caption&gt;</code> es interpretada
+                        por lectores de pantalla como el título de la tabla,
+                        mejorando la comprensión de los datos para usuarios con
+                        discapacidades visuales.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <code>&lt;colgroup&gt;</code>: Especifica un grupo de una o más
+                    columnas de una tabla para formatearlas.
+                    <ul>
+                      <li>
+                        La etiqueta <code>&lt;colgroup&gt;</code> se ubica dentro
+                        de <code>&lt;table&gt;</code>, después de su apertura y
+                        antes de las filas <code>&lt;tr&gt;</code>, y contiene
+                        etiquetas <code>&lt;col&gt;</code> que definen una o más
+                        columnas de la tabla.
+                      </li>
+                      <li>
+                        La etiqueta <code>&lt;caption&gt;</code> simplifica la
+                        gestión de estilos al permitir que múltiples columnas
+                        compartan las mismas propiedades visuales, evitando
+                        aplicar estilos individualmente a cada celda (<code>&lt;td&gt;</code>
+                        o <code>&lt;th&gt;</code>).
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <code>&lt;col&gt;</code>: La etiqueta
+                    <code>&lt;col&gt;</code> especifica propiedades de columna para
+                    cada columna dentro de un elemento
+                    <code>&lt;colgroup&gt;</code>.
+                  </li>
+                  <li>
+                    <code>span</code>: El atributo span en la etiqueta
+                    <code>&lt;col&gt;</code> de HTML especifica cuántas columnas
+                    consecutivas compartirán los estilos o propiedades
+                    definidas.
+                  </li>
+                </ul>
+                Ejemplo:
+                <div class=row>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3 row">
+                      
+                      <div>
+                        <table class=ej-table>
+                          <caption class=ej-caption>
+                            Calificaciones de Estudiantes
+                          </caption>
+                          <colgroup>
+                            <col class=ej-col-nombre>
+                            <col span=2 class=ej-col-notas>
+                            <col class=ej-col-promedio>
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th class=ej-th>Estudiante</th>
+                              <th class=ej-th>Examen 1</th>
+                              <th class=ej-th>Examen 2</th>
+                              <th class=ej-th>Promedio</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class=ej-td>Ana López</td>
+                              <td class=ej-td>85</td>
+                              <td class=ej-td>92</td>
+                              <td class=ej-td>88.5</td>
+                            </tr>
+                            <tr>
+                              <td class=ej-td>Carlos García</td>
+                              <td class=ej-td>78</td>
+                              <td class=ej-td>84</td>
+                              <td class=ej-td>81.0</td>
+                            </tr>
+                            <tr>
+                              <td class=ej-td>María Ruiz</td>
+                              <td class=ej-td>95</td>
+                              <td class=ej-td>89</td>
+                              <td class=ej-td>92.0</td>
+                            </tr>
+                            <tr>
+                              <td class=ej-td>Pedro Sánchez</td>
+                              <td class=ej-td>72</td>
+                              <td class=ej-td>79</td>
+                              <td class=ej-td>75.5</td>
+                            </tr>
+                          </tbody>
+                          <tfoot class=ej-tfoot>
+                            <tr>
+                              <td class=ej-td>Tot. Estudiantes: 4</td>
+                              <td class=ej-td>Prom.: 82.5</td>
+                              <td class=ej-td>Prom.: 86.0</td>
+                              <td class=ej-td>Prom. Gen.: 84.25</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                      </div>
+                      
+                    </div>
+                    <div class=row>
+                      <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                          <code class=language-html data-prismjs-copy=Copy>
+                            <div>
+                              &lt;table class="table"&gt;
+                                  &lt;caption class="caption"&gt;
+                                      Calificaciones de Estudiantes
+                                  &lt;/caption&gt;
+                                  &lt;colgroup&gt;
+                                      &lt;col class="col-nombre"&gt;
+                                      &lt;col span="2" class="col-notas"&gt;
+                                      &lt;col class="col-promedio"&gt;
+                                  &lt;/colgroup&gt;
+                                  &lt;thead&gt;
+                                      &lt;tr&gt;
+                                          &lt;th class="th"&gt;Estudiante&lt;/th&gt;
+                                          &lt;th class="th"&gt;Examen 1&lt;/th&gt;
+                                          &lt;th class="th"&gt;Examen 2&lt;/th&gt;
+                                          &lt;th class="th"&gt;Promedio&lt;/th&gt;
+                                      &lt;/tr&gt;
+                                  &lt;/thead&gt;
+                                  &lt;tbody&gt;
+                                      &lt;tr&gt;
+                                          &lt;td class="td"&gt;Ana López&lt;/td&gt;
+                                          &lt;td class="td"&gt;85&lt;/td&gt;
+                                          &lt;td class="td"&gt;92&lt;/td&gt;
+                                          &lt;td class="td"&gt;88.5&lt;/td&gt;
+                                      &lt;/tr&gt;
+                                      &lt;tr&gt;
+                                          &lt;td class="td"&gt;Carlos García&lt;/td&gt;
+                                          &lt;td class="td"&gt;78&lt;/td&gt;
+                                          &lt;td class="td"&gt;84&lt;/td&gt;
+                                          &lt;td class="td"&gt;81.0&lt;/td&gt;
+                                      &lt;/tr&gt;
+                                      &lt;tr&gt;
+                                          &lt;td class="td"&gt;María Ruiz&lt;/td&gt;
+                                          &lt;td class="td"&gt;95&lt;/td&gt;
+                                          &lt;td class="td"&gt;89&lt;/td&gt;
+                                          &lt;td class="td"&gt;92.0&lt;/td&gt;
+                                      &lt;/tr&gt;
+                                      &lt;tr&gt;
+                                          &lt;td class="td"&gt;Pedro Sánchez&lt;/td&gt;
+                                          &lt;td class="td"&gt;72&lt;/td&gt;
+                                          &lt;td class="td"&gt;79&lt;/td&gt;
+                                          &lt;td class="td"&gt;75.5&lt;/td&gt;
+                                      &lt;/tr&gt;
+                                  &lt;/tbody&gt;
+                                  &lt;tfoot class="tfoot"&gt;
+                                      &lt;tr&gt;
+                                          &lt;td class="td"&gt;Tot. Estudiantes: 4&lt;/td&gt;
+                                          &lt;td class="td"&gt;Prom.: 82.5&lt;/td&gt;
+                                          &lt;td class="td"&gt;Prom.: 86.0&lt;/td&gt;
+                                          &lt;td class="td"&gt;Prom. Gen.: 84.25&lt;/td&gt;
+                                      &lt;/tr&gt;
+                                  &lt;/tfoot&gt;
+                              &lt;/table&gt;                              
+                            </div>        
+                          </code>
+                        </pre>
+                        
+                      </div>
+                      <div class="col-lg-6 ej-code-css mb-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                          <code class=language-css data-prismjs-copy=Copy>
+                            <div>
+                              .table {
+                                  width: 100%;
+                                  max-width: 600px;
+                                  margin: 0 auto;
+                                  border-collapse: collapse;
+                                  background-color: white;
+                                  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                                  border-radius: 8px;
+                                  overflow: hidden;
+                              }
+
+                              .table th {
+                                  background-color: #4CAF50;
+                                  color: white;
+                                  padding: 12px 15px;
+                                  text-align: left;
+                                  font-weight: 600;
+                              }
+
+                              .table td {
+                                  padding: 12px 15px;
+                                  border-bottom: 1px solid #ddd;
+                              }
+
+                              .table tbody tr:hover {
+                                  background-color: #f9f9f9;
+                              }
+
+                              .table tbody tr:last-child td {
+                                  border-bottom: none;
+                              }
+
+                              .table tfoot td {
+                                  background-color: #f8f8f8;
+                                  font-style: italic;
+                                  text-align: center;
+                                  padding: 15px;
+                                  color: #666;
+                                  border-top: 2px solid #ddd;
+                              }
+
+                              .table tbody tr:nth-child(even) {
+                                  background-color: #f9f9f9;
+                              }
+
+                              .caption {
+                                font-size: 1.3em;
+                                font-weight: bold;
+                                margin-bottom: 12px;
+                                color: #34495e;
+                                background-color: #ecf0f1;
+                                padding: 12px;
+                                border-radius: 5px;
+                                text-align: center;
+                                caption-side: top;
+                              }
+
+                              /* Columna del nombre */
+                              .col-nombre {
+                                background-color: #e8f4fd;
+                                width: 25%;
+                              }
+
+                              /* Las dos columnas de notas (span="2") */
+                              .col-notas {
+                                background-color: #fff3cd;
+                                width: 20%;
+                                text-align: center;
+                              }
+
+                              /* La columna de promedio */
+                              .col-promedio {
+                                background-color: #d4edda;
+                                width: 15%;
+                                text-align: center;
+                                font-weight: bold;
+                              }
+
+                              .tfoot {
+                                background-color: #e6e6e6;
+                                font-weight: bold;
+                              }
+
+                              .tfoot .td {
+                                border-top: 2px solid #212529;
+                              }                             
+                            </div>        
+                          </code>
+                        </pre>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class=m-3>
+                  <p><span class=fw-bold>Estructura de la tabla</span>:</p>
+                  <ul>
+                    <li>
+                      <span class=fw-bold>Título</span>
+                      (<code>&lt;caption&gt;</code>): "Calificaciones de
+                      Estudiantes" - proporciona un título descriptivo para la
+                      tabla.
+                    </li>
+                    <li>
+                      <code>&lt;colgroup&gt;</code> Define grupos de columnas con
+                      clases CSS para aplicar estilos específicos:
+                    </li>
+                    <li>
+                      <span class=fw-bold>Encabezado</span>
+                      (<code>&lt;thead&gt;</code>): Contiene los títulos de las
+                      columnas:
+                    </li>
+                    <li>
+                      <span class=fw-bold>Cuerpo</span>
+                      (<code>&lt;tbody&gt;</code>): Contiene los datos de cada
+                      estudiante con sus respectivas calificaciones.
+                    </li>
+                    <li>
+                      <code>span</code>: Este atributo agrupa las columnas dos y
+                      tres, tratándolas como una sola para aplicar el formato
+                      definido por la clase <code>.col-notas</code>.
+                    </li>
+                    <li>
+                      <span class=fw-bold>Píe de página</span>
+                      (<code>&lt;tfoot&gt;</code>):
+                      <ul>
+                        <li>
+                          <span class=fw-bold>Nota importante</span>: Aunque
+                          <code>&lt;tfoot&gt;</code> se coloque en el código HTML
+                          antes de <code>&lt;tbody&gt;</code>, visualmente se
+                          renderiza al final de la tabla.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+          </article>
+          
+          
+          <article class="pt-5 row" id=comments>
+            <h2>COMENTARIOS</h2>
+            <p>
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
+            </p>
+            <div class="d-flex justify-content-center">
+              <form action=https://formspree.io/f/mdkdawkg method=post id=myForm>
+                <fieldset class="d-flex flex-column gap-3">
+                  <legend class="fs-4 text-center">Deje su comentario</legend>
+
+                  <div class="d-flex flex-column">
+                    <label for=name>Nombre:</label>
+                    <input name=name id=name placeholder=User class="form-control rounded" required>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for=email>Email:</label>
+                    <input type=email name=email id=email placeholder=user@mail.com class="form-control rounded" required>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for=message>Mensaje:</label>
+                    <textarea name=message id=message cols=30 rows=5 placeholder="Su comentario..." class="form-control rounded-3" required></textarea>
+                  </div>
+
+                  <button class="border border-2 btn btn-outline-light my-3 rounded-pill">
+                    Enviar
+                  </button>
+                </fieldset>
+
+                <p class="small text-center">
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
+                </p>
+              </form>
+            </div>
+          </article>
+          
+        </section>
+        
+        <aside class="col-lg-3 d-lg-block d-none pt-5">
+          <h1>En Este Artículo</h1>
+
+          <div class=menu-scroll>
+            <div class=menu-container>
+              <div class=menu-item>
+                <a href=#introduccion class=simple-link>Introducción</a>
+              </div>
+              <div class=menu-item>
+                <a href=#que-son-las-tablas-html class=simple-link>Qué son las Tablas HTML</a>
+              </div>
+              <div class=menu-item>
+                <a href=#estructura-basica-de-una-tabla-html class=simple-link>Estructura Básica de una Tabla HTML</a>
+              </div>
+              <div class=menu-item>
+                <a href=#ejemplo-de-una-tabla-html class=simple-link>Ejemplo de una Tabla HTML</a>
+              </div>
+              <div class=menu-item>
+                <a href=#elementos-opcionales-y-atributos-adicionales class=simple-link>Elementos Opcionales y Atributos Adicionales</a>
+              </div>
+              <div class=menu-item>
+                <a href=#comments class=simple-link>Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+        
+        
+      </main>
+      
+    </div>
+    
+
+    
+    <footer class="border-1 border-top m-1 mt-auto row">
+      <div class=row>
+        
+        <address class="align-items-center col-lg-4 d-flex flex-column">
+          <div class="fs-2 text-center">Contacto</div>
+          <div class="align-items-center d-flex flex-row">
+            <i class="bi bi-envelope-at fs-3"></i>
+            <span class=ms-3>
+              <a class=text-decoration-none href=mailto:ehfeduardo@gmail.com>ehfeduardo@gmail.com</a>
+            </span>
+          </div>
+          <div class="align-items-center d-flex flex-row">
+            <i class="bi bi-geo-alt fs-3"></i>
+            <span class=ms-3>Bogotá D. C. - Colombia</span>
+          </div>
+        </address>
+        
+        <div class="align-items-center col-lg-4 d-flex flex-column h-100 justify-content-center">
+          <div>
+            <i class="bi bi-c-circle fs-5"></i>
+          </div>
+          <div class=ms-2>All Rights Reserved 2025</div>
+        </div>
+        
+        <div class="align-items-center col-lg-4 d-flex flex-column">
+          <div class="fs-2 text-center">Redes Sociales</div>
+          <div class="align-items-center d-flex gap-5 justify-content-evenly">
+            <div>
+              <a href=https://www.linkedin.com/in/eduardoherreraf/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-linkedin fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://github.com/eduardoherreraf target=_blank rel="noopener noreferrer">
+                <i class="bi bi-github fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://www.facebook.com/eduardoherreraforero/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-facebook fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://twitter.com/ehfeduardo/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-twitter-x fs-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="align-items-center d-flex gap-2 justify-content-center"></div>
+    </footer>
+    
+
+    
+    <button onclick=topFunction() id=myBtnScroll title="Go to top">
+      <svg xmlns:xmlns=http://www.w3.org/2000/svg width=32 height=32 fill=currentColor class="bi bi-arrow-bar-up" style=margin-left:-2px viewBox="0 0 16 16"><path fill-rule=evenodd d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg>
+    </button>
+    
+  
+

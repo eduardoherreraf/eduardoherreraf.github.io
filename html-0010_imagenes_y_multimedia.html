@@ -1,0 +1,2194 @@
+<!DOCTYPE html><html lang=es data-bs-theme=dark><link rel=stylesheet href=PlantillaMiPagina.b8c68df4.css><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="Guía que explica cómo utilizar imágenes y otros elementos multimedia en una página web."><meta name=title content="Imágenes y Multimedia HTML - Ing. Eduardo Herrera Forero."><meta name=author content="Ing. Eduardo Herrera Forero"><meta name=application-name content=EHF><meta name=robots content="index, follow"><link rel=canonical href=https://eduardoherreraf.github.io/html-0010_imagenes_y_multimedia.html><meta property=og:type content=website><meta property=og:title content="Imágenes y Multimedia HTML - Ing. Eduardo Herrera Forero."><meta property=og:description content="Guía que explica cómo utilizar imágenes y otros elementos multimedia en una página web."><meta property=og:image content=a78299640365c23f><meta property=og:image:alt content="Imagen de ejemplo de una página con una imagen y un vídeo."><meta property=og:url content=https://eduardoherreraf.github.io/html-0010_imagenes_y_multimedia.html><meta property=og:locale content=es_CO><meta name=twitter:card content=summary_large_image><meta name=twitter:title content="Imágenes y Multimedia HTML - Ing. Eduardo Herrera Forero."><meta name=twitter:description content="Guía que explica cómo utilizar imágenes y otros elementos multimedia en una página web."><meta name=twitter:image content=a78299640365c23f><meta name=twitter:image:alt content="Imagen de ejemplo de una página con una imagen y un vídeo."><meta name=twitter:url content=https://eduardoherreraf.github.io/html-0010_imagenes_y_multimedia.html><meta name=twitter:site content=@ehfeduardo><link rel=apple-touch-icon sizes=180x180 href=apple-touch-icon.96046c77.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.f7991d03.png><link rel=icon type=image/png sizes=192x192 href=android-chrome-192x192.4500461c.png><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.060ee0ac.png><link rel=manifest href=site.webmanifest><link rel=mask-icon href=safari-pinned-tab.df3b9c22.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>Imágenes y Multimedia HTML - Ing. Eduardo Herrera Forero.</title><script type=module src=PlantillaMiPagina.638e488a.js></script><meta name=google-site-verification content=2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc><body>
+    
+    <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg">
+      <div class=container-fluid>
+        
+        <a class="align-items-center d-flex ms-2 navbar-brand text-decoration-none" href=index.html>
+          <img src=logo.08948a42.png alt="Logo de Ing. Eduardo Herrera Forero" width=30 height=30 class="align-text-top d-inline-block me-1">
+          <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span>
+        </a>
+        
+        <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+          <span class=navbar-toggler-icon></span>
+        </button>
+        
+        <div class="collapse ms-auto navbar-collapse text-center" id=navbarSupportedContent>
+          <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100">
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html>SOBRE MÍ</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#resume>EXPERIENCIA</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#portfolio>PORTAFOLIO</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#studies>ESTUDIOS</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link publicaciones-activo text-decoration-none" href=index.html#blog>PUBLICACIONES</a>
+            </li>
+            <li class=nav-item>
+              <a class="mx-1 nav-link text-decoration-none" href=index.html#contact>CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <div class=container-fluid id=introduccion>
+      <main class=row>
+        <section class="col-lg-9 pb-3 pt-5 px-lg-4">
+          
+          <article class="border-1 border-bottom pb-3 row" data-bs-spy=scroll data-bs-target=#list-example data-bs-smooth-scroll=true>
+            <div>
+              <header>
+                <h1>Imágenes y Multimedia HTML</h1>
+              </header>
+
+              
+              <div>
+                <h2>Introducción</h2>
+                <p>
+                  HTML no solo facilita la organización de texto, sino que
+                  también permite incorporar contenido multimedia, como
+                  imágenes, audio y video, enriqueciendo notablemente la
+                  experiencia del usuario. Las imágenes se insertan mediante la
+                  etiqueta <img>, que utiliza atributos como src para
+                  especificar la ubicación del archivo y alt para proporcionar
+                  una descripción alternativa, garantizando accesibilidad si la
+                  imagen no se carga.
+                </p>
+                <p>
+                  Para incluir audio y video, se emplean las etiquetas
+                  <code class=language-html>&lt;audio&gt;</code> y
+                  <code class=language-html>&lt;video&gt;</code>,
+                  respectivamente, que permiten reproducir contenido
+                  directamente en el navegador. Se aconseja usar formatos
+                  compatibles como MP3 para audio y MP4 para video, añadir
+                  controles de reproducción mediante el atributo controls y
+                  optimizar los archivos para minimizar el tiempo de carga,
+                  mejorando así la accesibilidad y el rendimiento del sitio web.
+                </p>
+                <div class="centrar-imagen imagen50">
+                  <picture>
+                    <img src=https://i.ibb.co/RpWzpCP8/Imagenes-y-multimedia-HTML.png class=img-fluid alt="Imágenes y Multimedia HTML" title="Imágenes y Multimedia HTML" draggable=true>
+                    <figcaption>
+                      Página Web que muestra una Imagen y un vídeo con HTML.
+                    </figcaption>
+                  </picture>
+                </div>
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=imagenes-html-img class=mt-3>
+                <h2>
+                  Imágenes HTML <code class=language-html>&lt;img&gt;</code>
+                </h2>
+                <p>
+                  Las imágenes pueden embellecer y optimizar el diseño visual de
+                  una página web, mejorando su estética, funcionalidad y
+                  experiencia del usuario al captar la atención y transmitir
+                  información de manera más efectiva.
+                </p>
+                <p>
+                  En HTML, se usa la etiqueta
+                  <code class=language-html>&lt;img&gt;</code> para insertar
+                  imágenes en una página web.
+                </p>
+
+                <p>
+                  La etiqueta <code class=language-html>&lt;img&gt;</code> en
+                  HTML permite integrar imágenes en una página web, potenciando
+                  su atractivo visual y enriqueciendo la experiencia del
+                  usuario. Este elemento crea un espacio reservado para mostrar
+                  la imagen, que no se inserta directamente, sino que se vincula
+                  mediante una referencia, conectando el archivo gráfico al
+                  sitio.
+                </p>
+                <p>
+                  Como etiqueta vacía,
+                  <code class=language-html>&lt;img&gt;</code> no requiere cierre
+                  y se define únicamente por sus atributos. Los atributos
+                  esenciales son <code class=language-html>src</code> y
+                  <code class=language-html>alt</code>, a saber:
+                </p>
+                <ul>
+                  <li>
+                    <code class=language-html>src</code>: Define la ruta o
+                    dirección del archivo de la imagen.
+                  </li>
+                  <li>
+                    <code class=language-html>alt</code>: Proporciona un texto
+                    alternativo que describe la imagen para accesibilidad. Es
+                    importante por varias razones:
+                    <ul>
+                      <li>
+                        <span class=fw-bold>Accesibilidad</span>: Las personas
+                        con discapacidades visuales que utilizan lectores de
+                        pantalla podrán escuchar el texto alternativo, lo que
+                        les permitirá comprender el contenido o propósito de la
+                        imagen.
+                      </li>
+                      <li>
+                        <span class=fw-bold>SEO (Optimización para Motores de Búsqueda)</span>: Los buscadores emplean el texto alternativo para
+                        interpretar el contenido de la imagen, lo que puede
+                        mejorar la visibilidad de la página en los resultados de
+                        búsqueda de imágenes.
+                      </li>
+                      <li>
+                        <span class=fw-bold>Cuando la imagen no carga</span>:
+                        Si la imagen no se muestra debido a errores (como una
+                        ruta incorrecta o problemas de conexión), el texto
+                        alternativo aparecerá en su lugar, proporcionando una
+                        descripción del contenido.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p>Otros parámetros opciones podrían ser:</p>
+                <ul>
+                  <li>
+                    <code class=language-html>width</code>: Ancho en píxeles o
+                    porcentaje.
+                  </li>
+                  <li>
+                    <code class=language-html>height</code>: Alto en píxeles o
+                    porcentaje.
+                  </li>
+                  <li>
+                    <code class=language-html>title</code>: Texto que aparece
+                    al pasar el mouse sobre la imagen. <br>
+                    Este atributo permite mostrar información contextual
+                    adicional sobre una imagen, como una breve explicación que
+                    aparece al pasar el cursor, mejorando la experiencia del
+                    usuario al aclarar el contenido o propósito de la imagen sin
+                    ocupar espacio en la página. Aunque no reemplaza al atributo
+                    alt, complementa la accesibilidad al proporcionar detalles
+                    extra, y en imágenes que actúan como enlaces o botones,
+                    facilita la navegación intuitiva al indicar qué acción se
+                    desencadenará al hacer clic.
+                  </li>
+                  <li>
+                    <code class=language-html>id</code>: Identificador único
+                    del elemento.
+                  </li>
+                  <li><code class=language-html>class</code>: Clases CSS.</li>
+                  <li>
+                    <code class=language-html>loading</code>: Controla cómo y
+                    cuándo se carga una imagen en la página, mejorando el
+                    rendimiento web.
+                    <ul>
+                      <li>
+                        <code class=language-html>lazy</code>: carga diferida
+                        (mejora rendimiento).
+                      </li>
+                      <li>
+                        <code class=language-html>eager</code>: carga
+                        inmediata, por defecto.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <code class=language-html>aria-label</code>: Proporciona
+                    una etiqueta de texto accesible para describir el propósito
+                    o contenido de una imagen en tecnologías de asistencia, como
+                    lectores de pantalla, cuando no hay otro texto descriptivo
+                    disponible.
+                  </li>
+                </ul>
+                <div class=row>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3 row">
+                      
+                      <div>
+                        <div class=ej-contenedor>
+                          <p class=ej-h3-img>Tecnologías Web</p>
+                          <img src=https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png alt="Diseño web" width=80% class=ej-centrar-imagen title="Algunas tecnologías para la realización de páginas web" loading=lazy aria-label="Algunas tecnologías para la realización de páginas web, p. ej. CSS, JS, HTML, angular, vue.js, ruby, python...">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class=row>
+                      <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>
+                                &lt;div class="contenedor"&gt;
+                                    &lt;p class="h3-img"&gt;Tecnologías Web&lt;/p&gt;
+                                    &lt;img
+                                        src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
+                                        alt="Diseño web"
+                                        width="80%"
+                                        class="centrar-imagen"
+                                        title="Algunas tecnologías para la realización de páginas web"
+                                        loading="lazy"
+                                        aria-label="Algunas tecnologías para la realización de páginas web, p. ej. CSS, JS, HTML, angular, vue.js, ruby, python..."
+                                                          /&gt;
+                                &lt;/div&gt;                                
+                              </div>        
+                            </code>
+                          </pre>
+                        
+                      </div>
+                      <div class="col-lg-6 ej-code-css mb-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                              <code class=language-css data-prismjs-copy=Copy>
+                                <div>
+                                  .centrar-imagen {
+                                      display: block;
+                                      margin: 0 auto;
+                                      max-width: 100%;
+                                      height: auto;
+                                      // border-radius: 12px;
+                                      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                                      transition: transform 0.3s ease;
+                                      overflow: hidden;
+                                  }
+
+                                  .centrar-imagen:hover {
+                                      transform: scale(1.02);
+                                  }
+
+                                  .contenedor {
+                                      max-width: 100%;
+                                      margin: 0 auto;
+                                      padding: 20px;
+                                      text-align: center;
+                                  }
+
+                                  .h3-img {
+                                      color: var(--color-texto);
+                                      margin-bottom: 20px;
+                                      text-align: center;
+                                      font-size: 2rem;
+                                      font-weight: bold;
+                                      ;
+                                  }                                  
+                                </div>        
+                              </code>
+                            </pre>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=videos-html-video class=mt-3>
+                <h2>
+                  Videos HTML <code class=language-html>&lt;video&gt;</code>
+                </h2>
+                <p>
+                  El elemento <code class=language-html>&lt;video&gt;</code> en
+                  HTML se utiliza para insertar y reproducir contenido de video
+                  en una página web. Fue introducido en HTML5 con el objetivo de
+                  proporcionar soporte nativo para videos en navegadores,
+                  eliminando la necesidad de complementos (plug-ins) externos
+                  como Flash o Java applets.
+                </p>
+                <p>
+                  Los atributos más comunes y útiles que se pueden usar con la
+                  etiqueta <code class=language-html>&lt;video&gt;</code> son:
+                </p>
+                <ul>
+                  <li>
+                    <code class=language-html>src</code>: Ruta del archivo de
+                    video (puede ser relativa o absoluta).
+                  </li>
+                  <li>
+                    <code class=language-html>controls</code>: Muestra los
+                    controles de reproducción.
+                  </li>
+
+                  <li>
+                    <code class=language-html>autoplay</code>: Reproducción
+                    automática (debe usar el atributo
+                    <code class=language-html>muted</code>).
+                  </li>
+                  <li>
+                    <code class=language-html>loop</code>: Repite el video.
+                  </li>
+                  <li>
+                    <code class=language-html>muted</code>: Inicia sin sonido.
+                  </li>
+                  <li>
+                    <code class=language-html>poster</code>: Imagen de vista
+                    previa mientras se espera que el video comience a
+                    reproducirse. Si no se especifica, el navegador mostrará el
+                    primer fotograma del video tan pronto como esté disponible.
+                  </li>
+                  <li>
+                    <code class=language-html>preload</code>: Controla qué
+                    tanto precargar.
+                    <ul>
+                      <li>
+                        <code class=language-html>none</code>: El video no
+                        debe ser almacenado en caché, generalmente para
+                        minimizar el tráfico innecesario.
+                      </li>
+                      <li>
+                        <code class=language-html>metadata</code>: Recomienda
+                        al navegador capturar información básica sobre la fuente
+                        (por ejemplo, dimensiones, duración, primer fotograma).
+                      </li>
+                      <li>
+                        <code class=language-html>auto</code>: Es el valor
+                        predeterminado y sugiere al navegador descargar el
+                        archivo tan pronto como sea posible.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <code class=language-html>aria-label</code>: se utiliza
+                    para proporcionar una descripción accesible del video a
+                    usuarios que dependen de tecnologías adaptables, como
+                    lectores de pantalla. Este atributo define una etiqueta de
+                    texto que describe el propósito o contenido del video,
+                    especialmente cuando no hay controles visibles o texto
+                    asociado que lo explique claramente.
+                  </li>
+                  <li>
+                    <code class=language-html>width</code>: Este atributo le
+                    indica al navegador que el vídeo debe ocupar el porcentaje
+                    indicado del ancho del contenedor que la contiene. Si está
+                    dentro de un <code class=language-html>&lt;div</code>,
+                    tomará todo el ancho de ese
+                    <code class=language-html>&lt;div</code>. Si está dentro
+                    de <code class=language-html>&lt;body</code>, tomará todo
+                    el ancho de la página.
+                  </li>
+                </ul>
+                <p>
+                  En el siguiente ejemplo el navegador comenzará a reproducir el
+                  video automáticamente
+                  <code class=language-html>autoplay </code> tan pronto como
+                  sea posible, pero algunos navegadores también requieren el
+                  atributo <code class=language-html>muted</code> para que
+                  funcione, tal como en este caso.
+                </p>
+
+                <div class=row>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3 row">
+                      
+                      <div>
+                        <div class=ej-video-container>
+                          <p class=ej-h3-videos>
+                            Reproducción Automática de un Vídeo
+                          </p>
+
+                          <video class=ej-video-element src=202368-918049003_small.32fa416c.mp4 width=80% autoplay muted loop>
+                            Tu navegador no soporta la reproducción de video.
+                          </video>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class=row>
+                      <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>
+                                &lt;div class="video-container"&gt;
+                                    &lt;p class="h3-videos"&gt;Reproducción Automática de un Vídeo&lt;/p&gt;
+                                    
+                                    &lt;video 
+                                        class="video-element"
+                                        src="/202368-918049003_small.05929545.mp4" 
+                                        width="80%"
+                                        autoplay 
+                                        muted 
+                                        loop&gt;
+                                        Tu navegador no soporta la reproducción de video.
+                                    &lt;/video&gt;
+                                &lt;/div&gt;                                
+                              </div>        
+                            </code>
+                          </pre>
+                        
+                      </div>
+                      <div class="col-lg-6 ej-code-css mb-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                              <code class=language-css data-prismjs-copy=Copy>
+                                <div>
+                                  .video-container {
+                                    max-width: 800px;
+                                    margin: 40px auto;
+                                    padding: 20px;
+                                    text-align: center;
+                                  }
+
+                                  .h3-videos {
+                                    font-size: 1.8rem;
+                                    color: var(--color-texto);
+                                    margin-bottom: 20px;
+                                    font-weight: 600;
+                                    text-align: center;
+                                  }
+
+                                  .video-element {
+                                    width: 80%;
+                                    border-radius: 12px;
+                                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                                  }
+
+                                  @media (max-width: 768px) {
+                                    .video-container {
+                                      padding: 15px;
+                                      margin: 20px auto;
+                                    }
+
+                                    .h3-videos {
+                                      font-size: 1.5rem;
+                                    }
+
+                                    .video-element {
+                                      width: 95%;
+                                    }
+                                  }                                  
+                                </div>        
+                              </code>
+                            </pre>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <p>
+                  En el siguiente ejemplo se muestra la configuración más usada:
+                </p>
+                <div class=row>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3 row">
+                      
+                      <div>
+                        <div class=ej-video-container>
+                          <p class=ej-h3-videos>
+                            Reproducción un Vídeo con Imagen Previa
+                          </p>
+                          <video class=ej-video-element src=202368-918049003_small.32fa416c.mp4 poster=https://i.postimg.cc/3xWF9xR2/poster.png controls preload=auto loop aria-label="Video que muestra la panorámica de un parque de diversiones y al fondo hay una rueda de Chicago.">
+                            Tu navegador no soporta la reproducción de video.
+                          </video>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class=row>
+                      <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>
+                                &lt;div class="video-container"&gt;
+                                    &lt;p class="h3-videos"&gt;Reproducción Automática de un Vídeo&lt;/p&gt;
+                                    
+                                    &lt;video 
+                                        class="video-element"
+                                        src="/202368-918049003_small.05929545.mp4" 
+                                        width="80%"
+                                        autoplay 
+                                        muted 
+                                        loop&gt;
+                                        Tu navegador no soporta la reproducción de video.
+                                    &lt;/video&gt;
+                                &lt;/div&gt;                                
+                              </div>        
+                            </code>
+                          </pre>
+                        
+                      </div>
+                      <div class="col-lg-6 ej-code-css mb-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                              <code class=language-css data-prismjs-copy=Copy>
+                                <div>
+                                  .video-container {
+                                    max-width: 800px;
+                                    margin: 40px auto;
+                                    padding: 20px;
+                                    text-align: center;
+                                  }
+
+                                  .h3-videos {
+                                    font-size: 1.8rem;
+                                    color: var(--color-texto);
+                                    margin-bottom: 20px;
+                                    font-weight: 600;
+                                    text-align: center;
+                                  }
+
+                                  .video-element {
+                                    width: 80%;
+                                    border-radius: 12px;
+                                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                                  }
+
+                                  @media (max-width: 768px) {
+                                    .video-container {
+                                      padding: 15px;
+                                      margin: 20px auto;
+                                    }
+
+                                    .h3-videos {
+                                      font-size: 1.5rem;
+                                    }
+
+                                    .video-element {
+                                      width: 95%;
+                                    }
+                                  }                                  
+                                </div>        
+                              </code>
+                            </pre>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <p>
+                  <span class=fw-bold>Otra Forma de usar
+                    <code class=language-html>&lt;video&gt;</code></span>:
+                </p>
+                <div class=row>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3 row">
+                      
+                      <div>
+                        <div class=ej-video-container2>
+                          <p class=ej-h3-videos>
+                            Reproducción Moderna de un Vídeo
+                          </p>
+                          <video controls width=80%>
+                            <source src=202368-918049003_small.09964e50.webm type=video/mp4>
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class=row>
+                      <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>
+                                &lt;div class="video-container2"&gt;
+                                  &lt;p class="h3-videos"&gt;
+                                    Reproducción Moderna de un Vídeo
+                                  &lt;/p&gt;
+                                  &lt;video controls width="80%"&gt;
+                                    &lt;source
+                                      src="./multimedia/202368-918049003_small.webm"
+                                      type="video/mp4"
+                                    /&gt;
+                                    Your browser does not support the video tag.
+                                  &lt;/video&gt;
+                                &lt;/div&gt;
+                              </div>        
+                            </code>
+                          </pre>
+                        
+                      </div>
+                      <div class="col-lg-6 ej-code-css mb-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                          <code class=language-css data-prismjs-copy=Copy>
+                          <div>
+                            .video-container2 {
+                              max-width: 800px;
+                              margin: 40px auto;
+                              background-color: #1e1e2f;
+                              border-radius: 16px;
+                              box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+                              padding: 24px;
+                              text-align: center; /* Centra contenido inline y video */
+                              font-family: "Segoe UI", Roboto, sans-serif;
+                              color: #f4f4f4;
+                            }
+
+                            .video-container2 video {
+                              width: 80%;
+                              margin: 0 auto; /* Centra el video como bloque */
+                              display: block; /* Necesario para que margin funcione */
+                              border-radius: 12px;
+                              box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+                              outline: none;
+                              background-color: #000;
+                            }
+                          </div>      
+                          </code>
+                        </pre>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <p>
+                  Este ejemplo presenta un reproductor de video HTML5 estándar
+                  que reproduce un archivo WEBM con los controles nativos del
+                  navegador. El video se redimensiona al 80% del ancho
+                  disponible. Sin embargo, no incluye un manejo robusto de
+                  errores: si el archivo no está disponible, el reproductor
+                  mostrará un error o quedará en blanco. Además, si el navegador
+                  no soporta el formato WEBM, se mostrará el mensaje "Your
+                  browser does not support the video tag.", aunque esto es poco
+                  común en navegadores modernos.
+                </p>
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=audio-html-audio class=mt-3>
+                <h2>
+                  Audio HTML <code class=language-html>&lt;audio&gt;</code>
+                </h2>
+                <p>
+                  El elemento HTML
+                  <code class=language-html>&lt;audio&gt;</code> es una
+                  característica introducida en HTML5 que permite incrustar
+                  contenido de audio directamente en una página web. Funciona de
+                  manera muy similar al elemento
+                  <code class=language-html>&lt;video&gt;</code>.
+                </p>
+                <p>Esta etiqueta posee los siguientes principales atributos:</p>
+                <ul>
+                  <li>
+                    <code class=language-html>src</code> (<span class=fst-italic>source</span>): Este atributo especifica la dirección (URL) del archivo
+                    de audio que se desea reproducir. En este caso, se trata de
+                    una pista musical alojada en Pixabay, un sitio web que
+                    ofrece música gratuita.
+                  </li>
+                  <li>
+                    <code class=language-html>controls</code>: (Obligatorio)
+                    Muestra los botones de reproducir/pausar y control de
+                    volumen.
+                  </li>
+                  <li>
+                    <code class=language-html>autoplay</code>: Reproduce
+                    automáticamente (a menudo bloqueado por navegadores).
+                  </li>
+                  <li>
+                    <code class=language-html>loop</code>: Repite el audio
+                    cuando termina.
+                  </li>
+                  <li>
+                    <code class=language-html>muted</code>: Inicia silenciado.
+                  </li>
+                  <li>
+                    <code class=language-html>preload</code>: Funciona igual
+                    que en
+                    <code class=language-html>&lt;video&gt;</code>
+                  </li>
+                  <li>
+                    <code class=language-html>aria-label</code>: Ofrece un
+                    texto descriptivo para que los lectores de pantalla lo
+                    interpreten, lo que ayuda cuando los controles del
+                    reproductor de audio no son claros o cuando el elemento
+                    <code class=language-html>&lt;audio&gt;</code> está oculto
+                    pero operable mediante botones personalizados.
+                  </li>
+                </ul>
+                <div class=row>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3 row">
+                      
+                      <div>
+                        <div class=ej-audio-container>
+                          <audio src=commercial-upbeat-energetic-rock-354637.df8676e1.mp3 preload=auto loop controls autoplay class=audio-personalizado aria-label="Reproductor de audio para una pista musical de rock"></audio>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class=row>
+                      <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                          <code class=language-html data-prismjs-copy=Copy>
+                            <div>
+                              &lt;div class="audio-container"&gt;
+                                &lt;audio 
+                                  src="/commercial-upbeat-energetic-rock-354637.01e7c64f.mp3" 
+                                  preload="auto" 
+                                  loop 
+                                  controls 
+                                  autoplay 
+                                  class="audio-personalizado" 
+                                  aria-label="Reproductor de audio para una pista musical de rock"&gt;
+                                &lt;/audio&gt;
+                              &lt;/div&gt;                              
+                            </div>        
+                          </code>
+                        </pre>
+                        
+                      </div>
+                      <div class="col-lg-6 ej-code-css mb-3">
+                        
+                        <pre data-src-status=loaded tabindex=0>                          <code class=language-css data-prismjs-copy=Copy>
+                            <div>
+                              .audio-container {
+                                max-width: 400px;
+                                margin: 40px auto;
+                                background: linear-gradient(145deg, #1f1f2e, #2c2c3d);
+                                border-radius: 16px;
+                                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+                                padding: 20px;
+                                text-align: center;
+                                font-family: 'Segoe UI', sans-serif;
+                              }
+
+                              .audio-container audio {
+                                width: 100%;
+                                filter: grayscale(30%) brightness(1.1) contrast(1.1);
+                                border-radius: 8px;
+                                outline: none;
+                              }                              
+                            </div>        
+                          </code>
+                        </pre>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <hr class=subtle-divider>
+
+              
+              <div id=etiqueta-html-figure class=mt-3>
+                <h2>
+                  Etiqueta HTML <code class=language-html>&lt;figure&gt;</code>
+                </h2>
+                <p>
+                  El elemento HTML semántico
+                  <code class=language-html>&lt;figure&gt;</code> se emplea para
+                  agrupar contenido independiente relacionado con el flujo
+                  principal del documento, como imágenes, ilustraciones,
+                  diagramas, fragmentos de código o tablas, acompañado de una
+                  descripción o pie de figura proporcionado por el elemento
+                  <code class=language-html>&lt;figcaption&gt;</code>.
+                </p>
+                <p>
+                  La función principal del elemento
+                  <code class=language-html>&lt;figure&gt;</code> es proporcionar
+                  un significado semántico al contenido que engloba. Esto indica
+                  a los navegadores, a las tecnologías de asistencia y los a
+                  lectores de pantalla, que el contenido agrupado forma una
+                  unidad con un propósito específico, usualmente como una
+                  ilustración o un complemento del texto principal.
+                </p>
+                <p>Aquí se explican algunos ejemplos de su utilidad:</p>
+                <ul>
+                  <li>
+                    <span class=fw-bold>Accesibilidad</span>: Optimiza la
+                    accesibilidad para personas con discapacidades visuales,
+                    permitiendo que los lectores de pantalla interpreten con
+                    claridad el contenido y la descripción de la figura.
+                  </li>
+                  <li>
+                    <span class=fw-bold>Organización</span>: Facilita la
+                    estructuración del contenido web, resultando en un código
+                    más claro, ordenado y comprensible.
+                  </li>
+                  <li>
+                    <span class=fw-bold>Estilo</span>: Posibilita la
+                    aplicación de estilos CSS de forma precisa a un conjunto de
+                    contenido y su leyenda.
+                  </li>
+                  <li>
+                    <span class=fw-bold>Contenido contextual</span>: Destaca
+                    el contenido dentro de
+                    <code class=language-html>&lt;figure&gt;</code> como un
+                    elemento relevante, pero independiente, de la narrativa
+                    principal.
+                  </li>
+                </ul>
+                <p><span class=fw-bold>Sintaxis básica</span>:</p>
+                qwe
+                <div class=row>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3 row">
+                      
+                      <div>
+                        <div class=ej-example-figure>
+                          <p class=ej-h3-figure>
+                            Uso &lt;img&gt; con &lt;figure&gt;
+                          </p>
+                          <figure class=ej-figura-estilizada2>
+                            <img src=https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png alt="Diseño web">
+                            <figcaption class=ej-figcaption>
+                              Mi primera imagen con una leyenda.
+                            </figcaption>
+                          </figure>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class=row>
+                      <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                        
+                        <pre>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>
+                                &lt;div class="example-figure"&gt;
+                                  &lt;p class="h3-figure"&gt;
+                                    Uso &lt;img&gt; con &lt;figure&gt;
+                                  &lt;/p&gt;
+                                  &lt;figure class="figura-estilizada2"&gt;
+                                    &lt;img
+                                      src="https://cdn.pixabay.com/photo/2016/12/28/09/36/web-1935737_1280.png"
+                                      alt="Diseño web"
+                                    /&gt;
+                                    &lt;figcaption class="figcaption"&gt;
+                                      Mi primera imagen con una leyenda.
+                                    &lt;/figcaption&gt;
+                                  &lt;/figure&gt;
+                                &lt;/div&gt;                                
+                              </div>        
+                            </code>
+                          </pre>
+                        
+                      </div>
+                      <div class="col-lg-6 ej-code-css mb-3">
+                        
+                        <pre>                              <code class=language-css data-prismjs-copy=Copy>
+                                <div>
+                                  .figura-estilizada2 {
+                                    background: var(--color-texto);
+                                    border: 1px solid #3d3d50;
+                                    border-radius: 16px;
+                                    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+                                    padding: 16px;
+                                    max-width: 600px;
+                                    margin: 0 auto;
+                                    text-align: center;
+                                    color: var(--color-fondo);
+                                  }
+
+                                  .figura-estilizada2 img {
+                                    width: 80%;
+                                    height: auto;
+                                    border-radius: 12px;
+                                    transition: transform 0.3s ease, filter 0.3s ease;
+                                    filter: brightness(1.1) contrast(1.05);
+                                  }
+
+                                  .figura-estilizada2 img:hover {
+                                    transform: scale(1.03);
+                                    filter: brightness(1.2) contrast(1.1);
+                                  }
+
+                                  .figura-estilizada2 figcaption {
+                                    margin-top: 12px;
+                                    font-size: 1rem;
+                                    font-style: italic;
+                                    color: var(--color-fondo)
+                                    opacity: 0.9;
+                                  }
+
+                                  .h3-figure {
+                                    text-align: center;
+                                    font-size: 1.8rem;
+                                    font-weight: 600;
+                                    margin-bottom: 24px;
+                                    letter-spacing: 0.5px;
+                                    background: linear-gradient(90deg, #7f5af0, #2cb67d);
+
+                                    /* Compatibilidad WebKit y estándar */
+                                    -webkit-background-clip: text;
+                                    background-clip: text;
+
+                                    -webkit-text-fill-color: transparent;
+                                    color: transparent;
+
+                                    /* Sombra opcional para dar profundidad */
+                                    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+                                  }
+
+                                  .figura-estilizada2 {
+                                    background: #f5f5f5;
+                                    border: 1px solid #ccc;
+                                    border-radius: 16px;
+                                    padding: 16px;
+                                    max-width: 600px;
+                                    margin: 0 auto;
+                                    text-align: center;
+                                  }
+
+                                  .figura-estilizada2 figcaption {
+                                    margin-top: 12px;
+                                    font-size: 1rem;
+                                    font-style: italic;
+                                    color: var(--color-fondo) !important;
+                                    opacity: 1;
+                                  }                                  
+                                </div>        
+                              </code>
+                            </pre>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <p>
+                  <span class=fw-bold>Cuándo usar
+                    <code class=language-html>&lt;figure&gt;</code></span>:
+                </p>
+                <ul>
+                  <li>
+                    Para ilustraciones que tienen una leyenda explicativa.
+                  </li>
+                  <li>
+                    Para gráficos o tablas que requieren contexto adicional.
+                  </li>
+                  <li>
+                    Para códigos fuente con explicación:
+                    <div class=row>
+                      
+                      <div class=ej-ejemplo>
+                        <div class="ej-ejecutado mt-3 row">
+                          
+                          <div>
+                            <div class=ej-wrapper>
+                              <div class=ej-code-container>
+                                <div class=ej-code-header>
+                                  <div class=ej-code-dots>
+                                    <div class="ej-dot red"></div>
+                                    <div class="ej-dot yellow"></div>
+                                    <div class="ej-dot green"></div>
+                                  </div>
+                                  <span>script.js</span>
+                                </div>
+                                <pre class=ej-pre-code><code class=ej-code-syntax>console<span class="punctuation token">.</span><span class="function token">log</span><span class="punctuation token">(</span><span class="string token">"Hola mundo"</span><span class="punctuation token">)</span><span class="punctuation token">;</span>  </code>
+                  </pre>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <div class=row>
+                          <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                            
+                            <pre>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>
+                                &lt;div class="wrapper"&gt;
+                                    &lt;div class="code-container"&gt;
+                                        &lt;div class="code-header"&gt;
+                                            &lt;div class="code-dots"&gt;
+                                                &lt;div class="dot red"&gt;&lt;/div&gt;
+                                                &lt;div class="dot yellow"&gt;&lt;/div&gt;
+                                                &lt;div class="dot green"&gt;&lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;span&gt;script.js&lt;/span&gt;
+                                        &lt;/div&gt;
+                                        &lt;pre class="pre-code"&gt;&lt;code class="code-syntax"&gt;console&lt;span class="token punctuation"&gt;.&lt;/span&gt;&lt;span class="token function"&gt;log&lt;/span&gt;&lt;span class="token punctuation"&gt;(&lt;/span&gt;&lt;span class="token string"&gt;"Hola mundo"&lt;/span&gt;&lt;span class="token punctuation"&gt;)&lt;/span&gt;&lt;span class="token punctuation"&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;                               
+                              </div>        
+                            </code>
+                          </pre>
+                            
+                          </div>
+                          <div class="col-lg-6 ej-code-css mb-3">
+                            
+                            <pre>                              <code class=language-css data-prismjs-copy=Copy>
+                                <div>
+                                  .wrapper {
+                                      background: rgba(255, 255, 255, 0.03);
+                                      backdrop-filter: blur(10px);
+                                      border: 1px solid rgba(255, 255, 255, 0.1);
+                                      border-radius: 20px;
+                                      padding: 30px;
+                                      width: fit-content;
+                                      margin:0 auto;
+                                      box-shadow:
+                                          0 8px 32px rgba(0, 0, 0, 0.3),
+                                          inset 0 1px 0 rgba(255, 255, 255, 0.1);
+                                  }
+
+                                  .code-container {
+                                      position: relative;
+                                      max-width: 600px;
+                                      width: 100%;
+                                      border-radius: 12px;
+                                      overflow: hidden;
+                                      box-shadow:
+                                          0 20px 40px rgba(0, 0, 0, 0.4),
+                                          0 0 0 1px rgba(255, 255, 255, 0.05);
+                                      transition: all 0.3s ease;
+                                  }
+
+                                  .code-container:hover {
+                                      transform: translateY(-3px);
+                                      box-shadow:
+                                          0 25px 50px rgba(0, 0, 0, 0.5),
+                                          0 0 0 1px rgba(255, 255, 255, 0.1);
+                                  }
+
+                                  .code-header {
+                                      background: linear-gradient(90deg, #1a1a1a, #2a2a2a);
+                                      padding: 12px 20px;
+                                      display: flex;
+                                      align-items: center;
+                                      justify-content: space-between;
+                                      color: #e0e0e0;
+                                      font-size: 0.9rem;
+                                      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                                  }
+
+                                  .code-dots {
+                                      display: flex;
+                                      gap: 8px;
+                                  }
+
+                                  .dot {
+                                      width: 12px;
+                                      height: 12px;
+                                      border-radius: 50%;
+                                      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+                                  }
+
+                                  .dot.red {
+                                      background: linear-gradient(135deg, #ff6b6b, #ff5252);
+                                  }
+
+                                  .dot.yellow {
+                                      background: linear-gradient(135deg, #ffd93d, #ffb300);
+                                  }
+
+                                  .dot.green {
+                                      background: linear-gradient(135deg, #6bcf7f, #4caf50);
+                                  }
+
+                                  .pre-code {
+                                      background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #21262d 100%);
+                                      color: #f0f6fc;
+                                      padding: 30px;
+                                      margin: 0;
+                                      font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+                                      font-size: 1.1rem;
+                                      line-height: 1.6;
+                                      overflow-x: auto;
+                                      position: relative;
+                                      border-top: 1px solid rgba(255, 255, 255, 0.05);
+                                  }
+
+                                  .pre-code::before {
+                                      content: '';
+                                      position: absolute;
+                                      top: 0;
+                                      left: 0;
+                                      right: 0;
+                                      height: 2px;
+                                      background: linear-gradient(90deg,
+                                              #ff6b6b 0%,
+                                              #4ecdc4 25%,
+                                              #45b7d1 50%,
+                                              #96ceb4 75%,
+                                              #ffeaa7 100%);
+                                      background-size: 400% 100%;
+                                      animation: gradient 4s ease infinite;
+                                  }
+
+                                  @keyframes gradient {
+                                      0% {
+                                          background-position: 0% 50%;
+                                      }
+
+                                      50% {
+                                          background-position: 100% 50%;
+                                      }
+
+                                      100% {
+                                          background-position: 0% 50%;
+                                      }
+                                  }
+
+                                  .code-code {
+                                      background: linear-gradient(135deg, #667eea, #764ba2);
+                                      color: white;
+                                      padding: 4px 8px;
+                                      border-radius: 6px;
+                                      font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+                                      font-size: 0.9rem;
+                                      display: inline-block;
+                                      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+                                      transition: all 0.3s ease;
+                                      border: 1px solid rgba(255, 255, 255, 0.1);
+                                  }
+
+                                  .code-code:hover {
+                                      transform: translateY(-2px);
+                                      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+                                      border-color: rgba(255, 255, 255, 0.2);
+                                  }
+
+                                  /* Sintaxis highlighting mejorado para fondo oscuro */
+                                  .token.function {
+                                      color: #79c0ff;
+                                      font-weight: 600;
+                                      text-shadow: 0 0 10px rgba(121, 192, 255, 0.3);
+                                  }
+
+                                  .token.string {
+                                      color: #a5d6ff;
+                                      text-shadow: 0 0 8px rgba(165, 214, 255, 0.2);
+                                  }
+
+                                  .token.punctuation {
+                                      color: #8b949e;
+                                  }
+
+                                  .token.keyword {
+                                      color: #ff7b72;
+                                      font-weight: 600;
+                                      text-shadow: 0 0 10px rgba(255, 123, 114, 0.3);
+                                  }
+
+                                  /* Efectos adicionales */
+                                  .code-container::after {
+                                      content: '';
+                                      position: absolute;
+                                      top: -2px;
+                                      left: -2px;
+                                      right: -2px;
+                                      bottom: -2px;
+                                      background: linear-gradient(45deg,
+                                              transparent,
+                                              rgba(255, 255, 255, 0.1),
+                                              transparent);
+                                      border-radius: 14px;
+                                      opacity: 0;
+                                      transition: opacity 0.3s ease;
+                                      pointer-events: none;
+                                      z-index: -1;
+                                  }
+
+                                  .code-container:hover::after {
+                                      opacity: 1;
+                                  }
+
+                                  /* Glow effect en hover */
+                                  .code-container:hover .pre-code::before {
+                                      box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+                                  }                                 
+                                </div>        
+                              </code>
+                            </pre>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+
+                    adsss
+                  </li>
+                </ul>
+                <p>
+                  <span class=fw-bold>Ejemplo</span>: Uso de
+                  <code class=language-html>&lt;figure&gt;</code> con varias
+                  imágenes
+                </p>
+                <div class=row>
+                  
+                  <div class=ej-ejemplo>
+                    <div class="ej-ejecutado mt-3 row">
+                      
+                      <div>
+                        <figure class=ej-main-figure>
+                          <p class=ej-title>
+                            Instalación de Lámpara de Escritorio
+                          </p>
+
+                          <div class=ej-steps-grid>
+                            <figure class=ej-step-card>
+                              <div class=ej-step-number>1</div>
+                              <img src=https://i.ibb.co/cSbZB8mf/figure-0101.png alt="Paso 1: Fijar el brazo a la base" class=ej-step-image>
+                              <figcaption class=ej-step-caption>
+                                <h3 class=ej-step-title>
+                                  Fijar el brazo a la base
+                                </h3>
+                                <p class=ej-step-description>
+                                  Conecta el brazo articulado a la base de la
+                                  lámpara.
+                                </p>
+                              </figcaption>
+                            </figure>
+
+                            <figure class=ej-step-card>
+                              <div class=ej-step-number>2</div>
+                              <img src=https://i.ibb.co/DfvjRzqy/figure-0102.png alt="Paso 2: Instalar la bombilla" class=ej-step-image>
+                              <figcaption class=ej-step-caption>
+                                <h3 class=ej-step-title>
+                                  Instalar la bombilla
+                                </h3>
+                                <p class=ej-step-description>
+                                  Coloca la bombilla en el socket y enrosca
+                                  firmemente.
+                                </p>
+                              </figcaption>
+                            </figure>
+
+                            <figure class=ej-step-card>
+                              <div class=ej-step-number>3</div>
+                              <img src=https://i.ibb.co/Gv0PwQHr/figure-0103.png alt="Paso 3: Colocar la pantalla" class=ej-step-image>
+                              <figcaption class=ej-step-caption>
+                                <h3 class=ej-step-title>
+                                  Colocar la pantalla
+                                </h3>
+                                <p class=ej-step-description>
+                                  Instala la pantalla sobre la bombilla para
+                                  completar el montaje.
+                                </p>
+                              </figcaption>
+                            </figure>
+                          </div>
+
+                          <figcaption class=ej-main-caption>
+                            Pasos para la instalación de una lámpara de
+                            escritorio básica
+                          </figcaption>
+                        </figure>
+                      </div>
+                      
+                    </div>
+                    <div class=row>
+                      <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                        
+                        <pre>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>
+                                &lt;figure class="main-figure"&gt;
+                                  &lt;p class="title"&gt;Instalación de Lámpara de Escritorio&lt;/p&gt;
+
+                                    &lt;div class="steps-grid"&gt;
+                                      &lt;figure class="step-card"&gt;
+                                        &lt;div class="step-number"&gt;1&lt;/div&gt;
+                                        &lt;img
+                                                    src="https://i.ibb.co/cSbZB8mf/figure-0101.png"
+                                                    alt="Paso 1: Fijar el brazo a la base"
+                                                    class="step-image"
+                                                /&gt;
+                                        &lt;figcaption class="step-caption"&gt;
+                                          &lt;h3 class="step-title"&gt;Fijar el brazo a la base&lt;/h3&gt;
+                                          &lt;p class="step-description"&gt;
+                                            Conecta el brazo articulado a la base de la lámpara.
+                                          &lt;/p&gt;
+                                        &lt;/figcaption&gt;
+                                      &lt;/figure&gt;
+
+                                      &lt;figure class="step-card"&gt;
+                                        &lt;div class="step-number"&gt;2&lt;/div&gt;
+                                        &lt;img
+                                                    src="https://i.ibb.co/DfvjRzqy/figure-0102.png"
+                                                    alt="Paso 2: Instalar la bombilla"
+                                                    class="step-image"
+                                                /&gt;
+                                        &lt;figcaption class="step-caption"&gt;
+                                          &lt;h3 class="step-title"&gt;Instalar la bombilla&lt;/h3&gt;
+                                          &lt;p class="step-description"&gt;
+                                            Coloca la bombilla en el socket y enrosca firmemente.
+                                          &lt;/p&gt;
+                                        &lt;/figcaption&gt;
+                                      &lt;/figure&gt;
+
+                                      &lt;figure class="step-card"&gt;
+                                        &lt;div class="step-number"&gt;3&lt;/div&gt;
+                                        &lt;img
+                                                    src="https://i.ibb.co/Gv0PwQHr/figure-0103.png"
+                                                    alt="Paso 3: Colocar la pantalla"
+                                                    class="step-image"
+                                                /&gt;
+                                        &lt;figcaption class="step-caption"&gt;
+                                          &lt;h3 class="step-title"&gt;Colocar la pantalla&lt;/h3&gt;
+                                          &lt;p class="step-description"&gt;
+                                            Instala la pantalla sobre la bombilla para completar el montaje.
+                                          &lt;/p&gt;
+                                        &lt;/figcaption&gt;
+                                      &lt;/figure&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;figcaption class="main-caption"&gt;
+                                      Pasos para la instalación de una lámpara de escritorio básica
+                                    &lt;/figcaption&gt;
+                                &lt;/figure&gt;                                
+                              </div>        
+                            </code>
+                          </pre>
+                        
+                      </div>
+                      <div class="col-lg-6 ej-code-css mb-3">
+                        
+                        <pre>                          <code class=language-css data-prismjs-copy=Copy>
+                            <div>
+                              .main-figure {
+                                  max-width: 900px;
+                                  margin: 0 auto;
+                                  background: white;
+                                  border-radius: 8px;
+                                  padding: 40px;
+                                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                              }
+
+                              .title {
+                                  text-align: center;
+                                  color: #333;
+                                  font-size: 1.8rem;
+                                  font-weight: 600;
+                                  margin-bottom: 40px;
+                              }
+
+                              .steps-grid {
+                                  display: grid;
+                                  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                                  gap: 30px;
+                                  margin-bottom: 30px;
+                              }
+
+                              .step-card {
+                                  border: 1px solid #e9ecef;
+                                  border-radius: 6px;
+                                  padding: 20px;
+                                  text-align: center;
+                                  margin: 0;
+                              }
+
+                              .step-number {
+                                  display: inline-block;
+                                  width: 32px;
+                                  height: 32px;
+                                  background: #007bff;
+                                  color: white;
+                                  border-radius: 50%;
+                                  line-height: 32px;
+                                  font-weight: 600;
+                                  margin-bottom: 15px;
+                              }
+
+                              .step-image {
+                                  width: 100%;
+                                  height: auto;
+                                  border-radius: 4px;
+                                  margin-bottom: 15px;
+                              }
+
+                              .step-title {
+                                  color: #333;
+                                  font-size: 1.1rem;
+                                  font-weight: 600;
+                                  margin-bottom: 8px;
+                              }
+
+                              .step-description {
+                                  color: #6c757d;
+                                  font-size: 0.9rem;
+                              }
+
+                              .step-caption {
+                                  margin: 0;
+                              }
+
+                              .main-caption {
+                                  text-align: center;
+                                  color: #495057;
+                                  font-style: italic;
+                                  padding: 20px;
+                                  background: #f8f9fa;
+                                  border-radius: 4px;
+                                  margin: 0;
+                              }
+
+                              /* Responsive */
+                              @media (max-width: 768px) {
+                                  .main-figure {
+                                      padding: 20px;
+                                      margin: 0 10px;
+                                  }
+
+                                  .title {
+                                      font-size: 1.5rem;
+                                      margin-bottom: 30px;
+                                  }
+
+                                  .steps-grid {
+                                      grid-template-columns: 1fr;
+                                      gap: 20px;
+                                  }
+                              }                                  
+                            </div>        
+                          </code>
+                        </pre>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <p><span class=fw-bold>Características importantes</span>:</p>
+                <ul>
+                  <li>Todas las imágenes están agrupadas semánticamente.</li>
+                  <li>
+                    El pie de figura
+                    <code class=language-html>&lt;figcaption&gt;</code> describe
+                    el conjunto, no cada imagen individual.
+                  </li>
+                  <li>
+                    Cada imagen tiene su propio atributo alt, mejorando la
+                    accesibilidad.
+                  </li>
+                  <li>
+                    Puede usarse con CSS para mostrar las imágenes en fila, como
+                    una galería.
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+
+            
+            <div id=etiqueta-html-picture class=mt-3>
+              <h2>
+                Etiqueta HTML <code class=language-html>&lt;picture&gt;</code>
+              </h2>
+              <p>
+                La etiqueta
+                <code class=language-html>&lt;picture&gt;</code> permite manejar
+                imágenes de forma más versátil.
+              </p>
+              <p>
+                La etiqueta HTML
+                <code class=language-html>&lt;picture&gt;</code> permite mostrar
+                la versión más adecuada de una imagen entre múltiples opciones,
+                adaptándola al dispositivo, tamaño de pantalla, resolución o
+                formato (como PNG o JPG), optimizando así la compatibilidad, el
+                rendimiento y la adaptación visual, en lugar de una sola imagen
+                redimensionada.
+              </p>
+              <p>
+                El elemento
+                <code class=language-html>&lt;picture&gt;</code> incluye dos
+                tipos de etiquetas: una o más etiquetas
+                <code class=language-html>&lt;source&gt;</code> y una etiqueta
+                <code class=language-html>&lt;img&gt;.</code>
+              </p>
+              <p>
+                El navegador identifica el primer elemento
+                <code class=language-html>&lt;source&gt;</code> cuya consulta de
+                medios (<span class=fst-italic>media query</span>) coincida
+                con el ancho actual del viewport y, a continuación, muestra la
+                imagen especificada en el atributo
+                <code class=language-html>srcset</code>. La etiqueta
+                <code class=language-html>&lt;img /&gt;</code> es obligatoria
+                como último hijo del elemento
+                <code class=language-html>&lt;picture&gt;,</code> sirviendo como
+                alternativa predeterminada si ninguna etiqueta
+                <source>
+                es compatible.
+              </p>
+              <p>
+                Consejo: El elemento
+                <code class=language-html>&lt;picture&gt;</code> opera de manera
+                similar a los elementos
+                <code class=language-html>&lt;video&gt;</code> y
+                <code class=language-html>&lt;audio&gt;</code>. Se configuran
+                distintas fuentes, y se utiliza la primera que cumpla con las
+                condiciones establecidas.
+              </p>
+              <div class=row>
+                
+                <div class=ej-ejemplo>
+                  <div class="ej-ejecutado mt-3 row">
+                    
+                    <div>
+                      <div class="ej-centrar-imagen-pic ej-example-pic">
+                        <p class=ej-h3-tipos-pic>
+                          &lt;picture&gt; Diferentes imágenes dependientes el
+                          ancho del viewport
+                        </p>
+                        <div class=ej-picture-container-pic>
+                          <picture>
+                            <source class=ej-source-pic media="(width >= 992px)" srcset=https://i.postimg.cc/tC9VfH0g/pexels-gasparzaldo-6779117-lg.jpg>
+                            <source class=ej-source-pic media="(width >= 576px)" srcset=https://i.postimg.cc/G3Fyqm5N/pexels-optical-chemist-340351297-31284696-md.jpg>
+                            <img class=ej-image-pic src=https://i.postimg.cc/fyfSL8dZ/pexels-rachel-claire-5864618-sm.jpg alt="Imagen responsiva que cambia según el ancho del viewport">
+                          </picture>
+                          <figcaption class=ej-caption-pic>
+                            Figura 2: Ejemplo que muestra una imagen que depende
+                            del ancho del viewport.
+                          </figcaption>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class=row>
+                    <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                      
+                      <pre>                        <code class=language-html data-prismjs-copy=Copy>
+                          <div>
+                            &lt;div class="&lt;example-pic &lt;centrar-imagen-pic"&gt;
+                              &lt;p class="h3-tipos-pic"&gt;&lt;picture&gt; Diferentes imágenes dependientes el ancho del viewport&lt;/p&gt;
+                              &lt;div class="&lt;picture-container-pic"&gt;
+                                &lt;picture&gt;
+                                  &lt;source class="&lt;source-pic" media="(width &gt;= 992px)"
+                                    srcset="https://i.postimg.cc/tC9VfH0g/pexels-gasparzaldo-6779117-lg.jpg"&gt;
+                                  &lt;source class="&lt;source-pic" media="(width &gt;= 576px)"
+                                    srcset="https://i.postimg.cc/G3Fyqm5N/pexels-optical-chemist-340351297-31284696-md.jpg"&gt;
+                                  &lt;img class="&lt;image-pic"
+                                                src="https://i.postimg.cc/fyfSL8dZ/pexels-rachel-claire-5864618-sm.jpg"
+                                                alt="Imagen responsiva que cambia según el ancho del viewport"&gt;
+                                &lt;/picture&gt;
+                                &lt;figcaption class="&lt;caption-pic"&gt;
+                                  Figura 2: Ejemplo que muestra una imagen que depende del ancho del viewport.
+                                &lt;/figcaption&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;                            
+                          </div>        
+                        </code>
+                      </pre>
+                      
+                    </div>
+                    <div class="col-lg-6 ej-code-css mb-3">
+                      
+                      <pre>                        <code class=language-css data-prismjs-copy=Copy>
+                          <div>
+                            /* Estilos para el contenedor del ejemplo picture */
+                            .example-pic {
+                                max-width: 1200px;
+                                margin: 2rem auto;
+                                padding: 1.5rem;
+                                background-color: #f8f9fa;
+                                border-radius: 12px;
+                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                            }
+
+                            /* Centrar imagen y contenido */
+                            .centrar-imagen-pic {
+                                text-align: center;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 1rem;
+                            }
+
+                            /* Estilo para el título usando párrafo */
+                            .h3-tipos-pic {
+                                color: #2c3e50;
+                                font-family: 'Arial', sans-serif;
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                                margin: 0 0 1.5rem 0;
+                                text-align: center;
+                                border-bottom: 2px solid #3498db;
+                                padding-bottom: 0.5rem;
+                                display: inline-block;
+                            }
+
+                            /* Contenedor del elemento picture */
+                            .picture-container-pic {
+                                position: relative;
+                                width: 100%;
+                                max-width: 800px;
+                                border-radius: 8px;
+                                overflow: hidden;
+                                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            }
+
+                            .picture-container-pic:hover {
+                                transform: translateY(-5px);
+                                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+                            }
+
+                            /* Estilos para las fuentes de imagen */
+                            .source-pic {
+                                width: 100%;
+                                height: auto;
+                                display: block;
+                            }
+
+                            /* Estilo para la imagen principal */
+                            .image-pic {
+                                width: 100%;
+                                height: auto;
+                                display: block;
+                                object-fit: cover;
+                                transition: opacity 0.3s ease;
+                            }
+
+                            /* Estilo para la leyenda */
+                            .caption-pic {
+                                margin-top: 1rem;
+                                font-size: 0.9rem;
+                                color: #6c757d;
+                                font-style: italic;
+                                line-height: 1.4;
+                                max-width: 600px;
+                                text-align: center;
+                            }
+
+                            /* Responsive design */
+                            @media (max-width: 991px) {
+                                .example-pic {
+                                    padding: 1rem;
+                                    margin: 1rem;
+                                }
+
+                                .h3-tipos-pic {
+                                    font-size: 1.3rem;
+                                }
+                            }
+
+                            @media (max-width: 575px) {
+                                .example-pic {
+                                    padding: 0.75rem;
+                                    margin: 0.5rem;
+                                }
+
+                                .h3-tipos-pic {
+                                    font-size: 1.1rem;
+                                }
+
+                                .caption-pic {
+                                    font-size: 0.8rem;
+                                }
+                            }                            
+                          </div>        
+                        </code>
+                      </pre>
+                      
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <p><span class=fw-bold>Funcionamiento</span>:</p>
+              <p>El navegador evalúa las condiciones de arriba hacia abajo:</p>
+              <ul>
+                <li>
+                  <span class=fw-bold>Pantalla ≥ 992px</span>: Muestra la
+                  imagen grande
+                </li>
+                <li>
+                  <span class=fw-bold>Pantalla entre 576px-991px</span>:
+                  Muestra la imagen mediana
+                </li>
+                <li>
+                  <span class=fw-bold>Pantalla &lt; 576px</span>: Muestra la
+                  imagen pequeña
+                </li>
+              </ul>
+
+              <p><span class=fw-bold>Explicación del código</span>:</p>
+              <p>
+                <code class=language-html>&lt;picture&gt;</code>: Esta etiqueta
+                HTML permite incluir múltiples versiones de una misma imagen en
+                diferentes tamaños, formatos o resoluciones, habilitando al
+                navegador seleccionar y mostrar la más adecuada según el ancho
+                del viewport, las características del dispositivo, la resolución
+                de pantalla o las capacidades del navegador. Esto facilita la
+                creación de imágenes adaptables, optimizando la experiencia
+                visual, el rendimiento de carga y la compatibilidad, al tiempo
+                que reduce el consumo de datos y mejora la accesibilidad en
+                diversos contextos de uso.
+              </p>
+              <p>
+                <code class=language-html>&lt;source&gt;</code>: Se usa para
+                definir las distintas versiones de la imagen.
+              </p>
+              <ul>
+                <li>
+                  <code class=language-html>srcset</code>: ruta de la imagen.
+                </li>
+                <li>
+                  <code class=language-html>media</code>: condición de media
+                  query para determinar cuándo usar esa imagen.
+                </li>
+                <li>
+                  <code class=language-html>type</code>: opcional, define el
+                  formato de la imagen (por ejemplo,
+                  <code class=language-html>image/webp</code>).
+                </li>
+              </ul>
+              <p>
+                <code class=language-html>&lt;img&gt;</code>: Es el elemento de
+                respaldo (fallback), que se usará si ninguna de las condiciones
+                anteriores se cumple o si el navegador no soporta
+                <code class=language-html>&lt;picture&gt;</code>.
+              </p>
+
+              <p><span class=fw-bold>proceso de selección</span>:</p>
+              <p>
+                El navegador sigue un proceso de evaluación secuencial para
+                decidir qué imagen mostrar:
+              </p>
+              <ul>
+                <li>
+                  <span class=fw-bold>Evaluación en orden</span>: El navegador
+                  lee los elementos
+                  <code class=language-html>&lt;source&gt;</code> de arriba hacia
+                  abajo y evalúa cada condición
+                  <code class=language-html>media</code>:
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-html data-prismjs-copy=Copy>
+                        &lt;!-- PASO 1: ¿La pantalla tiene un ancho mayor o igual a 992px? --&gt;
+                        &lt;source media="(width &gt;= 992px)" srcset="imagen-grande.jpg" /&gt;
+
+                        &lt;!-- PASO 2: Si no, ¿tiene ancho de 576px pero menor que 992px? --&gt;
+                        &lt;source media="(width &gt;= 576px)" srcset="imagen-mediana.jpg" /&gt;
+
+                        &lt;!-- PASO 3: Si ninguna coincide, usa esta por defecto --&gt;
+                        &lt;img src="imagen-pequeña.jpg" /&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </li>
+                <li>
+                  <span class=fw-bold>Primera coincidencia gana</span>: En
+                  cuanto encuentra una condición
+                  <code class=language-html>media</code> que se cumple, se
+                  detiene y usa esa imagen. No sigue evaluando el resto.
+                </li>
+                <li>
+                  <span class=fw-bold>Ejemplos prácticos</span>:
+                  <ul>
+                    <li>
+                      <span class=fw-bold>Pantalla de 1200px</span>:
+                      <ul>
+                        <li>
+                          Como el ancho de la pantalla es mayor o igual a 992px:
+                          (min-width: 992px) → VERDADERO → Usar imagen grande.
+                        </li>
+                        <li>No evaluar las siguientes condiciones.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class=fw-bold>Pantalla de 768px</span>:
+                      <ul>
+                        <li>(min-width: 992px) → FALSO.</li>
+                        <li>
+                          El ancho de la pantalla es mayor o igual a 576px:
+                          (min-width: 576px) → VERDADERO → Usa imagen mediana.
+                        </li>
+                        <li>No evaluar las siguientes condiciones.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span class=fw-bold>Pantalla de 320px</span>:
+                      <ul>
+                        <li>(min-width: 992px) → FALSO.</li>
+                        <li>(min-width: 576px) → FALSO.</li>
+                        <li>
+                          Como la imagen tiene ancho menor a 576px entonces usar
+                          la imagen del
+                          <code class=language-html>&lt;img&gt;</code> (imagen
+                          pequeña).
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class=fw-bold>Importante</span>: El orden importa.
+                  Siempre se ordenan de mayor a menor tamaño de pantalla, para
+                  que las condiciones más específicas se evalúen primero.
+                </li>
+              </ul>
+              <p><span class=fw-bold>Beneficios</span>:</p>
+              <ul>
+                <li>
+                  <span class=fw-bold>Rendimiento</span>: Carga imágenes
+                  optimizadas para cada dispositivo.
+                </li>
+                <li>
+                  <span class=fw-bold>Experiencia de usuario</span>: Imágenes
+                  apropiadas para cada tamaño de pantalla.
+                </li>
+                <li>
+                  <span class=fw-bold>Ancho de banda</span>: Dispositivos
+                  móviles descargan imágenes más pequeñas.
+                </li>
+              </ul>
+              <p>
+                <span class=fw-bold>Consejo</span>: El elemento
+                <code class=language-html>&lt;picture&gt;</code> funciona de
+                forma "similar" a
+                <code class=language-html>&lt;video&gt;</code> y
+                <code class=language-html>&lt;audio&gt;</code>. Se configuran
+                diferentes fuentes, y la primera fuente que se ajuste a las
+                preferencias es la que se utiliza.
+              </p>
+              <p>
+                <span class=fw-bold>Como manejar diferentes formatos de imagen</span>:
+              </p>
+              <p>
+                Algunos navegadores o dispositivos no son compatibles con todos
+                los formatos de imagen. Con el uso de la etiqueta
+                <code class=language-html>&lt;picture&gt;</code>, se pueden
+                incluir imágenes en diversos formatos, permitiendo que el
+                navegador seleccione el primer formato que reconozca e ignore
+                las demás imágenes.
+              </p>
+              <p>Ejemplo:</p>
+              <div class=row>
+                
+                <div class=ej-ejemplo>
+                  <div class="ej-ejecutado mt-3 row">
+                    
+                    <div>
+                      <div class=ej-wrapper-ext>
+                        <div class=ej-example-ext>
+                          <p class=ej-h3-ext>Diferentes Formatos de Imagen</p>
+                          <picture class=ej-picture-ext>
+                            <source srcset=https://i.ibb.co/Z6fqJW75/img-reddit.webp type=image/webp>
+                            <source srcset=https://i.ibb.co/B5ks8yDZ/img-retriver.jpg type=image/jpeg>
+                            <img src=https://i.ibb.co/nNDDmN0R/img-avatar.png alt=Avatar class=ej-centrar-imagen-ext>
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class=row>
+                    <div class="col-lg-6 ej-code-html mb-0 mb-lg-3">
+                      
+                      <pre>                            <code class=language-html data-prismjs-copy=Copy>
+                              <div>
+                                &lt;div class="wrapper-ext"&gt;
+                                  &lt;div class="example-ext"&gt;
+                                  &lt;p class="h3-ext"&gt;Diferentes Formatos de Imagen&lt;/p&gt;
+                                  &lt;picture class="picture-ext"&gt;
+                                      &lt;source srcset="https://i.ibb.co/Z6fqJW75/img-reddit.webp" type="image/webp"&gt;
+                                      &lt;source srcset="https://i.ibb.co/B5ks8yDZ/img-retriver.jpg" type="image/jpeg"&gt;
+                                      &lt;img src="https://i.ibb.co/nNDDmN0R/img-avatar.png" alt="Avatar" class="centrar-imagen-ext"&gt;
+                                  &lt;/picture&gt;
+                                  &lt;/div&gt;
+                              &lt;/div&gt;                                
+                              </div>        
+                            </code>
+                          </pre>
+                      
+                    </div>
+                    <div class="col-lg-6 ej-code-css mb-3">
+                      
+                      <pre>                        <code class=language-css data-prismjs-copy=Copy>
+                          <div>
+                            .wrapper-ext {
+                                font-family: 'Arial', sans-serif;
+                                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                                min-height: 100vh;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 20px;
+                            }
+
+                            .example-ext {
+                                background: rgba(255, 255, 255, 0.95);
+                                backdrop-filter: blur(10px);
+                                border-radius: 20px;
+                                padding: 40px;
+                                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                                max-width: 600px;
+                                width: 100%;
+                                text-align: center;
+                                border: 2px solid rgba(255, 255, 255, 0.3);
+                                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            }
+
+                            .example-ext:hover {
+                                transform: translateY(-5px);
+                                box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+                            }
+
+                            .h3-ext {
+                                font-size: 2.2rem;
+                                color: #4a5568;
+                                margin-bottom: 30px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                letter-spacing: 2px;
+                                position: relative;
+                                display: inline-block;
+                            }
+
+                            .h3-ext::after {
+                                content: '';
+                                position: absolute;
+                                bottom: -10px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                width: 80px;
+                                height: 4px;
+                                background: linear-gradient(90deg, #667eea, #764ba2);
+                                border-radius: 2px;
+                            }
+
+                            .centrar-imagen-ext {
+                                width: 80%;
+                                max-width: 400px;
+                                border-radius: 15px;
+                                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+                                transition: all 0.4s ease;
+                                border: 3px solid rgba(255, 255, 255, 0.8);
+                            }
+
+                            .centrar-imagen-ext:hover {
+                                transform: scale(1.05) rotate(2deg);
+                                box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+                                border-color: #667eea;
+                            }
+
+                            .picture-ext {
+                                display: block;
+                                margin: 0 auto;
+                                position: relative;
+                                overflow: hidden;
+                                border-radius: 20px;
+                                background: linear-gradient(45deg, #f0f2f5, #e2e8f0);
+                                padding: 15px;
+                                box-shadow:
+                                    0 10px 25px rgba(0, 0, 0, 0.1),
+                                    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+                                transition: all 0.3s ease;
+                            }
+
+                            .picture-ext::before {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: -100%;
+                                width: 100%;
+                                height: 100%;
+                                background: linear-gradient(90deg,
+                                        transparent,
+                                        rgba(255, 255, 255, 0.4),
+                                        transparent);
+                                transition: left 0.6s ease;
+                            }
+
+                            .picture-ext:hover::before {
+                                left: 100%;
+                            }
+
+                            .picture-ext:hover {
+                                transform: translateY(-3px);
+                                box-shadow:
+                                    0 20px 40px rgba(0, 0, 0, 0.15),
+                                    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+                            }
+
+                            @media (max-width: 768px) {
+                                .example-ext {
+                                    padding: 30px 20px;
+                                    margin: 10px;
+                                }
+
+                                .h3-ext {
+                                    font-size: 1.8rem;
+                                    letter-spacing: 1px;
+                                }
+
+                                .centrar-imagen-ext {
+                                    width: 90%;
+                                }
+                            }
+
+                            @keyframes float {
+
+                                0%,
+                                100% {
+                                    transform: translateY(0px);
+                                }
+
+                                50% {
+                                    transform: translateY(-10px);
+                                }
+                            }
+
+                            .example-ext {
+                                animation: float 6s ease-in-out infinite;
+                            }                            
+                          </div>        
+                        </code>
+                      </pre>
+                      
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <p>
+                El navegador evalúa las opciones en orden: primero intenta
+                cargar la imagen WebP (formato más moderno y eficiente), si no
+                es compatible carga el JPEG, y como último recurso muestra el
+                avatar PNG. El atributo
+                <code class=language-html>style="width: 80%"</code> hace que
+                la imagen ocupe el 80% del ancho de su contenedor.
+              </p>
+              <p>
+                <span class=fw-bold>Propósito</span>: Optimizar la carga de
+                imágenes ofreciendo el mejor formato disponible según el
+                navegador del usuario, mejorando el rendimiento web.
+              </p>
+            </div>
+            
+          </article>
+          
+          
+          <article class="pt-5 row" id=comments>
+            <h2>COMENTARIOS</h2>
+            <p>
+              Si tiene alguna inquietud, duda o ha encontrado algún error, por
+              favor infórmelo a través del formulario disponible para este
+              propósito.
+            </p>
+            <div class="d-flex justify-content-center">
+              <form action=https://formspree.io/f/mdkdawkg method=post id=myForm>
+                <fieldset class="d-flex flex-column gap-3">
+                  <legend class="fs-4 text-center">Deje su comentario</legend>
+
+                  <div class="d-flex flex-column">
+                    <label for=name>Nombre:</label>
+                    <input name=name id=name placeholder=User class="form-control rounded" required>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for=email>Email:</label>
+                    <input type=email name=email id=email placeholder=user@mail.com class="form-control rounded" required>
+                  </div>
+
+                  <div class="d-flex flex-column">
+                    <label for=message>Mensaje:</label>
+                    <textarea name=message id=message cols=30 rows=5 placeholder="Su comentario..." class="form-control rounded-3" required></textarea>
+                  </div>
+
+                  <button class="border border-2 btn btn-outline-light my-3 rounded-pill">
+                    Enviar
+                  </button>
+                </fieldset>
+
+                <p class="small text-center">
+                  La política de privacidad, y los términos y condiciones están
+                  disponibles en el formulario de contacto.
+                </p>
+              </form>
+            </div>
+          </article>
+          
+        </section>
+        
+        <aside class="col-lg-3 d-lg-block d-none pt-5">
+          <h1>En Este Artículo</h1>
+
+          <div class=menu-scroll>
+            <div class=menu-container>
+              <div class=menu-item>
+                <a href=#introduccion class=simple-link>Introducción</a>
+              </div>
+              <div class=menu-item>
+                <a href=#imagenes-html-img class=simple-link>Imágenes HTML <code class=language-html>&lt;img&gt;</code></a>
+              </div>
+              <div class=menu-item>
+                <a href=#videos-html-video class=simple-link>Videos HTML <code class=language-html>&lt;video&gt;</code></a>
+              </div>
+              <div class=menu-item>
+                <a href=#audio-html-audio class=simple-link>Audio HTML <code class=language-html>&lt;audio&gt;</code></a>
+              </div>
+              <div class=menu-item>
+                <a href=#etiqueta-html-figure class=simple-link>Etiqueta HTML
+                  <code class=language-html>&lt;figure&gt;</code></a>
+              </div>
+              <div class=menu-item>
+                <a href=#etiqueta-html-picture class=simple-link>Etiqueta HTML
+                  <code class=language-html>&lt;picture&gt;</code></a>
+              </div>
+              <div class=menu-item>
+                <a href=#comments class=simple-link>Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+        
+        
+      </main>
+    </div>
+    
+
+    
+    <footer class="border-1 border-top m-1 mt-auto row">
+      <div class=row>
+        
+        <address class="align-items-center col-lg-4 d-flex flex-column">
+          <div class="fs-2 text-center">Contacto</div>
+          <div class="align-items-center d-flex flex-row">
+            <i class="bi bi-envelope-at fs-3"></i>
+            <span class=ms-3>
+              <a class=text-decoration-none href=mailto:ehfeduardo@gmail.com>ehfeduardo@gmail.com</a>
+            </span>
+          </div>
+          <div class="align-items-center d-flex flex-row">
+            <i class="bi bi-geo-alt fs-3"></i>
+            <span class=ms-3>Bogotá D. C. - Colombia</span>
+          </div>
+        </address>
+        
+        <div class="align-items-center col-lg-4 d-flex flex-column h-100 justify-content-center">
+          <div>
+            <i class="bi bi-c-circle fs-5"></i>
+          </div>
+          <div class=ms-2>All Rights Reserved 2025</div>
+        </div>
+        
+        <div class="align-items-center col-lg-4 d-flex flex-column">
+          <div class="fs-2 text-center">Redes Sociales</div>
+          <div class="align-items-center d-flex gap-5 justify-content-evenly">
+            <div>
+              <a href=https://www.linkedin.com/in/eduardoherreraf/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-linkedin fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://github.com/eduardoherreraf target=_blank rel="noopener noreferrer">
+                <i class="bi bi-github fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://www.facebook.com/eduardoherreraforero/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-facebook fs-1"></i>
+              </a>
+            </div>
+            <div>
+              <a href=https://twitter.com/ehfeduardo/ target=_blank rel="noopener noreferrer">
+                <i class="bi bi-twitter-x fs-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="align-items-center d-flex gap-2 justify-content-center"></div>
+    </footer>
+    
+
+    
+    <button onclick=topFunction() id=myBtnScroll title="Go to top">
+      <svg xmlns:xmlns=http://www.w3.org/2000/svg width=32 height=32 fill=currentColor class="bi bi-arrow-bar-up" style=margin-left:-2px viewBox="0 0 16 16"><path fill-rule=evenodd d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg>
+    </button>
+    
+  
+
