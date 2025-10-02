@@ -1,0 +1,1223 @@
+<!DOCTYPE html><html lang=es data-bs-theme=dark><link rel=stylesheet href=EduardoHerreraForero.031e5d37.css><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="Guía práctica sobre cómo crear, listar, subir y borrar etiquetas en Git con ejemplos"><meta name=title content="Etiquetado en GIT - Ing. Eduardo Herrera Forero."><meta name=keywords content="git, etiquetas, git tag, etiquetas anotadas, etiquetas ligeras, versionado"><meta name=author content="Ing. Eduardo Herrera Forero"><meta name=application-name content=EHF><meta name=robots content="index, follow"><link rel=canonical href="https://eduardoherreraf.github.io/git-0006_etiqueta-en git.html"><meta property=og:type content=website><meta property=og:title content="Etiquetado en GIT - Ing. Eduardo Herrera Forero."><meta property=og:description content="Guía práctica sobre cómo crear, listar, subir y borrar etiquetas en Git con ejemplos"><meta property=og:image content=e1cd56bca6a1c4bb><meta property=og:image:alt content="Programador trabajando frente a pantallas con etiquetas de versiones de software como v1.0 y v1.1"><meta property=og:url content="https://eduardoherreraf.github.io/git-0006_etiqueta-en git.html"><meta property=og:locale content=es_CO><meta name=twitter:card content=summary><meta name=twitter:title content="Etiquetado en GIT - Ing. Eduardo Herrera Forero."><meta name=twitter:description content="Guía práctica sobre cómo crear, listar, subir y borrar etiquetas en Git con ejemplos"><meta name=twitter:image content=e1cd56bca6a1c4bb><meta name=twitter:image:alt content="Ilustración que muestra a un programador frente a varias pantallas de software, con etiquetas de versiones como v1.0 y v1.1 que representan hitos importantes en el desarrollo"><meta name=twitter:url content="https://eduardoherreraf.github.io/git-0006_etiqueta-en git.html"><meta name=twitter:site content=@ehfeduardo><link rel=apple-touch-icon sizes=180x180 href=apple-touch-icon.96046c77.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.f7991d03.png><link rel=icon type=image/png sizes=192x192 href=android-chrome-192x192.4500461c.png><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.060ee0ac.png><link rel=manifest href=site.webmanifest><link rel=mask-icon href=safari-pinned-tab.df3b9c22.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>
+    Etiquetado en GIT - Ing. Eduardo Herrera Forero.
+  </title><style></style><script type=module defer src=EduardoHerreraForero.b1453780.js></script><meta name=google-site-verification content=2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc><body>
+  
+  <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg">
+    <div class=container-fluid>
+      
+      <a class="align-items-center d-flex ms-2 navbar-brand" href=index.html>
+        <img src=logo.08948a42.png alt="Logo de Ing. Eduardo Herrera Forero" width=30 height=30 class="align-text-top d-inline-block me-1">
+        <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span>
+      </a>
+      
+      <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+        <span class=navbar-toggler-icon></span>
+      </button>
+      
+      <div class="collapse ms-auto navbar-collapse text-center" id=navbarSupportedContent>
+        <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100">
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html>SOBRE MÍ</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#resume>EXPERIENCIA</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#portfolio>PORTAFOLIO</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#studies>ESTUDIOS</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link publicaciones-activo" href=index.html#blog>PUBLICACIONES</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#contact>CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <div class=container-fluid id=introduccion>
+    <main class=row>
+      <section class="col-lg-9 pb-3 pt-5 px-lg-4">
+        
+        <article class="border-1 border-bottom pb-3 row" data-bs-spy=scroll data-bs-target=#list-example data-bs-smooth-scroll=true>
+          <header>
+            <h1>Git Tags: Marcando Puntos Importantes en la Historia de tu Proyecto</h1>
+          </header>
+          
+          <div class=mt-5>
+            <h2>Introducción</h2>
+            <p>
+              Este artículo explora en profundidad el concepto de Git tags, una herramienta esencial para marcar puntos
+              específicos en la historia de un repositorio Git. Se aprenderá qué son las etiquetas, por qué son útiles,
+              los
+              diferentes tipos de tags que existen (anotados y ligeros), cómo crearlos, listarlos, verificarlos,
+              compartirlos y eliminarlos. Además, se abordarán escenarios comunes de uso y las mejores prácticas para
+              incorporar tags de manera efectiva en el flujo de trabajo de desarrollo.
+            </p>
+
+            <div class="centrar-imagen imagen40">
+              <figure class=img-container>
+                <img src=https://i.postimg.cc/6WRvrSCj/git-0006-etiqueta-tag-en-git-comp.png class=img-fluid alt="Programador trabajando frente a pantallas con etiquetas de versiones de software como v1.0 y v1.1" title="Uso de etiquetas en Git" loading=lazy>
+                <figcaption class=img-caption>Ilustración que representa cómo las etiquetas en Git marcan hitos en el
+                  desarrollo de software, como versiones alfa, beta y estables</figcaption>
+              </figure>
+            </div>
+
+            <p>Para comprender con mayor facilidad cómo funcionan <span class=fw-bold>las etiquetas en GIT</span>,
+              imagine el desarrollo de un sistema:</p>
+            <ul>
+              <li>Durante el ciclo de vida de un proyecto, los programadores van escribiendo código, corrigiendo errores
+                y agregando nuevas funciones. Cada vez que guardan un avance en el repositorio, se genera un commit, que
+                sería como un registro de progreso.</li>
+              <li>No obstante, hay momentos cruciales en el desarrollo que deben quedar marcados: por ejemplo, la
+                primera versión funcional mínima (MVP), la beta para pruebas internas, la versión candidata (release
+                candidate) y la entrega final al cliente</li>
+            </ul>
+            <p>Aquí entran las etiquetas:</p>
+            <ul>
+              <li>Son como “post-its” o “sellos” que se colocan en un commit específico para señalar que en ese punto el
+                software alcanzó un estado importante.</li>
+              <li>Por ejemplo:
+                <ul>
+                  <li>
+                    <span class=fst-italic>v0.1-alpha</span> → primera versión con la interfaz básica.
+                  </li>
+                  <li>
+                    <span class=fst-italic>v0.5-beta</span> → versión con funcionalidades completas para pruebas.
+                  </li>
+                  <li>
+                    <span class=fst-italic>v1.0</span> → versión estable lista para producción.
+                  </li>
+                  <li>
+                    <span class=fst-italic>v1.1</span> → actualización con mejoras y correcciones.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p>Así como un arquitecto de software documenta <span class=fw-bold>los hitos de desarrollo</span>, Git
+              permite marcar esos puntos
+              críticos con tags para volver a ellos en cualquier momento sin perderse en el historial de cambios.</p>
+          </div>
+
+          
+          <div id=que-son-las-etiquetas-tab class=mt-5>
+            <h2>¿Qué Son las Etiquetas Tab?</h2>
+            <p>
+              Un Git tag es una referencia a un punto específico en la historia de un repositorio. Pensar en ellos como
+              marcadores permanentes que apuntan a un commit en particular. A diferencia de las ramas (branches), que
+              están diseñadas para evolucionar y moverse a medida que se agregan nuevos commits, las etiquetas están
+              diseñados para permanecer estáticos. Esto los hace ideales para marcar lanzamientos de versiones, hitos
+              importantes o cualquier otro punto en el tiempo que se desee recordar y referenciar fácilmente.
+            </p>
+          </div>
+          
+
+          
+          <div id=por-que-usar-etiquetas-git class=mt-5>
+            <h2>¿Por qué Usar Etiquetas Git?</h2>
+            <p>
+              las etiquetas ofrecen varias ventajas importantes:
+            </p>
+            <ul>
+              <li><span class=fw-bold>Identificación de Versiones</span>: La razón más común para usar tags es marcar
+                lanzamientos de versiones de tu software (por ejemplo, v1.0.0, v1.1.0, v2.0.0-beta). Esto permite a los
+                usuarios y desarrolladores identificar fácilmente qué versión del código están utilizando.</li>
+              <li><span class=fw-bold>Referencia a Hitos</span>: Se puede usar tags para marcar hitos importantes en
+                el desarrollo de un proyecto, como la finalización de una característica principal, la corrección de un
+                error crítico o la publicación de una documentación importante.</li>
+              <li><span class=fw-bold>Facilitar la Recuperación</span>: las etiquetas facilitan la recuperación de
+                versiones específicas del código. En lugar de tener que recordar el hash de un commit, se puede
+                simplemente referenciar la etiqueta asociado.</li>
+              <li><span class=fw-bold>Automatización</span>: las etiquetas pueden ser utilizados en scripts de
+                automatización para tareas como la construcción de versiones, la implementación y la generación de
+                documentación.</li>
+            </ul>
+          </div>
+          
+
+          
+          <div id=tipos-de-etiqetas-git class=mt-5>
+            <h2>Tipos de Etiquetas Git</h2>
+            <p>Existen dos tipos principales de tags en Git:</p>
+            <ul>
+              <li><span class=fw-bold>Tags Anotados (Annotated Tags)</span>: Son las etiquetas recomendados para la
+                mayoría
+                de los casos de uso. Almacenan información adicional, como el nombre del autor, la dirección de correo
+                electrónico, la fecha y un mensaje. Se almacenan como objetos completos en la base de datos de Git.</li>
+              <li><span class=fw-bold>Tags Ligeros (Lightweight Tags)</span>: Son simplemente punteros a un commit
+                específico. No almacenan ninguna información adicional. Son útiles para crear marcadores temporales o
+                para uso personal.</li>
+            </ul>
+
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=creando-etiquetas-tags class=mt-5>
+            <h2>Creando Etiquetas Git</h2>
+
+            
+            <div id=creando-una-etiqueta-anotada>
+              <h3>Creando una Etiqueta Anotada</h3>
+              <p>Para crear una etiquetaanotado, usar el siguiente comando:</p>
+              <div class=ej-sintaxis>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-bash data-prismjs-copy=Copy>
+                    git tag -a &lt;nombre-etiqueta&gt; -m "mensaje_del_tag" &lt;commit-hash&gt;
+                  </code>
+                </pre>
+              </div>
+              <ul>
+                <li><code class=language-bash>&lt;nombre-etiqueta&gt;</code>: El nombre que se le da al tag (por
+                  ejemplo, v1.0.0).</li>
+                <li><code class=language-bash>-a</code>: Especifica que se creará una etiquetaanotado.</li>
+                <li><code class=language-bash>-m "mensaje_del_tag"</code>: Agrega un mensaje descriptivo al
+                  tag. Es importante proporcionar un mensaje claro y conciso que explique el propósito de la etiqueta.
+                </li>
+                <li><code class=language-bash>&lt;commit-hash&gt;</code>: El hash del commit al que apuntará el tag.
+                  Si
+                  no se especifica, la etiqueta apuntará al commit actual (HEAD).</li>
+              </ul>
+              <p>Ejemplo:</p>
+              <div class=ej-sintaxis>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-bash data-prismjs-copy=Copy>
+                    git tag -a v1.0.0 -m "Lanzamiento de la versión 1.0.0"
+                  </code>
+                </pre>
+              </div>
+            </div>
+            
+
+            
+            <div id=creando-un-etiqueta-ligera>
+              <h3>Creando una Etiqueta Ligera </h3>
+              <p>Para crear una etiquetaligero, usar el siguiente comando:</p>
+              <div class=ej-sintaxis>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-bash data-prismjs-copy=Copy>
+                  git tag &lt;nombre-etiqueta&gt; &lt;commit-hash&gt;
+                  </code>
+                </pre>
+              </div>
+              <ul>
+                <li><code class=language-bash>&lt;nombre-etiqueta&gt;</code>: El nombre que se le da al tag (por
+                  ejemplo, v1.0.0-rc1).</li>
+                <li><code class=language-bash>&lt;commit-hash&gt;</code>: El hash del commit al que apuntará el tag.
+                  Si no
+                  se especifica, la etiqueta apuntará al commit actual (HEAD).</li>
+              </ul>
+              <p>Ejemplo:</p>
+              <div class=ej-sintaxis>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-bash data-prismjs-copy=Copy>
+                  git tag v1.0.0-rc1
+                  </code>
+                </pre>
+              </div>
+            </div>
+            
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=listando-etiquetas-git class=mt-5>
+            <h2>Listando Etiquetas Git</h2>
+            <p>Para listar todos las etiquetas de un repositorio, usar el siguiente comando:</p>
+            <div class=ej-sintaxis>
+              <pre data-src-status=loaded tabindex=0>                <code class=language-bash data-prismjs-copy=Copy>
+                  git tag
+                </code>
+              </pre>
+            </div>
+            <p>Este comando mostrará una lista alfabética de todos las etiquetas.</p>
+            <p>Para filtrar la lista de tags, se puede usar el comodín <code class=language-bash>*</code>:</p>
+            <div class=ej-sintaxis>
+              <pre data-src-status=loaded tabindex=0>                <code class=language-bash data-prismjs-copy=Copy>
+                  git tag -l "v1.0.*"
+                </code>
+              </pre>
+            </div>
+            <p>Esto mostrará todos las etiquetas que comiencen con <code class=language-bash>v1.0.</code>.</p>
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=verificando-git-tags class=mt-5>
+            <h2>Verificando Etiquetas Git</h2>
+            
+            <div id=verificando-Etiqueta-local>
+              <h3>Verificando Etiqueta local </h3>
+              <p>Para mostrar la información de una etiquetaanotado, usa el siguiente comando:</p>
+              <div class=ej-sintaxis>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-bash data-prismjs-copy=Copy>
+                    git show &lt;nombre-etiqueta&gt;
+                  </code>
+                </pre>
+              </div>
+              <p>Esto mostrará el nombre del autor, la fecha, el mensaje y el commit al que apunta el tag.</p>
+            </div>
+            
+
+            
+            <div id=verificando-Etiqueta-remota>
+              <h3>Verificando Etiqueta Remota </h3>
+              <p>Para mostrar la información de una etiquetaanotado remoto, usar el siguiente comando:</p>
+              <div class=ej-sintaxis>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-bash data-prismjs-copy=Copy>
+                    git ls-remote --tags origin | grep &lt;nombre-etiqueta&gt;
+                  </code>
+                </pre>
+              </div>
+              <p>Muestra todas las etiquetas (tags) remotas del repositorio:</p>
+              <div class=ej-sintaxis>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-bash data-prismjs-copy=Copy>
+                    git ls-remote --tags origin
+                  </code>
+                </pre>
+              </div>
+            </div>
+            
+
+
+
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=sincronizacion-de-etiquetas-con-el-repositorio-remoto class=mt-5>
+            <h2>Sincronización de Etiquetas con el Repositorio Remoto</h2>
+            <p>Por defecto, las etiquetas no se envían al repositorio remoto cuando se ejecuta el comando <code class=language-bash>git push</code>. Para enviar todos las etiquetas,
+              se debe usar siempre la opción <code class=language-bash>--tags</code>:</p>
+            <div class=ej-sintaxis>
+              <pre data-src-status=loaded tabindex=0>                <code class=language-bash data-prismjs-copy=Copy>
+                  git push origin --tags
+                </code>
+                </pre>
+            </div>
+            <p>Con este comando se envían todas las etiquetas (tags) pendientes para su sincronización con el
+              repositorio remoto.
+            </p>
+            <p>Con el siguiente comando se sincroniza una etiqueta específica:</p>
+
+            <div class=ej-sintaxis>
+              <pre data-src-status=loaded tabindex=0>                <code class=language-bash data-prismjs-copy=Copy>
+                  git push origin &lt;nombre-etiqueta&gt;
+                </code>
+                </pre>
+            </div>
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=renombrando-etiquetas-git class=mt-5>
+            <h2>Renombrando Etiquetas Git</h2>
+            <p>Git no permite renombrar las etiquetas (tags) directamente. La forma de "renombrar" una etiqueta es
+              crear una etiqueta nueva y luego eliminar la etiqueta existente apuntando al mismo commit.</p>
+            
+            <div id=renombrando-etiquetas-ligeras>
+              <h3>Renombrando Etiquetas Ligeras </h3>
+              <p>Renombrado de etiqueta local:</p>
+              <div class=ej-sintaxis>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-bash data-prismjs-copy=Copy>
+                    # Crear nuevo tag apuntando al mismo commit
+                    git tag &lt;etiqueta-nueva&gt; &lt;etiqueta-vieja&gt;
+
+                    # Eliminar la etiqueta anterior
+                    git tag -d &lt;etiqueta-vieja&gt;
+
+                    # Verificar el cambio
+                    git tag -l                  
+                  </code>
+                </pre>
+              </div>
+              <p>Eliminación de etiqueta remota:</p>
+              <div class=ej-sintaxis>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-bash data-prismjs-copy=Copy>
+                    # Versión actual, más clara
+                    git tag -d v2.0.0 &lt;etiqueta-vieja&gt;
+
+                    # Version anterior
+                    git push origin :refs/tags/&lt;etiqueta-vieja&gt;
+                  </code>
+                </pre>
+              </div>
+              <p>Sincronización de etiquetas locales con el repositorio remoto:</p>
+              <div class=ej-sintaxis>
+                <pre data-src-status=loaded tabindex=0>                <code class=language-bash data-prismjs-copy=Copy>
+                  git push origin &lt;etiqueta-nueva&gt;
+                </code>
+              </pre>
+              </div>
+
+              
+              <div>
+                <h4>Script para Cambio dec Etiqueta Ligera </h4>
+                
+                <div class="mt-3 text-center">
+                  <a href=up_/scripts/renombrar-git-tag-ligera.sh download target=_blank rel="noopener noreferrer" class="align-items-center btn d-inline-flex gap-2" style="background:var(--color-fondo);color:var(--color-texto);border:2px solid var(--color-borde)">
+                    Script renombrar Etiqueta Ligera
+                    <i class="bi bi-cloud-download"></i>
+                  </a>
+                </div>
+                <p>Para renombrar una etiqueta ligera Git con este script, configure la etiqueta antigua en la línea 36
+                  y la
+                  nueva
+                  en la línea 37, luego ejecute el script desde la carpeta principal del proyecto.
+                </p>
+              </div>
+              
+            </div>
+            
+
+            
+            <div id=renombrando-etiquetas-anotadas>
+              <h3>Renombrando Etiquetas Anotadas </h3>
+
+              
+              <div>
+                <h4>Método 1: Eliminar y recrear la etiqueta </h4>
+                <div class=ej-sintaxis>
+                  <pre data-src-status=loaded tabindex=0>                    <code class=language-bash data-prismjs-copy=Copy>
+                      # Eliminar la etiqueta local
+                      git tag -d &lt;etiqueta-vieja&gt;
+
+                      # Eliminar la etiqueta del repositorio remoto (si ya se había subido)
+                      git push origin --delete &lt;etiqueta-vieja&gt;
+
+                      # Crear la nueva etiqueta anotada en el mismo commit
+                      git tag -a &lt;etiqueta-nueva&gt; commit-hash -m "Mensaje de la etiqueta"
+
+                      # Subir la nueva etiqueta al remoto
+                      git push origin &lt;etiqueta-nueva&gt;                      
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              
+              
+              <div>
+                <h4>Método 2: Preservar el Contenido de la Etiqueta Antigua </h4>
+                <div class=ej-sintaxis>
+                  <pre data-src-status=loaded tabindex=0>                    <code class=language-bash data-prismjs-copy=Copy>
+                      # Ver la información de la etiqueta actual
+                      git show &lt;etiqueta-vieja&gt;
+
+                      # Crear la nueva etiqueta con el mismo mensaje en el mismo commit
+                      git tag -a &lt;etiqueta-nueva&gt; $(git rev-list -n 1 &lt;etiqueta-vieja&gt;) -m "$(git tag -l --format='%(contents)' &lt;etiqueta-vieja&gt;)"
+
+                      # Eliminar la etiqueta antigua
+                      git tag -d &lt;etiqueta-vieja&gt;
+                      git push origin --delete &lt;etiqueta-vieja&gt;
+
+                      # Subir la nueva etiqueta
+                      git push origin &lt;etiqueta-nueva&gt;               
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              
+              
+              <div>
+                <h4>Script para Cambio dec Etiqueta Anotada </h4>
+                
+                <div class="mt-3 text-center">
+                  <a href=up_/scripts/renombrar-git-tag-anotada.sh download target=_blank rel="noopener noreferrer" class="align-items-center btn d-inline-flex gap-2" style="background:var(--color-fondo);color:var(--color-texto);border:2px solid var(--color-borde)">
+                    Script renombrar Etiqueta Anotada
+                    <i class="bi bi-cloud-download"></i>
+                  </a>
+                </div>
+                <p>Para renombrar una etiqueta anotada Git con este script, configure la etiqueta antigua en la línea 12
+                  y la
+                  nueva en la línea 137, luego ejecute el script desde la carpeta principal del proyecto.
+                </p>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=eliminando-etiquetas-git class=mt-5>
+            <h2>Eliminando Etiquetas Git</h2>
+            
+            <div id=eliminando-una-etiqueta-local>
+              <h3>Eliminando una Etiqueta Local </h3>
+              <p>Para eliminar una etiqueta (tag) local, usar el siguiente comando:</p>
+              <div class=ej-sintaxis>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-bash data-prismjs-copy=Copy>
+                    git tag -d &lt;nombre-etiqueta&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            
+
+            
+            <div id=eliminando-una-etiqueta-remota>
+              <h3>Eliminando una Etiqueta Remota </h3>
+              <p>Para eliminar una etiqueta (tag) remota, usar el siguiente comando:</p>
+              <div class=ej-sintaxis>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-bash data-prismjs-copy=Copy>
+                    git push origin --delete tag &lt;nombre-etiqueta&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            
+
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=escenarios-comunes-de-uso class=mt-5>
+            <h2>Escenarios Comunes de Uso</h2>
+            <ul>
+              <li><span class=fw-bold>Lanzamiento de Versiones</span>: Como se mencionó anteriormente, las etiquetas
+                (tags) son ideales para marcar lanzamientos de versiones. Se crea una etiqueta (tag) anotado para cada
+                versión del software, incluyendo un mensaje descriptivo que explique los cambios realizados en esa
+                versión.</li>
+              <li><span class=fw-bold>Creación de Builds</span>: Se puede usar etiquetas (tags) para crear builds
+                específicos del software. Por ejemplo, se puede crear un script que busque la última etiqueta (tag) y
+                cree un build a partir de ese commit.</li>
+              <li><span class=fw-bold>Auditoría</span>: las etiquetas pueden ser utilizados para fines de auditoría.
+                Se
+                puede usar etiquetas (tags) para marcar puntos importantes en el desarrollo del proyecto y luego usar
+                <code class=language-bash>git show</code> para revisar la información asociada a esos tags.
+              </li>
+            </ul>
+
+          </div>
+          
+          <hr class=subtle-divider>
+
+
+          
+          <div id=error-comunes-con-las-etiquetas-git class=mt-5>
+            <h2>Error Comunes con las Etiquetas Git</h2>
+            <p>En esta sección del artículo se analizan tres escenarios comunes de error que pueden surgir al trabajar
+              con etiquetas en Git:</p>
+            <ul>
+              <li>La creación de tags con nombres incorrectos.</li>
+              <li>Problemas de sincronización entre el repositorio local y remoto.</li>
+              <li>
+                Conflictos al intentar subir tags al repositorio remoto. Para cada caso, se proporciona una
+                descripción del problema, las posibles causas y las soluciones recomendadas.</li>
+            </ul>
+            
+            <div id=etiqueta-creada-con-el-nombre-incorrecto>
+              <h3>Etiqueta Creada con el Nombre Incorrecto </h3>
+
+              
+              <div>
+                <h4>Problema: Etiqueta Creada con un Nombre Incorrecto </h4>
+                <p>Crear una etiqueta con un nombre incorrecto es un error común, especialmente cuando se trabaja bajo
+                  presión o se siguen convenciones de nomenclatura estrictas. Esto puede llevar a confusión, dificultar
+                  la identificación de versiones y afectar la automatización de procesos de despliegue.
+                </p>
+              </div>
+              
+
+              
+              <div>
+                <h4>Causas Posibles de una Etiqueta Creada con un Nombre Incorrecto </h4>
+                <ul>
+                  <li><span class=fw-bold>Errores de escritura (typos)</span>: Esta es la causa más frecuente. El
+                    desarrollador escribe el nombre de la etiqueta de forma incorrecta, por ejemplo, v1.0.o en lugar de
+                    v1.0.0,
+                    o relase-1.2 en vez de release-1.2. Un simple error de dedo puede generar un nombre incorrecto.</li>
+                  <li><span class=fw-bold>Falta de convenciones de nombrado</span>: En equipos de desarrollo, no tener
+                    una convención de nombrado clara para las etiquetas puede llevar a que cada miembro use su propio
+                    formato. Esto provoca inconsistencia y, a menudo, nombres incorrectos o confusos (por ejemplo,
+                    alguien usa release-1.0 y otro usa version_1.0).</li>
+                  <li><span class=fw-bold>Uso de caracteres no permitidos o especiales</span>: Aunque Git es bastante
+                    flexible, ciertos caracteres especiales pueden causar problemas, especialmente en la terminal. Usar
+                    espacios, puntos y comas, o caracteres poco comunes sin la debida sintaxis puede resultar en una
+                    etiqueta
+                    no válida o mal interpretado.</li>
+                  <li><span class=fw-bold>Desconocimiento del propósito de las etiquetas</span>: Para un novato, el
+                    concepto de una etiqueta (tag) puede ser confuso. Si un desarrollador no entiende que las etiquetas
+                    se
+                    usan para marcar puntos fijos y estables en el historial (como versiones de software), podría darle
+                    un nombre genérico o poco descriptivo que no tiene sentido para el equipo.</li>
+                  <li><span class=fw-bold>Prisa o distracción</span>: En el calor del momento, al intentar etiquetar
+                    una versión rápidamente, es fácil cometer errores. La prisa por terminar una tarea o una simple
+                    distracción puede llevar a una omisión o un error en el nombre.</li>
+                </ul>
+              </div>
+              
+
+              
+              <div>
+                <h4>Soluciones para una Etiqueta Creada con un Nombre Incorrecto </h4>
+                <ul>
+                  <li>Eliminar la etiqueta local:
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-bash data-prismjs-copy=Copy>
+                          git tag -d &lt;nombre-incorrecto&gt;
+                        </code>
+                      </pre>
+                    </div>
+                  </li>
+                  <li>Eliminar la etiqueta remota (si ya se envió):
+                    s <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-bash data-prismjs-copy=Copy>
+                          git push origin --delete &lt;nombre-incorrecto&gt;
+                        </code>
+                    </pre>
+                    </div>
+                    
+                  </li>
+                  <li>Crear la etiqueta ligera correcta con el &lt;commit-hash&gt; si es necesario:</li>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-bash data-prismjs-copy=Copy>
+                        git tag &lt;nombre-correcto&gt; &lt;commit-hash&gt;
+                      </code>
+                    </pre>
+                  </div>
+                  <li>Crear la etiqueta anotada correcta con el &lt;commit-hash&gt; si es necesario:</li>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-bash data-prismjs-copy=Copy>
+                        git tag -a &lt;nombre-incorrecto&gt; &lt;commit-hash&gt; -m "Mensaje de la etiqueta"
+                      </code>
+                    </pre>
+                  </div>
+                  <li>Subir la etiqueta corregida:</li>
+                  <div class=ej-sintaxis>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-bash data-prismjs-copy=Copy>
+                        git push origin &lt;nombre-correcto&gt;
+                      </code>
+                    </pre>
+                  </div>
+                </ul>
+              </div>
+              
+              <p><span class=fw-bold>Importante:</span> Antes de borrar una etiqueta remota, considerar las
+                siguientes
+                alternativas:</p>
+              <ul>
+                <li><span class=fw-bold>Dejar la etiqueta incorrecto</span>: Si la etiqueta incorrecto no causa
+                  problemas
+                  graves, puede ser mejor dejarlo y simplemente crear la etiqueta correcto. Asegúrate de documentar la
+                  situación para evitar confusiones futuras.
+                </li>
+                <li>
+                  <span class=fw-bold>Crear una nota en la etiqueta incorrecto</span>: Se puede agregar una nota al
+                  tag
+                  incorrecto indicando que es un error y que la etiqueta correcto es otro. Esto puede ayudar a evitar
+                  confusiones.
+                </li>
+              </ul>
+            </div>
+            
+
+            
+            <div id=problemas-de-sincronizacion-entre-repositorio-local-y-remoto>
+              <h3>Problemas de Sincronización entre Repositorio Local y Remoto </h3>
+              
+              <div>
+                <h4>Problema: Sincronización entre Local y Remoto </h4>
+                <p>Las etiquetas, al igual que las ramas, necesitan ser sincronizados entre el repositorio local y el
+                  remoto. Si no se sincronizan correctamente, se puede tener tags que existen localmente pero no
+                  remotamente, o viceversa.</p>
+              </div>
+              
+
+              
+              <div>
+                <h4>Causas Posibles de Sincronización entre Local y Remoto </h4>
+                <ul>
+                  <li><span class=fw-bold>Olvidar subir las etiquetas</span>: Después de crear una etiqueta
+                    localmente, es
+                    necesario subirla al repositorio remoto usando git push.</li>
+                  <li><span class=fw-bold>Olvidar descargar las etiquetas</span>: Después de que alguien más crea una
+                    etiqueta en
+                    el repositorio remoto, es necesario descargarlo al repositorio local usando <code class=language-bash>git fetch</code> o <code class=language-bash>git pull</code>.
+                  </li>
+                  <li><span class=fw-bold>Configuración incorrecta de <code class=language-bash>git push</code></span>: La configuración por defecto de
+                    <code class=language-bash>git push</code> puede no incluir las etiquetas.
+                  </li>
+                </ul>
+              </div>
+              
+
+              
+              <div>
+                <h4>Soluciones para Sincronización entre Local y Remoto</h4>
+                <ul>
+                  <li>Las etiquetas remotas no aparecen en el entorno local:
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-bash data-prismjs-copy=Copy>
+                          # Descargar todos los tags del remoto
+                          git fetch --tags
+
+                          # o forzar la actualización de tags
+                          git fetch --tags --force
+                        </code>
+                      </pre>
+                    </div>
+                  </li>
+                  <li>El repositorio remoto contiene etiquetas que no se quieren en el entorno local:
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-bash data-prismjs-copy=Copy>
+                          # Ver tags remotos
+                          git ls-remote --tags origin
+
+                          # Eliminar tag local específico
+                          git tag -d &lt;nombre-etiqueta&gt;
+                        </code>
+                      </pre>
+                    </div>
+                  </li>
+                  <li>Se quiere sincronizar exactamente con el repositorio remoto:
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-bash data-prismjs-copy=Copy>
+                          # Eliminar todos los tags locales que no existen en el remoto
+                        git fetch --prune --prune-tags origin
+                        </code>
+                      </pre>
+                    </div>
+                  </li>
+                  <li>El envío de todas las etiquetas falla parcialmente:
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-bash data-prismjs-copy=Copy>
+                          # Ver cuáles etiquetas no se han subido
+                          git push --tags --dry-run
+
+                          # Subir etiquetas una por una si hay conflictos
+                          git push origin v1.0.0
+                          git push origin v1.1.0
+                        </code>
+                      </pre>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+            
+
+            
+            <div id=conflictos-al-subir-etiguetas>
+              <h3>Conflictos al Subir Etiquetas</h3>
+              
+              <div>
+                <h4>Problema: Conflictos al Subir Etiquetas</h4>
+                <p>Aunque menos común que los conflictos con ramas, pueden surgir conflictos al intentar subir etiquetas
+                  al repositorio remoto, especialmente si alguien más ha creado una etiqueta con el mismo nombre.</p>
+              </div>
+              
+
+              
+              <div>
+                <h4>Causas Posibles de Conflictos al Subir Etiquetas </h4>
+                <ul>
+                  <li><span class=fw-bold>Otro usuario creó un tag con el mismo nombre</span>: Si otro usuario crea
+                    una etiqueta con el mismo nombre que una existente en el entorno local de alguien y la sube al
+                    repositorio remoto antes, se generará un conflicto al intentar subir la etiqueta local.</li>
+                  <li><span class=fw-bold>La etiqueta remota apunta a un commit diferente</span>: Se intenta subir una
+                    etiqueta que ya existe en el remoto pero apunta a un commit diferente.</li>
+                </ul>
+              </div>
+              
+
+              
+              <div>
+                <h4>Soluciones para los Conflictos al Subir Etiquetas </h4>
+                <ul>
+                  <li><span class=fw-bold>Updates were rejected because the tag already exists</span>: Se intenta
+                    subir una etiqueta que ya existe en el remoto pero apunta a un commit diferente.
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-bash data-prismjs-copy=Copy>
+                          # Error típico:
+                          # ! [rejected]        v1.0.0 -&gt; v1.0.0 (already exists)
+
+                          # Opción 1: Forzar la actualización (usar con precaución)
+                          git push origin v1.0.0 --force
+
+                          # Opción 2: Eliminar y recrear
+                          git push origin --delete tag &lt;nombre-etiqueta&gt;  # Eliminar del remoto
+                          git push origin v1.0.0                          # Subir la nueva versión
+                        </code>
+                      </pre>
+                    </div>
+                  </li>
+                  <li><span class=fw-bold>Etiqueta apunta a un commit diferente en local vs remoto:</span>
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-bash data-prismjs-copy=Copy>
+                          # Ver a qué commit apunta la etiqueta localmente
+                          git show-ref --tags | grep &lt;nombre-etiqueta&gt;
+
+                          # Ver a qué commit apunta en el remoto
+                          git ls-remote --tags origin | grep &lt;nombre-etiqueta&gt;
+
+                          # Decidir cuál mantener:
+                          # Si se quiere el remoto:
+                          git tag -d &lt;nombre-etiqueta&gt;
+                          git fetch origin tag &lt;nombre-etiqueta&gt;
+
+                          # Si se quiere el local:
+                          git push origin &lt;nombre-etiqueta&gt; --force
+                        </code>
+                      </pre>
+                    </div>
+                  </li>
+                  <li><span class=fw-bold>Permisos insuficientes para modificar etiquetas</span>:
+                    <div class=ej-sintaxis>
+                      <pre data-src-status=loaded tabindex=0>                        <code class=language-bash data-prismjs-copy=Copy>
+                          # Error: "denied to delete"
+                          # Solución: Contactar al administrador del repositorio
+                          # Algunos repositorios protegen los tags para evitar modificaciones                          
+                        </code>
+                      </pre>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=mejores-practicas class=mt-5>
+            <h2>Mejores Prácticas</h2>
+            <ul>
+              <li><span class=fw-bold>Usar Etiquetas Anotadas Siempre que Sea Posible</span>: La información adicional
+                almacenada en los etiquetas anotadas puede ser muy útil en el futuro.
+                <div class=ej-sintaxis>
+                  <pre data-src-status=loaded tabindex=0>                    <code class=language-bash data-prismjs-copy=Copy>
+                      # Siempre usa tags anotados para releases
+                      git tag -a &lt;nombre-etiqueta&gt; -m "Mensaje de la etiqueta"
+                    </code>
+                  </pre>
+                </div>
+
+              </li>
+              <li><span class=fw-bold>Usar Nombres Descriptivos</span>: Eligir nombres de etiquetas (tags) que sean
+                claras y descriptivas. Seguir una convención de nomenclatura consistente para facilitar la
+                identificación y el manejo de las etiquetas (tags). Por ejemplo, usar <code class=language-text>v&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;</code> para las versiones.
+              </li>
+              <li><span class=fw-bold>Agregar Mensajes Significativos</span>: Proporcionar mensajes descriptivos para
+                todos las etiquetas anotados. Explicar el propósito de la etiqueta (tag) y los cambios realizados en esa
+                versión del código o prefijos claros: <code class=language-text>release/</code>, <code class=language-text>hotfix/</code>.</li>
+              <li><span class=fw-bold>Sincronizar todas las Etiquetas (Tags)</span>: Asegurarse de sincronizar todas
+                las etiquetas (tags) con el equipo y con la comunidad. Esto permitirá a otros desarrolladores
+                beneficiarse de las etiquetas propias y facilitará la colaboración.
+              </li>
+              <li><span class=fw-bold>Verificar Sincronización Regularmente</span>:
+                <div class=ej-sintaxis>
+                  <pre data-src-status=loaded tabindex=0>                    <code class=language-bash data-prismjs-copy=Copy>
+                      # actualiza el repositorio local con todas las ramas y todas las etiquetas remotas sin modificar 
+                      # el estado de la rama actual (no hace merge ni rebase).
+                      git fetch --all --tags
+                      git tag -l | sort -V        # Ver todos los tags ordenados
+                    </code>
+                  </pre>
+                </div>
+              </li>
+              <li><span class=fw-bold>No Modificar etiquetas (tags) Existentes</span>: Una vez que una etiqueta (tag)
+                ha sido creada y sincronizada, no se debe modificar. Si se necesita corregir un error en una etiqueta
+                (tag), crear una nueva etiqueta (tag) en su lugar. Modificar tags existentes puede causar problemas de
+                consistencia y dificultar la colaboración.</li>
+              <li><span class=fw-bold>Verificar antes de Subir Etiquetas:</span>: Antes de subir etiquetas a remoto
+                conviene
+                verificarlas para asegurar que el nombre y el commit asociado sean correctos y evitar conflictos o
+                inconsistencias.
+                <div class=ej-sintaxis>
+                  <pre data-src-status=loaded tabindex=0>                    <code class=language-bash data-prismjs-copy=Copy>
+                      git tag -l                  # Listar tags locales
+                      git push --tags --dry-run   # Simular push
+                    </code>
+                  </pre>
+                </div>
+              </li>
+              <li><span class=fw-bold>Comunica cambios de tags al equipo:</span>
+                <ul>
+                  <li>Si se elimina/modifica una etiqueta remota, notificar al equipo.</li>
+                  <li>Considerar las etiquetas como "inmutables" una vez publicados.</li>
+                </ul>
+              </li>
+              <li><span class=fw-bold>Protege tags críticos en el servidor:</span>
+                <ul>
+                  <li>GitHub/GitLab permiten proteger etiquetas con patrones (ej: <code class=language-text>v*</code>).</li>
+                  <li>Evitar que se modifiquen o eliminen accidentalmente.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=ejemplos class=mt-5>
+            <h2>Ejemplos</h2>
+            
+            <div id=crear-etiqueta-anotada>
+              <h3>Crear Etiqueta Anotada</h3>
+              <div class=ej-sintaxis>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-bash data-prismjs-copy=Copy>
+                    # Crear etiqueta anotada
+                    git tag -a v1.2.0 -m "Versión 1.2.0: corrección de errores y mejoras de rendimiento"
+
+                    # Verificar localmente
+                    git tag
+                    git show v1.2.0
+
+                    # Subir etiqueta al remoto
+                    git push origin v1.2.0
+
+                    # Verificar en remoto
+                    git ls-remote --tags origin
+                  </code>
+                </pre>
+              </div>
+            </div>
+            
+
+            
+            <div id=borrar-la-etiqueta-local-y-remota>
+              <h3>Borrar la Etiqueta Local y Remota </h3>
+              <div class=ej-sintaxis>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-bash data-prismjs-copy=Copy>
+                    # Borrar etiqueta local
+                    git tag -d v3.1.0
+
+                    # Borrar etiqueta en remoto (forma moderna)
+                    git push origin --delete tag v3.1.0
+
+                    # --- Alternativa clásica ---
+                    # git push origin :refs/tags/v3.1.0
+
+                    # Verificar etiquetas locales
+                    git tag
+
+                    # Verificar etiquetas en remoto
+                    git ls-remote --tags origin
+                  </code>
+                </pre>
+              </div>
+            </div>
+            
+
+            
+            <div id=renombrar-etiquetas>
+              <h3>Renombrar Etiquetas </h3>
+              
+              <div>
+                <h4>Renombrar Etiqueta Ligera</h4>
+                <div class=ej-sintaxis>
+                  <pre data-src-status=loaded tabindex=0>                    <code class=language-bash data-prismjs-copy=Copy>
+                      # Verificar que la etiqueta existente
+                      git tag -l
+                      
+                      # Verificar que la etiqueta sea ligera
+                      git cat-file -t &lt;etiqueta-vieja&gt; 
+                      # Respuesta: commit, si es ligera
+
+                      # Ver información de la etiqueta que quieres renombrar
+                      git show &lt;etiqueta-vieja&gt;
+                      
+                      # Obtener el hash del commit donde está la etiqueta
+                      git rev-list -n 1 &lt;etiqueta-vieja&gt;
+
+                      # Crear la nueva etiqueta en el último commit o el apuntado por HEAD
+                      git tag &lt;etiqueta-nueva&gt; &lt;etiqueta-vieja&gt;
+                      # O usar el hash de otro commit diferente al último
+                      git tag &lt;etiqueta-nueva&gt; &lt;hash-commit&gt;
+
+                      # Verificar que la nueva etiqueta se creó correctamente
+                      git tag -l
+                      git log --oneline
+
+                      # Eliminar la etiqueta antigua
+                      git tag -d &lt;etiqueta-vieja&gt;
+
+                      # Actualizar el repositorio remoto si lo hay
+                      git push origin --delete tag &lt;etiqueta-vieja&gt;
+                      # Luego subir la nueva etiqueta
+                      git push origin &lt;etiqueta-nueva&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              
+
+              
+              <div>
+                <h4>Renombrar Etiquetas Anotadas</h4>
+                <div class=ej-sintaxis>
+                  <pre data-src-status=loaded tabindex=0>                    <code class=language-bash data-prismjs-copy=Copy>
+                      # Ver etiquetas
+                      git tag -l
+
+                      # Verificar que es anotada
+                      git cat-file -t &lt;etiqueta-vieja&gt;
+                      # Respuesta: tag
+
+                      # Ver información completa
+                      git show &lt;etiqueta-vieja&gt;
+
+                      # Obtener hash del commit
+                      git rev-list -n 1 &lt;etiqueta-vieja&gt;
+
+                      # Ver mensaje de la etiqueta
+                      git tag -l -n99 &lt;etiqueta-vieja&gt;
+                      git tag -n &lt;etiqueta-vieja&gt;
+
+                      # Crear nueva etiqueta anotada (con mensaje)
+                      git tag -a &lt;etiqueta-nueva&gt; &lt;commit-hash&gt; -m "mensaje"
+
+                      # Verificar la nueva etiqueta
+                      git show &lt;etiqueta-nueva&gt;
+                      git tag -l
+
+                      # Eliminar etiqueta antigua
+                      git tag -d &lt;etiqueta-vieja&gt;
+
+                      # Actualizar remoto
+                      git push origin --delete tag &lt;etiqueta-vieja&gt;
+                      git push origin &lt;etiqueta-nueva&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+        </article>
+        
+        
+        <article class=row id=comments>
+          <h2>COMENTARIOS</h2>
+          <p>
+            Si tiene alguna inquietud, duda o ha encontrado algún error, por
+            favor infórmelo a través del formulario disponible para este
+            propósito.
+          </p>
+          <div class="d-flex justify-content-center">
+            <form action=https://formspree.io/f/mdkdawkg method=post id=myForm>
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="fs-4 text-center">Deje su comentario</legend>
+
+                <div class="d-flex flex-column">
+                  <label for=name>Nombre:</label>
+                  <input name=name id=name placeholder=User class="form-control rounded" required>
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for=email>Email:</label>
+                  <input type=email name=email id=email placeholder=user@mail.com class="form-control rounded" required>
+                </div>
+
+                <div class="d-flex flex-column">
+                  <label for=message>Mensaje:</label>
+                  <textarea name=message id=message cols=30 rows=5 placeholder="Su comentario..." class="form-control rounded-3" required></textarea>
+                </div>
+
+                <button class="border border-2 btn btn-outline-light my-3 rounded-pill">
+                  Enviar
+                </button>
+              </fieldset>
+              <p class="small text-center">
+                La política de privacidad, y los términos y condiciones están
+                disponibles en el formulario de contacto.
+              </p>
+            </form>
+          </div>
+        </article>
+        
+      </section>
+
+      
+      <aside class="col-lg-3 d-lg-block d-none">
+        <h1>En Este Artículo</h1>
+        <div class=menu-scroll>
+          <div class=menu-container>
+            <div class="border border-1">
+              <div class=menu-item>
+                <a href=#introduccion class=simple-link>Introducción</a>
+              </div>
+              <div class=menu-item>
+                <a href=#que-son-las-etiquetas-tab class=simple-link>¿Qué Son las Etiquetas Tab?</a>
+              </div>
+              <div class=menu-item>
+                <a href=#por-que-usar-etiquetas-git class=simple-link>¿Por qué Usar Etiquetas Git?</a>
+              </div>
+              <div class=menu-item>
+                <a href=#tipos-de-etiqetas-git class=simple-link>Tipos de Etiquetas Git</a>
+              </div>
+              <div class=menu-item>
+                <details>
+                  <summary>
+                    Creando Etiquetas Git
+                  </summary>
+                  <div class=submenu>
+                    <a href=#creando-una-etiqueta-anotada class=submenu-item>Creando una Etiqueta Anotada</a>
+                    <a href=#creando-un-etiqueta-ligera class=submenu-item>Creando una Etiqueta Ligera</a>
+                  </div>
+                </details>
+              </div>
+              <div class=menu-item>
+                <a href=#listando-etiquetas-git class=simple-link>Listando Etiquetas Git</a>
+              </div>
+              <div class=menu-item>
+                <details>
+                  <summary>
+                    Verificando Etiquetas Git
+                  </summary>
+                  <div class=submenu>
+                    <a href=#verificando-Etiqueta-local class=submenu-item>Verificando Etiqueta local</a>
+                    <a href=#verificando-Etiqueta-remota class=submenu-item>Verificando Etiqueta Remota</a>
+                  </div>
+                </details>
+              </div>
+              <div class=menu-item>
+                <a href=#sincronizacion-de-etiquetas-con-el-repositorio-remoto class=simple-link>Sincronización de
+                  Etiquetas con el Repositorio Remoto</a>
+              </div>
+              <div class=menu-item>
+                <details>
+                  <summary>
+                    Renombrando Etiquetas Git
+                  </summary>
+                  <div class=submenu>
+                    <a href=#renombrando-etiquetas-ligeras class=submenu-item>Renombrando Etiquetas Ligeras</a>
+                    <a href=#renombrando-etiquetas-anotadas class=submenu-item>Renombrando Etiquetas Anotadas </a>
+                  </div>
+                </details>
+              </div>
+              <div class=menu-item>
+                <details>
+                  <summary>
+                    Eliminando Etiquetas Git
+                  </summary>
+                  <div class=submenu>
+                    <a href=#eliminando-una-etiqueta-local class=submenu-item>Eliminando una Etiqueta Local</a>
+                    <a href=#eliminando-una-etiqueta-remota class=submenu-item>Eliminando una Etiqueta Remota</a>
+                  </div>
+                </details>
+              </div>
+              <div class=menu-item>
+                <a href=#escenarios-comunes-de-uso class=simple-link>Escenarios Comunes de Uso</a>
+              </div>
+              <div class=menu-item>
+                <details>
+                  <summary>
+                    Error Comunes con las Etiquetas Git
+                  </summary>
+                  <div class=submenu>
+                    <a href=#etiqueta-creada-con-el-nombre-incorrecto class=submenu-item>Etiqueta Creada con el
+                      Nombre
+                      Incorrecto</a>
+                    <a href=#problemas-de-sincronizacion-entre-repositorio-local-y-remoto class=submenu-item>Problemas
+                      de Sincronización entre Repositorio Local y Remoto</a>
+                    <a href=#conflictos-al-subir-etiguetas class=submenu-item>Conflictos al Hacer push de tags</a>
+                  </div>
+                </details>
+              </div>
+              <div class=menu-item>
+                <a href=#mejores-practicas class=simple-link>Mejores Prácticas</a>
+              </div>
+              <div class=menu-item>
+                <details>
+                  <summary>
+                    Ejemplos
+                  </summary>
+                  <div class=submenu>
+                    <a href=#crear-etiqueta-anotada class=submenu-item>Crear Etiqueta Anotada</a>
+                    <a href=#borrar-la-etiqueta-local-y-remota class=submenu-item>Borrar la Etiqueta Local y
+                      Remota</a>
+                    <a href=#renombrar-etiquetas class=submenu-item>Renombrar Etiquetas</a>
+                  </div>
+                </details>
+              </div>
+              
+              <div class=menu-item>
+                <a href=#comments class=simple-link>Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      
+    </main>
+    
+  </div>
+  
+  
+  <footer class="border-1 border-top m-1 mt-auto row">
+    <div class=row>
+      
+      <address class="align-items-center col-lg-4 d-flex flex-column">
+        <div class="fs-2 text-center">Contacto</div>
+        <div class="align-items-center d-flex flex-row">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class=ms-3>
+            <a class=text-decoration-none href=mailto:ehfeduardo@gmail.com>ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="align-items-center d-flex flex-row">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class=ms-3>Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      
+      <div class="align-items-center col-lg-4 d-flex flex-column h-100 justify-content-center">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class=ms-2>All Rights Reserved 2025</div>
+      </div>
+      
+      <div class="align-items-center col-lg-4 d-flex flex-column">
+        <div class="fs-2 text-center">Redes Sociales</div>
+        <div class="align-items-center d-flex gap-5 justify-content-evenly">
+          <div>
+            <a href=https://www.linkedin.com/in/eduardoherreraf/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://github.com/eduardoherreraf target=_blank rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://www.facebook.com/eduardoherreraforero/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://twitter.com/ehfeduardo/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="align-items-center d-flex gap-2 justify-content-center"></div>
+  </footer>
+  
+
+
+  
+  <button onclick=topFunction() id=myBtnScroll title="Go to top">
+    <svg xmlns:xmlns=http://www.w3.org/2000/svg width=32 height=32 fill=currentColor class="bi bi-arrow-bar-up" style=margin-left:-2px viewBox="0 0 16 16"><path fill-rule=evenodd d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg>
+  </button>
+  
+
+
