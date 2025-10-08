@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang=es data-bs-theme=dark><link rel=stylesheet href=EduardoHerreraForero.031e5d37.css><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="Guía práctica sobre cómo crear, listar, subir y borrar etiquetas en Git con ejemplos"><meta name=title content="Etiquetado en GIT - Ing. Eduardo Herrera Forero."><meta name=keywords content="git, etiquetas, git tag, etiquetas anotadas, etiquetas ligeras, versionado"><meta name=author content="Ing. Eduardo Herrera Forero"><meta name=application-name content=EHF><meta name=robots content="index, follow"><link rel=canonical href="https://eduardoherreraf.github.io/git-0006_etiqueta-en git.html"><meta property=og:type content=website><meta property=og:title content="Etiquetado en GIT - Ing. Eduardo Herrera Forero."><meta property=og:description content="Guía práctica sobre cómo crear, listar, subir y borrar etiquetas en Git con ejemplos"><meta property=og:image content=e1cd56bca6a1c4bb><meta property=og:image:alt content="Programador trabajando frente a pantallas con etiquetas de versiones de software como v1.0 y v1.1"><meta property=og:url content="https://eduardoherreraf.github.io/git-0006_etiqueta-en git.html"><meta property=og:locale content=es_CO><meta name=twitter:card content=summary><meta name=twitter:title content="Etiquetado en GIT - Ing. Eduardo Herrera Forero."><meta name=twitter:description content="Guía práctica sobre cómo crear, listar, subir y borrar etiquetas en Git con ejemplos"><meta name=twitter:image content=e1cd56bca6a1c4bb><meta name=twitter:image:alt content="Ilustración que muestra a un programador frente a varias pantallas de software, con etiquetas de versiones como v1.0 y v1.1 que representan hitos importantes en el desarrollo"><meta name=twitter:url content="https://eduardoherreraf.github.io/git-0006_etiqueta-en git.html"><meta name=twitter:site content=@ehfeduardo><link rel=apple-touch-icon sizes=180x180 href=apple-touch-icon.96046c77.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.f7991d03.png><link rel=icon type=image/png sizes=192x192 href=android-chrome-192x192.4500461c.png><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.060ee0ac.png><link rel=manifest href=site.webmanifest><link rel=mask-icon href=safari-pinned-tab.df3b9c22.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>
+<!DOCTYPE html><html lang=es data-bs-theme=dark><link rel=stylesheet href=EduardoHerreraForero.ba2c4a68.css><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="Guía práctica sobre cómo crear, listar, subir y borrar etiquetas en Git con ejemplos"><meta name=title content="Etiquetado en GIT - Ing. Eduardo Herrera Forero."><meta name=keywords content="git, etiquetas, git tag, etiquetas anotadas, etiquetas ligeras, versionado"><meta name=author content="Ing. Eduardo Herrera Forero"><meta name=application-name content=EHF><meta name=robots content="index, follow"><link rel=canonical href="https://eduardoherreraf.github.io/git-0006_etiqueta-en git.html"><meta property=og:type content=website><meta property=og:title content="Etiquetado en GIT - Ing. Eduardo Herrera Forero."><meta property=og:description content="Guía práctica sobre cómo crear, listar, subir y borrar etiquetas en Git con ejemplos"><meta property=og:image content=e1cd56bca6a1c4bb><meta property=og:image:alt content="Programador trabajando frente a pantallas con etiquetas de versiones de software como v1.0 y v1.1"><meta property=og:url content="https://eduardoherreraf.github.io/git-0006_etiqueta-en git.html"><meta property=og:locale content=es_CO><meta name=twitter:card content=summary><meta name=twitter:title content="Etiquetado en GIT - Ing. Eduardo Herrera Forero."><meta name=twitter:description content="Guía práctica sobre cómo crear, listar, subir y borrar etiquetas en Git con ejemplos"><meta name=twitter:image content=e1cd56bca6a1c4bb><meta name=twitter:image:alt content="Ilustración que muestra a un programador frente a varias pantallas de software, con etiquetas de versiones como v1.0 y v1.1 que representan hitos importantes en el desarrollo"><meta name=twitter:url content="https://eduardoherreraf.github.io/git-0006_etiqueta-en git.html"><meta name=twitter:site content=@ehfeduardo><link rel=apple-touch-icon sizes=180x180 href=apple-touch-icon.96046c77.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.f7991d03.png><link rel=icon type=image/png sizes=192x192 href=android-chrome-192x192.4500461c.png><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.060ee0ac.png><link rel=manifest href=site.webmanifest><link rel=mask-icon href=safari-pinned-tab.df3b9c22.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>
     Etiquetado en GIT - Ing. Eduardo Herrera Forero.
   </title><style></style><script type=module defer src=EduardoHerreraForero.b1453780.js></script><meta name=google-site-verification content=2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc><body>
   
@@ -103,6 +103,7 @@
               permite marcar esos puntos
               críticos con tags para volver a ellos en cualquier momento sin perderse en el historial de cambios.</p>
           </div>
+          <hr class=subtle-divider>
 
           
           <div id=que-son-las-etiquetas-tab class=mt-5>
@@ -116,6 +117,7 @@
             </p>
           </div>
           
+          <hr class=subtle-divider>
 
           
           <div id=por-que-usar-etiquetas-git class=mt-5>
@@ -139,6 +141,7 @@
             </ul>
           </div>
           
+          <hr class=subtle-divider>
 
           
           <div id=tipos-de-etiqetas-git class=mt-5>
@@ -1044,7 +1047,7 @@
 
       
       <aside class="col-lg-3 d-lg-block d-none">
-        <h1>En Este Artículo</h1>
+        <h2>En Este Artículo</h2>
         <div class=menu-scroll>
           <div class=menu-container>
             <div class="border border-1">
