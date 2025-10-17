@@ -1,0 +1,757 @@
+<!DOCTYPE html><html lang=es data-bs-theme=dark><link rel=stylesheet href=EduardoHerreraForero.f3ce418f.css><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="El análisis de datos permite transformar la información en conocimiento útil para la toma de decisiones. Conozca qué es el análisis de datos, las fases del ciclo de vida del dato y los tipos de datos que se utilizan para generar valor en empresas y proyectos"><meta name=title content="Análisis de Datos - Ing. Eduardo Herrera Forero."><meta name=keywords content="análisis de datos, qué es el análisis de datos, ciclo de vida del dato, tipos de datos, big data, ciencia de datos, minería de datos, toma de decisiones, procesamiento de información, datos estructurados y no estructurados"><meta name=author content="Ing. Eduardo Herrera Forero"><meta name=application-name content=EHF><meta name=robots content="index, follow"><link rel=canonical href=https://eduardoherreraf.github.io/analisis-de-datos-0001_introduccion_analisis_de_datos.html><meta property=og:type content=website><meta property=og:title content="Análisis de Datos - Ing. Eduardo Herrera Forero."><meta property=og:description content="El análisis de datos permite transformar la información en conocimiento útil para la toma de decisiones. Conozca qué es el análisis de datos, las fases del ciclo de vida del dato y los tipos de datos que se utilizan para generar valor en empresas y proyectos"><meta property=og:image content=https://i.postimg.cc/BsmNXBkD/introduccion-analisis-de-datos-comp.jpg><meta property=og:image:alt content="Ingeniero inspeccionando una máquina de engranajes mientras revisa gráficos en una tableta — metáfora del análisis de datos en ingeniería"><meta property=og:url content=https://eduardoherreraf.github.io/analisis-de-datos-0001_introduccion_analisis_de_datos.html><meta property=og:locale content=es_CO><meta name=twitter:card content=summary><meta name=twitter:title content="Análisis de Datos - Ing. Eduardo Herrera Forero."><meta name=twitter:description content="El análisis de datos permite transformar la información en conocimiento útil para la toma de decisiones. Conozca qué es el análisis de datos, las fases del ciclo de vida del dato y los tipos de datos que se utilizan para generar valor en empresas y proyectos"><meta name=twitter:image content=https://i.postimg.cc/BsmNXBkD/introduccion-analisis-de-datos-comp.jpg><meta name=twitter:image:alt content="ingeniero que examina planos y gráficos en una tableta frente a una maquinaria de engranajes; simboliza el análisis de datos aplicado a sistemas complejos"><meta name=twitter:url content=https://eduardoherreraf.github.io/analisis-de-datos-0001_introduccion_analisis_de_datos.html><meta name=twitter:site content=@ehfeduardo><link rel=apple-touch-icon sizes=180x180 href=apple-touch-icon.96046c77.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.f7991d03.png><link rel=icon type=image/png sizes=192x192 href=android-chrome-192x192.4500461c.png><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.060ee0ac.png><link rel=manifest href=site.webmanifest><link rel=mask-icon href=safari-pinned-tab.df3b9c22.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>
+    Análisis de Datos - Ing. Eduardo Herrera Forero.
+  </title><script type=module defer src=EduardoHerreraForero.b1453780.js></script><meta name=google-site-verification content=2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc><body>
+  
+  <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg">
+    <div class=container-fluid>
+      
+      <a class="align-items-center d-flex ms-2 navbar-brand" href=index.html>
+        <img src=logo.08948a42.png alt="Logo de Ing. Eduardo Herrera Forero" width=30 height=30 class="align-text-top d-inline-block me-1">
+        <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span>
+      </a>
+      
+      <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+        <span class=navbar-toggler-icon></span>
+      </button>
+      
+      <div class="collapse ms-auto navbar-collapse text-center" id=navbarSupportedContent>
+        <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100">
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html>SOBRE MÍ</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#resume>EXPERIENCIA</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#portfolio>PORTAFOLIO</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#studies>ESTUDIOS</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link publicaciones-activo" href=index.html#blog>PUBLICACIONES</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#contact>CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <div class=container-fluid id=introduccion>
+    <main class=row>
+      <section class="col-lg-9 pb-3 pt-5 px-lg-4">
+        
+        <article class="border-1 border-bottom pb-3 row" data-bs-spy=scroll data-bs-target=#list-example data-bs-smooth-scroll=true>
+          <header>
+            <h1>Análisis de Datos</h1>
+          </header>
+          
+          <div class=mt-3>
+            <h2>Introducción: Análisis de Datos</h2>
+            <div class="centrar-imagen imagen40 mb-5">
+              <figure class=img-container>
+                <img src=https://i.ibb.co/5xMJYYDy/introduccion-analisis-de-datos-comp.jpg class=img-fluid alt="Ingeniero inspeccionando una máquina de engranajes mientras revisa gráficos en una tableta — metáfora del análisis de datos en ingeniería" title="Analogía visual de análisis de datos: Ingeniero analizando datos y planos" loading=lazy onerror="this.onerror=null; this.src='https://i.postimg.cc/BsmNXBkD/introduccion-analisis-de-datos-comp.jpg'">
+                <figcaption class=img-caption>
+                  La imagen muestra a un ingeniero que compara planos y lecturas gráficas en una tableta frente a una
+                  maquinaria compleja. Representa el proceso de identificar qué variables (engranajes) generan
+                  movimiento y cómo optimizarlas mediante el análisis de datos para mejorar el rendimiento del sistema.
+                </figcaption>
+              </figure>
+            </div>
+            <div class="mb-3 p-3 text-bg-light" style=background-color:#fffacd>“El análisis de datos es como revisar
+              los planos de una máquina compleja para descubrir qué engranajes generan el movimiento y cómo optimizar su
+              funcionamiento.”</div>
+            <p>En la imagen se presenta una analogía técnica del análisis de datos aplicada a la ingeniería: así como un
+              ingeniero examina los planos y el funcionamiento interno de una máquina compleja para identificar qué
+              engranajes producen el movimiento y cómo mejorar su desempeño, el análisis de datos consiste en observar
+              cada variable de un sistema, procesarla, encontrar patrones y relaciones entre sus componentes y, con base
+              en esos hallazgos, optimizar el funcionamiento global. En ambos casos, el objetivo es comprender el
+              comportamiento del sistema a partir de información detallada para tomar decisiones más precisas y
+              eficientes.</p>
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=basicos-del-analisis-de-datos class=mt-3>
+            <h2>Básicos del Análisis de Datos</h2>
+
+            
+            <div id=que-es-el-analisis-de-datos>
+              <h3>Que es el Análisis de Datos </h3>
+              <p>El <span class="fw-bold text-warning">Análisis de Datos</span> es el proceso de examinar, limpiar,
+                transformar y modelar datos con el objetivo de descubrir información útil, sacar conclusiones y apoyar
+                la toma de decisiones. Este proceso puede incluir diversas técnicas y herramientas, dependiendo del tipo
+                de datos y los objetivos del análisis.
+              </p>
+              <p>Ejemplo práctico: Cómo aumentar las ganancias de la Cafetería "El Buen Café":</p>
+              <p>Eduardo tiene una cafetería y nota que algunos días sobra mucha comida y otros se queda sin productos.
+                Decide usar análisis de datos para resolver esto.</p>
+              <p><span class=fw-bold>Recopilación de datos</span>: Durante dos meses, María registra diariamente:</p>
+              <ul>
+                <li>Cantidad de cada producto vendido.</li>
+                <li>Día de la semana.</li>
+                <li>Clima (soleado, lluvioso).</li>
+                <li>Ventas totales por hora.</li>
+              </ul>
+              <p><span class=fw-bold>Análisis</span>: Al revisar los datos, María descubre patrones interesantes:</p>
+              <ul>
+                <li>Los lunes vende 40% menos café que otros días.</li>
+                <li>Los viernes por la tarde las ventas de postres aumentan 60%.</li>
+                <li>Los días lluviosos las ventas de chocolate caliente se triplican.</li>
+                <li>Entre 3-5 PM casi no hay clientes.</li>
+              </ul>
+              <p><span class=fw-bold><span class=text-warning>Decisiones</span> basadas en datos</span>:</p>
+              <ul>
+                <li>Reduce la producción de panes los lunes (ahorra $200/mes en desperdicio.)</li>
+                <li>Prepara más postres los viernes (aumenta ventas en $300/mes).</li>
+                <li>Tiene chocolate y malvaviscos extra cuando pronostican lluvia.</li>
+                <li>Ofrece promoción "hora feliz" de 3-5 PM para atraer clientes.</li>
+              </ul>
+            </div>
+            
+
+            
+            <div id=el-proposito-esencial-del-analisis-de-datos>
+              <h3>El Propósito Esencial del Análisis de Datos </h3>
+              <p>El análisis de datos culmina en la transformación de la información en acciones concretas. Este proceso
+                puede resumirse en los siguientes puntos clave:</p>
+              <ul>
+                <li><span class=fw-bold>Soporte a la Toma de Decisiones</span>: Este es el <span class=text-warning>objetivo principal</span>. En lugar de basar las decisiones en la intuición o
+                  conjeturas, el análisis proporciona evidencia sólida y objetiva. Ya sea en un negocio, la ciencia o el
+                  gobierno, el objetivo es elegir el mejor camino a seguir (por ejemplo, ¿qué producto lanzar? o ¿dónde
+                  invertir recursos?).</li>
+                <li><span class=fw-bold>Resolución de Problemas</span>: Identificar la causa raíz de una situación.
+                  Por ejemplo, descubrir por qué una máquina se avería con frecuencia.</li>
+                <li><span class=fw-bold>Generación de Conocimiento (Insights)</span>: Se busca descubrir patrones,
+                  tendencias y relaciones ocultas que no son obvias a simple vista. Este conocimiento, o insight,
+                  explica el "por qué" detrás de los datos (por ejemplo, ¿por qué cayeron las ventas? o ¿cuál es el
+                  factor clave de éxito?).</li>
+                <li><span class=fw-bold>Predicción y Pronóstico</span>: Usar datos históricos para predecir lo que
+                  probablemente sucederá en el futuro. Esto permite planificar con anticipación y mitigar riesgos (por
+                  ejemplo, predecir la demanda de un producto, el clima o el riesgo de una enfermedad).</li>
+                <li><span class=fw-bold>Optimización y Mejora Continua</span>: Identificar ineficiencias, cuellos de
+                  botella y áreas de oportunidad para hacer que los procesos, productos o servicios sean mejores, más
+                  rápidos o más baratos.</li>
+              </ul>
+            </div>
+            
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=tipos-de-analisis-de-datos class=mt-3>
+            <h2>Tipos de Análisis de Datos</h2>
+            <p>Existen diferentes tipos de análisis de datos, cada uno con un enfoque y objetivo específico:</p>
+            <ul>
+              <li><span class=fw-bold>Análisis Descriptivo</span>: Se centra en resumir y describir las
+                características principales de un conjunto de datos. Utiliza medidas como la media, la mediana, la moda,
+                la desviación estándar y los percentiles para proporcionar una visión general de los datos. Ejemplos
+                incluyen la creación de histogramas, diagramas de dispersión y tablas de frecuencia.</li>
+              <li><span class=fw-bold>Análisis Exploratorio (EDA)</span>: Busca descubrir patrones, relaciones y
+                anomalías ocultas en los datos. Es un proceso iterativo que implica la visualización de datos, la
+                aplicación de técnicas estadísticas y la formulación de hipótesis. El EDA ayuda a comprender mejor los
+                datos y a identificar posibles áreas de investigación.</li>
+              <li><span class=fw-bold>Análisis Confirmatorio</span>: Se utiliza para verificar o refutar hipótesis
+                predefinidas. Implica la aplicación de pruebas estadísticas rigurosas para determinar si la evidencia
+                apoya o rechaza la hipótesis. Este tipo de análisis es crucial para la toma de decisiones basada en
+                evidencia.</li>
+              <li><span class=fw-bold>Análisis Predictivo</span>: Utiliza modelos estadísticos y algoritmos de
+                aprendizaje automático para predecir eventos o resultados futuros. Se basa en datos históricos para
+                identificar patrones y construir modelos que puedan generalizarse a nuevos datos. Ejemplos incluyen la
+                predicción de ventas, la detección de fraudes y la evaluación de riesgos.</li>
+              <li><span class=fw-bold>Análisis Prescriptivo</span>: Va más allá de la predicción y recomienda acciones
+                específicas para optimizar los resultados. Utiliza modelos de optimización y simulación para identificar
+                la mejor estrategia a seguir en función de los objetivos y las restricciones. Ejemplos incluyen la
+                optimización de la cadena de suministro, la gestión de inventario y la asignación de recursos.</li>
+            </ul>
+          </div>
+          
+          <hr class=subtle-divider>
+
+
+          
+          <div id=ciclo-de-vida-del-analisis-de-datos class=mt-3>
+            <h2>Ciclo de Vida del Análisis de Datos</h2>
+            <p>El proceso de análisis de datos generalmente sigue una serie de etapas bien definidas:</p>
+            <ul>
+              <li><span class=fw-bold>Definición del Problema</span>: El primer paso es definir claramente el problema
+                o la pregunta que se busca responder con el análisis de datos. Esto implica comprender el contexto,
+                identificar los objetivos y establecer los criterios de éxito.</li>
+              <li><span class=fw-bold>Recopilación de Datos</span>: Una vez definido el problema, se procede a
+                recopilar los datos relevantes de diversas fuentes. Esto puede incluir bases de datos, archivos de
+                texto, hojas de cálculo, APIs y sensores. Es importante asegurarse de que los datos sean precisos,
+                completos y relevantes para el problema en cuestión.</li>
+              <li><span class=fw-bold>Limpieza de Datos</span>: Los datos recopilados suelen contener errores, valores
+                faltantes, inconsistencias y duplicados. La limpieza de datos implica identificar y corregir estos
+                problemas para garantizar la calidad de los datos. Esto puede incluir la eliminación de valores
+                atípicos, la imputación de valores faltantes y la estandarización de formatos.</li>
+              <li><span class=fw-bold>Transformación de Datos</span>: La transformación de datos implica convertir los
+                datos a un formato que sea adecuado para el análisis. Esto puede incluir la normalización, la
+                discretización, la agregación y la creación de nuevas variables. El objetivo es facilitar el análisis y
+                mejorar el rendimiento de los modelos.</li>
+              <li><span class=fw-bold>Análisis de Datos</span>: En esta etapa, se aplican las técnicas de análisis de
+                datos apropiadas para responder a la pregunta de investigación. Esto puede incluir la aplicación de
+                estadísticas descriptivas, la visualización de datos, la construcción de modelos predictivos y la
+                realización de pruebas de hipótesis.</li>
+              <li><span class=fw-bold>Interpretación de Resultados</span>: Una vez realizado el análisis, se
+                interpretan los resultados para extraer conclusiones significativas. Esto implica comprender las
+                limitaciones de los datos y los modelos, y comunicar los hallazgos de manera clara y concisa.</li>
+              <li><span class=fw-bold>Comunicación de Resultados</span>: Finalmente, los resultados del análisis se
+                comunican a las partes interesadas a través de informes, presentaciones y visualizaciones. Es importante
+                adaptar la comunicación al público objetivo y destacar las implicaciones prácticas de los hallazgos.
+              </li>
+            </ul>
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=herramientas-para-el-analisis-de-datos class=mt-3>
+            <h2>Herramientas para el Análisis de Datos</h2>
+            <p>Existe una amplia variedad de herramientas disponibles para el análisis de datos, tanto de código abierto
+              como comerciales:</p>
+            <ul>
+              <li><span class=fw-bold>Lenguajes de Programación</span>: Python y R son los lenguajes de programación
+                más populares para el análisis de datos. Ofrecen una amplia gama de bibliotecas y paquetes para la
+                manipulación de datos, la visualización y el modelado estadístico.</li>
+              <li><span class=fw-bold>Bibliotecas de Python</span>: Pandas (manipulación de datos), NumPy (cálculo
+                numérico), Scikit-learn (aprendizaje automático), Matplotlib y Seaborn (visualización de datos).</li>
+              <li><span class=fw-bold>Software Estadístico</span>: SPSS, SAS y Stata son paquetes de software
+                estadístico ampliamente utilizados en la investigación académica y en la industria.</li>
+              <li><span class=fw-bold>Herramientas de Visualización de Datos</span>: Tableau, Power BI y Qlik Sense
+                son herramientas de visualización de datos que permiten crear dashboards interactivos y explorar los
+                datos de manera visual.</li>
+              <li><span class=fw-bold>Bases de Datos</span>: SQL y NoSQL son sistemas de gestión de bases de datos que
+                permiten almacenar y consultar grandes volúmenes de datos.</li>
+              <li><span class=fw-bold>Herramientas de Big Data</span>: Hadoop y Spark son plataformas de procesamiento
+                de datos distribuidas que permiten analizar grandes conjuntos de datos que no caben en la memoria de un
+                solo ordenador.</li>
+            </ul>
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=tipos-de-datos-en-analisis-de-datos class=mt-3>
+            <h2>Tipos de Datos en Análisis de Datos</h2>
+            <p>En el análisis de datos, los tipos de datos se clasifican según su estructura, origen y naturaleza. Aquí
+              te detallo los principales tipos, con ejemplos prácticos para cada uno:</p>
+            
+            <div id=segun-su-estructura>
+              <h3>Según su Estructura</h3>
+              <p>Los datos se clasifican Según su Estructura según su organización y formato, lo que determina cómo se
+                almacenan, procesan y analizan. Aquí las definiciones clave:</p>
+              
+              <div>
+                <h4>Datos Estructurados </h4>
+                <p>Datos organizados en un formato rígido y predefinido, generalmente en tablas (filas y columnas),
+                  donde cada campo tiene un significado específico y un tipo de dato definido (número, texto, fecha,
+                  etc.). Son fáciles de buscar, consultar y analizar con herramientas estándar.</p>
+                <p><span class=fw-bold>Formato</span>: Tienen un formato tabular (ejemplo: bases de datos
+                  relacionales, hojas de cálculo).</p>
+                <p><span class=fw-bold>Ventajas</span>:</p>
+                <ul>
+                  <li>Fáciles de consultar (SQL), analizar (Pandas, Excel) y visualizar (Tableau, Power BI).</li>
+                  <li>Ideales para análisis estadísticos y reportes automatizados.</li>
+                </ul>
+                <p><span class=fw-bold>Herramientas comunes</span>:</p>
+                <ul>
+                  <li>Bases de datos relacionales: MySQL, PostgreSQL, SQL Server.</li>
+                  <li>Hojas de cálculo: Excel, Google Sheets.</li>
+                  <li>Lenguajes: SQL, Python (Pandas), R.</li>
+                </ul>
+              </div>
+              
+
+              
+              <div>
+                <h4>Datos No Estructurados </h4>
+                <p>Datos sin un formato predefinido ni organización interna. No se ajustan a modelos de datos
+                  tradicionales y requieren técnicas avanzadas para extraer información útil.</p>
+                <p><span class=fw-bold>Características</span>:</p>
+                <ul>
+                  <li><span class=fw-bold>Formato</span>: Texto libre, imágenes, audio, video, documentos (PDF, Word).
+                  </li>
+                  <li><span class=fw-bold>Ejemplos</span>:
+                    <ul>
+                      <li><span class=fw-bold>Reseñas de clientes</span>: "El café es excelente, pero el servicio fue
+                        lento."</li>
+                      <li><span class=fw-bold>Imágenes</span>: Fotos de productos en redes sociales.</li>
+                      <li><span class=fw-bold>Audio</span>: Grabaciones de llamadas de servicio al cliente.</li>
+                      <li><span class=fw-bold>Videos</span>: Tutoriales o publicidad en YouTube.</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <p><span class=fw-bold>Desafíos</span>:</p>
+                <ul>
+                  <li>Difíciles de procesar y analizar con herramientas tradicionales.</li>
+                  <li>Requieren técnicas como:
+                    <ul>
+                      <li>NLP (Procesamiento de Lenguaje Natural) para texto.</li>
+                      <li>Computer Vision para imágenes/videos.</li>
+                      <li>Speech Recognition para audio.</li>
+                    </ul>
+                  </li>
+                </ul>
+                <p><span class=fw-bold>Herramientas comunes</span>:</p>
+                <ul>
+                  <li>Python: NLTK, spaCy (texto), OpenCV (imágenes), TensorFlow (IA).</li>
+                  <li>Plataformas: AWS Textract, Google Cloud Vision.</li>
+                </ul>
+              </div>
+              
+
+              
+              <div>
+                <h4>Datos Semiestructurados </h4>
+                <p>Datos que no están en formato tabular, pero tienen etiquetas, marcadores o jerarquías que permiten
+                  organizarlos y procesarlos. No siguen un esquema rígido, pero contienen metadatos que facilitan su
+                  interpretación.</p>
+                <p><span class=fw-bold>Características</span>:</p>
+                <ul>
+                  <li><span class=fw-bold>Formato</span>: JSON, XML, HTML, emails con campos definidos (ejemplo:
+                    remitente, asunto, fecha).</li>
+                  <li><span class=fw-bold>Ejemplos</span>:
+                    <ul>
+                      <li><span class=fw-bold>Archivo JSON de una API de clima</span>:
+                        
+                        <p><span class=fw-bold>Sintaxis básica</span>:</p>
+                        <div class=ej-sintaxis>
+                          <pre data-src-status=loaded tabindex=0>                            <code class=language-json data-prismjs-copy=Copy>
+                              {
+                                "fecha": "2025-10-25",
+                                "ciudad": "Bogotá",
+                                "temperatura": 22,
+                                "humedad": 65
+                              }
+                            </code>
+                          </pre>
+                        </div>
+                        
+                      </li>
+                      <li>Datos de sensores en formato clave-valor.</li>
+                      <li>Logs de servidores con timestamps y mensajes estandarizados.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p><span class=fw-bold>Ventajas</span>:</p>
+                <ul>
+                  <li>Más flexibles que los datos estructurados, ya que permiten anidamiento y variabilidad en los
+                    campos.</li>
+                  <li>Pueden convertirse a formato tabular si es necesario.</li>
+                </ul>
+                <p><span class=fw-bold>Herramientas comunes</span>:</p>
+                <ul>
+                  <li><span class=fw-bold>Bases de datos NoSQL</span>: MongoDB, Cassandra.</li>
+                  <li><span class=fw-bold>Lenguajes</span>: Python (librerías json, xml), JavaScript.</li>
+                </ul>
+              </div>
+              
+              
+              <div>
+                <h4>¿Por qué importa esta clasificación? </h4>
+                <ul>
+                  <li><span class=fw-bold>Elección de herramientas</span>: Los datos estructurados se analizan con
+                    SQL,
+                    mientras que los no estructurados requieren IA o machine learning.</li>
+                  <li><span class=fw-bold>Almacenamiento</span>: Los estructurados usan bases de datos relacionales;
+                    los
+                    no estructurados, sistemas como lagos de datos (Data Lakes) o NoSQL.</li>
+                  <li><span class=fw-bold>Preparación</span>: Los no estructurados necesitan más limpieza y
+                    transformación antes del análisis.</li>
+                </ul>
+              </div>
+              
+            </div>
+            
+
+            
+            <div id=según-su-naturaleza>
+              <h3>Según su Naturaleza </h3>
+              <p>Esta clasificación distingue los datos según el tipo de valor que representan.</p>
+              
+              <div>
+                <h4>Datos Cualitativos (o Categóricos) </h4>
+                <p>Este tipo de datos se caracteriza por:</p>
+                <ul>
+                  <li>Describen características, cualidades o categorías que no se expresan numéricamente.</li>
+                  <li>Se utilizan para representar atributos o clasificaciones.</li>
+                </ul>
+                <p><span class=fw-bold>Ejemplos</span>: género (masculino/femenino), color (rojo, azul), tipo de
+                  producto, país, marca.</p>
+                <p><span class=fw-bold>Tipos de datos cualitativos</span>:</p>
+                <ul>
+                  <li><span class=fw-bold>Nominales</span>: no tienen orden (por ejemplo: “azul”, “verde”, “rojo”).
+                  </li>
+                  <li><span class=fw-bold>Ordinales</span>: tienen un orden lógico (por ejemplo: “bajo”, “medio”,
+                    “alto”).</li>
+                </ul>
+              </div>
+              
+
+              
+              <div>
+                <h4>Datos Cuantitativos </h4>
+                <p>Representan valores numéricos que permiten realizar operaciones matemáticas (suma, promedio,
+                  desviación, etc.).</p>
+                <p><span class=fw-bold>Tipos de datos cuantitativos:</span>:</p>
+                <ul>
+                  <li><span class=fw-bold>Discretos</span>: son números enteros contables. Ejemplo: número de
+                    empleados, cantidad de ventas, llamadas recibidas. </li>
+                  <li><span class=fw-bold>Continuos</span>: pueden tener valores decimales o fraccionarios. Ejemplo:
+                    peso, altura, temperatura, ingresos, tiempo de respuesta.</li>
+                </ul>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=consideraciones-eticas-en-el-analisis-de-datos class=mt-3>
+            <h2>Consideraciones Éticas en el Análisis de Datos</h2>
+            <p>El análisis de datos plantea importantes consideraciones éticas que deben tenerse en cuenta:</p>
+            <ul>
+              <li><span class=fw-bold>Privacidad</span>: Es fundamental proteger la privacidad de los individuos cuyos
+                datos se están analizando. Esto implica obtener el consentimiento informado, anonimizar los datos y
+                cumplir con las leyes de protección de datos.</li>
+              <li><span class=fw-bold>Sesgo</span>: Los datos pueden contener sesgos que pueden llevar a conclusiones
+                erróneas o discriminatorias. Es importante identificar y mitigar estos sesgos para garantizar la equidad
+                y la justicia.</li>
+              <li><span class=fw-bold>Transparencia</span>: Los métodos y los resultados del análisis de datos deben
+                ser transparentes y reproducibles. Esto permite que otros puedan verificar los hallazgos y evaluar la
+                validez de las conclusiones.</li>
+              <li><span class=fw-bold>Responsabilidad</span>: Los analistas de datos son responsables de las
+                consecuencias de sus análisis. Deben ser conscientes de los posibles impactos negativos de sus hallazgos
+                y tomar medidas para mitigarlos.</li>
+            </ul>
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=aplicaciones-practicas-de-analisis-de-datos class=mt-3>
+            <h2>Aplicaciones Prácticas de Análisis de Datos</h2>
+            
+            <div id=analisis-de-datos-para-la-agroindustria>
+              <h3>Análisis de Datos para la Agroindustria </h3>
+              <p>El análisis de datos tiene múltiples aplicaciones en la agroindustria, y se ha convertido en una
+                herramienta esencial para optimizar la producción, reducir costos y mejorar la sostenibilidad. A
+                continuación, se explican sus principales aplicaciones:</p>
+              <ul>
+                <li><span class=fw-bold>Agricultura de precisión</span>: El análisis de datos permite recopilar y
+                  procesar información proveniente de sensores, drones, imágenes satelitales y estaciones
+                  meteorológicas. <br>
+                  Aplicaciones concretas:
+                  <ul>
+                    <li>Determinar las zonas del cultivo que necesitan más o menos riego o fertilizante.</li>
+                    <li>Detectar enfermedades o plagas en etapas tempranas.</li>
+                    <li>Monitorear el crecimiento y la salud de los cultivos en tiempo real.</li>
+                  </ul>
+                </li>
+                <li><span class=fw-bold>Gestión del riego</span>: Mediante el análisis de datos de humedad del suelo,
+                  temperatura y pronóstico del clima, se pueden diseñar sistemas de riego automatizados que optimizan el
+                  uso del agua. <br>
+                  Beneficio: ahorro de recursos hídricos y mayor eficiencia en el uso del agua.</li>
+                <li><span class=fw-bold>Predicción de rendimientos</span>: Modelos predictivos basados en inteligencia
+                  artificial y aprendizaje automático permiten estimar la producción futura según variables como tipo de
+                  suelo, clima, fertilización y variedades sembradas. Resultado: planificación más precisa de cosechas y
+                  recursos logísticos.</li>
+                <li><span class=fw-bold>Control de calidad y trazabilidad</span>: El análisis de datos en las etapas
+                  de procesamiento, empaque y distribución garantiza que se cumplan los estándares de calidad. <br>
+                  Ejemplos:
+                  <ul>
+                    <li>Monitoreo de temperatura y humedad durante el transporte.</li>
+                    <li>Registro digital de cada lote para asegurar la trazabilidad “del campo al consumidor”.</li>
+                  </ul>
+                </li>
+                <li><span class=fw-bold>Optimización de la cadena de suministro</span>: Mediante el análisis de datos
+                  se puede anticipar la demanda del mercado, reducir pérdidas post-cosecha y planificar mejor la
+                  distribución. <br>
+                  Ejemplo: prever picos de consumo para ajustar la producción o el almacenamiento.</li>
+                <li><span class=fw-bold>Análisis económico y toma de decisiones</span>: El análisis de costos,
+                  precios de insumos y márgenes de ganancia permite identificar áreas de mejora financiera. <br>
+                  Ejemplo: evaluar si conviene cambiar de cultivo o invertir en nuevas tecnologías.</li>
+                <li><span class=fw-bold>Sostenibilidad ambiental</span>: El uso de datos ayuda a medir el impacto
+                  ambiental y aplicar prácticas más sostenibles. <br>
+                  Ejemplo: reducir el uso de agroquímicos, controlar la erosión y calcular la huella de carbono.</li>
+              </ul>
+            </div>
+            
+            
+            <div id=analisis-de-datos-para-la-educacion>
+              <h3>Análisis de Datos para la Educación </h3>
+              <p>El análisis de datos en la educación tiene un papel fundamental en la mejora del aprendizaje, la
+                gestión institucional y la toma de decisiones pedagógicas. A continuación se presentan sus principales
+                aplicaciones, explicadas de manera sencilla y técnica:</p>
+              <ul>
+                <li><span class=fw-bold>Personalización del aprendizaje</span>: El análisis de datos permite adaptar
+                  los contenidos, actividades y ritmos de estudio según el desempeño y las necesidades de cada
+                  estudiante. <br>
+                  Ejemplo: Plataformas de aprendizaje en línea como Khan Academy o Moodle analizan los resultados de los
+                  estudiantes para recomendar ejercicios específicos según sus errores o progresos.
+                  <br>
+                  Beneficio: Se mejora la motivación y se incrementa la eficacia del proceso educativo.
+                </li>
+                <li><span class=fw-bold>Evaluación del rendimiento académico</span>: A través del análisis de datos se
+                  pueden detectar patrones en las calificaciones, la asistencia y la participación. <br>
+                  Ejemplo: Los docentes pueden identificar a tiempo a los estudiantes con riesgo de bajo rendimiento.
+                  <br>
+                  Beneficio: Permite diseñar planes de refuerzo o tutorías personalizadas antes de que el problema se
+                  agrave.
+                </li>
+                <li><span class=fw-bold>Gestión institucional y toma de decisiones</span>: Los directivos pueden usar
+                  el análisis de datos para optimizar recursos y mejorar la eficiencia de la
+                  institución. <br>
+                  Ejemplo: El análisis de matrícula, ausentismo y deserción ayuda a planificar cupos, personal docente y
+                  programas de bienestar. <br>
+                  Beneficio: Se facilita una administración más transparente, eficiente y basada en evidencias.
+                </li>
+                <li><span class=fw-bold>Medición del impacto de programas educativos</span>: Permite evaluar si una
+                  política o programa educativo realmente mejora los resultados de aprendizaje. <br>
+                  Ejemplo: Se pueden comparar los resultados antes y después de aplicar un nuevo método de enseñanza.
+                  <br>
+                  Beneficio: Facilita justificar inversiones y mejorar estrategias educativas.
+                </li>
+                <li><span class=fw-bold>Aprendizaje automático y analítica predictiva</span>: El uso de técnicas de
+                  machine learning ayuda a predecir comportamientos futuros de los estudiantes.
+                  <br>
+                  Ejemplo: Algoritmos que predicen qué estudiantes podrían abandonar el curso o necesitan apoyo
+                  adicional.
+                  <br>
+                  Beneficio: Permite intervenir tempranamente con estrategias preventivas.
+                </li>
+                <li><span class=fw-bold>Diseño curricular basado en datos</span>: El análisis de datos sobre desempeño
+                  y satisfacción de los estudiantes ayuda a ajustar contenidos y
+                  metodologías.
+                  <br>
+                  Ejemplo: Si muchos estudiantes fallan en un tema específico, el plan de estudios puede modificarse
+                  para
+                  reforzarlo.
+                  <br>
+                  Beneficio: Se garantiza una mejora continua en la calidad del currículo.
+                </li>
+                <li><span class=fw-bold>Análisis de participación y comportamiento</span>: Las plataformas virtuales
+                  generan grandes volúmenes de datos sobre la interacción de los estudiantes.
+                  <br>
+                  Ejemplo: Analizar los foros, tiempos de conexión y participación en actividades.
+                  <br>
+                  Beneficio: Permite identificar estudiantes poco participativos o problemas en la dinámica del curso.
+                </li>
+                <li><span class=fw-bold>Educación inclusiva</span>: Los datos permiten detectar desigualdades o
+                  barreras en el aprendizaje de ciertos grupos.
+                  <br>
+                  Ejemplo: Mediante indicadores se puede analizar el rendimiento de estudiantes con discapacidades o en
+                  zonas rurales.
+                  <br>
+                  Beneficio: Se promueve la equidad educativa con políticas más justas.
+                </li>
+              </ul>
+            </div>
+            
+            
+            <div id=analisis-de-datos-para-la-salud>
+              <h3>Análisis de Datos para la Salud </h3>
+              <p>El análisis de datos en el sector salud tiene un papel fundamental en la mejora de la atención médica,
+                la gestión hospitalaria, la investigación y la toma de decisiones. Sus aplicaciones permiten transformar
+                grandes volúmenes de información médica en conocimiento útil para médicos, instituciones y pacientes. A
+                continuación se describen las principales aplicaciones del análisis de datos en la salud:</p>
+              <ul>
+                <li><span class=fw-bold>Diagnóstico médico asistido</span>: El análisis de datos ayuda a identificar
+                  patrones y correlaciones en los historiales clínicos, resultados de laboratorio e imágenes médicas.
+                  Con técnicas de machine learning se pueden detectar enfermedades en etapas tempranas, como cáncer,
+                  diabetes o afecciones cardíacas, con alta precisión. <br>
+                  Ejemplo: sistemas que analizan radiografías o resonancias magnéticas para detectar tumores de forma
+                  automática.
+                <li><span class=fw-bold>Medicina personalizada</span>
+                  Permite diseñar tratamientos adaptados a las características genéticas, biológicas y clínicas de cada
+                  paciente. <br>
+                  Ejemplo: análisis de datos genómicos para determinar qué medicamentos son más eficaces o seguros para
+                  un individuo específico.
+                <li><span class=fw-bold>Investigación biomédica</span>
+                  Los investigadores utilizan análisis de datos para descubrir nuevas relaciones entre genes, proteínas
+                  y enfermedades, acelerar el desarrollo de fármacos y validar ensayos clínicos con mayor precisión.
+                  <br>
+                  Ejemplo: estudios sobre la relación entre mutaciones genéticas y predisposición a enfermedades.
+                <li><span class=fw-bold>Gestión hospitalaria y operativa</span>
+                  Los hospitales aplican análisis de datos para optimizar recursos, reducir tiempos de espera y mejorar
+                  la logística. <br>
+                  Ejemplo: análisis predictivo para anticipar la demanda de camas, personal o medicamentos según la
+                  temporada o tipo de enfermedad.
+                <li><span class=fw-bold>Epidemiología y salud pública</span>
+                  El análisis de datos permite rastrear brotes epidémicos, identificar zonas de riesgo y planificar
+                  campañas de prevención. <br>
+                  Ejemplo: seguimiento de contagios de COVID-19 mediante análisis de datos geográficos y demográficos en
+                  tiempo real.
+                <li><span class=fw-bold>Monitoreo de pacientes y medicina preventiva</span>
+                  Los dispositivos portátiles (wearables) generan datos sobre frecuencia cardíaca, sueño, actividad
+                  física, entre otros. Analizar esta información permite detectar anomalías y prevenir enfermedades
+                  antes de que se agraven. <br>
+                  Ejemplo: relojes inteligentes que alertan sobre arritmias o niveles anormales de oxígeno en la sangre.
+                <li><span class=fw-bold>Control de costos y fraudes médicos</span>
+                  El análisis de datos financieros y clínicos ayuda a detectar irregularidades en facturación,
+                  reclamaciones o uso de servicios médicos, evitando pérdidas económicas en el sistema de salud. <br>
+                  Ejemplo: detección automática de patrones sospechosos en reclamaciones de seguros médicos.</li>
+                <li><span class=fw-bold>Evaluación de políticas sanitarias</span>
+                  Los gobiernos utilizan análisis de datos para evaluar la efectividad de programas de salud pública,
+                  identificar carencias y mejorar la distribución de recursos. <br>
+                  Ejemplo: análisis de datos poblacionales para medir el impacto de campañas de vacunación o de
+                  prevención
+                  de obesidad.
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+          
+        </article>
+        <article class=row id=comments>
+          <h2>COMENTARIOS</h2>
+          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, porfavor infórmelo a través del formulario
+            disponible para estepropósito.</p>
+          <div class="d-flex justify-content-center">
+            <form action=https://formspree.io/f/mdkdawkg method=post id=myForm>
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="fs-4 text-center">Deje su comentario</legend>
+                <div class="d-flex flex-column">
+                  <label for=name>Nombre:</label>
+                  <input name=name id=name placeholder=User class="form-control rounded" required>
+                </div>
+                <div class="d-flex flex-column">
+                  <label for=email>Email:</label>
+                  <input type=email name=email id=email placeholder=user@mail.com class="form-control rounded" required>
+                </div>
+                <div class="d-flex flex-column">
+                  <label for=message>Mensaje:</label>
+                  <textarea name=message id=message cols=30 rows=5 placeholder="Su comentario..." class="form-control rounded-3" required></textarea>
+                </div>
+                <button class="border border-2 btn btn-outline-light my-3 rounded-pill">Enviar</button>
+              </fieldset>
+              <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
+                el formulario de contacto.</p>
+            </form>
+          </div>
+        </article>
+        
+      </section>
+      
+      <aside class="col-lg-3 d-lg-block d-none">
+        <h2>En Este Artículo</h2>
+        <div class=menu-scroll>
+          <div class=menu-container>
+            <div class="border border-1">
+              <div class=menu-item>
+                <a href=#introduccion class=simple-link>Introducción</a>
+              </div>
+              <div class=menu-item>
+                <a href=#basicos-del-analisis-de-datos class=simple-link>Básicos del Análisis de Datos</a>
+              </div>
+              <div class=menu-item>
+                <a href=#tipos-de-analisis-de-datos class=simple-link>Tipos de Análisis de Datos</a>
+              </div>
+              <div class=menu-item>
+                <a href=#ciclo-de-vida-del-analisis-de-datos class=simple-link>Ciclo de Vida del Análisis de
+                  Datos</a>
+              </div>
+              <div class=menu-item>
+                <a href=#herramientas-para-el-analisis-de-datos class=simple-link>Herramientas para el Análisis de
+                  Datos</a>
+              </div>
+              <div class=menu-item>
+                <a href=#tipos-de-datos-en-analisis-de-datos class=simple-link>Tipos de Datos en Análisis de
+                  Datos</a>
+              </div>
+              <div class=menu-item>
+                <a href=#consideraciones-eticas-en-el-analisis-de-datos class=simple-link>Consideraciones Éticas en
+                  el Análisis de Datos</a>
+                
+                <div class=menu-item>
+                  <a href=#aplicaciones-practicas-de-analisis-de-datos class=simple-link>Aplicaciones Prácticas de
+                    Análisis de Datos</a>
+                </div>
+                
+                <div class=menu-item>
+                  <a href=#comments class=simple-link>Comentarios</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div></aside>
+      
+    </main>
+  </div>
+  
+
+
+  
+  <footer class="border-1 border-top m-1 mt-auto row">
+    <div class=row>
+      
+      <address class="align-items-center col-lg-4 d-flex flex-column">
+        <div class="fs-2 text-center">Contacto</div>
+        <div class="align-items-center d-flex flex-row">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class=ms-3>
+            <a class=text-decoration-none href=mailto:ehfeduardo@gmail.com>ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="align-items-center d-flex flex-row">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class=ms-3>Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      
+      <div class="align-items-center col-lg-4 d-flex flex-column h-100 justify-content-center">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class=ms-2>All Rights Reserved 2025</div>
+      </div>
+      
+      <div class="align-items-center col-lg-4 d-flex flex-column">
+        <div class="fs-2 text-center">Redes Sociales</div>
+        <div class="align-items-center d-flex gap-5 justify-content-evenly">
+          <div>
+            <a href=https://www.linkedin.com/in/eduardoherreraf/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://github.com/eduardoherreraf target=_blank rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://www.facebook.com/eduardoherreraforero/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://twitter.com/ehfeduardo/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="align-items-center d-flex gap-2 justify-content-center"></div>
+  </footer>
+  
+
+  
+  <button onclick=topFunction() id=myBtnScroll title="Go to top">
+    <svg xmlns:xmlns=http://www.w3.org/2000/svg width=32 height=32 fill=currentColor class="bi bi-arrow-bar-up" style=margin-left:-2px viewBox="0 0 16 16"><path fill-rule=evenodd d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg>
+  </button>
+  
+
+
