@@ -75,12 +75,13 @@ Disallow: /photoshop-13_filtros.html
 Disallow: /photoshop-14_filtros_neurales.html
 Disallow: /photoshop-15_filtros_licuar.html
 Disallow: /photoshop-16_metadatos_y_exportacion.html
-html-0004_cuerpo_aria.htmlhtml-0004_cuerpo_aria.html
-html-0004_cuerpo_article_html.htmlhtml-0004_cuerpo_article_html.html
-html-0004_cuerpo_aside_html.htmlhtml-0004_cuerpo_aside_html.html
-html-0004_cuerpo_footer_html.htmlhtml-0004_cuerpo_footer_html.html
-html-0004_cuerpo_semantico.htmlhtml-0004_cuerpo_semantico.html
-html-0015_etiquetas_de_programacion_y_script_template.htmlhtml-0015_etiquetas_de_programacion_y_script_template.html
+Disallow: /html-0004_cuerpo_aria.htmlhtml-0004_cuerpo_aria.html
+Disallow: /html-0004_cuerpo_article_html.htmlhtml-0004_cuerpo_article_html.html
+Disallow: /html-0004_cuerpo_aside_html.htmlhtml-0004_cuerpo_aside_html.html
+Disallow: /html-0004_cuerpo_footer_html.htmlhtml-0004_cuerpo_footer_html.html
+Disallow: /html-0004_cuerpo_semantico.htmlhtml-0004_cuerpo_semantico.html
+Disallow: /html-0015_etiquetas_de_programacion_y_script_template.htmlhtml-0015_etiquetas_de_programacion_y_script_template.html
+Disallow: /analisis_de_datos.html
 
 # Sitemap
 Sitemap: https://eduardoherreraf.github.io/sitemap.xml
