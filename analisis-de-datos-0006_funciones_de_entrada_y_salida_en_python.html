@@ -1,0 +1,364 @@
+<!DOCTYPE html><html lang=es data-bs-theme=dark><link rel=stylesheet href=EduardoHerreraForero.f3ce418f.css><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso"><meta name=title content="Fundamentos a Python - Ing. Eduardo Herrera Forero."><meta name=keywords content="Python, programación, introducción a Python, aprender Python, curso Python, lenguaje de programación, tutorial Python, fundamentos de Python, código en Python"><meta name=author content="Ing. Eduardo Herrera Forero"><meta name=application-name content=EHF><meta name=robots content="index, follow"><link rel=canonical href=https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html><meta property=og:type content=website><meta property=og:title content="Fundamentos a Python - Ing. Eduardo Herrera Forero."><meta property=og:description content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso"><meta property=og:image content=https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg><meta property=og:image:alt content="Ejemplo introductorio en Python donde el programa solicita el nombre del usuario y muestra el mensaje: Hola, Eduardo"><meta property=og:url content=https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html><meta property=og:locale content=es_CO><meta name=twitter:card content=summary><meta name=twitter:title content="Fundamentos a Python - Ing. Eduardo Herrera Forero."><meta name=twitter:description content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso"><meta name=twitter:image content=https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg><meta name=twitter:image:alt content="Ejemplo introductorio de Python: programa que pide el nombre del usuario y muestra un saludo personalizado. Ideal para aprender los fundamentos del lenguaje"><meta name=twitter:url content=https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html><meta name=twitter:site content=@ehfeduardo><link rel=apple-touch-icon sizes=180x180 href=apple-touch-icon.96046c77.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.f7991d03.png><link rel=icon type=image/png sizes=192x192 href=android-chrome-192x192.4500461c.png><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.060ee0ac.png><link rel=manifest href=site.webmanifest><link rel=mask-icon href=safari-pinned-tab.df3b9c22.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>
+    Fundamentos a Python - Ing. Eduardo Herrera Forero.
+  </title><script type=module defer src=EduardoHerreraForero.b1453780.js></script><meta name=google-site-verification content=2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc><body>
+  
+  <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg">
+    <div class=container-fluid>
+      
+      <a class="align-items-center d-flex ms-2 navbar-brand" href=index.html>
+        <img src=logo.08948a42.png alt="Logo de Ing. Eduardo Herrera Forero" width=30 height=30 class="align-text-top d-inline-block me-1">
+        <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span>
+      </a>
+      
+      <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+        <span class=navbar-toggler-icon></span>
+      </button>
+      
+      <div class="collapse ms-auto navbar-collapse text-center" id=navbarSupportedContent>
+        <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100">
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html>SOBRE MÍ</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#resume>EXPERIENCIA</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#portfolio>PORTAFOLIO</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#studies>ESTUDIOS</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link publicaciones-activo" href=index.html#blog>PUBLICACIONES</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#contact>CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <div class=container-fluid id=introduccion>
+    <main class=row>
+      <section class="col-lg-9 pb-3 pt-5 px-lg-4">
+        
+        <article class="border-1 border-bottom pb-3 row" data-bs-spy=scroll data-bs-target=#list-example data-bs-smooth-scroll=true>
+          <header>
+            <h1>Funciones de Entrada y Salida en Python</h1>
+          </header>
+          
+          <div class=mt-3>
+            <h2>Introducción a Funciones de Entrada y Salida en Python</h2>
+            <div class="centrar-imagen imagen40 mb-5">
+              <figure class=img-container>
+                <img src=https://i.postimg.cc/FR2C0ZTk/introduccion-de-python-comp.jpg class=img-fluid alt="Ejemplo introductorio en Python donde el programa solicita el nombre del usuario y muestra el mensaje: Hola, Eduardo" title="Ejemplo básico en Python para principiantes: programa que saluda al usuario por su nombre" loading=lazy onerror="this.onerror=null; this.src='https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg';">
+                <figcaption class=img-caption>
+                  Ejemplo de un programa en Python que solicita el nombre del usuario y muestra un saludo personalizado.
+                  Una forma sencilla de comprender la entrada y salida de datos en Python.
+                </figcaption>
+              </figure>
+            </div>
+            <p>En Python, las funciones de entrada y salida (I/O) son las que permiten interactuar con el usuario o con
+              el sistema, ya sea recibiendo datos (entrada) o mostrando resultados (salida).</p>
+            <p>A continuación se explica en detalle cada una con ejemplos claros.</p>
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=funcion-de-entrada:-input()>
+            <h3>Función de Entrada: <code class=language-py>input()</code>
+            </h3>
+            <p>La función <code class=language-py>input()</code> permite leer información desde el teclado.</p>
+            <p>Siempre devuelve el dato como una cadena de texto (tipo <code class=language-py>str</code>), por lo
+              que si se necesita trabajar con
+              números, se debe convertir el tipo.</p>
+            
+            <p><span class=fw-bold>Sintaxis básica</span>:</p>
+            <div class=ej-sintaxis-100>
+              <pre data-src-status=loaded tabindex=0>                  <code class=language-py data-prismjs-copy=Copy>
+                    variable = input("Mensaje al usuario: ")
+                  </code>
+                </pre>
+            </div>
+            
+            <p><span class=fw-bold>Ejemplos</span>:</p>
+            <ul>
+              <li>
+                <span class=fw-bold>Entrada de texto</span>:
+                <div class=ej-sintaxis-100>
+                  <pre data-src-status=loaded tabindex=0>                      <code class=language-py data-prismjs-copy=Copy>
+                      nombre = input("Ingrese su nombre: ")
+                        print("Hola,", nombre)
+                      </code>
+                    </pre>
+                </div>
+                <span class=fw-bold>Salida</span>: <br>
+                <div class=ej-sintaxis-100>
+                  <pre data-src-status=loaded tabindex=0>                    <code class=language-texto data-prismjs-copy=Copy>
+                    Ingrese su nombre: Eduardo
+                      Hola, Eduardo
+                    </code>
+                  </pre>
+                </div>
+              </li>
+              <li>
+                <span class=fw-bold>Entrada de número entero</span>: <br>
+                <div class=ej-sintaxis-100>
+                  <pre data-src-status=loaded tabindex=0>                      <code class=language-py data-prismjs-copy=Copy>
+                      edad = int(input("Ingrese su edad: "))                   # se hace necesaria la conversión a entero
+                        print("Su edad en 5 años será:", edad + 5)
+                      </code>
+                    </pre>
+                </div>
+              </li>
+              <li>
+                <span class=fw-bold>Entrada de número decimal</span>: <br>
+                <div class=ej-sintaxis-100>
+                  <pre data-src-status=loaded tabindex=0>                      <code class=language-py data-prismjs-copy=Copy>
+                      altura = float(input("Ingrese su altura en metros: "))   # se hace necesaria la conversión a flotante
+                        print("Su altura es:", altura, "m")
+                      </code>
+                    </pre>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          
+          <div id=funciones-de-salida:-print()>
+            <h3>Funciones de Salida: <code class=language-py>print()</code></h3>
+            <p>La función <code class=language-py>print()</code> sirve para mostrar datos o resultados en
+              pantalla.</p>
+            <p>Permite imprimir textos, variables, expresiones matemáticas o el resultado de funciones.</p>
+            
+            <p><span class=fw-bold>Sintaxis básica</span>:</p>
+            <div class=ej-sintaxis-100>
+              <pre data-src-status=loaded tabindex=0>                    <code class=language-py data-prismjs-copy=Copy>
+                      print(valor1, valor2, ..., sep=' ', end='\n')
+                    </code>
+                  </pre>
+            </div>
+            
+            <ul>
+              <li><code class=language-py>sep</code>: define el separador entre los valores (por defecto un
+                espacio).
+              </li>
+              <li><code class=language-py>end</code>: define qué se imprime al final (por defecto un salto de
+                línea <code class=language-py>\n</code>).</li>
+            </ul>
+            <p><span class=fw-bold>Ejemplos</span>:</p>
+            <ul>
+              <li>
+                <span class=fw-bold>Salida básica</span>: <br>
+                <div class=ej-sintaxis-100>
+                  <pre data-src-status=loaded tabindex=0>                      <code class=language-py data-prismjs-copy=Copy>
+                        print("Hola mundo")
+                      </code>
+                    </pre>
+                </div>
+              </li>
+              <li>
+                <span class=fw-bold>Salida de múltiples valores</span>: <br>
+                <div class=ej-sintaxis-100>
+                  <pre data-src-status=loaded tabindex=0>                      <code class=language-py data-prismjs-copy=Copy>
+                       nombre = "Eduardo"
+                        edad = 35
+                        print("Nombre:", nombre, "Edad:", edad)
+                      </code>
+                    </pre>
+                </div>
+              </li>
+              <li>
+                <span class=fw-bold>Uso de <code class=language-py>sep</code> y <code class=language-py>end</code></span>: <br>
+                <div class=ej-sintaxis-100>
+                  <pre data-src-status=loaded tabindex=0>                      <code class=language-py data-prismjs-copy=Copy>
+                        print("Python", "es", "genial", sep="-", end="!!!\n")
+                      </code>
+                    </pre>
+                </div>
+                <span class=fw-bold>Salida:</span>: <br>
+                <div class=ej-sintaxis-100>
+                  <pre data-src-status=loaded tabindex=0>                      <code class=language-texto data-prismjs-copy=Copy>
+                        Python-es-genial!!!
+                      </code>
+                    </pre>
+                </div>
+              </li>
+              <li>
+                <span class=fw-bold>Uso de f-strings (formateo moderno)</span>: <br>
+                <div class=ej-sintaxis-100>
+                  <pre data-src-status=loaded tabindex=0>                      <code class=language-py data-prismjs-copy=Copy>
+                       nombre = "Eduardo"
+                        edad = 35
+                        print(f"Hola {nombre}, tienes {edad} años.")
+                      </code>
+                    </pre>
+                </div>
+              </li>
+              <li>
+                <span class=fw-bold>Entrada de número entero</span>: <br>
+                <div class=ej-sintaxis-100>
+                  <pre data-src-status=loaded tabindex=0>                      <code class=language-py data-prismjs-copy=Copy>
+                      edad = int(input("Ingrese su edad: "))                   # se hace necesaria la conversión a entero
+                        print("Su edad en 5 años será:", edad + 5)
+                      </code>
+                    </pre>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+
+          
+          <div id=ejemplo-completo-combinando-entrada-y-salida>
+            <h3>Ejemplo completo combinando entrada y salida </h3>
+            <p>
+              <span class=fw-bold>Salida básica</span>: <br>
+            <div class=ej-sintaxis-100>
+              <pre data-src-status=loaded tabindex=0>                    <code class=language-py data-prismjs-copy=Copy>
+                     nombre = input("Ingrese su nombre: ")
+                      edad = int(input("Ingrese su edad: "))
+
+                      print(f"Hola {nombre}, el próximo año tendrás {edad + 1} años.")
+                    </code>
+                  </pre>
+            </div>
+            <p></p>
+            <p>
+              <span class=fw-bold>Salida básica</span>: <br>
+            <div class=ej-sintaxis-100>
+              <pre data-src-status=loaded tabindex=0>                    <code class=language-texto data-prismjs-copy=Copy>
+                     Ingrese su nombre: Eduardo
+                      Ingrese su edad: 35
+                      Hola Eduardo, el próximo año tendrás 36 años.
+                    </code>
+                  </pre>
+            </div>
+            
+          </div>
+        </article>
+        
+        <article class=row id=comments>
+          <h2>COMENTARIOS</h2>
+          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario
+            disponible para este propósito.</p>
+          <div class="d-flex justify-content-center">
+            <form action=https://formspree.io/f/mdkdawkg method=post id=myForm>
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="fs-4 text-center">Deje su comentario</legend>
+                <div class="d-flex flex-column">
+                  <label for=name>Nombre:</label>
+                  <input name=name id=name placeholder=User class="form-control rounded" required>
+                </div>
+                <div class="d-flex flex-column">
+                  <label for=email>Email:</label>
+                  <input type=email name=email id=email placeholder=user@mail.com class="form-control rounded" required>
+                </div>
+                <div class="d-flex flex-column">
+                  <label for=message>Mensaje:</label>
+                  <textarea name=message id=message cols=30 rows=5 placeholder="Su comentario..." class="form-control rounded-3" required></textarea>
+                </div>
+                <button class="border border-2 btn btn-outline-light my-3 rounded-pill">Enviar</button>
+              </fieldset>
+              <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
+                el formulario de contacto.</p>
+            </form>
+          </div>
+        </article>
+        
+      </section>
+      
+      <aside class="col-lg-3 d-lg-block d-none">
+        <h2>En Este Artículo</h2>
+        <div class=menu-scroll>
+          <div class=menu-container>
+            <div class="border border-1">
+
+              <div class=menu-item>
+                <a href=#introduccion class=simple-link>Introducción</a>
+              </div>
+              <div class=menu-item><a href=#funcion-de-entrada:-input() class=simple-link>Función de Entrada:
+                  <code class=language-py>input()</code></a></div>
+              <div class=menu-item><a href=#funciones-de-salida:-print() class=simple-link>Funciones de Salida:
+                  <code class=language-py>print()</code></a></div>
+              <div class=menu-item><a href=#ejemplo-completo-combinando-entrada-y-salida class=simple-link>Ejemplo
+                  completo combinando entrada y salida</a></div>
+              
+              <div class=menu-item>
+                <a href=#comments class=simple-link>Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+  
+
+  
+  <footer class="border-1 border-top m-1 mt-auto row">
+    <div class=row>
+      
+      <address class="align-items-center col-lg-4 d-flex flex-column">
+        <div class="fs-2 text-center">Contacto</div>
+        <div class="align-items-center d-flex flex-row">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class=ms-3>
+            <a class=text-decoration-none href=mailto:ehfeduardo@gmail.com>ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="align-items-center d-flex flex-row">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class=ms-3>Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      
+      <div class="align-items-center col-lg-4 d-flex flex-column h-100 justify-content-center">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class=ms-2>All Rights Reserved 2025</div>
+      </div>
+      
+      <div class="align-items-center col-lg-4 d-flex flex-column">
+        <div class="fs-2 text-center">Redes Sociales</div>
+        <div class="align-items-center d-flex gap-5 justify-content-evenly">
+          <div>
+            <a href=https://www.linkedin.com/in/eduardoherreraf/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://github.com/eduardoherreraf target=_blank rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://www.facebook.com/eduardoherreraforero/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://twitter.com/ehfeduardo/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="align-items-center d-flex gap-2 justify-content-center"></div>
+  </footer>
+  
+
+  
+  <button onclick=topFunction() id=myBtnScroll title="Go to top">
+    <svg xmlns:xmlns=http://www.w3.org/2000/svg width=32 height=32 fill=currentColor class="bi bi-arrow-bar-up" style=margin-left:-2px viewBox="0 0 16 16"><path fill-rule=evenodd d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg>
+  </button>
+  
+
+

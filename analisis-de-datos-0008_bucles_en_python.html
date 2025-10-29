@@ -1,0 +1,463 @@
+<!DOCTYPE html><html lang=es data-bs-theme=dark><link rel=stylesheet href=EduardoHerreraForero.f3ce418f.css><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso"><meta name=title content="Fundamentos a Python - Ing. Eduardo Herrera Forero."><meta name=keywords content="Python, programación, introducción a Python, aprender Python, curso Python, lenguaje de programación, tutorial Python, fundamentos de Python, código en Python"><meta name=author content="Ing. Eduardo Herrera Forero"><meta name=application-name content=EHF><meta name=robots content="index, follow"><link rel=canonical href=https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html><meta property=og:type content=website><meta property=og:title content="Fundamentos a Python - Ing. Eduardo Herrera Forero."><meta property=og:description content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso"><meta property=og:image content=https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg><meta property=og:image:alt content="Ejemplo introductorio en Python donde el programa solicita el nombre del usuario y muestra el mensaje: Hola, Eduardo"><meta property=og:url content=https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html><meta property=og:locale content=es_CO><meta name=twitter:card content=summary><meta name=twitter:title content="Fundamentos a Python - Ing. Eduardo Herrera Forero."><meta name=twitter:description content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso"><meta name=twitter:image content=https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg><meta name=twitter:image:alt content="Ejemplo introductorio de Python: programa que pide el nombre del usuario y muestra un saludo personalizado. Ideal para aprender los fundamentos del lenguaje"><meta name=twitter:url content=https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html><meta name=twitter:site content=@ehfeduardo><link rel=apple-touch-icon sizes=180x180 href=apple-touch-icon.96046c77.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.f7991d03.png><link rel=icon type=image/png sizes=192x192 href=android-chrome-192x192.4500461c.png><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.060ee0ac.png><link rel=manifest href=site.webmanifest><link rel=mask-icon href=safari-pinned-tab.df3b9c22.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>
+    Fundamentos a Python - Ing. Eduardo Herrera Forero.
+  </title><script type=module defer src=EduardoHerreraForero.b1453780.js></script><meta name=google-site-verification content=2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc><body>
+  
+  <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg">
+    <div class=container-fluid>
+      
+      <a class="align-items-center d-flex ms-2 navbar-brand" href=index.html>
+        <img src=logo.08948a42.png alt="Logo de Ing. Eduardo Herrera Forero" width=30 height=30 class="align-text-top d-inline-block me-1">
+        <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span>
+      </a>
+      
+      <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+        <span class=navbar-toggler-icon></span>
+      </button>
+      
+      <div class="collapse ms-auto navbar-collapse text-center" id=navbarSupportedContent>
+        <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100">
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html>SOBRE MÍ</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#resume>EXPERIENCIA</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#portfolio>PORTAFOLIO</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#studies>ESTUDIOS</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link publicaciones-activo" href=index.html#blog>PUBLICACIONES</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#contact>CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <div class=container-fluid id=introduccion>
+    <main class=row>
+      <section class="col-lg-9 pb-3 pt-5 px-lg-4">
+        
+        <article class="border-1 border-bottom pb-3 row" data-bs-spy=scroll data-bs-target=#list-example data-bs-smooth-scroll=true>
+          <header>
+            <h1>Bucles en Python</h1>
+          </header>
+          
+          <div class=mt-3>
+            <h2>Introducción a Bucles en Python</h2>
+            <div class="centrar-imagen imagen40 mb-5">
+              <figure class=img-container>
+                <img src=https://i.postimg.cc/FR2C0ZTk/introduccion-de-python-comp.jpg class=img-fluid alt="Ejemplo introductorio en Python donde el programa solicita el nombre del usuario y muestra el mensaje: Hola, Eduardo" title="Ejemplo básico en Python para principiantes: programa que saluda al usuario por su nombre" loading=lazy onerror="this.onerror=null; this.src='https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg';">
+                <figcaption class=img-caption>
+                  Ejemplo de un programa en Python que solicita el nombre del usuario y muestra un saludo personalizado.
+                  Una forma sencilla de comprender la entrada y salida de datos en Python.
+                </figcaption>
+              </figure>
+            </div>
+            <p>El bucle <code class=language-py>for</code> se utiliza para recorrer una secuencia (como una lista,
+              una cadena, una tupla, un diccionario o un rango de números) y ejecutar un bloque de código una vez por
+              cada elemento de esa secuencia.</p>
+          </div>
+          
+          <hr class=subtle-divider>
+
+          
+          <div id=bucles-en-python class=mt-3>
+            <h2>Bucles en Python</h2>
+            En Python, los bucles (también llamados ciclos o iteraciones) son estructuras de control que permiten
+            repetir un bloque de código varias veces, ya sea un número determinado de veces o mientras se cumpla una
+            condición.
+            <p>Existen principalmente dos tipos de bucles en Python:</p>
+            <ul>
+              <li><code class=language-py>for</code></li>
+              <li><code class=language-py>while</code></li>
+            </ul>
+            
+            <div id=bucle-for>
+              <h2>Bucle <code class=language-py>for</code></h2>
+
+              
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-py data-prismjs-copy=Copy>
+                   for variable in secuencia:
+                      # bloque de código
+                  </code>
+                </pre>
+              </div>
+              
+              <ul>
+                <li><code class=language-py>variable</code>: toma el valor de cada elemento dentro de la secuencia
+                  (uno por uno).</li>
+                <li><code class=language-py>secuencia</code>: puede ser una lista, una cadena de texto, un rango
+                  (range()), etc.</li>
+              </ul>
+              <p><span class=fw-bold>Ejemplo 1: recorrer una lista</span>:</p>
+              
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-py data-prismjs-copy=Copy>
+                   frutas = ["manzana", "banana", "cereza"]
+
+                    for fruta in frutas:
+                        print(fruta)
+                  </code>
+                </pre>
+              </div>
+              
+              <p><span class=language-py>Salida</span>:</p>
+              
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-none data-prismjs-copy=Copy>
+                   manzana
+                    banana
+                    cereza
+                  </code>
+                </pre>
+              </div>
+              
+              <p>El bucle toma cada fruta de la lista y la muestra en pantalla.</p>
+
+              <p><span class=fw-bold>Ejemplo 2: usar <code class=language-py>range()</code></span>:</p>
+              
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-py data-prismjs-copy=Copy>
+                   for numero in range(5):
+                      print(numero)
+                  </code>
+                </pre>
+              </div>
+              
+              <p><span class=fw-bold>Salida</span>:</p>
+              
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-none data-prismjs-copy=Copy>
+                   0
+                    1
+                    2
+                    3
+                    4
+                  </code>
+                </pre>
+              </div>
+              
+              <p><code class=language-py>range(5)</code> genera los números del <code class=language-py>0</code> al
+                <code class=language-py>4</code>, así que el código se repite 5 veces.
+              </p>
+
+              <p><span class=fw-bold>Ejemplo 3</span> <code class=language-py>range(inicio, fin, paso), con parámetros</code>:</p>
+              
+              <p><span class=fw-bold>Sintaxis básica</span>:</p>
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-py data-prismjs-copy=Copy>
+                   for i in range(inicio, fin, paso)
+                        # bloque de código
+                  </code>
+                </pre>
+              </div>
+              
+              
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-py data-prismjs-copy=Copy>
+                   for i in range(2, 10, 2):
+                      print(i)
+                  </code>
+                </pre>
+              </div>
+              
+              <p><span class=fw-bold>Salida</span>:</p>
+              
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-none data-prismjs-copy=Copy>
+                   2
+                    4
+                    6
+                    8
+                  </code>
+                </pre>
+              </div>
+              
+              <p>2 (inicio): Comienza desde el número 2. <br>
+                10 (fin): Se detiene ANTES de llegar a 10 (no lo incluye). <br>
+                2 (paso): Avanza de 2 en 2.
+              </p>
+            </div>
+            
+
+            
+            <div id=bucle-while>
+              <h2>Bucle <code class=language-py>while</code></h2>
+              <p>El bucle <code class=language-py>while</code> ejecuta un bloque de código mientras la condición sea
+                verdadera (<code class=language-py>True</code>). Cuando la condición deja de cumplirse, el bucle se
+                detiene.</p>
+              
+              <p><span class=fw-bold>Sintaxis básica</span>:</p>
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-py data-prismjs-copy=Copy>
+                   while condición:
+                        # bloque de código
+                  </code>
+                </pre>
+              </div>
+              
+            </div>
+
+            <p><span class=fw-bold>Ejemplo</span>:</p>
+            
+            <div class=ej-sintaxis-100>
+              <pre data-src-status=loaded tabindex=0>                  <code class=language-py data-prismjs-copy=Copy>
+                   for i in range(5):
+                        print(i)
+                  </code>
+                </pre>
+            </div>
+            
+            <p><span class=fw-bold>Salida</span>:</p>
+            
+            <div class=ej-sintaxis-100>
+              <pre data-src-status=loaded tabindex=0>                  <code class=language-none data-prismjs-copy=Copy>
+                   0
+                    1
+                    2
+                    3
+                    4
+                  </code>
+                </pre>
+            </div>
+            
+            <p><code class=language-py>range(5)</code> genera los números del 0 al 4 (5 números en total, pero empieza
+              desde 0).</p>
+
+            
+            <div>
+              <h4><code class=language-py>break</code></h4>
+              <p><code class=language-py>break</code> sirve para detener el bucle antes de que termine
+                normalmente.</p>
+
+              <p><span class=fw-bold>Ejemplo</span>:</p>
+              
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-py data-prismjs-copy=Copy>
+                   for i in range(10):
+                        if i == 5:
+                            break
+                    print(i)
+                  </code>
+                </pre>
+              </div>
+              
+              <p><span class=fw-bold>Salida</span>:</p>
+              
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-none data-prismjs-copy=Copy>
+                   0
+                    1
+                    2
+                    3
+                    4
+                  </code>
+                </pre>
+              </div>
+              
+            </div>
+            
+
+            
+            <div>
+              <h4><code class=language-py>continue</code></h4>
+              <p><code class=language-py>continue</code> sHace que el bucle salte la iteración actual y continúe con
+                la siguiente.</p>
+
+              <p><span class=fw-bold>Ejemplo</span>:</p>
+              
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-py data-prismjs-copy=Copy>
+                   for i in range(5):
+                        if i == 2:
+                            continue 
+                        print(i)        # saltado cuando i = 2
+                  </code>
+                </pre>
+              </div>
+              
+              <p><span class=fw-bold>Salida</span>:</p>
+              
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-none data-prismjs-copy=Copy>
+                   0
+                    1
+                    3
+                    4
+                  </code>
+                </pre>
+              </div>
+              
+            </div>
+            
+
+            
+            <div>
+              <h4><code class=language-py>else</code> con bucles</h4>
+              <p>Python permite usar una cláusula <code class=language-py>else</code> después de un bucle <code class=language-py>for</code> o <code class=language-py>while</code>.</p>
+              <p>El bloque <code class=language-py>else</code> se ejecuta solo si el bucle termina sin usar <code class=language-py>break</code>.</p>
+
+              <p><span class=fw-bold>Ejemplo</span>:</p>
+              
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-py data-prismjs-copy=Copy>
+                   for i in range(5):
+                        print(i)
+                    else:
+                        print("Bucle terminado sin interrupciones")
+                  </code>
+                </pre>
+              </div>
+              
+              <p><span class=fw-bold>Salida</span>:</p>
+              
+              <div class=ej-sintaxis-100>
+                <pre data-src-status=loaded tabindex=0>                  <code class=language-none data-prismjs-copy=Copy>
+                   0
+                    1
+                    2
+                    3
+                    4
+                    Bucle terminado sin interrupciones
+                  </code>
+                </pre>
+              </div>
+              
+              <p>El <code class=language-py>else</code> en bucles solo se ejecuta cuando el bucle completa todas sus
+                iteraciones sin interrupciones.</p>
+            </div>
+            
+
+
+
+            
+          </div>
+          
+        </article>
+        <article class=row id=comments>
+          <h2>COMENTARIOS</h2>
+          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario
+            disponible para este propósito.</p>
+          <div class="d-flex justify-content-center">
+            <form action=https://formspree.io/f/mdkdawkg method=post id=myForm>
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="fs-4 text-center">Deje su comentario</legend>
+                <div class="d-flex flex-column">
+                  <label for=name>Nombre:</label>
+                  <input name=name id=name placeholder=User class="form-control rounded" required>
+                </div>
+                <div class="d-flex flex-column">
+                  <label for=email>Email:</label>
+                  <input type=email name=email id=email placeholder=user@mail.com class="form-control rounded" required>
+                </div>
+                <div class="d-flex flex-column">
+                  <label for=message>Mensaje:</label>
+                  <textarea name=message id=message cols=30 rows=5 placeholder="Su comentario..." class="form-control rounded-3" required></textarea>
+                </div>
+                <button class="border border-2 btn btn-outline-light my-3 rounded-pill">Enviar</button>
+              </fieldset>
+              <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
+                el formulario de contacto.</p>
+            </form>
+          </div>
+        </article>
+        
+      </section>
+      
+      <aside class="col-lg-3 d-lg-block d-none">
+        <h2>En Este Artículo</h2>
+        <div class=menu-scroll>
+          <div class=menu-container>
+            <div class="border border-1">
+
+              <div class=menu-item>
+                <a href=#introduccion class=simple-link>Introducción</a>
+              </div>
+              <div class=menu-item><a href=#bucle-for class=simple-link>Bucle <code class=language-py>for</code>
+                </a></div>
+              <div class=menu-item><a href=#bucle-while class=simple-link>Bucle <code class=language-py>while
+                  </code></a></div>
+              
+              <div class=menu-item>
+                <a href=#comments class=simple-link>Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+  
+
+  
+  <footer class="border-1 border-top m-1 mt-auto row">
+    <div class=row>
+      
+      <address class="align-items-center col-lg-4 d-flex flex-column">
+        <div class="fs-2 text-center">Contacto</div>
+        <div class="align-items-center d-flex flex-row">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class=ms-3>
+            <a class=text-decoration-none href=mailto:ehfeduardo@gmail.com>ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="align-items-center d-flex flex-row">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class=ms-3>Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      
+      <div class="align-items-center col-lg-4 d-flex flex-column h-100 justify-content-center">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class=ms-2>All Rights Reserved 2025</div>
+      </div>
+      
+      <div class="align-items-center col-lg-4 d-flex flex-column">
+        <div class="fs-2 text-center">Redes Sociales</div>
+        <div class="align-items-center d-flex gap-5 justify-content-evenly">
+          <div>
+            <a href=https://www.linkedin.com/in/eduardoherreraf/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://github.com/eduardoherreraf target=_blank rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://www.facebook.com/eduardoherreraforero/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://twitter.com/ehfeduardo/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="align-items-center d-flex gap-2 justify-content-center"></div>
+  </footer>
+  
+
+  
+  <button onclick=topFunction() id=myBtnScroll title="Go to top">
+    <svg xmlns:xmlns=http://www.w3.org/2000/svg width=32 height=32 fill=currentColor class="bi bi-arrow-bar-up" style=margin-left:-2px viewBox="0 0 16 16"><path fill-rule=evenodd d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg>
+  </button>
+  
+
+
