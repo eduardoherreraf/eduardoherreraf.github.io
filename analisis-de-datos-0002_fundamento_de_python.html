@@ -1,0 +1,553 @@
+<!DOCTYPE html><html lang=es data-bs-theme=dark><link rel=stylesheet href=EduardoHerreraForero.52dd53b6.css><meta charset=utf-8><script src=EduardoHerreraForero.75310983.js></script><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso"><meta name=title content="Fundamentos a Python - Ing. Eduardo Herrera Forero."><meta name=keywords content="Python, programación, introducción a Python, aprender Python, curso Python, lenguaje de programación, tutorial Python, fundamentos de Python, código en Python"><meta name=author content="Ing. Eduardo Herrera Forero"><meta name=application-name content=EHF><meta name=robots content="index, follow"><link rel=canonical href=https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html><meta property=og:type content=website><meta property=og:title content="Fundamentos a Python - Ing. Eduardo Herrera Forero."><meta property=og:description content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso"><meta property=og:image content=https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg><meta property=og:image:alt content="Ejemplo introductorio en Python donde el programa solicita el nombre del usuario y muestra el mensaje: Hola, Eduardo"><meta property=og:url content=https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html><meta property=og:locale content=es_CO><meta name=twitter:card content=summary><meta name=twitter:title content="Fundamentos a Python - Ing. Eduardo Herrera Forero."><meta name=twitter:description content="Aprenda los fundamentos de Python, uno de los lenguajes de programación más usados en el mundo. Descubra su sintaxis, estructuras básicas, y cómo empezar a crear programas paso a paso"><meta name=twitter:image content=https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg><meta name=twitter:image:alt content="Ejemplo introductorio de Python: programa que pide el nombre del usuario y muestra un saludo personalizado. Ideal para aprender los fundamentos del lenguaje"><meta name=twitter:url content=https://eduardoherreraf.github.io/analisis-de-datos-0002_introduccion_a_python..html><meta name=twitter:site content=@ehfeduardo><link rel=apple-touch-icon sizes=180x180 href=apple-touch-icon.96046c77.png><link rel=icon type=image/png sizes=32x32 href=favicon-32x32.f7991d03.png><link rel=icon type=image/png sizes=192x192 href=android-chrome-192x192.4500461c.png><link rel=icon type=image/png sizes=16x16 href=favicon-16x16.060ee0ac.png><link rel=manifest href=site.webmanifest><link rel=mask-icon href=safari-pinned-tab.df3b9c22.svg color=#5bbad5><meta name=msapplication-TileColor content=#da532c><meta name=theme-color content=#ffffff><title>
+    Fundamentos a Python - Ing. Eduardo Herrera Forero.
+  </title><script type=module defer src=EduardoHerreraForero.3adec6e8.js></script><meta name=google-site-verification content=2H5ZMCD1_xl7oxaiqnopfdQBnIXVIOfmW0UBSa5sQJc><body class=position-relative data-bs-spy=scroll data-bs-target=#article-scrollspy data-bs-root-margin="-48px 0px -40%" data-bs-threshold=[0]>
+  
+  <nav class="border border-1 fixed-top nav-underline navbar navbar-expand-lg">
+    <div class=container-fluid>
+      
+      <a class="align-items-center d-flex ms-2 navbar-brand" href=index.html>
+        <img src=logo.08948a42.png alt="Logo de Ing. Eduardo Herrera Forero" width=30 height=30 class="align-text-top d-inline-block me-1">
+        <span class="d-lg-inline d-none">Ing. Eduardo Herrera Forero</span>
+      </a>
+      
+      <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon site-nav__toggle-icon"></span>
+      </button>
+      
+      <div class="collapse ms-auto navbar-collapse text-center" id=navbarSupportedContent>
+        <ul class="justify-content-lg-end mb-2 mb-lg-0 ms-auto navbar-nav w-100">
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html>SOBRE MÍ</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#resume>EXPERIENCIA</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#portfolio>PORTAFOLIO</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#studies>ESTUDIOS</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link site-nav__link site-nav__link--publications-active" href=index.html#blog>ARTÍCULOS</a>
+          </li>
+          <li class=nav-item>
+            <a class="mx-1 nav-link" href=index.html#contact>CONTACTO</a>
+          </li>
+          <li class=nav-item>
+            <button type=button class="mx-1 nav-link site-nav__theme-toggle" data-theme-toggle aria-label="Cambiar a tema claro" title="Cambiar a tema claro">
+              <i class="bi bi-sun-fill" aria-hidden=true></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  <div class="container-fluid site-layout__intro">
+    <main class=row>
+      <section class="col-lg-9 pb-3 pt-5 px-lg-4">
+        
+        <article class="border-1 border-bottom pb-3 row">
+          
+          <div class=mt-3 id=introduccion>
+            <header>
+              <h1>Fundamentos de Python</h1>
+            </header>
+            <h2>Introducción</h2>
+            <div class="mb-5 site-image site-intro-image">
+              <figure class="site-content__img-container site-image__figure site-image__figure--intro">
+                <img src=https://i.postimg.cc/FR2C0ZTk/introduccion-de-python-comp.jpg class=img-fluid alt="Ejemplo introductorio en Python donde el programa solicita el nombre del usuario y muestra el mensaje: Hola, Eduardo" title="Ejemplo básico en Python para principiantes: programa que saluda al usuario por su nombre" loading=lazy onerror="this.onerror=null; this.src='https://i.ibb.co/dsgttHFn/introduccion-de-python-comp.jpg';">
+                <figcaption class=site-image__caption>
+                  Ejemplo de un programa en Python que solicita el nombre del usuario y muestra un saludo personalizado.
+                  Una forma sencilla de comprender la entrada y salida de datos en Python.
+                </figcaption>
+              </figure>
+            </div>
+            <p>El análisis de datos es una disciplina esencial en la era digital, ya que permite transformar grandes
+              volúmenes de información en conocimiento útil para la toma de decisiones. En este contexto, Python se ha
+              consolidado como uno de los lenguajes de programación más utilizados gracias a su sencillez, flexibilidad
+              y a la amplia disponibilidad de bibliotecas especializadas. Su sintaxis clara facilita el aprendizaje
+              incluso para quienes no tienen experiencia previa en programación, mientras que sus potentes herramientas
+              permiten realizar desde tareas básicas de limpieza y manipulación de datos hasta complejos modelos
+              predictivos.</p>
+            <p>Entre las bibliotecas más empleadas se destacan NumPy y Pandas, utilizadas para la gestión y análisis de
+              estructuras de datos; Matplotlib y Seaborn, enfocadas en la visualización gráfica de la información; y
+              Scikit-learn, orientada al desarrollo de modelos de aprendizaje automático. Estas herramientas hacen
+              posible que el analista explore, transforme y visualice datos de manera eficiente, generando conclusiones
+              fundamentadas y apoyando procesos de mejora continua en distintos sectores, como la salud, la industria,
+              las telecomunicaciones o la educación.</p>
+            <p>En síntesis, Python ofrece un entorno integral para el análisis de datos que combina facilidad de uso,
+              potencia y escalabilidad, convirtiéndose en una herramienta indispensable para quienes buscan comprender
+              patrones, optimizar procesos y generar valor a partir de la información.</p>
+          </div>
+          
+          <hr class="site-divider site-divider--subtle">
+
+          
+          <div id=porque-python-para-el-analisis-de-datos class=mt-3>
+            <h2>Porque Python para el Análisis de Datos</h2>
+            <p>Python es una de las herramientas más populares y recomendadas para el análisis de datos debido a su
+              versatilidad, facilidad de uso y sólida comunidad de desarrolladores. Su estructura clara, su extensa
+              colección de bibliotecas especializadas y su compatibilidad con diversas tecnologías lo convierten en un
+              lenguaje esencial en el entorno de la ciencia de datos moderna.</p>
+            <ul>
+              <li><span class=fw-bold>Facilidad de Aprendizaje y Uso</span>: Python se caracteriza por una sintaxis
+                limpia y comprensible que se asemeja al lenguaje natural, lo que facilita su aprendizaje incluso para
+                quienes no poseen experiencia previa en programación. Esta simplicidad permite que los analistas se
+                concentren en la comprensión de los datos y no en la complejidad del código. Además, su documentación
+                clara y la abundancia de ejemplos disponibles en línea reducen la curva de aprendizaje, haciendo que el
+                proceso de adquisición de habilidades sea rápido y eficiente.</li>
+              <li><span class=fw-bold>Amplia Gama de Librerías Específicas para Análisis de Datos</span>: Una de las
+                mayores ventajas de Python radica en su ecosistema de librerías. Herramientas como <span class="fw-bold text-warning">NumPy</span> permiten el manejo eficiente de datos numéricos y matrices
+                multidimensionales; <span class="fw-bold text-warning">Pandas</span> facilita la limpieza, organización
+                y análisis de grandes conjuntos de datos; <span class="fw-bold text-warning">Matplotlib</span> y <span class="fw-bold text-warning">Seaborn</span> ofrecen potentes capacidades de visualización para
+                interpretar patrones y tendencias; mientras que <span class="fw-bold text-warning">Scikit-learn</span>
+                proporciona algoritmos de aprendizaje automático para análisis predictivo. Este conjunto de librerías
+                reduce significativamente el tiempo necesario para desarrollar soluciones analíticas robustas y
+                precisas.
+              </li>
+              <li><span class=fw-bold>Flexibilidad y Escalabilidad</span>: Python es un lenguaje extremadamente
+                flexible que se adapta a proyectos de cualquier tamaño, desde pequeños análisis individuales hasta
+                sistemas de Big Data en entornos empresariales. Puede trabajar con distintos tipos de fuentes de
+                información (CSV, Excel, SQL, JSON, entre otros) y escalar hacia el procesamiento de grandes volúmenes
+                de datos mediante herramientas como <span class="fw-bold text-warning">Apache Spark</span>, <span class="fw-bold text-warning">Hadoop</span> o <span class="fw-bold text-warning">Dask</span>. Esta
+                capacidad de adaptarse a distintos niveles de complejidad lo convierte en una herramienta ideal tanto
+                para analistas principiantes como para ingenieros de datos avanzados.</li>
+              <li><span class=fw-bold>Integración con Herramientas y Tecnologías</span>: Python se integra fácilmente
+                con plataformas y herramientas de visualización y análisis como <span class="fw-bold text-warning">Power
+                  BI</span>, <span class="fw-bold text-warning">Tableau</span>, <span class="fw-bold text-warning">Google Data Studio</span> y sistemas de bases de datos como <span class="fw-bold text-warning">MySQL</span>, <span class="fw-bold text-warning"> Postgre</span><span class="fw-bold text-warning">SQL</span> o <span class="fw-bold text-warning">MongoDB</span>. Además,
+                su compatibilidad con APIs y servicios web permite automatizar la recolección de datos y conectar
+                diferentes fuentes en un solo flujo de trabajo. Esta interoperabilidad garantiza que los proyectos de
+                análisis puedan combinar diversas tecnologías sin complicaciones
+                técnicas.
+              </li>
+              <li><span class=fw-bold>Comunidad Activa y Recursos</span>: La comunidad de Python es una de las más
+                grandes y colaborativas del mundo tecnológico. Gracias a esta red global de desarrolladores, analistas y
+                científicos de datos, existen innumerables tutoriales, foros, cursos gratuitos y documentación oficial
+                que facilitan la resolución de problemas y el aprendizaje continuo. Esta comunidad también impulsa el
+                desarrollo constante de nuevas librerías y herramientas, garantizando que Python se mantenga actualizado
+                frente a las demandas del análisis de datos moderno.</li>
+              <li><span class=fw-bold>Código Abierto y Gratuito</span>: Python es un software de código abierto, lo
+                que significa que su uso, distribución y modificación son completamente libres. Esto lo hace accesible
+                tanto para estudiantes y académicos como para empresas e instituciones que buscan implementar soluciones
+                sin costos de licencias. Su naturaleza abierta también fomenta la innovación y la colaboración,
+                permitiendo a los usuarios adaptar el lenguaje y sus herramientas a las necesidades específicas de cada
+                proyecto.
+              </li>
+            </ul>
+          </div>
+          
+          <hr class="site-divider site-divider--subtle">
+
+          
+          <div id=sintaxis-y-conceptos-Básicos-de-phyton class=mt-3>
+            <h2>Sintaxis y Conceptos Básicos de Phyton</h2>
+            
+            <div id=características-de-python>
+              <h3>Características de Python </h3>
+              
+              <div>
+                <h4>Lenguaje interpretado </h4>
+                <p>Python es un lenguaje interpretado, lo que significa que su código no necesita ser compilado antes de
+                  ejecutarse. En lugar de generar un archivo binario ejecutable, el código fuente se ejecuta línea por
+                  línea mediante un programa llamado intérprete (por ejemplo, CPython).
+                  Ventajas:</p>
+                <ul>
+                  <li>Permite una ejecución inmediata del código, facilitando la depuración y el aprendizaje.</li>
+                  <li>Facilita el desarrollo rápido de prototipos.</li>
+                  <li>Hace posible la ejecución interactiva (por ejemplo, desde la consola de Python o Jupyter
+                    Notebook).</li>
+                </ul>
+                <p>Ejemplo: <br>
+                  Si se escribe <code class=language-py>print("Hola Mundo")</code> en la consola de Python, el
+                  intérprete ejecuta esa instrucción directamente sin requerir un proceso de compilación previo.</p>
+              </div>
+              
+
+              
+              <div>
+                <h4>Lenguaje Multiparadigma </h4>
+                <p>Python es multiparadigma, lo que significa que admite diferentes estilos o enfoques de programación.
+                  Esto da libertad al programador para elegir el método más adecuado según el tipo de problema.
+                  Paradigmas soportados:</p>
+                <ul>
+                  <li>Programación estructurada: basada en funciones y estructuras de control (<code class=language-py>if</code>, <code class=language-py>while</code>, <code class=language-py>for)</code>.</li>
+                  <li>Programación orientada a objetos (POO): permite crear clases y objetos, promoviendo la
+                    reutilización de código.</li>
+                  <li>Programación funcional: admite el uso de funciones de orden superior, expresiones <code class=language-py>lambda</code> y
+                    comprensión de listas.</li>
+                </ul>
+                <p>Ejemplo: <br>
+                  Un problema puede resolverse con funciones (enfoque estructurado) o con clases (enfoque orientado a
+                  objetos), y Python permite usar ambos de forma combinada.</p>
+              </div>
+              
+
+              
+              <div>
+                <h4>Lenguaje Multiplataforma </h4>
+                <p>Python es multiplataforma, lo que significa que puede ejecutarse en diferentes sistemas operativos
+                  sin necesidad de modificar el código.</p>
+                <p>Compatibilidad: Funciona en Windows, macOS, Linux y otras plataformas, e incluso se puede usar en
+                  dispositivos móviles o sistemas embebidos.</p>
+                <p>Ventajas:</p>
+                <ul>
+                  <li>El mismo programa puede ejecutarse en distintos entornos.</li>
+                  <li>Facilita el trabajo colaborativo en equipos que usan diferentes sistemas operativos.</li>
+                </ul>
+                <p> Ejemplo: <br>
+                  Un script desarrollado en Linux puede ejecutarse en Windows o macOS sin requerir cambios en el código.
+                </p>
+              </div>
+              
+
+              
+              <div>
+                <h4>Lenguaje legible </h4>
+                <p>La legibilidad es una de las principales fortalezas de Python. Su sintaxis está diseñada para ser
+                  clara, sencilla y similar al lenguaje natural, lo que facilita la comprensión del código incluso por
+                  parte de quienes no lo escribieron originalmente.</p>
+                <p>Características de legibilidad:</p>
+                <ul>
+                  <li>Uso de sangrías obligatorias en lugar de llaves {}.</li>
+                  <li>Nombres de variables y funciones fáciles de entender.</li>
+                  <li>Estructura del código limpia y ordenada.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                
+                <div class=code-example__full-syntax>
+                  <pre data-src-status=loaded tabindex=0>                      <code class=language-py data-prismjs-copy=Copy>
+                        for numero in range(5):
+                            print("Número:", numero)
+                      </code>
+                    </pre>
+                </div>
+                
+                <p>Este fragmento de código se entiende fácilmente: recorre una secuencia de números del 0 al 4 e
+                  imprime cada uno.</p>
+              </div>
+              
+            </div>
+            
+            
+            <div id=estructura-general-de-un-programa-en-python>
+              <h3>Estructura General de un Programa en Python </h3>
+              <p>Python se caracteriza por tener una estructura clara, ordenada y fácil de comprender. La organización
+                de un programa en este lenguaje se basa en reglas sintácticas que favorecen la legibilidad y la
+                coherencia del código. A continuación, se explican los principales aspectos que definen la estructura
+                general de un programa en Python.</p>
+              
+              <div>
+                <h4>Uso de líneas y sangrías (indentación obligatoria) </h4>
+                <p>Una de las características más distintivas de Python es el uso obligatorio de la indentación
+                  (sangrías) para definir los bloques de código.</p>
+                <p>En lugar de utilizar llaves <code class=language-none>{}</code> como otros lenguajes, Python
+                  determina la jerarquía y alcance de las instrucciones mediante espacios o tabulaciones.</p>
+                <p>Regla básica: <br>
+                  Cada bloque (por ejemplo, dentro de un <code class=language-py>if</code>, <code class=language-py>while</code>, <code class=language-py>for</code>, o una función) debe tener
+                  la misma cantidad de espacios al inicio de la línea.</p>
+                <p>Ejemplo correcto:</p>
+                
+                <div class=code-example__full-syntax>
+                  <pre data-src-status=loaded tabindex=0>                      <code class=language-py data-prismjs-copy=Copy>
+                        if True:
+                            print("Bloque indentado correctamente")
+                            print("Forma parte del mismo bloque")
+                        
+                      </code>
+                    </pre>
+                </div>
+                
+                <p>Ejemplo correcto:</p>
+                
+                <div class=code-example__full-syntax>
+                  <pre data-src-status=loaded tabindex=0>                      <code class=language-py data-prismjs-copy=Copy>
+                        if True:
+                         print("Error de indentación")
+                      </code>
+                    </pre>
+                </div>
+                
+                <p>Explicación: <br>
+                  La indentación no es solo una recomendación estética, sino una regla obligatoria. Un error en la
+                  alineación del código provocará un IndentationError al ejecutar el programa.</p>
+              </div>
+              
+
+            </div>
+            
+            <div id=sensibilidad-a-mayusculas-y-minusculas-case-sensitive>
+              <h3>Sensibilidad a Mayúsculas y Minúsculas (case sensitive) </h3>
+              <p>Python distingue entre mayúsculas y minúsculas, lo que significa que las variables, funciones o
+                clases con nombres similares pero diferentes en su capitalización se consideran entidades distintas.
+              </p>
+              
+              <div class=code-example__full-syntax>
+                <pre data-src-status=loaded tabindex=0>                    <code class=language-PY data-prismjs-copy=Copy>
+                     nombre = "Eduardo"
+                      Nombre = "Andrés"
+                      print(nombre)  # Imprime: Eduardo
+                      print(Nombre)  # Imprime: Andrés
+                    </code>
+                  </pre>
+              </div>
+              
+              <p>Explicación: <br>
+                Aunque ambos identificadores son visualmente parecidos, Python los interpreta como variables
+                diferentes. Por ello, se recomienda mantener un uso consistente de mayúsculas y minúsculas para evitar
+                errores lógicos o confusión en el código.</p>
+            </div>
+            
+            
+            <div id=comentarios-en-el-codigo-comentario>
+              <h3>Comentarios en el Código (<code class=language-py># comentario</code>) </h3>
+              <p>Los comentarios son líneas de texto dentro del código que el intérprete no ejecuta, pero que sirven
+                para documentar y aclarar el funcionamiento del programa.</p>
+              <p>Se escriben utilizando el símbolo numeral <code class=language-py># seguido del texto del comentario</code>.</p>
+              <p>Tipos de comentarios:</p>
+              <ul>
+                <li>Comentario en una línea:
+                  
+                  <div class=code-example__full-syntax>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-py data-prismjs-copy=Copy>
+                       # Este es un comentario explicativo
+                        print("Hola mundo")  # También puede ir al final de una instrucción
+                      </code>
+                    </pre>
+                  </div>
+                  
+                </li>
+                <li>Comentario multilínea (docstring o cadena de documentación): <br>
+                  Se utiliza comúnmente al inicio de una función, clase o módulo para describir su propósito.
+                  
+                  <div class=code-example__full-syntax>
+                    <pre data-src-status=loaded tabindex=0>                      <code class=language-py data-prismjs-copy=Copy>
+                       """
+                        Este programa imprime un saludo
+                        y muestra un mensaje en pantalla.
+                        """
+                        print("Hola desde Python")
+                      </code>
+                    </pre>
+                  </div>
+                  
+                </li>
+              </ul>
+            </div>
+            
+            
+            <div id=buenas-practicas-de-escritura-estilo-pep-8>
+              <h3>Buenas Prácticas de Escritura (estilo PEP 8) </h3>
+              <p>PEP 8 (<span class=fst-italic>Python Enhancement Proposal 8</span>) es una guía oficial de estilo
+                que establece las normas recomendadas para escribir código limpio, uniforme y fácil de leer.</p>
+              
+              <div>
+                <h4>Principales Recomendaciones de PEP 8</h4>
+                <ul>
+                  <li><span class=fw-bold>Indentación</span>: usar 4 espacios por nivel de sangría.
+                  </li>
+                  <li><span class=fw-bold>Longitud de línea</span>: no superar los 79 caracteres por línea.
+                  </li>
+                  <li><span class=fw-bold>Espacios</span>: dejar un espacio después de comas y operadores.
+                    
+                    <div class=code-example__full-syntax>
+                      <pre data-src-status=loaded tabindex=0>                          <code class=language-py data-prismjs-copy=Copy>
+                           suma = a + b
+                            lista = [1, 2, 3, 4]
+                          </code>
+                        </pre>
+                    </div>
+                    
+                  </li>
+                  <li><span class=fw-bold>Nombres de variables</span>: usar minúsculas y guiones bajos.
+                    
+                    <div class=code-example__full-syntax>
+                      <pre data-src-status=loaded tabindex=0>                          <code class=language-py data-prismjs-copy=Copy>
+                           nombre_usuario = "Eduardo"
+                          </code>
+                        </pre>
+                    </div>
+                    
+                  </li>
+                  <li><span class=fw-bold>Nombres de Constantes</span>: usar MAYÚSCULAS y guiones bajos.
+                    
+                    <div class=code-example__full-syntax>
+                      <pre data-src-status=loaded tabindex=0>                          <code class=language-py data-prismjs-copy=Copy>
+                           PI = 3.1416
+                            PI_2 = 6.2832   
+                          </code>
+                        </pre>
+                    </div>
+                    
+                  </li>
+                  <li><span class=fw-bold>Nombres de clases</span>: usar la convención CamelCase.
+                    
+                    <div class=code-example__full-syntax>
+                      <pre data-src-status=loaded tabindex=0>                          <code class=language-py data-prismjs-copy=Copy>
+                           class EstudianteUniversitario:
+                              pass
+                          </code>
+                        </pre>
+                    </div>
+                    
+                  </li>
+                  <li><span class=fw-bold>Comentarios claros y útiles</span>: explicar el “por qué”, no solo el
+                    “qué”.</li>
+                  <li><span class=fw-bold>Importaciones ordenadas</span>: primero las bibliotecas estándar, luego
+                    las externas y finalmente las locales.</li>
+                </ul>
+                <p><span class=fw-bold>Ejemplo de código con buenas prácticas</span>:</p>
+                
+                <div class=code-example__full-syntax>
+                  <pre data-src-status=loaded tabindex=0>                      <code class=language-py data-prismjs-copy=Copy>
+                        # Programa que calcula el área de un círculo
+
+                        import math
+
+                        def calcular_area(radio):
+                            """Calcula el área de un círculo a partir de su radio."""
+                            return math.pi * radio ** 2
+
+                        radio = 5
+                        area = calcular_area(radio)
+                        print(f"El área del círculo es: {area:.2f}")
+                      </code>
+                    </pre>
+                </div>
+                
+              </div>
+              
+            </div>
+            
+
+            
+          </div>
+          
+        </article>
+        <article class=row id=comments>
+          <h2>COMENTARIOS</h2>
+          <p>Si tiene alguna inquietud, duda o ha encontrado algún error, por favor infórmelo a través del formulario
+            disponible para este propósito.</p>
+          <div class="d-flex justify-content-center">
+            <form action=https://formspree.io/f/mdkdawkg method=post id=myForm>
+              <fieldset class="d-flex flex-column gap-3">
+                <legend class="fs-4 text-center">Deje su comentario</legend>
+                <div class="d-flex flex-column">
+                  <label for=name>Nombre:</label>
+                  <input name=name id=name placeholder=User class="form-control rounded" required>
+                </div>
+                <div class="d-flex flex-column">
+                  <label for=email>Email:</label>
+                  <input type=email name=email id=email placeholder=user@mail.com class="form-control rounded" required>
+                </div>
+                <div class="d-flex flex-column">
+                  <label for=message>Mensaje:</label>
+                  <textarea name=message id=message cols=30 rows=5 placeholder="Su comentario..." class="form-control rounded-3" required></textarea>
+                </div>
+                <button class="border border-2 btn btn-outline-light my-3 rounded-pill site-button">Enviar</button>
+              </fieldset>
+              <p class="small text-center">La política de privacidad, y los términos y condiciones estándisponibles en
+                el formulario de contacto.</p>
+            </form>
+          </div>
+        </article>
+        
+      </section>
+      
+      <aside class="col-lg-3 d-lg-block d-none">
+        <h2>En Este Artículo</h2>
+        <div class=site-menu__scroll>
+          <div id=article-scrollspy class="list-group site-menu" role=navigation aria-label="Indice del articulo">
+            <div class="border border-1">
+
+              <div class=site-menu__item>
+                <a href=#introduccion class="list-group-item list-group-item-action">Introducción</a>
+              </div>
+
+              <div class=site-menu__item>
+                <a href=#porque-python-para-el-analisis-de-datos class="list-group-item list-group-item-action">Porque
+                  Python para el Análisis de
+                  Datos</a>
+              </div>
+              <div class=site-menu__item>
+                <a href=#sintaxis-y-conceptos-Básicos-de-phyton class="list-group-item list-group-item-action">Sintaxis y Conceptos Básicos de Phyton</a>
+              </div>
+
+              
+              <div class=site-menu__item>
+                <a href=#comments class="list-group-item list-group-item-action">Comentarios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+  
+
+  
+  <footer class="border-1 border-top m-1 mt-3 row">
+    <div class=row>
+      
+      <address class="align-items-center col-lg-4 d-flex flex-column">
+        <div class="fs-2 text-center">Contacto</div>
+        <div class="align-items-center d-flex flex-row">
+          <i class="bi bi-envelope-at fs-3"></i>
+          <span class=ms-3>
+            <a class=text-decoration-none href=mailto:ehfeduardo@gmail.com>ehfeduardo@gmail.com</a>
+          </span>
+        </div>
+        <div class="align-items-center d-flex flex-row">
+          <i class="bi bi-geo-alt fs-3"></i>
+          <span class=ms-3>Bogotá D. C. - Colombia</span>
+        </div>
+      </address>
+      
+      <div class="align-items-center col-lg-4 d-flex flex-column h-100 justify-content-center">
+        <div>
+          <i class="bi bi-c-circle fs-5"></i>
+        </div>
+        <div class=ms-2>All Rights Reserved 2025</div>
+      </div>
+      
+      <div class="align-items-center col-lg-4 d-flex flex-column">
+        <div class="fs-2 text-center">Redes Sociales</div>
+        <div class="align-items-center d-flex gap-5 justify-content-evenly">
+          <div>
+            <a href=https://www.linkedin.com/in/eduardoherreraf/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-linkedin fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://github.com/eduardoherreraf target=_blank rel="noopener noreferrer">
+              <i class="bi bi-github fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://www.facebook.com/eduardoherreraforero/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-facebook fs-1"></i>
+            </a>
+          </div>
+          <div>
+            <a href=https://twitter.com/ehfeduardo/ target=_blank rel="noopener noreferrer">
+              <i class="bi bi-twitter-x fs-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="align-items-center d-flex gap-2 justify-content-center"></div>
+  </footer>
+  
+
+  
+  <button onclick=topFunction() id=myBtnScroll title="Go to top" class=site-scroll-top>
+    <svg xmlns:xmlns=http://www.w3.org/2000/svg width=32 height=32 fill=currentColor class="bi bi-arrow-bar-up" style=margin-left:-2px viewBox="0 0 16 16"><path fill-rule=evenodd d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/></svg>
+  </button>
+  
+
+

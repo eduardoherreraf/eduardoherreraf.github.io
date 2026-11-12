@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang=es><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Sidebar con Flexbox</title><style>*{box-sizing:border-box;margin:0;padding:0}.demo-fixed-sidebar{height:100vh;font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;overflow:hidden}.demo-fixed-sidebar__container{height:100vh;display:flex}.demo-fixed-sidebar__sidebar{color:#fff;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);flex-shrink:0;width:250px;padding:20px;overflow-y:auto}.demo-fixed-sidebar__sidebar .demo-fixed-sidebar__h2{border-bottom:2px solid #ffffff4d;margin-bottom:30px;padding-bottom:10px;font-size:24px}.demo-fixed-sidebar__sidebar .demo-fixed-sidebar__nav .demo-fixed-sidebar__ul{list-style:none}.demo-fixed-sidebar__sidebar .demo-fixed-sidebar__nav .demo-fixed-sidebar__li{margin-bottom:15px}.demo-fixed-sidebar__sidebar .demo-fixed-sidebar__nav .demo-fixed-sidebar__a{color:#fff;border-radius:8px;padding:12px 15px;text-decoration:none;transition:all .3s;display:block}.demo-fixed-sidebar__sidebar .demo-fixed-sidebar__nav .demo-fixed-sidebar__a:hover{background:#fff3;transform:translate(5px)}.demo-fixed-sidebar__content{background:#f5f7fa;flex:1;padding:40px;overflow-y:auto}.demo-fixed-sidebar__content .demo-fixed-sidebar__h1{color:#2d3748;margin-bottom:20px;font-size:32px}.demo-fixed-sidebar__card{background:#fff;border-radius:12px;margin-bottom:20px;padding:25px;box-shadow:0 2px 8px #0000001a}.demo-fixed-sidebar__card .demo-fixed-sidebar__h3{color:#667eea;margin-bottom:10px}.demo-fixed-sidebar__card .demo-fixed-sidebar__p{color:#4a5568;line-height:1.6}</style><body class=demo-fixed-sidebar>
+    <div class="container demo-fixed-sidebar__container">
+        <aside class=demo-fixed-sidebar__sidebar>
+            <h2 class=demo-fixed-sidebar__h2>Menú</h2>
+            <nav class=demo-fixed-sidebar__nav>
+                <ul class=demo-fixed-sidebar__ul>
+                    <li class=demo-fixed-sidebar__li><a href=#inicio class=demo-fixed-sidebar__a>🏠 Inicio</a></li>
+                    <li class=demo-fixed-sidebar__li><a href=#servicios class=demo-fixed-sidebar__a>💼 Servicios</a></li>
+                    <li class=demo-fixed-sidebar__li><a href=#proyectos class=demo-fixed-sidebar__a>📁 Proyectos</a></li>
+                    <li class=demo-fixed-sidebar__li><a href=#equipo class=demo-fixed-sidebar__a>👥 Equipo</a></li>
+                    <li class=demo-fixed-sidebar__li><a href=#contacto class=demo-fixed-sidebar__a>📧 Contacto</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class=demo-fixed-sidebar__content>
+            <h1 class=demo-fixed-sidebar__h1>Contenido Principal</h1>
+
+            <div class="card demo-fixed-sidebar__card">
+                <h3 class=demo-fixed-sidebar__h3>Bienvenido</h3>
+                <p class=demo-fixed-sidebar__p>Este es un ejemplo de layout con sidebar de ancho fijo y contenido flexible usando Flexbox. El
+                    sidebar mantiene sus 250px de ancho mientras que el contenido se expande para ocupar el resto del
+                    espacio disponible.</p>
+            </div>
+
+            <div class="card demo-fixed-sidebar__card">
+                <h3 class=demo-fixed-sidebar__h3>Características</h3>
+                <p class=demo-fixed-sidebar__p>✓ Sidebar con ancho fijo de 250px<br>
+                    ✓ Contenido flexible que se adapta al espacio restante<br>
+                    ✓ Diseño responsivo y moderno<br>
+                    ✓ Scroll independiente en cada sección</p>
+            </div>
+
+            <div class="card demo-fixed-sidebar__card">
+                <h3 class=demo-fixed-sidebar__h3>Flexbox</h3>
+                <p class=demo-fixed-sidebar__p>El contenedor principal usa <code>display: flex</code> para crear el layout. El sidebar tiene
+                    <code>width: 250px</code> y <code>flex-shrink: 0</code> para mantener su ancho fijo, mientras que el
+                    contenido usa <code>flex: 1</code> para ocupar todo el espacio restante.</p>
+            </div>
+        </main>
+    </div>
+
+
